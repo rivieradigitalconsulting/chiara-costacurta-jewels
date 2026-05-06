@@ -1,0 +1,6 @@
+<span class="o-header-utilities__link-label">
+  {{ 'sections.header.cart' | t }}
+  {%- if cart != empty -%}
+    <span class="cart-inline-count-amount">({{ cart.item_count }})</span>
+  {%- endif -%}
+</span>

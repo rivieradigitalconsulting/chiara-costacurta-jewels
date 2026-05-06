@@ -1,0 +1,15 @@
+.m-account-addresses [aria-expanded=false] ~ div[id] {
+  display: none;
+}
+.m-account-addresses [aria-expanded=true] ~ div[id] {
+  display: block;
+}
+.m-account-addresses__heading {
+  color: inherit;
+}
+.m-account-addresses__inner {
+  gap: 4rem;
+}
+.m-account-addresses__address {
+  word-break: break-all;
+}

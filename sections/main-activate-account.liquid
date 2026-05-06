@@ -1,0 +1,390 @@
+{%- render '_styles-section', section: section -%}
+{{ 'user-style.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign color_scheme = section.settings.color_scheme
+  assign standard_color_scheme = settings.color_schemes['scheme-1']
+
+  assign aspect_ratio_class = 'a-img__ratio--' | append: section.settings.image_ratio
+
+  if section.settings.media_position == 'left'
+    assign media_position = 'left'
+    assign content_position = 'right'
+  elsif section.settings.media_position == 'right'
+    assign media_position = 'right'
+    assign content_position = 'left'
+  endif
+
+  assign fetch_priority = 'auto'
+  if section.index == 1
+    assign fetch_priority = 'high'
+  endif
+-%}
+
+{%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+{%- capture sizes -%}
+  (min-width: 750px) calc((100vw) / 2), calc((100vw) / 2)
+{%- endcapture -%}
+
+<div
+  class="o-user o-section u-color--{{ color_scheme }}"
+  {% if section.settings.invert_navigation_color %}
+    data-invert-navigation
+  {% endif %}
+  {% if section.settings.section_id != blank %}
+    id="{{ section.settings.section_id | handleize }}"
+  {% endif %}
+>
+  <div class="grid o-section__constrict o-user__inner">
+    {% if section.settings.image != blank %}
+      <div class="grid__col-12 grid__col-lg-6 o-user__image-container" data-media-position="{{ media_position }}">
+        <div class="o-user__image">
+          {{
+            section.settings.image
+            | image_url: width: 1024
+            | image_tag:
+              class: aspect_ratio_class,
+              loading: 'lazy',
+              sizes: sizes,
+              widths: widths,
+              fetchpriority: fetch_priority
+          }}
+        </div>
+      </div>
+    {% endif %}
+    <div
+      class="grid__col-12 {% if section.settings.image != blank %}  grid__col-lg-5 {% endif %} o-user__form-container grid grid--{{ section.settings.content_vertical_position }}-v grid--{{ section.settings.content_position }}-h u-text-{{ section.settings.content_alignment }}"
+      data-content-position="{{ content_position }}"
+    >
+      <div class="o-user__activate">
+        <div class="o-user__header">
+          <div class="o-user__heading h2">
+            {{ 'customer.activate_account.title' | t }}
+          </div>
+          <p>
+            {{ 'customer.activate_account.subtext' | t }}
+          </p>
+        </div>
+        {%- form 'activate_customer_password' -%}
+          <div class="o-user__form-fields">
+            {%- if form.errors -%}
+              <div class="h5 o-user__errors-title o-user__heading" tabindex="-1" autofocus>
+                {{ 'templates.contact.form.error_heading' | t }}
+              </div>
+              <ul class="o-user__errors-list">
+                {%- for field in form.errors -%}
+                  <li>
+                    {{ form.errors.translated_fields[field] | capitalize }}
+                    {{ form.errors.messages[field] }}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+
+            <div class="a-input" class="a-input__label">
+              <label for="password">
+                {{ 'customer.activate_account.password' | t }}
+              </label>
+              <input
+                type="password"
+                name="customer[password]"
+                id="password"
+                autocomplete="new-password"
+                placeholder="{{ 'customer.activate_account.password' | t }}"
+                class="a-input__field"
+                {% if form.errors contains 'password' %}
+                  aria-invalid="true"
+                  aria-describedby="password-error"
+                {% endif %}
+              >
+              {%- if form.errors contains 'password' -%}
+                <small id="password-error">
+                  {{ form.errors.translated_fields.password | capitalize }}
+                  {{ form.errors.messages.password }}
+                </small>
+              {%- endif -%}
+            </div>
+
+            <div class="a-input">
+              <label for="password_confirmation" class="a-input__label">
+                {{ 'customer.activate_account.password_confirm' | t }}
+              </label>
+              <input
+                type="password"
+                name="customer[password_confirmation]"
+                id="password_confirmation"
+                autocomplete="new-password"
+                placeholder="{{ 'customer.activate_account.password_confirm' | t }}"
+                class="a-input__field"
+                {% if form.errors contains 'password' %}
+                  aria-invalid="true"
+                  aria-describedby="password_confirmation-error"
+                {% endif %}
+              >
+              {%- if form.errors contains 'password_confirmation' -%}
+                <small id="password_confirmation-error">
+                  {{ form.errors.translated_fields.password_confirmation | capitalize }}
+                  {{ form.errors.messages.password_confirmation }}
+                </small>
+              {%- endif -%}
+            </div>
+            <div class="o-user__btns-container grid--{{ section.settings.content_alignment }}-h">
+              <button
+                class="{% if section.settings.btn_style_1 == "line" %} a-link {% else %} a-btn a-btn--{{ section.settings.btn_style_1 }}{% endif %}"
+                aria-label=" {{ 'customer.activate_account.submit' | t }}"
+              >
+                {{ 'customer.activate_account.submit' | t }}
+              </button>
+              <button
+                class="{% if section.settings.btn_style_2 == "line" %} a-link {% else %} a-btn a-btn--{{ section.settings.btn_style_2 }}{% endif %}"
+                name="decline"
+                aria-label="{{ 'customer.activate_account.cancel' | t }}"
+              >
+                {{ 'customer.activate_account.cancel' | t }}
+              </button>
+            </div>
+          </div>
+        {%- endform -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:account_activation.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.section.content"
+    },
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "t:sections.all.section_id.label",
+      "info": "t:sections.all.section_id.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.spacing.content"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.mobile.label",
+      "info": "t:sections.all.padding.top.mobile.info",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.mobile.label",
+      "info": "t:sections.all.padding.bottom.mobile.info",
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.color.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_navigation_color",
+      "label": "t:sections.all.invert_navigation_color.label",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:account_activation.settings.color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "media_position",
+      "label": "t:account_activation.settings.media_position.label",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:account_activation.settings.media_position.options.left.label"
+        },
+        {
+          "value": "right",
+          "label": "t:account_activation.settings.media_position.options.right.label"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.layout.content"
+    },
+    {
+      "type": "select",
+      "id": "content_vertical_position",
+      "label": "t:account_activation.settings.content_vertical_position.label",
+      "options": [
+        {
+          "value": "top",
+          "label": "t:account_activation.settings.content_vertical_position.options.top.label"
+        },
+        {
+          "value": "center",
+          "label": "t:account_activation.settings.content_vertical_position.options.center.label"
+        },
+        {
+          "value": "bottom",
+          "label": "t:account_activation.settings.content_vertical_position.options.bottom.label"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "t:account_activation.settings.content_position.label",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:account_activation.settings.content_position.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:account_activation.settings.content_position.options.center.label"
+        },
+        {
+          "value": "right",
+          "label": "t:account_activation.settings.content_position.options.right.label"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "text_alignment",
+      "id": "content_alignment",
+      "label": "t:account_activation.settings.content_alignment.label",
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.content.content"
+    },
+    {
+      "type": "select",
+      "id": "btn_style_1",
+      "label": "t:account_activation.settings.btn_style_1.label",
+      "options": [
+        {
+          "value": "primary",
+          "label": "t:account_activation.settings.btn_style_1.options.primary.label"
+        },
+        {
+          "value": "secondary",
+          "label": "t:account_activation.settings.btn_style_1.options.secondary.label"
+        },
+        {
+          "value": "tertiary",
+          "label": "t:account_activation.settings.btn_style_1.options.tertiary.label"
+        },
+        {
+          "value": "line",
+          "label": "t:account_activation.settings.btn_style_1.options.line.label"
+        }
+      ],
+      "default": "primary"
+    },
+    {
+      "type": "select",
+      "id": "btn_style_2",
+      "label": "t:account_activation.settings.btn_style_2.label",
+      "options": [
+        {
+          "value": "primary",
+          "label": "t:account_activation.settings.btn_style_2.options.primary.label"
+        },
+        {
+          "value": "secondary",
+          "label": "t:account_activation.settings.btn_style_2.options.secondary.label"
+        },
+        {
+          "value": "tertiary",
+          "label": "t:account_activation.settings.btn_style_2.options.tertiary.label"
+        },
+        {
+          "value": "line",
+          "label": "t:account_activation.settings.btn_style_2.options.line.label"
+        }
+      ],
+      "default": "primary"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.media.content"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:account_activation.settings.image.label"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "t:account_activation.settings.image_ratio.label",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.media_ratio.options.default.label"
+        },
+        {
+          "value": "1x1",
+          "label": "t:sections.all.media_ratio.options.1_x_1.label"
+        },
+        {
+          "value": "2x3",
+          "label": "t:sections.all.media_ratio.options.2_x_3.label"
+        },
+        {
+          "value": "4x3",
+          "label": "t:sections.all.media_ratio.options.4_x_3.label"
+        },
+        {
+          "value": "4x5",
+          "label": "t:sections.all.media_ratio.options.4_x_5.label"
+        },
+        {
+          "value": "16x9",
+          "label": "t:sections.all.media_ratio.options.16_x_9.label"
+        }
+      ],
+      "default": "default"
+    }
+  ]
+}
+{% endschema %}

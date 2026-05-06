@@ -1,0 +1,28 @@
+{%- liquid
+  assign class = class
+  assign id = id
+  assign form_attr = form_attr
+-%}
+
+<div class="{{ class }} m-accordion js-accordion">
+  <div class="m-accordion__header grid grid--center-v js-accordion-trigger" tabindex="0">
+    <div class="body-fs-sm">{{ 'sections.cart.note' | t }}</div>
+    {% render 'icon-caret' %}
+  </div>
+  <div class="m-accordion__content rte">
+    <div class="m-accordion__text">
+      <div class="m-cart-note js-cart-note">
+        <label for="{{ id }}" class="visually-hidden a-input__label">
+          <p>{{ 'general.search.search' | t }}</p>
+        </label>
+        <textarea
+          class="a-input__textarea"
+          name="note"
+          id="{{ id }}"
+          {{ form_attr }}
+          placeholder="{{ 'sections.cart.note' | t }}"
+        >{{ cart.note }}</textarea>
+      </div>
+    </div>
+  </div>
+</div>

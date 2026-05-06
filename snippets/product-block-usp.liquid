@@ -1,0 +1,19 @@
+{%- liquid
+  assign usp_icon = block.settings.icon
+  assign usp_label = block.settings.title
+-%}
+
+<div
+  class="o-product__usp m-product-usp grid grid--top-v a-spacing-content"
+  style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {{ block.shopify_attributes }}
+>
+  {%- if usp_icon != 'none' -%}
+    <div class="m-product-usp__icon">
+      {%- render 'icon-pack', icon: usp_icon -%}
+    </div>
+  {%- endif -%}
+  <div class="m-product-usp__label rte body-fs-sm">
+    {{ usp_label }}
+  </div>
+</div>

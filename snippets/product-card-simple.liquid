@@ -1,0 +1,193 @@
+{%- liquid
+  assign card_product = card_product
+  assign product_availability = card_product.available
+
+  assign force_quick_add = force_quick_add
+  assign forced_quick_add_value = forced_quick_add_value
+  assign show_quick_add = settings.product_enable_quick_add
+  assign aspect_ratio_class = 'a-img__ratio--' | append: settings.product_image_ratio
+
+  assign section_id = section_id
+  assign combined_section_id = section_id | append: card_product.id
+
+  assign enable_price = enable_price
+  assign show_price = true
+
+  unless enable_price
+    assign show_price = false
+  endunless
+
+  if force_quick_add
+    assign show_quick_add = forced_quick_add_value
+  endif
+
+  if card_product.variants.size > 1
+    assign use_variant = true
+  else
+    assign use_variant = false
+  endif
+
+  assign widths = '165, 360, 535, 750'
+
+  assign is_preorder = false
+  for tag in card_product.tags
+    if tag contains 'preorder'
+      assign is_preorder = true
+    endif
+  endfor
+-%}
+
+{%- capture sizes -%}
+    (min-width: 750px) calc((100vw) / 2), calc((100vw) / 2)
+ {%- endcapture -%}
+
+<div class="m-product-card m-product-card--simple {% unless product_availability %}m-product-card--sold-out{% endunless %}">
+  <a href="{{ card_product.url | within: collection }}" class="m-product-card__url grid">
+    <div class="m-product-card__media">
+      <div class="m-product-card__image">
+        {%- if card_product.featured_media -%}
+          {{
+            card_product.featured_media
+            | image_url: width: 500
+            | image_tag: class: aspect_ratio_class, loading: 'lazy', sizes: sizes, widths: widths, fetchpriority: 'auto'
+          }}
+        {%- else -%}
+          {%- assign placeholder_classes = aspect_ratio_class | append: ' a-placeholder-media' -%}
+          {{ placeholder_media | placeholder_svg_tag: placeholder_classes }}
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="m-product-card__content">
+      <h3 class="m-product-card__heading product-title" {{ block.shopify_attributes }}>
+        {{ card_product.title | escape }}
+      </h3>
+      {%- if show_price -%}
+        <div class="m-product-card__info grid grid--center-v body-fs-xs grid--right-h">
+          <div class="m-product-card__price" id="price-{{ combined_section_id }}">
+            {%- render 'price', product: card_product, use_variant: use_variant -%}
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if show_quick_add -%}
+        {%- liquid
+          assign card_product = card_product
+          assign section_id = section_id
+          assign combined_section_id = section_id | append: card_product.id
+          assign product_form_id = 'product-form-' | append: section_id | append: card_product.id
+          assign hasVariants = false
+
+          if card_product.variants.size > 1
+            assign hasVariants = true
+          endif
+        -%}
+
+        <div class="m-product-card__quick-add">
+          {%- if hasVariants -%}
+            <div class="m-quick-add-variants js-quick-add-variants">
+              <div class="m-quick-add-variants__items m-quick-add-variants__items-transparent" style="display: none;">
+                <div
+                  class="m-variants js-variants js-variants-quick-add"
+                  data-section="{{ combined_section_id }}"
+                  data-url="{{ routes.root_url }}products/{{ card_product.handle }}"
+                  data-type="radio"
+                  {{ block.shopify_attributes }}
+                >
+                  {%- for option in card_product.options_with_values -%}
+                    {%- assign downcased_option = option.name | downcase -%}
+
+                    <fieldset class="m-variants__fieldset" data-option="{{ downcased_option }}">
+                      <legend class="m-variants__legend a-input__label">{{ option.name }}</legend>
+                      {%- render 'product-variant-options',
+                        product: card_product,
+                        option: option,
+                        label_class: 'm-variants__label--extra-small',
+                        display_mode: 'button',
+                        product_form_id: product_form_id,
+                        section_id: combined_section_id,
+                        track_ga_events: track_ga_events
+                      -%}
+                    </fieldset>
+                  {%- endfor -%}
+                  <script type="application/json">
+                    {{ card_product.variants | json }}
+                  </script>
+                </div>
+              </div>
+              <div class="m-quick-add-variants__buttons js-quick-add-toggle">
+                <button
+                  class="m-quick-add-variants__button u-unstyled-btn a-link"
+                  aria-label="
+                    {% if is_preorder %}
+                      {{ 'products.product.preorder' | t }}
+                    {% else %}
+                      {{ 'products.product.add_to_cart' | t }}
+                    {% endif %}
+                  "
+                >
+                  <span class="m-quick-add-variants__button-text">
+                    {% if is_preorder %}
+                      {{ 'products.product.preorder' | t }}
+                    {% else %}
+                      {{ 'products.product.add_to_cart' | t }}
+                    {% endif %}
+                  </span>
+                  <span class="m-quick-add-variants__button-icon"></span>
+                </button>
+              </div>
+            </div>
+          {%- endif -%}
+          <div class="js-product-form">
+            {%- form 'product',
+              card_product,
+              id: product_form_id,
+              class: 'form form-quick-add',
+              novalidate: 'novalidate',
+              data-type: 'add-to-cart-form'
+            -%}
+              <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}">
+
+              <div class="m-product-form__buttons">
+                <button
+                  type="submit"
+                  name="add"
+                  class="m-product-form__submit m-quick-add-variants__button u-unstyled-btn a-link js-cart-trigger {% if is_preorder %}is-preorder{% endif %}"
+                  {% if card_product.selected_or_first_available_variant.available == false %}
+                    disabled
+                  {% endif %}
+                  aria-label="
+                    {% if card_product.selected_or_first_available_variant.available %}
+                      {% if is_preorder %}
+                        {{ 'products.product.preorder' | t }}
+                      {% else %}
+                        {{ 'products.product.add_to_cart' | t }}
+                      {% endif %}
+                    {% else %}
+                      {{ 'products.product.sold_out' | t }}
+                    {% endif %}
+                  "
+                >
+                  <span class="m-product-form__submit-text m-quick-add-variants__button-text">
+                    {%- if card_product.selected_or_first_available_variant.available -%}
+                      {% if is_preorder %}
+                        {{ 'products.product.preorder' | t }}
+                      {% else %}
+                        {{ 'products.product.add_to_cart' | t }}
+                      {% endif %}
+                    {%- else -%}
+                      {{ 'products.product.sold_out' | t }}
+                    {%- endif -%}
+                  </span>
+                  <span class="m-product-form__sold-out-message m-quick-add-variants__button-text hide">
+                    {{ 'products.product.sold_out' | t }}
+                  </span>
+                  <span class="m-quick-add-variants__button-icon"></span>
+                </button>
+              </div>
+            {%- endform -%}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </a>
+</div>

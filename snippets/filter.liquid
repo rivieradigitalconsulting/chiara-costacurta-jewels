@@ -1,0 +1,102 @@
+{{ 'filter-style.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'filter-drawer-script.min.js' | asset_url }}" defer="defer"></script>
+
+<script src="{{ 'accordion-script.min.js' | asset_url }}" defer="defer"></script>
+{{ 'accordion-style.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign sort_by = results.sort_by | default: results.default_sort_by
+  assign total_active_values = 0
+
+  if results.url
+    assign results_url = results.url
+  else
+    assign terms = results.terms | escape
+    assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
+  endif
+
+  assign enable_product_count = enable_product_count
+  assign enable_sorting = enable_sorting
+-%}
+
+<div class="m-filter js-filter-drawer">
+  {%- for filter in results.filters -%}
+    {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+  {%- endfor -%}
+
+  <div class="m-filter__trigger js-filter-drawer-trigger" tabindex="0">
+    <span class="m-filter__trigger-label">
+      {{ 'products.facets.filter_button' | t }}
+      {%- render 'icon-plus' -%}
+    </span>
+  </div>
+
+  <div class="m-filter-drawer">
+    <div class="m-filter-drawer__content u-color--{{ filter_color_scheme }}">
+      <div class="m-filter-drawer__header grid grid--no-wrap grid--center-v">
+        <div class="m-filter-drawer__heading body-fs-lg">
+          {{ 'products.facets.filter_button' | t }}
+        </div>
+        {%- if enable_product_count -%}
+          <div id="product-count" class="m-filter-drawer__product-count body-fs-sm" role="status">
+            {%- if results.results_count -%}
+              {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
+            {%- else -%}
+              {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+        <button
+          class="u-unstyled-btn m-filter-drawer__close js-filter-drawer-close"
+          type="button"
+          aria-label="{{ 'accessibility.close' | t }}"
+        >
+          {%- render 'icon-close' -%}
+        </button>
+      </div>
+      <div class="m-filter-drawer__filters">
+        <form id="facet-filters-form" class="m-filter-drawer__form js-filter-form">
+          <div class="m-filter-drawer__filtering">
+            {%- liquid
+              for filter in results.filters
+                case filter.type
+                  when 'boolean', 'list'
+                    render 'filter-checkbox', filter: filter, forloop: forloop
+                  when 'price_range'
+                    render 'filter-price-range', filter: filter, forloop: forloop
+                endcase
+              endfor
+            -%}
+          </div>
+          <div class="m-filter-drawer__sorting">
+            {%- liquid
+              assign sorting_results = collection
+              if request.page_type == 'search'
+                assign sorting_results = search
+              endif
+              if enable_sorting
+                render 'sorting', results: sorting_results
+              endif
+            -%}
+          </div>
+        </form>
+      </div>
+      <div class="m-filter-drawer__footer u-text-center">
+        <div
+          class="m-filter-drawer__apply a-btn a-btn--primary js-filter-drawer-close"
+          tabindex="0"
+        >
+          {{ 'products.facets.apply' | t }}
+        </div>
+        <a
+          href="{{ results_url }}"
+          class="m-filter-drawer__remove a-link js-filter-remove js-filter-drawer-close"
+        >
+          {{- 'products.facets.clear_all' | t -}}
+        </a>
+      </div>
+    </div>
+    <div class="u-backdrop js-filter-drawer-underlay"></div>
+  </div>
+</div>

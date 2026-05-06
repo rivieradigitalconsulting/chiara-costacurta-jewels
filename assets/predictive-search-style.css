@@ -1,0 +1,64 @@
+.m-predictive-search {
+  font-size: var(--body-fs-sm);
+  width: 100%;
+}
+.m-predictive-search__segment {
+  margin-bottom: 2rem;
+}
+.m-predictive-search__segment:last-of-type {
+  margin-bottom: 0;
+}
+.m-predictive-search__segment-heading {
+  justify-content: space-between;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgb(var(--color-border));
+  margin-bottom: 1rem;
+}
+.m-predictive-search__segment-title {
+  margin-bottom: 0;
+}
+.m-predictive-search__segment-view-all {
+  font-size: var(--body-fs-sm);
+  line-height: var(--body-lh-sm);
+  text-decoration: none;
+  color: rgb(var(--color-text));
+}
+.m-predictive-search__image-wrapper {
+  max-width: 8rem;
+}
+.m-predictive-search__image-wrapper + .m-predictive-search__info:hover {
+  text-decoration: none;
+}
+.m-predictive-search__image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.m-predictive-search__item p {
+  margin-bottom: 0;
+}
+.m-predictive-search__query-result *:not(mark) {
+  font-weight: bolder;
+}
+.m-predictive-search__query-result mark {
+  opacity: 0.75;
+  background-color: transparent;
+}
+.m-predictive-search__info {
+  flex: 1;
+}
+.m-predictive-search__info:hover {
+  text-decoration: underline;
+}
+.m-predictive-search__info .m-price {
+  margin-top: 0.5rem;
+}
+.m-predictive-search__link {
+  text-decoration: none;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.m-predictive-search__message {
+  margin-top: 1rem;
+  display: block;
+}

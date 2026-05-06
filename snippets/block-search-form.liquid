@@ -1,0 +1,28 @@
+<div
+  class="o-main-search__form a-spacing-content"
+  style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {{ block.shopify_attributes }}
+>
+  <form action="{{ routes.search_url }}" method="get" role="search" class="search">
+    <div class="a-input">
+      <label for="Search-In-Template" class="visually-hidden a-input__label">
+        {{ 'general.search.search' | t }}
+      </label>
+      <input
+        class="a-input__field"
+        type="search"
+        name="q"
+        value="{{ search.terms | escape }}"
+        id="Search-In-Template"
+        placeholder="{{ 'general.search.search' | t }}"
+      >
+    </div>
+    <button
+      type="submit"
+      class="{% if block.settings.btn_style == "line" %} a-link {% else %} a-btn a-btn--{{ block.settings.btn_style }}{% endif %} a-btn--has-icon"
+      aria-label="{{ 'general.search.search' | t }}"
+    >
+      {% render 'icon-search' %}
+    </button>
+  </form>
+</div>

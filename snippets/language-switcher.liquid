@@ -1,0 +1,21 @@
+<div class="m-localization__form-wrapper js-localization">
+  {%- form 'localization' -%}
+    <select
+      name="language-switcher"
+      class="a-select__field custom-select"
+      id="language-switcher"
+    >
+      {%- for language in localization.available_languages -%}
+        <option
+          value="{{ language.iso_code }}"
+          {% if language.iso_code == localization.language.iso_code %}
+            selected
+          {% endif %}
+        >
+          {{ language.iso_code }}
+        </option>
+      {%- endfor -%}
+    </select>
+    <input type="hidden" name="language_code" value="{{ localization.language.iso_code }}">
+  {%- endform -%}
+</div>

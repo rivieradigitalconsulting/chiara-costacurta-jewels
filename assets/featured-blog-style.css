@@ -1,0 +1,19 @@
+.o-featured-blog__content {
+  margin-bottom: 3rem;
+}
+.o-featured-blog__footer {
+  margin-top: 3rem;
+}
+.o-featured-blog__articles {
+  display: flex;
+  flex-direction: column;
+  gap: var(--row-gap-mobile);
+}
+@media screen and (min-width: 768px) {
+  .o-featured-blog__articles {
+    gap: var(--row-gap-desktop);
+  }
+}
+.o-featured-blog__article:last-child {
+  margin-bottom: 0;
+}

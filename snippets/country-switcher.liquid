@@ -1,0 +1,22 @@
+<div class="m-localization__form-wrapper js-localization">
+  {%- form 'localization' -%}
+    <select
+      name="country-switcher"
+      class="a-select__field custom-select"
+      id="country-switcher"
+    >
+      {%- for country in localization.available_countries -%}
+        <option
+          value="{{ country.iso_code }}"
+          {% if country.iso_code == localization.country.iso_code %}
+            selected
+          {% endif %}
+        >
+          {{ country.name }} ({{ country.currency.iso_code }}
+          {{ country.currency.symbol }})
+        </option>
+      {%- endfor -%}
+    </select>
+    <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
+  {%- endform -%}
+</div>

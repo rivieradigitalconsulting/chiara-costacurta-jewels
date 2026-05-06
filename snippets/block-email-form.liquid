@@ -1,0 +1,27 @@
+{%- liquid
+  assign classes = 'a-spacing-content ' | append: block.settings.text_size | append: ' u-text-' | append: block.settings.text_style
+
+  if block_class != blank
+    assign classes = classes | append: ' ' | append: block_class
+  endif
+
+  if settings.enable_animation and disable_animation != true
+    assign classes = classes | append: ' js-animation a-animation a-animation--fade-up'
+  endif
+-%}
+<div
+  class="{{ classes }}"
+  {% if block_styles %}
+    style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  {%- render 'newsletter-form',
+    section: section,
+    id: 'NewsletterSection',
+    button_type: 'text',
+    show_optin: block.settings.show_optin,
+    link_terms: block.settings.terms_link,
+    link_privacy: block.settings.privacy_link
+  -%}
+</div>

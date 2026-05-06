@@ -1,0 +1,9 @@
+@media screen and (min-width: 768px) {
+  .o-product-block-recommendations:not(.a-spacing-content) {
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+}
+.o-product-block-recommendations__title {
+  margin-bottom: 1.6rem;
+}

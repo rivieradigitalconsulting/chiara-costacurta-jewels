@@ -1,0 +1,79 @@
+{%- liquid
+  assign show_panel_heading = section.settings.show_panel_heading | default: false
+  assign show_back_button = section.settings.show_back_button | default: false
+-%}
+
+
+<div class="m-main-nav__panel"
+  {% if level > 1 %}
+    id="submenu-{{ menu.title | handleize }}-{{ level }}"
+    role="region"
+    aria-label="{{ menu.title | escape }}"
+    inert
+    aria-hidden="true"
+  {% endif %}
+  data-level="{{ level }}"
+>
+  <div class="m-main-nav__panel-inner">
+    {%- if level > 1 and show_panel_heading -%}
+      <p class="m-main-nav__panel-title">{{ menu.title | escape }}</p>
+    {%- endif -%}
+
+    <div class="m-main-nav__panel-links">
+      {%- if level > 1 and show_back_button -%}
+        <button class="m-main-nav__back js-nav-back" aria-label="close" tabindex="-1">
+          {%- render 'icon-chevron-left' -%}
+          <span>{{ 'accessibility.close' | t }}</span>
+        </button>
+      {%- endif -%}
+      <ul class="m-main-nav__list grid u-unstyled-list">
+        {%- comment %} Loop through the menu links {% endcomment %}
+        {%- for link in menu.links -%}
+          {%- liquid
+            assign has_active_link = false
+            assign handle = link.title | handleize
+            assign link_title = link.title | escape
+            assign button_label = 'accessibility.toggle_submenu' | t: menu: link_title
+          -%}
+          <li class="m-main-nav__item {% if link.links != blank %}m-main-nav__item--has-children{% endif %} {% unless level > 1 %}js-element-to-invert{% endunless %}">
+            {%- if link.links != blank -%}
+              <button class="m-main-nav__link {% if link.current %}m-main-nav__link--active{% endif %} js-nav-toggle"
+                data-level={{ level }}
+                {% if link.current %}
+                  aria-current="page"
+                {% endif %}
+                aria-haspopup="true"
+                aria-expanded="{% if has_active_link %}true{% else %}false{% endif %}"
+                aria-controls="submenu-{{ handle }}-{{ level | plus: 1 }}"
+                aria-label="{{ button_label }}"
+                {% if level > 1 %}
+                  tabindex="-1"
+                {% endif %}
+              >
+                <span>{{- link.title | escape -}}</span>
+                <span class="m-main-nav__link-arrow">
+                  {%- render 'icon-chevron-right' -%}
+                </span>
+              </button>
+            {%- else -%}
+              <a
+                href="{{ link.url }}"
+                class="m-main-nav__link {% if link.current %}m-main-nav__link--active{% endif %}"
+                {% if link.current %}
+                  aria-current="page"
+                {% endif %}
+                {% if level > 1 %}
+                  tabindex="-1"
+                {% endif %}
+              >
+                <span>{{- link.title | escape -}}</span>
+              </a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+
+    {%- render 'navigation-promotions', section: section, link: menu -%}
+  </div>
+</div>

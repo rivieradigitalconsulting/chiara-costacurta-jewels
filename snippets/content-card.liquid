@@ -1,0 +1,43 @@
+{%- liquid
+  assign content_type = content_item.object_type
+
+  assign aspect_ratio_class = 'a-img__ratio--' | append: settings.content_card_image_ratio
+  assign show_badges = settings.content_card_show_badges
+
+  assign widths = '165, 360, 535, 750, 1070, 1500'
+  assign placeholder_media_classes = aspect_ratio_class | append: ' a-placeholder-media'
+-%}
+
+{%- capture sizes -%}
+  (min-width: 750px) calc((100vw) / 2), calc((100vw) / 2)
+{%- endcapture -%}
+
+<div class="m-content-card {% if settings.enable_animation %}js-animation a-animation a-animation--fade-up{% endif %}">
+  <a class="m-content-card__url" href="{{ content_item.url }}">
+    <div class="m-content-card__image">
+      {%- if content_type == 'article' -%}
+        {%- if content_item.image -%}
+          {{
+            content_item.image
+            | image_url: width: 600
+            | image_tag: class: aspect_ratio_class, loading: 'lazy', fetchpriority: 'auto', sizes: sizes, widths: widths
+          }}
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: placeholder_media_classes }}
+        {%- endif -%}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: placeholder_media_classes }}
+      {%- endif -%}
+      {%- if show_badges -%}
+        <div class="m-content-card__badges">
+          <span class="a-badge">{{ content_type }}</span>
+        </div>
+      {%- endif -%}
+    </div>
+    <div class="m-content-card__content u-text-{{ settings.content_card_alignment }}">
+      <h3 class="m-content-card__heading product-title">
+        {{ content_item.title | escape }}
+      </h3>
+    </div>
+  </a>
+</div>

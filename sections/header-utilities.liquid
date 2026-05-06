@@ -1,0 +1,126 @@
+{%- liquid
+  assign color_scheme = section.settings.color_scheme
+  assign enable_invertion = settings.enable_invertion | default: true
+  assign display = section.settings.menu_display_as
+-%}
+
+<div
+  class="o-header-utilities o-section"
+  style="--main-nav-letter-case: {{ section.settings.menu_letter_case }};"
+  {% if enable_invertion %}
+    data-invert-enabled
+    data-invert-scheme="{{ settings.inverted_color_scheme }}"
+    data-original-scheme="{{ color_scheme }}"
+  {% endif %}
+>
+  <div class="o-header-utilities__inner u-color--{{ color_scheme }}">
+    <ul class="o-header-utilities__list grid u-unstyled-list" id="utilities-menu">
+      <li class="o-header-utilities__list-item">
+        <a
+          href="{{ routes.cart_url }}"
+          class="o-header-utilities__link o-header-utilities__link-cart js-cart-link js-element-to-invert"
+          id="{% if display == 'icon' or display == 'icon_text' %}cart-icon-dot{% else %}cart-inline-count{%- endif -%}"
+        >
+          <span class="o-header-utilities__link-label">
+            {%- if display == 'text' or display == 'icon_text' -%}
+              {{ 'sections.header.cart' | t }}
+              {%- if cart != empty -%}
+                <span class="cart-inline-count-amount">({{ cart.item_count }})</span>
+              {%- endif -%}
+            {%- endif -%}
+            {%- if display == 'icon' or display == 'icon_text' -%}
+              {%- render 'icon-cart' -%}
+
+              {%- if cart != empty -%}
+                <span class="cart-inline-dot" aria-label="{{ cart.item_count }}"></span>
+              {%- endif -%}
+            {%- endif -%}
+          </span>
+        </a>
+      </li>
+      <li class="o-header-utilities__list-item">
+        <a
+          href="{{ routes.search_url }}"
+          class="o-header-utilities__link o-header-utilities__link-search js-header-search js-element-to-invert"
+        >
+          <span class="o-header-utilities__link-label">
+            {%- if display == 'text' or display == 'icon_text' -%}
+              {{ 'sections.header.search' | t }}
+            {%- endif -%}
+            {%- if display == 'icon' or display == 'icon_text' -%}
+              {%- render 'icon-search' -%}
+            {%- endif -%}
+          </span>
+        </a>
+      </li>
+      {%- if shop.customer_accounts_enabled -%}
+        <li class="o-header-utilities__list-item">
+          <a
+            href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+            class="o-header-utilities__link o-header-utilities__link-account js-element-to-invert"
+          >
+            <span class="o-header-utilities__link-label">
+              {%- if display == 'text' or display == 'icon_text' -%}
+                {{ 'sections.header.account' | t }}
+              {%- endif -%}
+              {%- if display == 'icon' or display == 'icon_text' -%}
+                {%- render 'icon-account' -%}
+              {%- endif -%}
+            </span>
+          </a>
+        </li>
+      {%- endif -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:header.utilities",
+  "class": "section-header-utilities",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.section.content"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:header.settings.color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "menu_letter_case",
+      "label": "t:header.settings.menu_letter_case.label",
+      "options": [
+        {
+          "value": "uppercase",
+          "label": "t:header.settings.menu_letter_case.options.uppercase.label"
+        },
+        {
+          "value": "unset",
+          "label": "t:header.settings.menu_letter_case.options.unset.label"
+        }
+      ],
+      "default": "unset"
+    },
+    {
+      "type": "select",
+      "id": "menu_display_as",
+      "label": "t:header.settings.menu_display_as.label",
+      "options": [
+        {
+          "value": "text",
+          "label": "t:header.settings.menu_display_as.options.text.label"
+        },
+        {
+          "value": "icon",
+          "label": "t:header.settings.menu_display_as.options.icon.label"
+        }
+      ],
+      "default": "text"
+    }
+  ]
+}
+{% endschema %}

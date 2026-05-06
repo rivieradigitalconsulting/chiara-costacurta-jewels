@@ -1,0 +1,41 @@
+<nav class="m-main-nav" aria-label="Main menu">
+  <div class="m-main-nav__heading">
+    {% render 'header-logo', enable_invertion: enable_invertion %}
+    <button class="m-main-nav__close js-nav-close" tabindex="-1" aria-label="{{ 'accessibility.close' | t }}">
+      {%- render 'icon-close' -%}
+    </button>
+  </div>
+
+  {%- if navigation_type == 'mega' -%}
+    <div class="m-main-nav__panels" data-active-level="1">
+
+      {%- liquid
+        render 'nav-panel', menu: main_menu, level: 1, section: section
+
+        echo '<div class="m-main-nav__panel-group">'
+        for link in main_menu.links
+          if link.links != blank
+            render 'nav-panel', menu: link, level: 2, section: section
+          endif
+        endfor
+        echo '</div>'
+
+        echo '<div class="m-main-nav__panel-group">'
+        for link in main_menu.links
+          if link.links != blank
+            for sublink in link.links
+              if sublink.links != blank
+                render 'nav-panel', menu: sublink, level: 3, section: section
+              endif
+            endfor
+          endif
+        endfor
+        echo '</div>'
+      -%}
+    </div>
+  {%- else -%}
+    <div class="m-main-nav__dropdown">
+      {%- render 'main-nav-list', main_menu: main_menu -%}
+    </div>
+  {%- endif -%}
+</nav>

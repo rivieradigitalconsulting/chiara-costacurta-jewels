@@ -1,0 +1,14 @@
+.gitignore
+.git/*
+README.md
+LICENSE
+
+.vscode/*
+.DS_Store
+
+##################################################
+# Theme customizer configurations & translations #
+# Remove these lines only if strictly necessary ##
+##################################################
+config/settings_data.json
+templates/**.json

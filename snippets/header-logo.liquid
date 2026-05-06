@@ -1,0 +1,70 @@
+
+<div class="o-header__logo a-logo">
+  <a class="a-logo__link js-logo-to-invert" href="{{ routes.root_url }}">
+    {%- if settings.logo != blank -%}
+      {%- liquid
+        assign logo_alt = settings.logo.alt | default: shop.name | escape
+        assign logo_inverted_alt = logo_alt
+
+        if settings.inverted_logo != blank
+          assign logo_inverted_alt = settings.inverted_logo.alt | escape
+        endif
+
+        assign logo_width_mobile = settings.logo_width_mobile | default: 100
+        assign logo_width_desktop = settings.logo_width | default: 100
+        assign tablet_breakpoint = 768
+        assign logo_width = logo_width_mobile | at_least: logo_width_desktop
+
+        capture logo_styles
+          echo '--width-mobile:' | append: logo_width_mobile | append: 'px;'
+          echo '--width-desktop:' | append: logo_width_desktop | append: 'px;'
+        endcapture
+
+        capture logo_sizes
+          echo '(max-width:' | append: tablet_breakpoint | append: 'px) '
+          echo logo_width_mobile | append: 'px, '
+          echo logo_width_desktop | append: 'px'
+        endcapture
+
+        capture logo_widths
+          echo logo_width_mobile | append: ', '
+          echo logo_width_mobile | times: 2 | append: ', '
+          echo logo_width_desktop | times: 1.5 | round | append: ', '
+          echo logo_width_desktop | times: 2
+        endcapture
+      -%}
+
+      {{
+        settings.logo
+        | image_url: width: 600
+        | image_tag:
+          style: logo_styles,
+          class: 'o-header__logo-image o-header__logo-image-regular',
+          widths: logo_widths,
+          width: logo_width,
+          alt: logo_alt,
+          sizes: logo_sizes,
+          preload: true,
+          fetchpriority: 'high'
+      }}
+
+      {%- if enable_invertion and settings.inverted_logo != blank -%}
+        {{
+          settings.inverted_logo
+          | image_url: width: 600
+          | image_tag:
+            class: 'o-header__logo-image o-header__logo-image-inverted js-inverted-logo',
+            widths: logo_widths,
+            style: logo_styles,
+            width: logo_width,
+            alt: logo_inverted_alt,
+            sizes: logo_sizes,
+            preload: true,
+            fetchpriority: 'high'
+        }}
+      {%- endif -%}
+    {%- else -%}
+      <span class="h3 js-element-to-invert">{{ shop.name }}</span>
+    {%- endif -%}
+  </a>
+</div>

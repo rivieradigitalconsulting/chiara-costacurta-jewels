@@ -1,0 +1,71 @@
+{%- liquid
+  assign color_scheme = settings.search_drawer_color_scheme
+
+  assign predictive_search_enabled = settings.predictive_search_enabled
+  assign predictive_search_limit = settings.predictive_search_limit
+  assign predictive_search_limit_scope = settings.predictive_search_limit_scope
+-%}
+
+<div class="m-search-drawer js-search-drawer" tabindex="-1">
+  <div class="m-search-drawer__content u-color--{{ color_scheme }} {% if predictive_search_enabled %}js-predictive-search{% endif %}">
+    <div class="m-search-drawer__header grid grid--no-wrap grid--center-v">
+      <p class="m-search-drawer__heading body-fs-lg">{{ 'general.search.search' | t }}</p>
+      <button
+        class="u-unstyled-btn m-search-drawer__close js-search-drawer-close"
+        type="button"
+        aria-label="{{ 'accessibility.close' | t }}"
+      >
+        {%- render 'icon-close' -%}
+      </button>
+
+      <form
+        action="{{ routes.search_url }}"
+        method="get"
+        role="search"
+        class="m-search-drawer__form"
+        data-limit="{{ predictive_search_limit }}"
+        data-limitscope="{{ predictive_search_limit_scope }}"
+        id="drawer-search-form"
+      >
+        <div class="m-search-drawer__fieldset ">
+          <div class="a-input">
+            <label for="Search-In-Drawer-1" class="visually-hidden a-checkbox__label">
+              <p>{{ 'general.search.search' | t }}</p>
+            </label>
+            <input
+              class="a-input__field a-input--gray m-search-drawer__input js-search-drawer-input"
+              id="Search-In-Drawer-1"
+              type="search"
+              name="q"
+              value=""
+              placeholder="{{ 'general.search.search' | t }}"
+              {%- if predictive_search_enabled -%}
+                role="combobox"
+                aria-expanded="false"
+                aria-owns="predictive-search-results-list"
+                aria-controls="predictive-search-results-list"
+                aria-haspopup="listbox"
+                aria-autocomplete="list"
+                autocorrect="off"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+              {%- endif -%}
+            >
+            <input type="hidden" name="options[prefix]" value="last">
+            <button class="u-unstyled-btn" aria-label="{{ 'general.search.search' | t }}">
+              {%- render 'icon-search' -%}
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="m-search-drawer__results">
+      {%- if predictive_search_enabled -%}
+        <div class="m-predictive-search m-predictive-search__content" tabindex="-1" data-predictive-search></div>
+        <span class="m-predictive-search__status visually-hidden" role="status" aria-hidden="true"></span>
+      {%- endif -%}
+    </div>
+  </div>
+  <div class="u-backdrop js-search-drawer-close"></div>
+</div>

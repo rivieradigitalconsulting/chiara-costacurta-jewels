@@ -1,0 +1,121 @@
+.m-quick-order-item__inner {
+  display: grid;
+  gap: 0.3rem;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
+}
+@media screen and (min-width: 768px) {
+  .m-quick-order-item__inner {
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+}
+.m-quick-order-item__info {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  grid-column: 1/1;
+  order: 1;
+  grid-row: 1;
+}
+@media screen and (min-width: 768px) {
+  .m-quick-order-item__info {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
+.m-quick-order-item__image {
+  max-width: 5rem;
+}
+.m-quick-order-item__image img {
+  width: 100%;
+  height: auto;
+}
+.m-quick-order-item__details {
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+}
+.m-quick-order-item__name {
+  font-size: var(--body-fs-sm);
+}
+.m-quick-order-item__sku {
+  font-size: var(--body-fs-xs);
+}
+.m-quick-order-item__quantity {
+  grid-column: 1/3;
+  order: 4;
+  grid-row: 3;
+  margin: 1rem 0 2rem;
+  margin-left: 7rem;
+}
+@media screen and (min-width: 768px) {
+  .m-quick-order-item__quantity {
+    grid-column: unset;
+    order: 2;
+    grid-row: unset;
+    margin: 0;
+  }
+}
+.m-quick-order-item__quantity-input {
+  margin: 0;
+}
+.m-quick-order-item__price-wrapper {
+  order: 3;
+  grid-column: 1/3;
+  grid-row: 2;
+  text-align: left;
+  margin-left: 7rem;
+}
+@media screen and (min-width: 768px) {
+  .m-quick-order-item__price-wrapper {
+    grid-column: unset;
+    grid-row: unset;
+    text-align: right;
+    margin: 0;
+  }
+}
+.m-quick-order-item__total {
+  order: 2;
+  grid-column: 2/2;
+  grid-row: 1;
+}
+@media screen and (min-width: 768px) {
+  .m-quick-order-item__total {
+    grid-column: unset;
+    grid-row: unset;
+    order: 4;
+  }
+}
+.m-quick-order-item__quantity-popover {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.m-quick-order-item__remove {
+  cursor: pointer;
+}
+.m-quick-order-item__remove svg {
+  max-width: 1.5rem;
+}
+.m-quick-order-item__discounted-price {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .m-quick-order-item__discounted-price {
+    justify-content: flex-end;
+  }
+}
+.m-quick-order-item__discounted-price--old {
+  text-decoration: line-through;
+}
+.m-quick-order-item.disabled .m-quick-order-item__price {
+  display: none;
+}

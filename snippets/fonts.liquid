@@ -1,0 +1,48 @@
+{%- comment -%}
+  Typekit fonts
+    - Add your typekit stylesheet link to this file
+
+    Example
+      <link rel='stylesheet' href='https://use.typekit.net/uye2srm.css'>
+
+
+  Local fonts
+    Adding Font
+    - Add your converted fonts to the website/assets folder & upload them to your theme
+
+    Load fonts
+    - When your font files are uploaded to the theme, add the font via font-face using the asset_url liquid filter
+
+    Example
+      <style>
+        @font-face {
+          font-family: 'Jost';
+          font-style: regular;
+          font-weight: 400;
+          font-display: swap;
+          src: url({{ 'Jost-Regular.eot' | asset_url }});
+          src: url({{ 'Jost-Regular.eot?#iefix' | asset_url }}) format('embedded-opentype'),
+              url({{ 'Jost-Regular.woff2' | asset_url }}) format('woff2'),
+              url({{ 'Jost-Regular.woff' | asset_url }}) format('woff'),
+              url({{ 'Jost-Regular.ttf' | asset_url }}) format('truetype'),
+              url({{ 'Jost-Regular.svg' | asset_url }}) format('svg');
+        }
+      </style>
+
+  Google fonts
+    - Download the google fonts and add them as a local font
+{%- endcomment -%}
+
+{%- liquid
+  assign ff_body_bold = settings.ff_body | font_modify: 'weight', 'bold'
+  assign ff_body_italic = settings.ff_body | font_modify: 'style', 'italic'
+  assign ff_body_bold_italic = ff_body_bold | font_modify: 'style', 'italic'
+-%}
+
+{%- style -%}
+  {{ settings.ff_heading | font_face: font_display: 'swap' }}
+  {{ settings.ff_body | font_face: font_display: 'swap' }}
+  {{ ff_body_bold | font_face: font_display: 'swap' }}
+  {{ ff_body_italic | font_face: font_display: 'swap' }}
+  {{ ff_body_bold_italic | font_face: font_display: 'swap' }}
+{%- endstyle -%}

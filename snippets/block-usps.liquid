@@ -1,0 +1,40 @@
+{%- liquid
+  assign classes = 'a-spacing-content'
+
+  if block_class != blank
+    assign classes = classes | append: ' ' | append: block_class
+  endif
+
+  if settings.enable_animation and disable_animation != true
+    assign classes = classes | append: ' js-animation a-animation a-animation--fade-up'
+  endif
+-%}
+<div
+  class="{{ classes }}"
+  {% if block_styles %}
+    style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  {%- for i in (1..4) -%}
+    {% assign icon = 'icon_select_' | append: i %}
+    {% assign title = 'title_' | append: i %}
+    {% assign text = 'text_' | append: i %}
+
+    <div class="o-featured-product__usp">
+      {%- if block.settings[icon] != 'none' -%}
+        <div class="o-featured-product__usp-icon">
+          {%- render 'icon-pack', icon: block.settings[icon] -%}
+        </div>
+      {%- endif -%}
+      <div class="o-featured-product__usp-texts">
+        {%- if block.settings[title] -%}
+          <span class="o-featured-product__usp-title">{{ block.settings[title] | escape }}</span>
+        {%- endif -%}
+        {%- if block.settings[text] -%}
+          <div class="o-featured-product__usp-text">{{ block.settings[text] }}</div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endfor -%}
+</div>

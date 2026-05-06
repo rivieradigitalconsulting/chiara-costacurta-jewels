@@ -1,0 +1,42 @@
+{%- liquid
+  assign segment_title = segment_title
+  assign type = type
+  assign items = items
+-%}
+
+<div class="m-predictive-search__segment">
+  <div class="m-predictive-search__segment-heading grid grid--center-v">
+    <div class="m-predictive-search__segment-title body-fs-md">
+      {{ segment_title | t }}
+    </div>
+  </div>
+  <div class="m-predictive-search__segment-content">
+    {%- for item in items -%}
+      <div class="m-predictive-search__item m-predictive-search__{{ type }}">
+        <a href="{{ item.url }}" class="m-predictive-search__link grid">
+          {%- if item.featured_media != blank and type == 'product' -%}
+            <div class="m-predictive-search__image-wrapper">
+              {{
+                item.featured_media
+                | image_url: width: 100
+                | image_tag: loading: 'lazy', class: 'm-predictive-search__image', fetchpriority: 'auto'
+              }}
+            </div>
+          {%- endif -%}
+          <div class="m-predictive-search__info">
+            {%- if type == 'suggestions' -%}
+              <p class="m-predictive-search__query-result" aria-label="{{ item.text }}">
+                {{ item.styled_text }}
+              </p>
+            {%- else -%}
+              <p class="{% if type == 'product' %} product-title {% endif %}">{{ item.title }}</p>
+            {%- endif -%}
+            {%- if type == 'product' -%}
+              {%- render 'price', product: item, use_variant: true, price_class: 'm-price--xs' -%}
+            {%- endif -%}
+          </div>
+        </a>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>

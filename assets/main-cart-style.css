@@ -1,0 +1,103 @@
+.o-cart.is-empty .o-cart__heading,
+.o-cart.is-empty .o-cart__grid {
+  display: none;
+}
+.o-cart.is-empty .o-cart__empty {
+  display: block;
+}
+.o-cart__empty {
+  display: none;
+}
+.o-cart__summary--sticky {
+  position: sticky;
+  top: var(--announcement-total-height);
+  align-self: flex-start;
+  overflow-y: auto;
+  transition: top var(--default-transition-easing) var(--default-transition-timing);
+}
+.o-cart__grid {
+  width: auto;
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+.o-cart__grid > div {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.o-cart__product {
+  border-bottom: 1px solid rgb(var(--color-border));
+  padding-bottom: 1.5rem;
+}
+.o-cart__product:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+@media screen and (min-width: 1250px) {
+  .o-cart__product:last-child {
+    border-bottom: 1px solid rgb(var(--color-border));
+    padding-bottom: 1.5rem;
+  }
+}
+.o-cart__tax-note {
+  margin-top: 1rem;
+}
+.o-cart__totals {
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.o-cart__total {
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+  gap: 1rem;
+}
+.o-cart__actions .a-btn {
+  width: 100%;
+  display: block;
+}
+.o-cart__error {
+  color: rgb(var(--color-error));
+}
+.o-cart__upsell {
+  margin: 0 -1.5rem 0 -1.5rem;
+  padding: 0 1.5rem;
+}
+@media screen and (min-width: 1250px) {
+  .o-cart__upsell {
+    margin: 0;
+    padding: 0;
+  }
+}
+.o-cart__upsell--padding {
+  padding: 2.5rem 1.5rem;
+}
+.o-cart__upsell .m-product-card {
+  margin-bottom: 1.2rem;
+}
+.o-cart__upsell .m-product-card:last-child {
+  margin-bottom: 0;
+}
+.o-cart__upsell .m-product-card .m-quick-add-variants__button-icon {
+  display: none;
+}
+.o-cart__upsell-heading {
+  margin-bottom: 1.5rem;
+}
+.o-cart__total-label.h5 {
+  margin-bottom: 0;
+}
+.o-cart__dynamic-checkout-buttons {
+  margin-top: 1rem;
+}
+.o-cart__dynamic-checkout-buttons ul[data-shopify-buttoncontainer] {
+  justify-content: center;
+}
+.o-cart__dynamic-checkout-buttons ul[data-shopify-buttoncontainer] li:first-child {
+  margin-top: 0 !important;
+}
+.o-cart__dynamic-checkout-buttons .shopify-cleanslate div[role=button] {
+  border-radius: 0 !important;
+}
+
+body.u-sticky-header-hidden .o-cart__summary--sticky, body.u-no-sticky-header .o-cart__summary--sticky {
+  top: 1rem;
+}

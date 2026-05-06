@@ -1,0 +1,18 @@
+.m-list-social {
+  margin: -0.5rem;
+  line-height: 0;
+}
+.m-list-social__item {
+  padding: 0.5rem;
+}
+.m-list-social__item .icon {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.m-list-social__link {
+  transition: color 0.35s ease;
+}
+.m-list-social__link:hover {
+  color: rgb(var(--color-button));
+}

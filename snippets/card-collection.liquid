@@ -1,0 +1,100 @@
+{%- liquid
+  assign image = card_collection.featured_image
+  assign heading = card_collection.title
+  assign description = card_collection.description
+  assign url = card_collection.url
+  assign content_position = content_position
+  assign placeholder_product = placeholder_product
+  assign padded_content = padded_content
+
+  assign settings_card_scheme = settings_card_scheme
+
+  assign aspect_ratio_class_collection = 'm-card-collection__ratio--' | append: card_image_ratio
+  assign aspect_ratio_class_image = 'a-img__ratio--' | append: card_image_ratio
+
+  assign fetch_priority = 'auto'
+
+  if block.settings.image != blank
+    assign image = block.settings.image
+  endif
+
+  if block.settings.heading != blank
+    assign heading = block.settings.heading
+  endif
+
+  if block.settings.description != blank
+    assign description = block.settings.description
+  endif
+
+  if block.settings.btn_label != blank
+    assign btn_label = block.settings.btn_label
+  endif
+
+  if block.settings.url != blank
+    assign url = block.settings.url
+  endif
+-%}
+
+{%- capture sizes -%}
+  (min-width: 750px) calc((100vw) / 2), calc((100vw) / 2)
+{%- endcapture -%}
+
+<div class="m-card-collection m-card-collection__content--{{ content_position }} {% if content_position == 'on-card' %}{{ aspect_ratio_class_collection }}{% endif %} u-color--{{ settings_card_scheme }} {% if settings.enable_animation %}js-animation a-animation a-animation--fade-up{% endif %}">
+  <a
+    class="m-card-collection__inner "
+    role="link"
+    href="{{ url }}"
+  >
+    {% if image %}
+      <div class="m-card-collection__image-container">
+        {{
+          image
+          | image_url: width: 1500
+          | image_tag:
+            class: aspect_ratio_class_image,
+            loading: 'lazy',
+            sizes: sizes,
+            widths: '550, 720, 990, 1100, 1500, 2200, 3000',
+            fetchpriority: fetch_priority
+        }}
+      </div>
+    {%- else -%}
+      <div class="m-card-collection__image-container {% if content_position == 'below-card' %}{{ aspect_ratio_class_image }}{% endif %}">
+        {%- assign placeholder_classes = aspect_ratio_class_image | append: ' a-placeholder-media' -%}
+        {{ placeholder_media | placeholder_svg_tag: placeholder_classes }}
+      </div>
+    {% endif %}
+    <div
+      class="m-card-collection__information {% if padded_content %}m-card-collection__information--padded{% endif %} grid grid--{{ card_horizontal_text_alignment }}-h grid--{{ card_vertical_text_alignment }}-v"
+    >
+      <div class="m-card-collection__information-inner u-text-{{ card_text_alignment }}">
+        {%- if placeholder_product -%}
+          <h3 class="m-card-collection__information-heading">
+            {{- 'sections.collection_template.default.collection_title' | t -}}
+          </h3>
+          {%- if show_description -%}
+            <p>
+              {{ 'sections.collection_template.default.collection_text' | t }}
+            </p>
+          {%- endif -%}
+        {%- else -%}
+          {%- if heading != blank -%}
+            <h3 class="m-card-collection__information-heading">
+              {{- heading | escape -}}
+            </h3>
+          {%- endif -%}
+          {%- if show_description -%}
+            {%- if description != blank -%}
+              <p>
+                {{ description | strip_html | truncate: 100 | escape }}
+              </p>
+            {%- endif -%}
+          {%- endif -%}
+          {%- if btn_label != blank -%}
+            <button class="a-link" aria-label="{{ btn_label }}">{{ btn_label }}</button>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </a>
+</div>

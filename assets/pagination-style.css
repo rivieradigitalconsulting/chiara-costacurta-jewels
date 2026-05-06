@@ -1,0 +1,32 @@
+.m-pagination__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.m-pagination__list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.m-pagination__item {
+  text-decoration: none;
+  color: rgb(var(--color-text));
+  min-width: 2.4rem;
+  text-align: center;
+}
+.m-pagination__item--current {
+  font-weight: 700;
+}
+.m-pagination__item--next {
+  transform: rotate(-90deg);
+}
+.m-pagination__item--previous {
+  transform: rotate(90deg);
+}
+.m-pagination__arrow svg {
+  width: 2rem;
+  height: 2rem;
+}

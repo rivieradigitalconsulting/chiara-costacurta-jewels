@@ -1,0 +1,147 @@
+{%- liquid
+  assign aspect_ratio_class = 'a-img__ratio--' | append: image_ratio
+  assign item_price = item.price | money
+  assign cart_qty = cart | item_count_for_variant: variant.id
+-%}
+
+<div
+  class="m-quick-order-item"
+  id="variant-{{ variant.id }}"
+  data-variant-id="{{ variant.id }}"
+  data-cart-qty="{{ cart_qty }}"
+  data-cart-price="{{ cart | line_items_for: item | sum: 'original_line_price' }}"
+>
+  <div class="m-quick-order-item__inner">
+    <div class="m-quick-order-item__info">
+      {%- if section.settings.show_image -%}
+        <div class="m-quick-order-item__image">
+          {%- if image -%}
+            {{
+              image
+              | image_url: width: 200
+              | image_tag: class: aspect_ratio_class, loading: 'lazy', alt: image.alt, fetchpriority: 'auto'
+            }}
+          {%- elsif product_image -%}
+            {{
+              product_image
+              | image_url: width: 200
+              | image_tag: class: aspect_ratio_class, loading: 'lazy', alt: image.alt, fetchpriority: 'auto'
+            }}
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      <div class="m-quick-order-item__details">
+        <span class="m-quick-order-item__name">{{ item.title | escape }}</span>
+        {%- if section.settings.show_sku -%}
+          <span class="m-quick-order-item__sku">{{ sku | escape }}</span>
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="m-quick-order-item__quantity">
+      {%- render 'quick-order-quantity', variant: variant -%}
+    </div>
+    <div class="m-quick-order-item__price-wrapper">
+      {%- if item.compare_at_price -%}
+        <div class="m-quick-order-item__discounted-price">
+          <span class="m-quick-order-item__discounted-price--old">
+            {{ item.compare_at_price | money }}
+          </span>
+          <div class="m-price m-quick-order-item__discounted-price--regular">
+            {%- if variant.quantity_price_breaks.size > 0 -%}
+              {%- liquid
+                assign volume_pricing_array = variant.quantity_price_breaks | sort: 'quantity' | reverse
+              -%}
+
+              <div
+                class="m-quick-order-item__price-per-item"
+                id="price-per-item-{{ variant.id }}"
+                data-variant-id="{{ variant.id }}"
+              >
+                <div class="m-quick-order-item__price-per-item-wrapper">
+                  {%- if cart_qty < volume_pricing_array.last.minimum_quantity -%}
+                    {%- assign variant_price = variant.price | money -%}
+                    <span class="m-quick-order-item__price-per-item--current m-price">
+                      {{- 'sections.quick_order_list.each' | t: money: variant_price -}}
+                    </span>
+                  {%- else -%}
+                    {%- for price_break in volume_pricing_array -%}
+                      {%- if cart_qty >= price_break.minimum_quantity -%}
+                        {%- assign price_break_price = price_break.price | money -%}
+                        <span class="m-quick-order-item__price-per-item--current m-price">
+                          {{- 'sections.quick_order_list.each' | t: money: price_break_price -}}
+                        </span>
+                        {%- break -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endif -%}
+                </div>
+              </div>
+            {%- else -%}
+              <span class="m-price">
+                {{- 'sections.quick_order_list.each' | t: money: item_price -}}
+              </span>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- else -%}
+        {%- if variant.quantity_price_breaks.size > 0 -%}
+          {%- liquid
+            assign volume_pricing_array = variant.quantity_price_breaks | sort: 'quantity' | reverse
+          -%}
+          <div
+            class="m-quick-order-item__price-per-item"
+            id="price-per-item-{{ variant.id }}"
+            data-variant-id="{{ variant.id }}"
+          >
+            <div class="m-quick-order-item__price-per-item-wrapper">
+              {%- if cart_qty < volume_pricing_array.last.minimum_quantity -%}
+                {%- assign variant_price = variant.price | money -%}
+                <span class="m-quick-order-item__price-per-item--current m-price">
+                  {{- 'sections.quick_order_list.each' | t: money: variant_price -}}
+                </span>
+              {%- else -%}
+                {%- for price_break in volume_pricing_array -%}
+                  {%- if cart_qty >= price_break.minimum_quantity -%}
+                    {%- assign price_break_price = price_break.price | money -%}
+                    <span class="m-quick-order-item__price-per-item--current m-price">
+                      {{- 'sections.quick_order_list.each' | t: money: price_break_price -}}
+                    </span>
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+            </div>
+          </div>
+        {%- else -%}
+          <span class="m-price">
+            {{- 'sections.quick_order_list.each' | t: money: item_price -}}
+          </span>
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- if item.available and item.unit_price_measurement -%}
+        <div class="m-price__unit">
+          <span class="hide">{{ 'products.product.price.unit_price' | t }}</span>
+          {{ item.unit_price | money }}
+          <span aria-hidden="true">/</span>
+          <span class="hide">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
+          {%- if item.unit_price_measurement.reference_value != 1 -%}
+            {{- item.unit_price_measurement.reference_value -}}
+          {%- endif -%}
+          {{ item.unit_price_measurement.reference_unit }}
+        </div>
+      {%- endif -%}
+    </div>
+    <div class="m-quick-order-item__total u-text-right">
+      <span class="m-quick-order-item__price  m-price">
+        {{- cart | line_items_for: item | sum: 'original_line_price' | money -}}
+      </span>
+      <span class="m-quick-order-item__loader hide">
+        {%- render 'icon-loader', loader_classes: 'a-loader--light' -%}
+      </span>
+    </div>
+  </div>
+  <div class="o-quick-order-list__error hide" id="quick-order-list-item-error-{{ variant.id }}">
+    <p class="o-quick-order-list__error-message error body-fs-xs"></p>
+  </div>
+</div>

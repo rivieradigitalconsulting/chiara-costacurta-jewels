@@ -1,0 +1,33 @@
+{%- liquid
+  assign card_product = card_product
+  assign aspect_ratio_class = aspect_ratio_class
+
+  assign widths = '165, 360, 535, 750, 1070'
+-%}
+
+{%- capture sizes -%}
+    (min-width: 750px) calc((100vw) / 2), calc((100vw) / 2)
+ {%- endcapture -%}
+
+<div class="m-product-card__image-slider-wrapper swiper-wrapper">
+  {%- for image in card_product.images -%}
+    <div class="swiper-slide">
+      {{
+        image
+        | image_url: width: 800
+        | image_tag: class: aspect_ratio_class, loading: 'lazy', sizes: sizes, widths: widths, fetchpriority: 'auto'
+      }}
+      {%- unless hide_loader_on_first_image and forloop.first -%}
+        <div class="swiper-lazy-preloader">
+          {%- render 'icon-loader', loader_classes: 'a-loader--light' -%}
+        </div>
+      {%- endunless -%}
+    </div>
+  {%- endfor -%}
+</div>
+<div class="swiper-button-next m-swiper__arrow m-swiper__arrow--light m-swiper__arrow--next">
+  {%- render 'icon-arrow-right' -%}
+</div>
+<div class="swiper-button-prev m-swiper__arrow m-swiper__arrow--light m-swiper__arrow--prev">
+  {%- render 'icon-arrow-left' -%}
+</div>

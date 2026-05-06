@@ -1,0 +1,118 @@
+{%- liquid
+  assign card_product = card_product
+  assign section_id = section_id
+  assign combined_section_id = section_id | append: card_product.id
+  assign product_form_id = 'product-form-' | append: section_id | append: card_product.id
+  assign hasVariants = false
+
+  if card_product.variants.size > 1
+    assign hasVariants = true
+  endif
+
+  assign is_preorder = false
+  for tag in card_product.tags
+    if tag contains 'preorder'
+      assign is_preorder = true
+    endif
+  endfor
+-%}
+
+<div class="m-product-card__quick-add">
+  {%- if hasVariants -%}
+    <div class="m-quick-add-variants js-quick-add-variants">
+      <div class="m-quick-add-variants__items" style="display: none;">
+        <div
+          class="m-variants js-variants js-variants-quick-add"
+          data-section="{{ combined_section_id }}"
+          data-url="{{ routes.root_url }}products/{{ card_product.handle }}"
+          data-type="radio"
+          {{ block.shopify_attributes }}
+        >
+          {%- for option in card_product.options_with_values -%}
+            <fieldset class="m-variants__fieldset">
+              <legend class="m-variants__legend a-input__label">{{ option.name }}</legend>
+              {%- render 'product-variant-options',
+                product: card_product,
+                option: option,
+                label_class: 'm-variants__label--small',
+                display_mode: 'button',
+                product_form_id: product_form_id,
+                section_id: combined_section_id
+              -%}
+            </fieldset>
+          {%- endfor -%}
+          <script type="application/json">
+            {{ card_product.variants | json }}
+          </script>
+        </div>
+      </div>
+      <div class="m-quick-add-variants__buttons js-quick-add-toggle" tab-index="1">
+        <button
+          class="m-quick-add-variants__button a-btn a-btn--secondary"
+          aria-label="{{ 'products.product.choose_options' | t }}"
+        >
+          <span class="m-product-form__submit-text">
+            {{ 'products.product.choose_options' | t }}
+          </span>
+        </button>
+      </div>
+    </div>
+  {%- endif -%}
+  <div class="js-product-form no-js-hidden">
+    <div
+      class="m-product-form__error-message-wrapper m-quick-add-variants__error-wrapper body-fs-xs"
+      role="alert"
+      hidden
+    >
+      <span class="m-product-form__error-message"></span>
+    </div>
+    {%- form 'product',
+      card_product,
+      id: product_form_id,
+      class: 'form',
+      novalidate: 'novalidate',
+      data-type: 'add-to-cart-form'
+    -%}
+      <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}">
+      <div class="m-product-form__buttons">
+        <button
+          type="submit"
+          name="add"
+          class="m-product-form__submit a-btn a-btn--secondary {% if is_preorder %}is-preorder{% endif %} js-cart-trigger"
+          {% if card_product.selected_or_first_available_variant.available == false %}
+            disabled
+          {% endif %}
+          aria-label="
+            {% if card_product.selected_or_first_available_variant.available %}
+              {% if is_preorder %}
+                {{ 'products.product.preorder' | t }}
+              {% else %}
+                {{ 'products.product.add_to_cart' | t }}
+              {% endif %}
+            {% else %}
+              {{ 'products.product.sold_out' | t }}
+            {% endif %}
+          "
+        >
+          <span class="m-product-form__submit-text">
+            {%- if card_product.selected_or_first_available_variant.available -%}
+              {%- if is_preorder -%}
+                {{ 'products.product.preorder' | t }}
+              {%- else -%}
+                {{ 'products.product.add_to_cart' | t }}
+              {%- endif -%}
+            {%- else -%}
+              {{ 'products.product.sold_out' | t }}
+            {%- endif -%}
+          </span>
+          <span class="m-product-form__sold-out-message hide">
+            {{ 'products.product.sold_out' | t }}
+          </span>
+          <span class="m-product-form__loader hide">
+            {%- render 'icon-loader', loader_classes: 'a-loader--light' -%}
+          </span>
+        </button>
+      </div>
+    {%- endform -%}
+  </div>
+</div>

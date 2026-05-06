@@ -1,0 +1,50 @@
+{%- if predictive_search.performed -%}
+  <div id="predictive-search-results" class="m-predictive-search__results">
+    {%- liquid
+      if predictive_search.resources.queries.size > 0
+        render 'predictive-search-item', segment_title: 'templates.search.suggestions', type: 'suggestions', items: predictive_search.resources.queries
+      endif
+
+      if predictive_search.resources.products.size > 0
+        render 'predictive-search-item', segment_title: 'templates.search.products', type: 'product', items: predictive_search.resources.products
+      endif
+
+      if predictive_search.resources.collections.size > 0
+        render 'predictive-search-item', segment_title: 'templates.search.collections', type: 'collections', items: predictive_search.resources.collections
+      endif
+
+      if predictive_search.resources.articles.size > 0
+        render 'predictive-search-item', segment_title: 'templates.search.articles', type: 'article', items: predictive_search.resources.articles
+      endif
+
+      if predictive_search.resources.pages.size > 0
+        render 'predictive-search-item', segment_title: 'templates.search.pages', type: 'page', items: predictive_search.resources.pages
+      endif
+    -%}
+
+    <div id="predictive-search-option-search-keywords" class="m-predictive-search__button-wrapper u-text-center">
+      <button
+        class="m-predictive-search__button a-link"
+        role="option"
+        aria-selected="false"
+        form="drawer-search-form"
+        aria-label="{{ "sections.header.search" | t }}"
+      >
+        <span data-predictive-search-search-for-text>
+          {{- 'templates.search.search_for' | t: terms: predictive_search.terms -}}
+        </span>
+      </button>
+    </div>
+
+    <span class="m-predictive-search__message u-text-center" data-predictive-search-live-region-count-value>
+      {%- assign totalCount = predictive_search.resources.products.size
+        | plus: predictive_search.resources.collections.size
+        | plus: predictive_search.resources.articles.size
+        | plus: predictive_search.resources.pages.size
+      -%}
+      {%- if totalCount == 0 -%}
+        {{ 'templates.search.no_results' | t: terms: predictive_search.terms }}
+      {%- endif -%}
+    </span>
+  </div>
+{%- endif -%}

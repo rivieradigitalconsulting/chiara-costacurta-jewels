@@ -1,0 +1,15 @@
+<script>
+  const announcementBars = document.querySelectorAll('.o-announcement-bar')
+  let totalHeight = 0
+
+  if (announcementBars) {
+    announcementBars.forEach((announcementBar) => {
+      totalHeight += announcementBar.offsetHeight
+    })
+
+    const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize) // Get root font-size
+    const totalHeightInRem = totalHeight / rootFontSize // Convert pixel height to rem
+
+    document.documentElement.style.setProperty('--announcement-total-height', `${totalHeightInRem}rem`)
+  }
+</script>

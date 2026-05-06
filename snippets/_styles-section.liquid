@@ -1,0 +1,75 @@
+{%- assign target = target | default: 'o-section' -%}
+{%- style -%}
+  #shopify-section-{{ section.id }} .{{ target }} {
+    {%- if section.settings.section_padding_top_desktop != blank -%}
+      --padding-block-start-desktop: {{ section.settings.section_padding_top_desktop }}px;
+    {%- endif -%}
+    {%- if section.settings.section_padding_bottom_desktop != blank -%}
+      --padding-block-end-desktop: {{ section.settings.section_padding_bottom_desktop }}px;
+    {%- endif -%}
+    {%- if section.settings.section_padding_top_mobile != blank -%}
+      --padding-block-start-mobile: {{ section.settings.section_padding_top_mobile }}px;
+    {%- endif -%}
+    {%- if section.settings.section_padding_bottom_mobile != blank -%}
+      --padding-block-end-mobile: {{ section.settings.section_padding_bottom_mobile }}px;
+    {%- endif -%}
+
+    {%- if section.settings.grid_gap_desktop != blank -%}
+      --grid-gap-desktop: {{ section.settings.grid_gap_desktop }}px;
+    {%- endif -%}
+    {%- if section.settings.grid_gap_mobile != blank -%}
+      --grid-gap-mobile: {{ section.settings.grid_gap_mobile }}px;
+    {%- endif -%}
+
+    {%- if section.settings.column_gap_desktop != blank -%}
+      --column-gap-desktop: {{ section.settings.column_gap_desktop }}px;
+    {%- endif -%}
+    {%- if section.settings.row_gap_desktop != blank -%}
+      --row-gap-desktop: {{ section.settings.row_gap_desktop }}px;
+    {%- endif -%}
+
+
+    {%- if section.settings.column_gap_mobile != blank -%}
+      --column-gap-mobile: {{ section.settings.column_gap_mobile }}px;
+    {%- endif -%}
+
+    {%- if section.settings.row_gap_mobile != blank -%}
+      --row-gap-mobile: {{ section.settings.row_gap_mobile }}px;
+    {%- endif -%}
+
+    {%- if section.settings.section_bg_image != blank -%}
+      --section-bg-image: url('{{ section.settings.section_bg_image | image_url }}');
+    {%- endif -%}
+
+    {%- if section.settings.section_bg_position != blank -%}
+      --section-bg-position: {{ section.settings.section_bg_position }};
+    {%- endif -%}
+
+    {%- if section.settings.section_bg_size != blank -%}
+      --section-bg-size: {{ section.settings.section_bg_size }};
+    {%- endif -%}
+
+    {%- if section.settings.section_bg_repeat == true -%}
+      --section-bg-repeat: repeat;
+    {%- endif -%}
+
+    {%- if section.settings.section_bg_opacity != blank -%}
+      --section-bg-opacity: {{ section.settings.section_bg_opacity | round: 2 | divided_by: 100.00 }};
+    {%- endif -%}
+
+    {%- if section.settings.columns_desktop != blank -%}
+      --columns-desktop: {{ section.settings.columns_desktop | plus: 0 }};
+    {%- endif -%}
+    {%- if section.settings.columns_mobile != blank -%}
+      --columns-mobile: {{ section.settings.columns_mobile | plus: 0 }};
+    {%- endif -%}
+
+    {%- if section.settings.content_horizontal_position != blank -%}
+      --content-horizontal-position: {{ section.settings.content_horizontal_position }};
+    {%- endif -%}
+
+    {%- if section.settings.content_max_width != blank -%}
+      --content-max-width: {{ section.settings.content_max_width }}px;
+    {%- endif -%}
+  }
+{%- endstyle -%}

@@ -1,0 +1,87 @@
+{%- liquid
+  assign quick_add = settings.product_card_enable_quick_add
+
+  assign column_gap_mobile = block.settings.column_gap_mobile | plus: 0
+  assign column_gap_desktop = block.settings.column_gap_desktop | plus: 0
+-%}
+
+{{ 'product-card-style.css' | asset_url | stylesheet_tag }}
+{{ 'price-style.css' | asset_url | stylesheet_tag }}
+{{ 'recommended-products-style.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'product-recommendations-script.min.js' | asset_url }}" defer="defer"></script>
+
+{%- if quick_add -%}
+  {{ 'product-quick-add-style.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- capture slider_options -%}
+  {
+    "direction": "horizontal",
+    "slidesPerView": 1,
+    "spaceBetween": {{ column_gap_mobile }},
+    "speed": 600,
+    "loop": false,
+    "autoHeight": true,
+    "navigation": {
+        "nextEl": ".swiper-button-next",
+        "prevEl": ".swiper-button-prev"
+    },
+    "breakpoints": {
+      "768": {
+        "spaceBetween": {{ column_gap_desktop }}
+      },
+      "990": {
+        "slidesPerView": 2,
+        "spaceBetween": {{ column_gap_desktop }}
+      },
+      "1100": {
+        "slidesPerView": 1,
+        "spaceBetween": {{ column_gap_desktop }}
+      },
+      "1650": {
+        "slidesPerView": 2,
+        "spaceBetween": {{ column_gap_desktop }}
+      }
+    }
+  }
+{%- endcapture -%}
+
+<div
+  class="o-product-block-recommendations js-product-recommendations a-spacing-content"
+  data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=related"
+  style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {{ block.shopify_attributes }}
+>
+  {%- if recommendations.performed and recommendations.products_count > 0 -%}
+    <div class="o-product-block-recommendations__container">
+      <p class="h3 o-product-block-recommendations__title">{{ block.settings.heading }}</p>
+      <div class="o-product-block-recommendations__slider js-product-recommendations-slider swiper m-swiper {% if quick_add %}quick-add-enabled{% endif %}">
+        <div class="swiper-wrapper">
+          {%- for recommendation in recommendations.products -%}
+            <div class="swiper-slide">
+              {%- render 'product-card',
+                card_product: recommendation,
+                section_id: section.id,
+                force_image_slide_disable: true
+              -%}
+            </div>
+          {%- endfor -%}
+        </div>
+        <div class="swiper-button-next m-swiper__arrow m-swiper__arrow--next">
+          {%- render 'icon-arrow-right' -%}
+        </div>
+        <div class="swiper-button-prev m-swiper__arrow m-swiper__arrow--prev">
+          {%- render 'icon-arrow-left' -%}
+        </div>
+      </div>
+      <script type="application/json" data-swiper>
+        {{ slider_options | strip_newlines | remove: " " }}
+      </script>
+    </div>
+  {%- endif -%}
+
+  <span class="o-product-block-recommendations__loader js-product-recommendations-loader a-hide">
+    {%- render 'icon-loader', loader_classes: 'a-loader--dark' -%}
+  </span>
+</div>

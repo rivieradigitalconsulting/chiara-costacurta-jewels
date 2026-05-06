@@ -1,0 +1,34 @@
+<div class="o-header__utilities">
+  <a
+    href="{{ routes.search_url }}"
+    class="o-header__utility o-header__utility-search js-header-search"
+    aria-label="{{ 'sections.header.search' | t }}"
+  >
+    {%- render 'icon-search' -%}
+    <span class="o-header__utility-label">{{ 'sections.header.search' | t }}</span>
+  </a>
+  {%- if shop.customer_accounts_enabled -%}
+    <a
+      href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+      class="o-header__utility o-header__utility-account"
+      aria-label="{{ 'sections.header.account' | t }}"
+    >
+      {%- render 'icon-account' -%}
+      <span class="o-header__utility-label">{{ 'sections.header.account' | t }}</span>
+    </a>
+  {%- endif -%}
+  <a
+    href="{{ routes.cart_url }}"
+    class="o-header__utility o-header__utility-cart js-cart-link"
+    id="cart-icon-bubble"
+    aria-label="{{ 'sections.header.cart' | t }}"
+  >
+    {%- render 'icon-cart' -%}
+    <span class="o-header__utility-label">{{ 'sections.header.cart' | t }}</span>
+    {%- if cart != empty -%}
+      <div class="cart-count-bubble a-count-bubble">
+        <span class="cart-count-bubble-amount">{{ cart.item_count }}</span>
+      </div>
+    {%- endif -%}
+  </a>
+</div>

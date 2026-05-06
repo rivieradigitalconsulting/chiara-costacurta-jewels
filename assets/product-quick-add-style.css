@@ -1,0 +1,32 @@
+.m-quick-add-variants.m-quick-add-variants--open + div {
+  display: block;
+}
+.m-quick-add-variants.m-quick-add-variants--open .m-quick-add-variants__buttons {
+  display: none;
+}
+.m-quick-add-variants + div {
+  display: none;
+}
+.m-quick-add-variants__button {
+  display: block;
+  width: 100%;
+}
+.m-quick-add-variants__items {
+  background-color: rgb(var(--color-white));
+  padding: 1.5rem;
+}
+.m-quick-add-variants__error-wrapper {
+  background-color: rgb(var(--color-white));
+  padding: 1rem 1.5rem;
+  margin: 0;
+}
+.m-quick-add-variants__items-transparent {
+  background-color: transparent;
+}
+.m-quick-add-variants .m-variants__fieldset:last-of-type {
+  margin-bottom: 0;
+}
+.m-quick-add-variants .m-variants__legend {
+  font-size: var(--body-fs-xs);
+  line-height: var(--body-lh-xs);
+}

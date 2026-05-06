@@ -1,0 +1,84 @@
+{%- liquid
+  assign gift_card_recipient_feature_active = false
+  if block.settings.show_gift_card_recipient and product.gift_card?
+    assign gift_card_recipient_feature_active = true
+  endif
+-%}
+
+{%- if gift_card_recipient_feature_active -%}
+  {{ 'recipient-form-style.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'recipient-form-script.min.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<div
+  class="o-product__product-form a-spacing-content"
+  style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="m-product-form js-product-form">
+    <div class="m-product-form__error-message-wrapper" role="alert" hidden>
+      <span class="m-product-form__error-message"></span>
+    </div>
+    {%- if product != blank -%}
+      {%- form 'product',
+        product,
+        id: product_form_id,
+        class: 'form',
+        novalidate: 'novalidate',
+        data-type: 'add-to-cart-form',
+        data-hide-errors: gift_card_recipient_feature_active
+      -%}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <input
+          type="hidden"
+          name="selling_plan"
+          class="selling_plan"
+          value="{{ current_selling_plan_allocation.selling_plan.id | default: '' }}"
+        >
+        {%- if gift_card_recipient_feature_active -%}
+          {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
+        {%- endif -%}
+
+        <div class="m-product-form__buttons">
+          <button
+            type="submit"
+            name="add"
+            class="m-product-form__submit a-btn {% if is_preorder %}is-preorder{% endif %} {% if block.settings.show_dynamic_checkout %}a-btn--secondary{% else %}a-btn--primary{% endif %} js-cart-trigger"
+            {% if product.selected_or_first_available_variant.available == false %}
+              disabled
+            {% endif %}
+            aria-label="
+              {% if product.selected_or_first_available_variant.available %}
+                {%- if is_preorder -%}
+                  {{ 'products.product.preorder' | t }}
+                {%- else -%}
+                  {{ 'products.product.add_to_cart' | t }}
+                {%- endif -%}
+              {% else %}
+                {{ 'products.product.sold_out' | t }}
+              {% endif %}
+            "
+          >
+            <span class="m-product-form__submit-text">
+              {%- if product.selected_or_first_available_variant.available -%}
+                {%- if is_preorder -%}
+                  {{ 'products.product.preorder' | t }}
+                {%- else -%}
+                  {{ 'products.product.add_to_cart' | t }}
+                {%- endif -%}
+              {%- else -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- endif -%}
+            </span>
+            <span class="m-product-form__loader hide">
+              {%- render 'icon-loader', loader_classes: 'a-loader--light' -%}
+            </span>
+          </button>
+          {%- if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false -%}
+            {{ form | payment_button }}
+          {%- endif -%}
+        </div>
+      {%- endform -%}
+    {%- endif -%}
+  </div>
+</div>

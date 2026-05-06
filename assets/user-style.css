@@ -1,0 +1,111 @@
+.o-user__inner {
+  justify-content: space-between;
+  row-gap: 3.2rem;
+}
+.o-user__header {
+  margin-bottom: 1rem;
+}
+.o-user__header .a-link {
+  display: inline-block;
+}
+.o-user__heading {
+  display: inline-block;
+  width: 100%;
+}
+.o-user__image img {
+  max-width: 100%;
+  height: auto;
+}
+.o-user__image-container[data-media-position=left] {
+  order: 2;
+}
+@media screen and (min-width: 990px) {
+  .o-user__image-container[data-media-position=left] {
+    order: 1;
+  }
+}
+.o-user__image-container[data-media-position=right] {
+  order: 2;
+}
+.o-user__form-container[data-content-position=left] {
+  order: 1;
+}
+.o-user__form-container[data-content-position=right] {
+  order: 1;
+}
+@media screen and (min-width: 990px) {
+  .o-user__form-container[data-content-position=right] {
+    order: 2;
+  }
+}
+.o-user__form-fields {
+  width: 100%;
+  margin-bottom: 3.2rem;
+}
+.o-user__form-fields .errors ul {
+  padding-left: 1.8rem;
+  margin-top: 0.5rem;
+}
+.o-user__form-fields .o-user__errors-title {
+  width: 100%;
+}
+.o-user__form-fields .o-user__errors-list,
+.o-user__form-fields #register-form-email-error,
+.o-user__form-fields #register-form-password-error,
+.o-user__form-fields .o-user__errors-title,
+.o-user__form-fields .errors {
+  text-align: left;
+}
+.o-user__form-fields .a-checkbox__label {
+  text-align: left;
+}
+.o-user__link--cancel {
+  margin-top: 0.8rem;
+}
+.o-user__btns-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+.o-user__errors-title {
+  outline: none;
+  margin-bottom: 0;
+}
+.o-user__errors-list {
+  padding-left: 1.8rem;
+  margin-top: 0.5rem;
+}
+.o-user__forgot-password-link {
+  margin: 1rem 0;
+}
+.o-user__recover-success:focus-visible {
+  outline: none;
+}
+.o-user #register-form-password-error,
+.o-user #register-form-email-error {
+  display: block;
+  margin-top: 0.5rem;
+}
+.o-user .a-input {
+  margin-bottom: 0;
+}
+.o-user .a-btn,
+.o-user .a-link {
+  margin-top: 1.5rem;
+}
+.o-user__login, .o-user__recover, .o-user__reset, .o-user__create, .o-user__activate {
+  width: 100%;
+  max-width: 58rem;
+}
+
+#recover {
+  display: none;
+}
+
+#recover:target {
+  display: block;
+}
+
+#recover:target ~ #login {
+  display: none;
+}

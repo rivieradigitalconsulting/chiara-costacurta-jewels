@@ -1,0 +1,82 @@
+{%- liquid
+  assign id = id
+  assign button_type = button_type
+  assign show_optin = show_optin
+  assign link_terms = link_terms
+  assign link_privacy = link_privacy
+-%}
+
+{%- form 'customer', id: id, class: 'm-newsletter-form' -%}
+  <input type="hidden" name="contact[tags]" value="newsletter">
+  <div class="m-newsletter-form__field-wrapper">
+    <div class="a-input grid grid--no-wrap">
+      <label for="NewsletterForm--{{ section.id }}" class="visually-hidden a-checkbox__label">
+        <p>{{ 'newsletter.label' | t }}</p>
+      </label>
+      <input
+        id="NewsletterForm--{{ section.id }}"
+        type="email"
+        name="contact[email]"
+        class="a-input__field a-input__field--transparent m-newsletter-form__field {% if form.errors %}error{% endif %}"
+        value="{{ form.email }}"
+        aria-required="true"
+        autocorrect="off"
+        autocapitalize="off"
+        autocomplete="email"
+        {% if form.errors %}
+          autofocus
+          aria-invalid="true"
+          aria-describedby="ContactFooter-error"
+        {% elsif form.posted_successfully? %}
+          aria-describedby="ContactFooter-success"
+        {% endif %}
+        placeholder="{{ 'newsletter.label' | t }}"
+        required
+      >
+      <button
+        type="submit"
+        class="a-btn {% unless button_type == 'text' %}a-btn--has-icon{% endunless %} a-btn--tertiary m-newsletter-form__submit"
+        name="commit"
+        id="Subscribe"
+        aria-label="{{ 'newsletter.button_label' | t }}"
+      >
+        {%- if button_type == 'text' -%}
+          {{ 'newsletter.button_label' | t }}
+        {%- else -%}
+          {%- render 'icon-arrow-right' -%}
+        {%- endif -%}
+      </button>
+    </div>
+    {%- if form.errors -%}
+      <p class="m-newsletter-form__error" id="{{id}}-error">
+        {{ form.errors.translated_fields.email | capitalize }}
+        {{ form.errors.messages.email }}
+      </p>
+    {%- endif -%}
+    <div class="m-newsletter-form__error" data-email-error></div>
+  </div>
+
+  {%- if show_optin -%}
+    <div class="m-newsletter-form__field-wrapper">
+      <div class="a-checkbox">
+        <input
+          type="checkbox"
+          class="a-checkbox__input"
+          name="contact[optin]"
+          id="newsletter-optin-{{ section.id }}"
+          required
+        >
+        <label for="newsletter-optin-{{ section.id }}" class="a-checkbox__label a-checkbox__label--small">
+          <p>{{ 'newsletter.optin_html' | t: link_terms: link_terms, link_privacy: link_privacy }}</p>
+        </label>
+      </div>
+      <div class="m-newsletter-form__error" data-optin-error></div>
+    </div>
+  {%- endif -%}
+
+  {%- if form.posted_successfully? -%}
+    <p class="m-newsletter-form__success" id="{{id}}-success" tabindex="-1" autofocus>
+      {{ 'newsletter.success' | t }}
+    </p>
+  {%- endif -%}
+{%- endform -%}

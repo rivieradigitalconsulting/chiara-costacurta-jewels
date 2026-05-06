@@ -1,0 +1,96 @@
+{%- liquid
+  assign product_form_id = product_form_id
+-%}
+
+{%- unless product.has_only_default_variant -%}
+  {%- if block.settings.display_mode == 'button' -%}
+    <div
+      class="m-variants js-variants a-spacing-content"
+      data-section="{{ section.id }}"
+      data-url="{{ product.url }}"
+      data-type="radio"
+      {% if update_url == false %}
+        data-update-url="false"
+      {% endif %}
+      {% if update_media == false %}
+        data-update-media="false"
+      {% endif %}
+      style="{{ block_styles | strip_newlines | remove: ' ' }}"
+      {{ block.shopify_attributes }}
+    >
+      {%- for option in product.options_with_values -%}
+        {%- liquid
+          assign swatch_count = option.values | map: 'swatch' | compact | size
+          assign has_swatch = false
+
+          if swatch_count > 0
+            assign has_swatch = true
+          endif
+        -%}
+
+        <fieldset class="m-variants__fieldset">
+          <legend class="m-variants__legend a-input__label">
+            {%- if has_swatch -%}
+              {{ option.name }}:
+              <span data-selected-value>
+                {{- option.selected_value -}}
+              </span>
+            {%- else -%}
+              {{ option.name }}
+            {%- endif -%}
+          </legend>
+          {%- render 'product-variant-options',
+            product: product,
+            option: option,
+            display_mode: block.settings.display_mode,
+            product_form_id: product_form_id,
+            section_id: section.id,
+            has_swatch: has_swatch
+          -%}
+        </fieldset>
+      {%- endfor -%}
+      <script type="application/json">
+        {{ product.variants | json }}
+      </script>
+    </div>
+  {%- else -%}
+    <div
+      class="m-variants js-variants a-spacing-content"
+      data-section="{{ section.id }}"
+      data-url="{{ product.url }}"
+      data-type="select"
+      {% if update_url == false %}
+        data-update-url="false"
+      {% endif %}
+      style="{{ block_styles | strip_newlines | remove: ' ' }}"
+      {{ block.shopify_attributes }}
+    >
+      {%- for option in product.options_with_values -%}
+        <div class="m-variants__fieldset">
+          <label class="m-variants__legend a-input__label" for="option-{{ section.id }}-{{ forloop.index0 }}">
+            {{ option.name }}
+          </label>
+          <div class="m-variants__select-wrapper">
+            <select
+              id="option-{{ section.id }}-{{ forloop.index0 }}"
+              class="m-variants__select a-select__field custom-select"
+              name="options[{{ option.name | escape }}]"
+              form="{{ product_form_id }}"
+            >
+              {%- render 'product-variant-options',
+                product: product,
+                option: option,
+                display_mode: block.settings.display_mode,
+                product_form_id: product_form_id,
+                section_id: section.id
+              -%}
+            </select>
+          </div>
+        </div>
+      {%- endfor -%}
+      <script type="application/json">
+        {{ product.variants | json }}
+      </script>
+    </div>
+  {%- endif -%}
+{%- endunless -%}

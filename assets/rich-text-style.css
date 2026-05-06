@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) {
+  .o-rich-text__columns, .o-rich-text__paragraph-columns {
+    display: flex;
+    gap: var(--grid-gap-desktop);
+  }
+}
+.o-rich-text__column {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .o-rich-text__column {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .o-rich-text__column--right {
+    order: 2;
+  }
+}

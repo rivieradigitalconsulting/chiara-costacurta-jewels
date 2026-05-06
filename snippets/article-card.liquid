@@ -1,0 +1,89 @@
+{% comment %}
+  Renders an article card for a given blog with settings to either show the image or not.
+
+  Accepts:
+  - blog: {Object} Blog object
+  - article: {Object} Article object
+  - media_aspect_ratio: {String} The setting changes the aspect ratio of the article image, if shown
+  - media_height: {String} The setting changes the height of the article image. Overrides media_aspect_ratio.
+  - show_image: {String} The setting either show the article image or not. If it's not included it will show the image by default
+  - show_date: {String} The setting either show the article date or not. If it's not included it will not show the image by default
+  - show_author: {String} The setting either show the article author or not. If it's not included it will not show the author by default
+  - show_badge: {String} The setting either show the blog badge or not.
+  - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+
+  Usage:
+  {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
+{% endcomment %}
+
+{% liquid
+  assign aspect_ratio_class = 'a-img__ratio--' | append: article_card_image_ratio
+  assign placeholder_media_classes = aspect_ratio_class | append: ' a-placeholder-media'
+  assign widths = '165, 360, 535, 750, 1070, 1500'
+  assign fetch_priority = 'auto'
+  assign default_title = 'blogs.article.default.article_title' | t
+  assign default_excerpt = 'blogs.article.default.article_excerpt' | t
+%}
+
+{%- capture sizes -%}
+    (min-width: 750px) calc((100vw) / 2), calc((100vw) / 2)
+ {%- endcapture -%}
+<div class="m-article-card {% if settings.enable_animation %}js-animation a-animation a-animation--fade-up{% endif %}">
+  <a href="{{ article.url }}">
+    <div class="m-article-card__inner">
+      {%- if show_image == true -%}
+        <div class="m-article-card__image">
+          {%- if article.image -%}
+            {{
+              article.image
+              | image_url: width: 800
+              | image_tag:
+                class: aspect_ratio_class,
+                loading: 'lazy',
+                sizes: sizes,
+                widths: widths,
+                fetchpriority: fetch_priority
+            }}
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: placeholder_media_classes }}
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      <div class="m-article-card__content">
+        <div class="m-article-card__info">
+          {%- if show_date -%}
+            <span class="m-article-card__date">{{ article.published_at | time_tag: format: 'date' }}</span>
+          {%- endif -%}
+          {%- if show_author -%}
+            <span class="m-article-card__author">{{ article.author }}</span>
+          {%- endif -%}
+        </div>
+        {%- if show_title -%}
+          <div class="m-article-card__heading">
+            <h3>{{ article.title | default: default_title | escape }}</h3>
+          </div>
+        {%- endif -%}
+        {%- if show_excerpt -%}
+          <div class="m-article-card__intro">
+            {%- if placeholder_product -%}
+              <p class="rte">
+                {{ default_excerpt | strip_html | truncatewords: 30 }}
+              </p>
+            {%- else -%}
+              {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+                <p class="rte">
+                  {{ article.excerpt_or_content | default: default_excerpt | strip_html | truncatewords: 30 }}
+                </p>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+        {%- if show_link -%}
+          <div class="m-article-card__footer a-link a-btn--has-icon">
+            {{ 'blogs.article.read_more' | t }}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </a>
+</div>

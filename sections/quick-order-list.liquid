@@ -1,0 +1,366 @@
+{%- render '_styles-section', section: section -%}
+{{ 'quick-order-list-style.css' | asset_url | stylesheet_tag }}
+{{ 'quick-order-list-item-style.css' | asset_url | stylesheet_tag }}
+{{ 'quick-order-list-total-style.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'quick-order-list-script.min.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign color_scheme = section.settings.color_scheme
+  assign standard_color_scheme = settings.color_schemes['scheme-1']
+
+  assign items_in_cart = cart | line_items_for: product | sum: 'quantity'
+-%}
+
+<section
+  class="o-section o-quick-order-list u-color--{{ color_scheme }}"
+  data-id="{{ section.id }}"
+  data-product-id="{{ product.id }}"
+  {% if section.settings.invert_navigation_color %}
+    data-invert-navigation
+  {% endif %}
+>
+  <div class="o-section__constrict o-quick-order-list__inner">
+    <div class="grid grid--{{ section.settings.content_position }}-h ">
+      <div
+        class="o-quick-order-list__content grid__col-12 grid__col-md-{{ section.settings.column_width }}"
+      >
+        <div class="o-quick-order-list__content-top u-text-{{ section.settings.content_alignment }}">
+          {%- if section.settings.heading != blank -%}
+            <h2
+              class="o-quick-order-list__heading {{ section.settings.heading_size }}"
+            >
+              {{ section.settings.heading | escape }}
+            </h2>
+          {%- endif -%}
+          {%- if section.settings.text != blank -%}
+            <div
+              class="o-quick-order-list__text rte {{ section.settings.text_size }}"
+            >
+              {{ section.settings.text }}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+      <div
+        class="o-quick-order-list__content grid__col-12"
+      >
+        <form
+          action="{{ routes.cart_update_url }}"
+          class="o-quick-order-list__contents"
+          method="post"
+          id="quick-order-list"
+        >
+          <div class="o-quick-order-list__container" id="main-variant-items">
+            <div class="js-contents">
+              <div class="o-quick-order-list__header">
+                <div class="o-quick-order-list__header-item">
+                  <span class="h5">
+                    {%- if product.has_only_default_variant -%}
+                      {{ 'sections.quick_order_list.product' | t }}
+                    {%- else -%}
+                      {{ 'sections.quick_order_list.variant' | t }}
+                    {%- endif -%}
+                  </span>
+                </div>
+
+                <div class="o-quick-order-list__header-item a-hide--mobile">
+                  <span class="h5"> {{ 'products.product.quantity.label' | t }} </span>
+                </div>
+                <div class="o-quick-order-list__header-item a-hide--mobile u-text-right">
+                  <span class="h5"> {{ 'products.product.quantity.price' | t }} </span>
+                </div>
+                <div class="o-quick-order-list__header-item u-text-right">
+                  <span class="h5">
+                    {%- if product.has_only_default_variant -%}
+                      {{ 'sections.quick_order_list.product_total' | t }}
+                    {%- else -%}
+                      {{ 'sections.quick_order_list.variant_total' | t }}
+                    {%- endif -%}
+                  </span>
+                </div>
+              </div>
+              <div class="o-quick-order-list__table">
+                {%- if product.has_only_default_variant -%}
+                  {%- render 'quick-order-list-item',
+                    item: product,
+                    image: product.featured_media,
+                    sku: product.selected_or_first_available_variant.sku,
+                    variant: product.selected_or_first_available_variant,
+                    image_ratio: section.settings.image_ratio
+                  -%}
+                {%- else -%}
+                  {%- for variant in product.variants -%}
+                    {%- render 'quick-order-list-item',
+                      item: variant,
+                      image: variant.image,
+                      product_image: product.featured_media,
+                      sku: variant.sku,
+                      variant: variant,
+                      image_ratio: section.settings.image_ratio
+                    -%}
+                  {%- endfor -%}
+                {%- endif -%}
+              </div>
+            </div>
+            <noscript>
+              {%- if product.has_only_default_variant or product.variants.size == 1 -%}
+                <button
+                  type="submit"
+                  class="a-btn a-btn--primary"
+                  formnovalidate
+                  form="QuickOrderList"
+                  aria-label="{{ "sections.cart.update" | t }}"
+                >
+                  {{ 'sections.cart.update' | t }}
+                </button>
+              {%- endif -%}
+            </noscript>
+          </div>
+          <p class="visually-hidden" id="quick-order-list-live-region-text" aria-live="polite" role="status"></p>
+          <p
+            class="visually-hidden"
+            id="shopping-cart-variant-item-status"
+            aria-live="polite"
+            aria-hidden="true"
+            role="status"
+          >
+            {{ 'accessibility.loading' | t }}
+          </p>
+        </form>
+        {%- if product.has_only_default_variant or product.variants.size == 1 -%}
+          <span class="o-quick-order-list__error">
+            {% comment %} Populated by JS {% endcomment %}
+          </span>
+        {%- else -%}
+          {%- render 'quick-order-list-total', items_in_cart: items_in_cart, color_scheme: color_scheme -%}
+        {%- endif -%}
+        <div id="quick-order-list-error-template-{{ section.id }}">
+          <span class="o-quick-order-list__error-message" role="alert"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:quick_order_list.name",
+  "limit": 1,
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.section.content"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.spacing.content"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.mobile.label",
+      "info": "t:sections.all.padding.top.mobile.info",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.mobile.label",
+      "info": "t:sections.all.padding.bottom.mobile.info",
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_navigation_color",
+      "label": "t:sections.all.invert_navigation_color.label",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:quick_order_list.settings.color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "t:quick_order_list.settings.image_ratio.label",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.media_ratio.options.default.label"
+        },
+        {
+          "value": "1x1",
+          "label": "t:sections.all.media_ratio.options.1_x_1.label"
+        },
+        {
+          "value": "2x3",
+          "label": "t:sections.all.media_ratio.options.2_x_3.label"
+        },
+        {
+          "value": "3x2",
+          "label": "t:sections.all.media_ratio.options.3_x_2.label"
+        },
+        {
+          "value": "4x3",
+          "label": "t:sections.all.media_ratio.options.4_x_3.label"
+        },
+        {
+          "value": "4x5",
+          "label": "t:sections.all.media_ratio.options.4_x_5.label"
+        },
+        {
+          "value": "16x9",
+          "label": "t:sections.all.media_ratio.options.16_x_9.label"
+        }
+      ],
+      "default": "1x1"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "label": "t:quick_order_list.settings.show_image.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sku",
+      "label": "t:quick_order_list.settings.show_sku.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.layout.content"
+    },
+    {
+      "type": "range",
+      "id": "column_width",
+      "min": 6,
+      "max": 12,
+      "step": 1,
+      "label": "t:quick_order_list.settings.column_width.label",
+      "info": "t:quick_order_list.settings.column_width.info",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "t:quick_order_list.settings.content_position.label",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:quick_order_list.settings.content_position.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:quick_order_list.settings.content_position.options.center.label"
+        },
+        {
+          "value": "right",
+          "label": "t:quick_order_list.settings.content_position.options.right.label"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "text_alignment",
+      "id": "content_alignment",
+      "label": "t:quick_order_list.settings.content_alignment.label",
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.content.content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:quick_order_list.settings.heading.label",
+      "default": "t:quick_order_list.settings.heading.default"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "t:quick_order_list.settings.heading_size.label",
+      "options": [
+        {
+          "value": "h3",
+          "label": "t:quick_order_list.settings.heading_size.options.h_3.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:quick_order_list.settings.heading_size.options.h_2.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:quick_order_list.settings.heading_size.options.h_1.label"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:quick_order_list.settings.text.label",
+      "default": "t:quick_order_list.settings.text.default"
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "label": "t:quick_order_list.settings.text_size.label",
+      "options": [
+        {
+          "value": "body-fs-sm",
+          "label": "t:quick_order_list.settings.text_size.options.body_fs_sm.label"
+        },
+        {
+          "value": "body-fs-md",
+          "label": "t:quick_order_list.settings.text_size.options.body_fs_md.label"
+        },
+        {
+          "value": "body-fs-lg",
+          "label": "t:quick_order_list.settings.text_size.options.body_fs_lg.label"
+        }
+      ],
+      "default": "body-fs-sm"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:quick_order_list.presets.quick_order_list.name"
+    }
+  ]
+}
+{% endschema %}

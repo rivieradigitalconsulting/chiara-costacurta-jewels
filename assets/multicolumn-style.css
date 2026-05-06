@@ -1,0 +1,27 @@
+.o-multicolumn__content {
+  margin-bottom: 3rem;
+}
+.o-multicolumn__footer {
+  margin-top: 3rem;
+}
+.o-multicolumn__title {
+  margin-bottom: 1rem;
+}
+.o-multicolumn__image {
+  margin-bottom: 3rem;
+}
+.o-multicolumn__image:last-child {
+  margin-bottom: 0;
+}
+.o-multicolumn__image img {
+  display: block;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.o-multicolumn__information {
+  padding: 1rem 0;
+}
+.o-multicolumn__information--padded {
+  padding: 1rem;
+}

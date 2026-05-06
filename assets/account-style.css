@@ -1,0 +1,38 @@
+.o-account__header {
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+@media screen and (min-width: 768px) {
+  .o-account__header {
+    margin-top: 3.2rem;
+  }
+}
+.o-account__header h1 {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .o-account__header h1 {
+    margin-bottom: 0.8rem;
+  }
+}
+.o-account__content {
+  justify-content: space-between;
+}
+.o-account__addresses {
+  margin: 2rem 0;
+  border-top: 1px solid rgb(var(--color-border));
+  padding-top: 2rem;
+}
+@media screen and (min-width: 990px) {
+  .o-account__addresses {
+    padding: 3.2rem 1.6rem;
+  }
+}
+.o-account__table-content {
+  margin-bottom: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .o-account__table-content {
+    margin-bottom: 2.4rem;
+  }
+}

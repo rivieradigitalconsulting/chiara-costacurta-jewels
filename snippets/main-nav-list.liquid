@@ -1,0 +1,127 @@
+<ul class="m-main-nav__list grid u-unstyled-list">
+{%- for link in main_menu.links -%}
+  {%- assign main_index = forloop.index -%}
+  <li
+    class="m-main-nav__item js-element-to-invert"
+  >
+    {%- liquid
+      assign has_active_link = false
+      assign active_level = 0
+      assign active_child_link = null
+
+      if section.settings.enable_uncollapsed_nav_active_page and link.links
+        for child_link in link.links
+          if child_link.current
+            assign has_active_link = true
+            assign active_level = 1
+          endif
+
+          for grandchild_link in child_link.links
+            if grandchild_link.current
+              assign has_active_link = true
+              assign active_level = 2
+              assign active_child_link = child_link
+            endif
+          endfor
+        endfor
+      endif
+    -%}
+
+    <a
+      href="{{ link.url }}"
+      class="m-main-nav__link {% if link.current %}m-main-nav__link--active{% endif %} {% if link.links != blank %}js-nav-toggle{% endif %}"
+      {% if link.links != blank %}
+        data-level="1"
+      {% endif %}
+      {% if link.current %}
+        aria-current="page"
+      {% endif %}
+      {% if link.links != blank %}
+        aria-label="{{ link.title }}"
+        role="button"
+        aria-expanded="{% if has_active_link or active_child_link %}true{% else %}false{% endif %}"
+        aria-controls="dropdown-{{ link.title | handleize }}-{{ main_index }}"
+      {% endif %}
+    >
+      <span>{{- link.title | escape -}}</span>
+      {%- if link.links != blank -%}
+        <span class="m-main-nav__link-arrow">
+          {%- render 'icon-chevron-down' -%}
+        </span>
+      {%- endif -%}
+    </a>
+    {%- if link.links != blank -%}
+      <div
+        class="m-main-nav__children"
+        aria-hidden="{% if has_active_link %}false{% else %}true{% endif %}"
+        id="dropdown-{{ link.title | handleize }}-{{ main_index }}"
+        data-level="2"
+      >
+        <ul class="m-main-nav__list">
+          {%- for child_link in link.links -%}
+            {%- assign child_index = main_index | append: '-' | append: forloop.index -%}
+            <li class="m-main-nav__item">
+              <a
+                href="{{ child_link.url }}"
+                class="m-main-nav__link {% if child_link.current %}m-main-nav__link--active{% endif %} {% if child_link.links != blank %}js-nav-toggle{% endif %}"
+                {% if child_link.links != blank %}
+                  data-level="2"
+                {% endif %}
+                {% if child_link.current %}
+                  aria-current="page"
+                {% endif %}
+                {% if child_link.links != blank %}
+                  aria-label="{{ child_link.title }}"
+                  role="button"
+                  aria-expanded="{% if has_active_link and active_level == 2 and active_child_link == child_link %}true{% else %}false{% endif %}"
+                  aria-controls="dropdown-{{ child_link.title | handleize }}-{{ child_index }}"
+                {% endif %}
+              >
+                <span>{{- child_link.title | escape -}}</span>
+
+                {%- if child_link.links != blank -%}
+                  <span class="m-main-nav__link-arrow">
+                    {%- render 'icon-chevron-down' -%}
+                  </span>
+                {%- endif -%}
+              </a>
+
+              {%- if child_link.links != blank -%}
+                {%- assign grandchild_index = child_index | append: '-' | append: forloop.index -%}
+                <div
+                  class="m-main-nav__children"
+                  aria-hidden="{% if has_active_link and active_level == 2 and active_child_link == child_link %}false{% else %}true{% endif %}"
+                  id="dropdown-{{ child_link.title | handleize }}-{{ child_index }}"
+                  data-level="3"
+                >
+                  <ul class="m-main-nav__list">
+                    {%- for grandchild_link in child_link.links -%}
+                      <li class="m-main-nav__item">
+                        <a
+                          href="{{ grandchild_link.url }}"
+                          class="m-main-nav__link {% if grandchild_link.current %}m-main-nav__link--active{% endif %}"
+                          {% if grandchild_link.current %}
+                            aria-current="page"
+                          {% endif %}
+                          {% if grandchild_link.links != blank %}
+                            aria-label="{{ grandchild_link.title }}"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="dropdown-{{ grandchild_link.title | handleize }}-{{ grandchild_index }}"
+                          {% endif %}
+                        >
+                          <span>{{- grandchild_link.title | escape -}}</span>
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endif -%}
+  </li>
+{%- endfor -%}
+</ul>

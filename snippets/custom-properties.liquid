@@ -1,0 +1,77 @@
+{% style %}
+  :root {
+    /**
+    * Typography
+    */
+    --ff-primary: {{ settings.ff_body.family }}, {{ settings.ff_body.fallback_families }};
+    --ff-secondary: {{ settings.ff_heading.family }}, {{ settings.ff_heading.fallback_families }};
+    --ff-secondary-weight: {{ settings.ff_heading.weight }};
+
+    --fs-body-scale: {{ settings.fs_body_scale | divided_by: 100.0 }};
+    --fs-heading-scale: {{ settings.fs_heading_scale | times: 1.0 | divided_by: settings.fs_body_scale }};
+
+    /**
+    * Layout
+    */
+    --layout-container-width-desktop: 60%;
+    --layout-container-width-mobile: 100%;
+
+    /*
+      Backdrop
+    */
+    --backdrop-color: {{ settings.backdrop_color.red }},{{ settings.backdrop_color.green }},{{ settings.backdrop_color.blue }};
+    --backdrop-color-opacity: {{ settings.backdrop_opacity | divided_by: 100.0 }};
+    --backdrop-blur: {{ settings.backdrop_blur }}px;
+
+    /*
+      Borders
+    */
+    --border-radius: {{ settings.border_radius }}px;
+
+    /*
+      Buttons
+    */
+    --button-border-radius: {{ settings.button_border_radius }}px;
+    --button-letter-case: {{ settings.button_letter_case }};
+  }
+
+  /**
+  * Color
+  */
+  :root {
+    --color-white: {{ settings.white.red }},{{ settings.white.green }},{{ settings.white.blue }};
+    --color-black: {{ settings.black.red }},{{ settings.black.green }},{{ settings.black.blue }};
+  }
+
+  {%- for scheme in settings.color_schemes -%}
+    {% assign scheme_classes = scheme_classes | append: ', .u-color--' | append: scheme.id %}
+
+    {% if forloop.index == 1 -%}
+      :root,
+    {%- endif %}
+    .u-color--{{ scheme.id }} {
+
+      --color-heading: {{ scheme.settings.heading.red }},{{ scheme.settings.heading.green }},{{ scheme.settings.heading.blue }};
+      --color-text: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
+      --color-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
+      --color-button: {{ scheme.settings.button.red }},{{ scheme.settings.button.green }},{{ scheme.settings.button.blue }};
+      --color-button-label: {{ scheme.settings.button_label.red }},{{ scheme.settings.button_label.green }},{{ scheme.settings.button_label.blue }};
+      --color-button-hover: {{ scheme.settings.button_hover.red }},{{ scheme.settings.button_hover.green }},{{ scheme.settings.button_hover.blue }};
+      --color-button-hover-label: {{ scheme.settings.button_hover_label.red }},{{ scheme.settings.button_hover_label.green }},{{ scheme.settings.button_hover_label.blue }};
+      --color-border: {{ scheme.settings.border.red }},{{ scheme.settings.border.green }},{{ scheme.settings.border.blue }};
+      --color-accent: {{ scheme.settings.accent.red }},{{ scheme.settings.accent.green }},{{ scheme.settings.accent.blue }};
+      --color-accent-label: {{ scheme.settings.accent_label.red }},{{ scheme.settings.accent_label.green }},{{ scheme.settings.accent_label.blue }};
+      --color-success: {{ scheme.settings.success.red }},{{ scheme.settings.success.green }},{{ scheme.settings.success.blue }};
+      --color-error: {{ scheme.settings.error.red }},{{ scheme.settings.error.green }},{{ scheme.settings.error.blue }};
+    }
+
+    .u-text--{{ scheme.id }} {
+      --color-text: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
+    }
+  {%- endfor -%}
+
+  {{ scheme_classes | prepend: 'body' }} {
+    color: rgb(var(--color-text));
+    background-color: rgb(var(--color-background));
+  }
+{% endstyle %}

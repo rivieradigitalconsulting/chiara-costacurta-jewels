@@ -1,0 +1,152 @@
+{%- liquid
+  assign item = item
+-%}
+
+<div class="o-cart__product m-cart-item grid">
+  <div class="m-cart-item__image">
+    {%- if item.image -%}
+      <a href="{{ item.url }}" class="m-cart-item__link">
+        {{ item.image | image_url: width: 180 | image_tag: loading: 'lazy' }}
+      </a>
+    {%- endif -%}
+  </div>
+  <div class="m-cart-item__content grid">
+    <div class="m-cart-item__title">
+      <a href="{{ item.url }}" class="product-title">
+        {{- item.product.title | escape -}}
+      </a>
+    </div>
+    <div class="m-cart-item__information grid body-fs-xs">
+      <div class="m-cart-item__options">
+        {%- if item.product.has_only_default_variant == false
+          or item.properties.size != 0
+          or item.selling_plan_allocation != null
+        -%}
+          {%- if item.product.has_only_default_variant == false -%}
+            {%- for option in item.options_with_values -%}
+              <div class="product-option">
+                {{ option.value -}}
+              </div>
+            {%- endfor -%}
+          {%- endif -%}
+
+          {%- for property in item.properties -%}
+            {%- assign property_first_char = property.first | slice: 0 -%}
+            {%- if property.last != blank and property_first_char != '_' -%}
+              <div class="product-option">
+                {%- if property.last contains '/uploads/' -%}
+                  <a
+                    href="{{ property.last }}"
+                    class="link"
+                    target="_blank"
+                    aria-describedby="a11y-new-window-message"
+                  >
+                    {{ property.last | split: '/' | last }}
+                  </a>
+                {%- else -%}
+                  {{ property.last }}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+          {%- if item.selling_plan_allocation != null -%}
+            <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+      <div class="m-cart-item__price">
+        <div class="m-cart-item__price-wrapper">
+          {%- if item.original_line_price != item.final_line_price -%}
+            <div class="m-cart-item__discounted-prices">
+              <span class="visually-hidden">
+                {{ 'products.product.price.regular_price' | t }}
+              </span>
+              <s class="m-cart-item__old-price m-price m-price--end">
+                {{ item.original_line_price | money }}
+              </s>
+              <span class="visually-hidden">
+                {{ 'products.product.price.sale_price' | t }}
+              </span>
+              <span class="m-price m-price--end">
+                {{ item.final_line_price | money }}
+              </span>
+            </div>
+          {%- else -%}
+            <span class="m-price m-price--end">
+              {{ item.original_line_price | money }}
+            </span>
+          {%- endif -%}
+
+          {%- if item.variant.available and item.unit_price_measurement -%}
+            <div class="m-price__unit-price body-fs-xs">
+              <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+              {{ item.unit_price | money }}
+              <span aria-hidden="true">/</span>
+              <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
+              {%- if item.unit_price_measurement.reference_value != 1 -%}
+                {{- item.unit_price_measurement.reference_value -}}
+              {%- endif -%}
+              {{ item.unit_price_measurement.reference_unit }}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+    <div class="m-cart-item__actions grid grid--center-v">
+      <div class="m-cart-item__quantity a-input">
+        <div class="m-quantity grid grid--no-wrap js-quantity-ticker">
+          <button
+            class="m-quantity__button u-unstyled-btn"
+            name="minus"
+            type="button"
+            aria-label="{{ 'accessibility.minus' | t }}"
+          >
+            {%- render 'icon-minus' -%}
+          </button>
+          <input
+            class="m-quantity__input a-input__field js-quantity-input"
+            type="number"
+            name="updates[]"
+            id="quantity-{{ item.index | plus: 1 }}"
+            min="0"
+            value="{{ item.quantity }}"
+            data-index="{{ item.index | plus: 1 }}"
+          >
+          <button
+            class="m-quantity__button u-unstyled-btn"
+            name="plus"
+            type="button"
+            aria-label="{{ 'accessibility.plus' | t }}"
+          >
+            {%- render 'icon-plus' -%}
+          </button>
+        </div>
+      </div>
+      <div class="m-cart-item__remove">
+        <div
+          class="m-cart-remove js-cart-remove-button"
+          id="cart-remove-{{ item.index | plus: 1 }}"
+          data-index="{{ item.index | plus: 1 }}"
+        >
+          <button
+            type="button"
+            class="u-unstyled-btn"
+            aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}"
+          >
+            {{ 'sections.cart.remove' | t }}
+          </button>
+        </div>
+      </div>
+      <div class="m-cart-item__loader hide" id="cart-item-loader-{{ item.index | plus: 1 }}">
+        {%- render 'icon-loader', loader_classes: 'a-loader--light' -%}
+      </div>
+    </div>
+    <div
+      id="line-item-error-{{ item.index | plus: 1 }}"
+      class="m-cart-item__error body-fs-xs"
+      role="alert"
+    >
+      <span class="m-cart-item__error-text js-line-item-error-text"></span>
+    </div>
+  </div>
+</div>

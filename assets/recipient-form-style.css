@@ -1,0 +1,18 @@
+.o-recipient__fields {
+  display: none;
+}
+.o-recipient__fields-inner {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.o-recipient__field {
+  margin: 0;
+}
+.o-recipient__errors-message {
+  display: block;
+  color: rgb(var(--color-error));
+  font-size: var(--body-fs-sm);
+  line-height: var(--body-lh-sm);
+}

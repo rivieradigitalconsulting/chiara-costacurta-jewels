@@ -1,0 +1,21 @@
+.m-pickup-availability__name {
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.m-pickup-availability__text {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.m-pickup-availability__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.m-pickup-availability.m-accordion .m-pickup-availability__wrapper .icon {
+  height: 2rem;
+  width: 2rem;
+  transform: none;
+}

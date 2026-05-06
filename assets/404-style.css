@@ -1,0 +1,10 @@
+.t-404__image img {
+  max-width: 100%;
+  height: auto;
+}
+.t-404__content.u-text-right .t-404__image {
+  margin-left: auto;
+}
+.t-404__content.u-text-left .t-404__image {
+  margin-right: auto;
+}

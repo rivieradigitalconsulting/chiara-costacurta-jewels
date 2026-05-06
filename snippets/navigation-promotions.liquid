@@ -1,0 +1,45 @@
+{%- liquid
+  assign link_title = link.title | downcase
+  assign downcased_link_title = link_title | handleize
+
+  assign has_promotions = false
+
+  for block in section.blocks
+    assign nav_title = block.settings.title | strip | downcase
+    assign downcased_nav_title = nav_title | handleize
+    if downcased_nav_title == downcased_link_title
+      assign has_promotions = true
+    endif
+  endfor
+
+  capture promotions
+    for block in section.blocks
+      assign nav_title = block.settings.title | strip | downcase
+      assign downcased_nav_title = nav_title | handleize
+      if downcased_nav_title == downcased_link_title
+        assign col = block.settings.image
+        assign image = block.settings.image
+        assign image_ratio = block.settings.image_ratio
+        assign text = block.settings.text
+        assign link = block.settings.link
+
+        if image != blank
+          render 'navigation-promotion-item', image: image, image_ratio: image_ratio, text: text, link: link, size: col
+        endif
+      endif
+    endfor
+  endcapture
+-%}
+{%- if has_promotions -%}
+  {%- if sidebar -%}
+    <div class="m-header-sidebar__item">
+      <div class="m-header-sidebar__item-wrapper m-header-sidebar__images m-promotions-wrapper">
+        {{ promotions }}
+      </div>
+    </div>
+  {%- else -%}
+    <div class="m-main-nav__promotions m-promotions-wrapper">
+      {{ promotions }}
+    </div>
+  {%- endif -%}
+{%- endif -%}

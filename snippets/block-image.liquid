@@ -1,0 +1,40 @@
+{%- liquid
+  assign classes = 'a-spacing-content'
+
+  if block_class != blank
+    assign classes = classes | append: ' ' | append: block_class
+  endif
+
+  if settings.enable_animation and disable_animation != true
+    assign classes = classes | append: ' js-animation a-animation a-animation--fade-up'
+  endif
+
+  assign aspect_ratio_class = ''
+  assign placeholder_media_classes = 'a-placeholder-media'
+  if block.settings.image_ratio
+    assign aspect_ratio_class = 'a-img__ratio--' | append: block.settings.image_ratio
+    assign placeholder_media_classes = placeholder_media_classes | append: ' a-img__ratio--' | append: block.settings.image_ratio
+  endif
+-%}
+<div
+  class="{{ classes }}"
+  {% if block_styles %}
+    style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  {%- if block.settings.image != blank -%}
+    {{
+      block.settings.image
+      | image_url: width: width
+      | image_tag:
+        loading: 'lazy',
+        sizes: sizes,
+        widths: widths,
+        fetchpriority: fetch_priority,
+        class: aspect_ratio_class
+    }}
+  {%- else -%}
+    {{ 'image' | placeholder_svg_tag: placeholder_media_classes }}
+  {%- endif -%}
+</div>

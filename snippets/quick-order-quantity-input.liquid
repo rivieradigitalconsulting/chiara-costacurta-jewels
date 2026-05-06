@@ -1,0 +1,37 @@
+<div class="m-quick-order-item__quantity-input o-product__quantity a-input">
+  <div class="m-quantity grid grid--no-wrap js-quantity-ticker">
+    <button
+      class="m-quantity__button u-unstyled-btn"
+      name="minus"
+      type="button"
+      aria-label="{{ 'accessibility.minus' | t }}"
+    >
+      {%- render 'icon-minus' -%}
+    </button>
+    <input
+      class="m-quantity__input a-input__field js-quantity-input"
+      data-quantity-variant-id="{{ variant.id }}"
+      type="number"
+      name="updates[{{ variant_id }}]"
+      value="{{ cart | item_count_for_variant: variant.id }}"
+      data-cart-quantity="{{ cart | item_count_for_variant: variant.id }}"
+      min="{{ variant.quantity_rule.min }}"
+      {% if variant.quantity_rule.max != null %}
+        max="{{ variant.quantity_rule.max }}"
+      {% endif %}
+      step="{{ variant.quantity_rule.increment }}"
+      {% # theme-check-enable %}
+      aria-label="{{ 'products.product.quantity.input_label' | t: product: variant.title | escape }}"
+      id="quantity-{{ variant.id }}"
+      data-index="{{ variant.id }}"
+    >
+    <button
+      class="m-quantity__button u-unstyled-btn"
+      name="plus"
+      type="button"
+      aria-label="{{ 'accessibility.plus' | t }}"
+    >
+      {%- render 'icon-plus' -%}
+    </button>
+  </div>
+</div>

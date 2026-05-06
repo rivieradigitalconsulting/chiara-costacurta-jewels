@@ -1,0 +1,7 @@
+<ul class="m-list-payment u-unstyled-list u-list-inline" role="list">
+  {%- for type in shop.enabled_payment_types -%}
+    <li class="m-list-payment__item">
+      {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+    </li>
+  {%- endfor -%}
+</ul>

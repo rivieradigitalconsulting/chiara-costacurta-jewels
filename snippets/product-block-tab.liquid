@@ -1,0 +1,41 @@
+{%- liquid
+  assign icon = block.settings.icon
+
+  assign classes = 'a-spacing-content m-accordion js-accordion'
+  if block_class != blank
+    assign classes = classes | append: ' ' | append: block_class
+  endif
+
+  if settings.enable_animation and disable_animation != true
+    assign classes = classes | append: ' js-animation a-animation a-animation--fade-up'
+  endif
+
+  if block.settings.show_tab_collapsed
+    assign classes = classes | append: ' m-accordion--open'
+  endif
+-%}
+
+{%- if block.settings.content != blank -%}
+  <div
+    class="{{ classes }}"
+    {% if block_styles %}
+      style="{{ block_styles | strip_newlines | remove: ' ' }}"
+    {% endif %}
+    {{ block.shopify_attributes }}
+  >
+    <div class="m-accordion__header grid grid--center-v js-accordion-trigger" tabindex="0">
+      <h2 class="body-fs-sm">{{ block.settings.title }}</h2>
+      {%- render 'icon-pack', icon: icon -%}
+    </div>
+    <div
+      class="m-accordion__content rte"
+      {% if block.settings.show_tab_collapsed %}
+        style="display: block;"
+      {% endif %}
+    >
+      <div class="m-accordion__text">
+        {{ block.settings.content }}
+      </div>
+    </div>
+  </div>
+{%- endif -%}

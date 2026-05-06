@@ -1,0 +1,432 @@
+{%- render '_styles-section', section: section -%}
+{{ 'user-style.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign color_scheme = section.settings.color_scheme
+  assign standard_color_scheme = settings.color_schemes['scheme-1']
+
+  assign aspect_ratio_class = 'a-img__ratio--' | append: section.settings.image_ratio
+
+  if section.settings.media_position == 'left'
+    assign media_position = 'left'
+    assign content_position = 'right'
+  elsif section.settings.media_position == 'right'
+    assign media_position = 'right'
+    assign content_position = 'left'
+  endif
+
+  assign fetch_priority = 'auto'
+  if section.index == 1
+    assign fetch_priority = 'high'
+  endif
+-%}
+
+{%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+{%- capture sizes -%}
+  (min-width: 750px) calc((100vw) / 2), calc((100vw) / 2)
+{%- endcapture -%}
+
+<div
+  class="o-user o-section u-color--{{ color_scheme }}"
+  {% if section.settings.invert_navigation_color %}
+    data-invert-navigation
+  {% endif %}
+  {% if section.settings.section_id != blank %}
+    id="{{ section.settings.section_id | handleize }}"
+  {% endif %}
+>
+  <div class="grid o-section__constrict o-user__inner">
+    {% if section.settings.image != blank %}
+      <div class="grid__col-12 grid__col-lg-6 o-user__image-container" data-media-position="{{ media_position }}">
+        <div class="o-user__image">
+          {{
+            section.settings.image
+            | image_url: width: 1024
+            | image_tag:
+              class: aspect_ratio_class,
+              loading: 'lazy',
+              sizes: sizes,
+              widths: widths,
+              fetchpriority: fetch_priority
+          }}
+        </div>
+      </div>
+    {% endif %}
+    <div
+      class="grid__col-12 {% if section.settings.image != blank %}  grid__col-lg-5 {% endif %} o-user__form-container grid grid--{{ section.settings.content_vertical_position }}-v grid--{{ section.settings.content_position }}-h u-text-{{ section.settings.content_alignment }}"
+      data-content-position="{{ content_position }}"
+    >
+      <div id="recover" class="o-user__recover">
+        <div tabindex="-1" class="o-user__heading h2">
+          {{ 'customer.recover_password.title' | t }}
+        </div>
+        <div>
+          <p>
+            {{ 'customer.recover_password.subtext' | t }}
+          </p>
+
+          {%- form 'recover_customer_password' -%}
+            {% assign recover_success = form.posted_successfully? %}
+            <div class="o-user__form-fields">
+              <div class="a-input">
+                <label for="recover-email" class="a-input__label">
+                  {{ 'customer.login_page.email' | t }}
+                </label>
+                <input
+                  type="email"
+                  value=""
+                  name="email"
+                  id="recover-email"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  class="a-input__field"
+                  {% if form.errors %}
+                    aria-invalid="true"
+                    aria-describedby="recover-email-email-error"
+                    autofocus
+                  {% endif %}
+                  placeholder="{{ 'customer.login_page.email' | t }}"
+                >
+                {%- if form.errors -%}
+                  <small id="recover-email-email-error">
+                    {{ form.errors.messages.form }}
+                  </small>
+                {%- endif -%}
+              </div>
+              <button
+                class="a-btn a-btn--{{ section.settings.btn_style }}"
+                aria-label="{{ 'customer.login_page.submit' | t }}"
+              >
+                {{ 'customer.login_page.submit' | t }}
+              </button>
+              <div class="o-user__link--cancel">
+                <a href="#login" class="a-link">
+                  {{ 'customer.login_page.cancel' | t }}
+                </a>
+              </div>
+            </div>
+          {%- endform -%}
+        </div>
+      </div>
+      <div id="login" class="o-user__login">
+        <div class="o-user__form-header">
+          <div class="h2 o-user__heading">{{ 'customer.login_page.title' | t }}</div>
+          {%- if shop.checkout.guest_login -%}
+            {%- form 'guest_login' -%}
+              <button
+                class="a-btn a-btn--{{ section.settings.btn_style }}"
+                aria-label="{{ 'customer.login_page.guest_continue' | t }}"
+              >
+                {{ 'customer.login_page.guest_continue' | t }}
+              </button>
+            {%- endform -%}
+          {%- endif -%}
+        </div>
+        <div>
+          {%- if recover_success == true -%}
+            <div
+              class="o-user__heading o-user__recover-success"
+              tabindex="-1"
+              autofocus
+            >
+              {{ 'customer.recover_password.success' | t }}
+            </div>
+          {%- endif -%}
+
+          {%- form 'customer_login', novalidate: 'novalidate' -%}
+            <div class="o-user__form-fields">
+              {%- if form.errors -%}
+                <div
+                  class="h5 o-user__errors-title o-user__heading"
+                  tabindex="-1"
+                  autofocus
+                >
+                  <span>{{ 'accessibility.error' | t }} </span>
+                  {{ 'templates.contact.form.error_heading' | t }}
+                </div>
+                {{ form.errors | default_errors }}
+              {%- endif -%}
+
+              <div class="a-input">
+                <label for="customer-email" class="a-input__label">
+                  {{ 'customer.login_page.email' | t }}
+                </label>
+                <input
+                  type="email"
+                  name="customer[email]"
+                  id="customer-email"
+                  autocomplete="email"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  class="a-input__field"
+                  {% if form.errors contains 'form' %}
+                    aria-invalid="true"
+                  {% endif %}
+                  placeholder="{{ 'customer.login_page.email' | t }}"
+                >
+              </div>
+
+              {%- if form.password_needed -%}
+                <div class="a-input">
+                  <label for="customer-password" class="a-input__label">
+                    {{ 'customer.login_page.password' | t }}
+                  </label>
+                  <input
+                    type="password"
+                    value=""
+                    name="customer[password]"
+                    id="customer-password"
+                    autocomplete="current-password"
+                    class="a-input__field"
+                    {% if form.errors contains 'form' %}
+                      aria-invalid="true"
+                    {% endif %}
+                    placeholder="{{ 'customer.login_page.password' | t }}"
+                  >
+                  <a href="#recover" class="o-user__forgot-password-link a-link">
+                    {{ 'customer.login_page.forgot_password' | t }}
+                  </a>
+                </div>
+              {%- endif -%}
+
+              <button
+                aria-label="{{ 'customer.login_page.sign_in' | t }}"
+                class="{% if section.settings.btn_style == "line" %} a-link {% else %} a-btn a-btn--{{ section.settings.btn_style }}{% endif %}"
+              >
+                {{ 'customer.login_page.sign_in' | t }}
+              </button>
+            </div>
+            <div>
+              <h2 class="h3 o-user__heading">{{ 'customer.login_page.no_account' | t }}</h2>
+              <p>
+                <a href="{{ routes.account_register_url }}" class="a-link">
+                  {{ 'customer.login_page.create_account' | t }}
+                </a>
+              </p>
+            </div>
+          {%- endform -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:login.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.section.content"
+    },
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "t:sections.all.section_id.label",
+      "info": "t:sections.all.section_id.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.spacing.content"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.mobile.label",
+      "info": "t:sections.all.padding.top.mobile.info",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.mobile.label",
+      "info": "t:sections.all.padding.bottom.mobile.info",
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.color.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_navigation_color",
+      "label": "t:sections.all.invert_navigation_color.label",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:login.settings.color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "media_position",
+      "label": "t:login.settings.media_position.label",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:login.settings.media_position.options.left.label"
+        },
+        {
+          "value": "right",
+          "label": "t:login.settings.media_position.options.right.label"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.layout.content"
+    },
+    {
+      "type": "select",
+      "id": "content_vertical_position",
+      "label": "t:login.settings.content_vertical_position.label",
+      "options": [
+        {
+          "value": "top",
+          "label": "t:login.settings.content_vertical_position.options.top.label"
+        },
+        {
+          "value": "center",
+          "label": "t:login.settings.content_vertical_position.options.center.label"
+        },
+        {
+          "value": "bottom",
+          "label": "t:login.settings.content_vertical_position.options.bottom.label"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "t:login.settings.content_position.label",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:login.settings.content_position.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:login.settings.content_position.options.center.label"
+        },
+        {
+          "value": "right",
+          "label": "t:login.settings.content_position.options.right.label"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "text_alignment",
+      "id": "content_alignment",
+      "label": "t:login.settings.content_alignment.label",
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.content.content"
+    },
+    {
+      "type": "select",
+      "id": "btn_style",
+      "label": "t:login.settings.btn_style.label",
+      "options": [
+        {
+          "value": "primary",
+          "label": "t:login.settings.btn_style.options.primary.label"
+        },
+        {
+          "value": "secondary",
+          "label": "t:login.settings.btn_style.options.secondary.label"
+        },
+        {
+          "value": "tertiary",
+          "label": "t:login.settings.btn_style.options.tertiary.label"
+        },
+        {
+          "value": "line",
+          "label": "t:login.settings.btn_style.options.line.label"
+        }
+      ],
+      "default": "primary"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.media.content"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:login.settings.image.label"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "t:login.settings.image_ratio.label",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.media_ratio.options.default.label"
+        },
+        {
+          "value": "1x1",
+          "label": "t:sections.all.media_ratio.options.1_x_1.label"
+        },
+        {
+          "value": "2x3",
+          "label": "t:sections.all.media_ratio.options.2_x_3.label"
+        },
+        {
+          "value": "3x2",
+          "label": "t:sections.all.media_ratio.options.3_x_2.label"
+        },
+        {
+          "value": "4x3",
+          "label": "t:sections.all.media_ratio.options.4_x_3.label"
+        },
+        {
+          "value": "4x5",
+          "label": "t:sections.all.media_ratio.options.4_x_5.label"
+        },
+        {
+          "value": "16x9",
+          "label": "t:sections.all.media_ratio.options.16_x_9.label"
+        }
+      ],
+      "default": "default"
+    }
+  ]
+}
+{% endschema %}

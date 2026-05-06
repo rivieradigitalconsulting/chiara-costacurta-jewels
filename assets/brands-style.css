@@ -1,0 +1,26 @@
+.o-brands {
+  --flex-items: var(--columns-mobile);
+  --grid-column-gap: var(--column-gap-mobile);
+  --grid-row-gap: var(--row-gap-mobile);
+}
+@media screen and (min-width: 768px) {
+  .o-brands {
+    --flex-items: var(--columns-desktop);
+    --grid-column-gap: var(--column-gap-desktop);
+    --grid-row-gap: var(--row-gap-desktop);
+  }
+}
+.o-brands img,
+.o-brands svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: var(--image-fit);
+}
+.o-brands__content {
+  margin-bottom: 2rem;
+}
+.o-brands .item-flex-grid {
+  --flex-justify-content: center;
+  --flex-align-items: center;
+}

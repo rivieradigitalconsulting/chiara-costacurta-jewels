@@ -1,0 +1,21 @@
+.m-content-card__url {
+  text-decoration: none;
+}
+.m-content-card__image {
+  position: relative;
+}
+.m-content-card__image img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.m-content-card__badges {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  z-index: 9;
+}
+.m-content-card__content {
+  padding: 1rem 0;
+}

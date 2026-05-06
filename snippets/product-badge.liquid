@@ -1,0 +1,58 @@
+{%- liquid
+  assign product = product
+  assign badge_classes = badge_classes
+
+  assign product_badge = blank
+  assign product_badge_value = blank
+  assign product_availability = product.available
+
+  assign badge_color = blank
+
+  assign listed_badges = settings.product_badges_names | split: '++'
+
+  if product_availability
+    if listed_badges != blank
+      for listed_badge in listed_badges
+        assign listed_badge_splitted = listed_badge | split: ':'
+
+        for tag in product.tags
+          if tag == listed_badge_splitted[0] and product_badge == blank
+            assign product_badge = listed_badge_splitted | first | downcase | replace: 'badge-', ''
+            assign product_badge_value = listed_badge_splitted | last
+          endif
+        endfor
+      endfor
+    endif
+
+    for tag in product.tags
+      if tag contains 'badge-color'
+        assign badge_color = tag | replace: 'badge-color-', 'a-badge--'
+      endif
+    endfor
+
+    if product.compare_at_price > product.price
+      assign product_badge = 'sale'
+      assign product_badge_value = 'products.product.on_sale' | t
+    endif
+
+  else
+    assign product_badge = 'sold-out'
+    assign product_badge_value = 'products.product.sold_out' | t
+  endif
+
+  if block != blank
+    assign badge_classes = badge_classes | append: ' a-spacing-content'
+  endif
+-%}
+
+{%- if product_badge_value != blank -%}
+  <div
+    class="a-badge {{ badge_classes }} {{ badge_color }} a-badge--{{ product_badge }}"
+    {%- if block != blank -%}
+      style="{{ block_styles | strip_newlines | remove: ' ' }}"
+      {{ block.shopify_attributes }}
+    {%- endif -%}
+  >
+    {{ product_badge_value }}
+  </div>
+{%- endif -%}

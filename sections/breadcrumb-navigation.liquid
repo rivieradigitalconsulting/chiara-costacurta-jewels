@@ -1,0 +1,264 @@
+{%- render '_styles-section', section: section -%}
+{{ 'accordion-navigation-style.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign color_scheme = section.settings.color_scheme
+  assign standard_color_scheme = settings.color_schemes['scheme-1']
+-%}
+
+<div
+  class="o-accordion-navigation o-section u-color--{{ color_scheme }}"
+  {% if section.settings.invert_navigation_color %}
+    data-invert-navigation
+  {% endif %}
+  {% if section.settings.section_id != blank %}
+    id="{{ section.settings.section_id | handleize }}"
+  {% endif %}
+>
+  <div class="o-accordion-navigation__inner o-section__constrict">
+    <div class="grid grid--{{ section.settings.content_position }}-h">
+      <div
+        class="grid__col-12 grid__col-md-{{ section.settings.column_width }} u-text-{{ section.settings.content_alignment }}"
+      >
+        <div class="o-accordion-navigation__content grid grid--{{ section.settings.content_alignment }}-h">
+          {%- for block in section.blocks -%}
+            <a
+              class="{% if block.settings.btn_style == "line" %} a-link {% else %} a-btn a-btn--{{ block.settings.btn_style }}{% endif %} {% if block.settings.btn_icon %}a-btn--has-icon{% endif %} {% if settings.enable_animation %}js-animation a-animation a-animation--fade-up{% endif %}"
+              href="{{ block.settings.btn_url }}"
+              {{ block.shopify_attributes }}
+            >
+              <span>{{- block.settings.btn_label -}}</span>
+              {% if block.settings.btn_icon %}{%- render 'icon-arrow-right' -%}{% endif %}
+            </a>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:accordion_navigation.name",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.section.content"
+    },
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "t:sections.all.section_id.label",
+      "info": "t:sections.all.section_id.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.spacing.content"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.desktop.label"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.desktop.label"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.mobile.label",
+      "info": "t:sections.all.padding.top.mobile.info"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.mobile.label",
+      "info": "t:sections.all.padding.bottom.mobile.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.color.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_navigation_color",
+      "label": "t:sections.all.invert_navigation_color.label",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:accordion_navigation.settings.color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.layout.content"
+    },
+    {
+      "type": "range",
+      "id": "column_gap_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20,
+      "unit": "px",
+      "label": "t:sections.all.grid.column_gap.desktop.label"
+    },
+    {
+      "type": "range",
+      "id": "row_gap_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20,
+      "unit": "px",
+      "label": "t:sections.all.grid.row_gap.desktop.label"
+    },
+    {
+      "type": "range",
+      "id": "column_gap_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20,
+      "unit": "px",
+      "label": "t:sections.all.grid.column_gap.mobile.label"
+    },
+    {
+      "type": "range",
+      "id": "row_gap_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20,
+      "unit": "px",
+      "label": "t:sections.all.grid.row_gap.mobile.label"
+    },
+    {
+      "type": "range",
+      "id": "column_width",
+      "min": 6,
+      "max": 12,
+      "step": 1,
+      "default": 10,
+      "label": "t:accordion_navigation.settings.column_width.label",
+      "info": "t:accordion_navigation.settings.column_width.info"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "t:accordion_navigation.settings.content_position.label",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:accordion_navigation.settings.content_position.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:accordion_navigation.settings.content_position.options.center.label"
+        },
+        {
+          "value": "right",
+          "label": "t:accordion_navigation.settings.content_position.options.right.label"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text_alignment",
+      "id": "content_alignment",
+      "label": "t:accordion_navigation.settings.content_alignment.label",
+      "default": "center"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "navigation",
+      "name": "Navigation",
+      "settings": [
+        {
+          "type": "text",
+          "id": "btn_label",
+          "label": "t:accordion_navigation.blocks.navigation.navigation.settings.btn_label.label",
+          "default": "t:accordion_navigation.blocks.navigation.navigation.settings.btn_label.default"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "t:accordion_navigation.blocks.navigation.navigation.settings.btn_url.label",
+          "info": "t:accordion_navigation.blocks.navigation.navigation.settings.btn_url.info"
+        },
+        {
+          "type": "select",
+          "id": "btn_style",
+          "label": "t:accordion_navigation.blocks.navigation.navigation.settings.btn_style.label",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:accordion_navigation.blocks.navigation.navigation.settings.btn_style.options.primary.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:accordion_navigation.blocks.navigation.navigation.settings.btn_style.options.secondary.label"
+            },
+            {
+              "value": "tertiary",
+              "label": "t:accordion_navigation.blocks.navigation.navigation.settings.btn_style.options.tertiary.label"
+            },
+            {
+              "value": "line",
+              "label": "t:accordion_navigation.blocks.navigation.navigation.settings.btn_style.options.line.label"
+            }
+          ],
+          "default": "line"
+        },
+        {
+          "type": "checkbox",
+          "id": "btn_icon",
+          "label": "t:accordion_navigation.blocks.navigation.navigation.settings.btn_icon.label",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:accordion_navigation.presets.accordion_navigation.name",
+      "blocks": [
+        {
+          "type": "navigation"
+        },
+        {
+          "type": "navigation"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

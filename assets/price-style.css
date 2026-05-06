@@ -1,0 +1,31 @@
+.m-price {
+  color: rgb(var(--color-text));
+}
+.m-price.m-price--lg {
+  font-size: var(--body-fs-lg);
+  line-height: var(--body-lh-lg);
+}
+.m-price.m-price--sm {
+  font-size: var(--body-fs-sm);
+  line-height: var(--body-lh-sm);
+}
+.m-price.m-price--xs {
+  font-size: var(--body-fs-xs);
+  line-height: var(--body-lh-xs);
+}
+.m-price.m-price--unavailable {
+  visibility: hidden;
+}
+.m-price__sale, .m-price--on-sale .m-price__regular {
+  display: none;
+}
+.m-price--on-sale .m-price__sale {
+  display: inline-block;
+}
+.m-price--on-sale .m-price__sale .m-price-item--regular {
+  margin-right: 1rem;
+}
+.m-price--on-sale .m-price__sale .m-price-item--regular {
+  font-size: var(--body-fs-sm);
+  line-height: var(--body-lh-sm);
+}

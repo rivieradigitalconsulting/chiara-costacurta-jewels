@@ -1,0 +1,9 @@
+{%- if product.description != blank -%}
+  <div
+    class="o-product__description rte a-spacing-content {{ block.settings.text_size }}"
+    style="{{ block_styles | strip_newlines | remove: ' ' }}"
+    {{ block.shopify_attributes }}
+  >
+    {{ product.description }}
+  </div>
+{%- endif -%}

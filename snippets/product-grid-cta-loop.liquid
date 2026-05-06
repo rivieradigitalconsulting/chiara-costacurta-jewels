@@ -1,0 +1,57 @@
+{%- liquid
+  assign cta_blocks = section.blocks | where: 'type', 'cta'
+-%}
+{%- for block in cta_blocks -%}
+  {%- if block.settings.index == index -%}
+    {%- liquid
+      assign aspect_ratio = block.settings.image_ratio
+      if aspect_ratio == 'inherit'
+        assign aspect_ratio = settings.product_card_image_ratio
+      endif
+      assign aspect_ratio_class = 'a-img__ratio--' | append: aspect_ratio
+    -%}
+
+    {%- capture card_content -%}
+      {% if block.settings.overlay_color and block.settings.overlay_opacity %}
+        <div
+          class="m-cta-card__overlay"
+          style="background-color: {{ block.settings.overlay_color }}; opacity: {{ block.settings.overlay_opacity | round: 2 | divided_by: 100.00 }};"
+        ></div>
+      {% endif %}
+      {%- if block.settings.image != blank -%}
+        <div class="m-cta-card__image {{ aspect_ratio_class }}">
+          {{
+            block.settings.image
+            | image_url: width: 600
+            | image_tag:
+              class: aspect_ratio_class,
+              loading: loading,
+              sizes: sizes,
+              widths: widths,
+              fetchpriority: fetch_priority
+          }}
+        </div>
+      {%- endif -%}
+      <div class="m-cta-card__content rte">
+        <h3 class="m-cta-card__heading">{{ block.settings.heading }}</h3>
+        <div class="m-cta-card__text rte">{{ block.settings.text }}</div>
+        {%- if block.settings.btn_label != blank and block.settings.btn_url != blank -%}
+          {%- render 'block-button', block: block, block_styles: '', block_class: 'm-cta-card__button', disable_animation: true, tag: 'span' -%}
+        {%- endif -%}
+      </div>
+    {%- endcapture -%}
+
+    <div class="m-cta-card u-color--{{ block.settings.color_scheme }} js-animation a-animation a-animation--fade-up u-text-{{ block.settings.card_text_alignment }} m-cta-card--v-{{ block.settings.card_vertical_text_alignment }} {{ aspect_ratio_class }}">
+      {%- if block.settings.btn_url != blank -%}
+        <a class="m-cta-card__inner" href="{{ block.settings.btn_url }}">
+          {{ card_content }}
+        </a>
+      {%- else -%}
+        <div class="m-cta-card__inner">
+          {{ card_content }}
+        </div>
+      {%- endif -%}
+
+    </div>
+  {%- endif -%}
+{%- endfor -%}

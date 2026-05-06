@@ -1,0 +1,38 @@
+{%- liquid
+  assign image = image
+  assign image_ratio = image_ratio
+  assign text = text
+  assign link = link
+
+  assign aspect_ratio_class = 'a-img__ratio--' | append: image_ratio
+  assign fetch_priority = 'auto'
+  if size == 'lg'
+    assign sizes = '900px'
+  else
+    assign sizes = '450px'
+  endif
+  assign widths = '375, 550, 750, 1100'
+-%}
+
+{%- capture promotion_content -%}
+  <div class="m-promotion__image">
+    {{
+      image
+      | image_url: width: 900
+      | image_tag: class: aspect_ratio_class, loading: 'lazy', sizes: sizes, widths: widths, fetchpriority: fetch_priority
+    }}
+  </div>
+  {%- if text != blank -%}
+    <p class="m-promotion__title">{{ text }}</p>
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- if link != blank -%}
+  <a class="m-promotion" href="{{ link }}">
+    {{ promotion_content }}
+  </a>
+{%- else -%}
+  <div class="m-promotion">
+    {{ promotion_content }}
+  </div>
+{%- endif -%}

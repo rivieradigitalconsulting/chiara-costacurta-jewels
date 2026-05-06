@@ -1,0 +1,46 @@
+{%- liquid
+  assign classes = 'a-spacing-content'
+
+  assign tag = tag | default: 'a'
+
+
+  unless block.settings.btn_style == blank
+    if block.settings.btn_style == "line"
+      assign classes = classes | append: ' a-link'
+    else
+      assign classes = classes | append: ' a-btn a-btn--' | append: block.settings.btn_style
+    endif
+  endunless
+
+  if block.settings.btn_icon
+    assign classes = classes | append: ' a-btn--has-icon'
+  endif
+
+  if block_class != blank
+    assign classes = classes | append: ' ' | append: block_class
+  endif
+
+  if settings.enable_animation and disable_animation != true
+    assign classes = classes | append: ' js-animation a-animation a-animation--fade-up'
+  endif
+
+  if disabled
+    assign classes = classes | append: ' disabled'
+  endif
+
+  assign button_label = block.settings.btn_label | default: override_content
+-%}
+
+
+<{{ tag }}
+  class="{{ classes }}"
+  {% if tag == 'a' %}href="{{ block.settings.btn_url }}"{% endif %}
+  {% if disabled %}disabled{% endif %}
+  {% if block_styles != blank %}style="{{ block_styles | strip_newlines | remove: ' ' }}"{% endif %}
+  {{ block.shopify_attributes }}
+>
+  <span>{{- button_label -}}</span>
+  {% if block.settings.btn_icon %}
+    {%- render 'icon-arrow-right' -%}
+  {%- endif %}
+</{{ tag }}>

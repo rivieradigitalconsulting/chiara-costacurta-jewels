@@ -1,0 +1,94 @@
+.o-banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+.o-banner__size--small .o-banner__content-wrapper {
+  min-height: 40rem;
+}
+.o-banner__size--medium .o-banner__content-wrapper {
+  min-height: 60rem;
+}
+.o-banner__size--large .o-banner__content-wrapper {
+  min-height: 100vh;
+}
+.o-banner__first-section-on-page.o-banner__size--large .o-banner__content-wrapper {
+  min-height: calc(100vh - var(--announcement-total-height));
+}
+.o-banner__background-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: block;
+  object-fit: cover;
+}
+.o-banner__background-media .o-banner__video {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.o-banner__background-media .o-banner__video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.o-banner__background-media .o-banner__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.o-banner__background-media .o-banner__image img {
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.o-banner__background-media .o-banner__image svg {
+  width: 100%;
+  height: 100%;
+}
+.o-banner__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(var(--color-black), 0.2);
+  border-radius: var(--border-radius);
+}
+.o-banner__content-wrapper {
+  position: relative;
+  z-index: 8;
+}
+.o-banner__inner {
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.o-banner__constrict .o-banner__content-wrapper {
+  padding-left: var(--layout-site-padding);
+  padding-right: var(--layout-site-padding);
+  position: relative;
+}
+.o-banner__page-width .o-banner__image img,
+.o-banner__page-width .o-banner__image svg {
+  border-radius: 0;
+}
+.o-banner__page-width .o-banner__video video {
+  border-radius: 0;
+}
+.o-banner__page-width .o-banner__overlay {
+  border-radius: 0;
+}

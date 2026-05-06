@@ -1,0 +1,41 @@
+{%- liquid
+  assign product_form_id = product_form_id
+-%}
+
+<div
+  class="o-product__quantity a-input a-spacing-content"
+  style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {{ block.shopify_attributes }}
+>
+  <label class="a-input__label" for="quantity-{{ section.id }}">
+    {{ 'products.product.quantity.label' | t }}
+  </label>
+
+  <div class="m-quantity grid grid--no-wrap js-quantity-ticker">
+    <button
+      class="m-quantity__button u-unstyled-btn"
+      name="minus"
+      type="button"
+      aria-label="{{ 'accessibility.minus' | t }}"
+    >
+      {%- render 'icon-minus' -%}
+    </button>
+    <input
+      class="m-quantity__input a-input__field js-quantity-input"
+      type="number"
+      name="quantity"
+      id="quantity-{{ section.id }}"
+      min="1"
+      value="1"
+      form="{{ product_form_id }}"
+    >
+    <button
+      class="m-quantity__button u-unstyled-btn"
+      name="plus"
+      type="button"
+      aria-label="{{ 'accessibility.plus' | t }}"
+    >
+      {%- render 'icon-plus' -%}
+    </button>
+  </div>
+</div>

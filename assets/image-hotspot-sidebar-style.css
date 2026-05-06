@@ -1,0 +1,183 @@
+@media screen and (min-width: 1100px) {
+  .m-image-hotspot-sidebar__content {
+    min-width: 20%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .m-image-hotspot-optionsbar__content {
+    min-width: 100%;
+  }
+}
+.m-image-hotspot-optionsbar .m-product-form__buttons button {
+  width: 100% !important;
+}
+
+.m-image-hotspot-sidebar,
+.m-image-hotspot-optionsbar {
+  display: block;
+  position: absolute;
+  z-index: 9999;
+}
+.m-image-hotspot-sidebar__content,
+.m-image-hotspot-optionsbar__content {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 45rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.0588235294), 0 3px 12px rgba(0, 0, 0, 0.0196078431);
+  opacity: 0;
+  transform: translate(100%);
+  visibility: hidden;
+  transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
+}
+@media screen and (min-width: 1100px) {
+  .m-image-hotspot-sidebar__content,
+  .m-image-hotspot-optionsbar__content {
+    max-width: 30rem;
+  }
+}
+.m-image-hotspot-sidebar__header,
+.m-image-hotspot-optionsbar__header {
+  border-bottom: 1px solid rgb(var(--color-border));
+  padding-bottom: 1.5rem;
+  margin: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .m-image-hotspot-sidebar__header,
+  .m-image-hotspot-optionsbar__header {
+    margin: 3rem;
+  }
+}
+.m-image-hotspot-sidebar__header.grid,
+.m-image-hotspot-optionsbar__header.grid {
+  width: auto;
+}
+.m-image-hotspot-sidebar__heading,
+.m-image-hotspot-optionsbar__heading {
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.m-image-hotspot-sidebar .m-product-form__buttons button {
+  width: auto;
+}
+.m-image-hotspot-sidebar--visible .m-image-hotspot-sidebar__content {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0);
+}
+.m-image-hotspot-sidebar__content {
+  z-index: 3000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+.m-image-hotspot-sidebar__header {
+  justify-content: space-between;
+}
+.m-image-hotspot-sidebar__heading {
+  margin-bottom: 0;
+}
+.m-image-hotspot-sidebar__close {
+  padding: 0;
+  margin-top: 0.5rem;
+}
+.m-image-hotspot-sidebar__empty, .m-image-hotspot-sidebar__products {
+  flex: 1;
+  overflow: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .m-image-hotspot-sidebar__empty, .m-image-hotspot-sidebar__products {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+.m-image-hotspot-sidebar__product {
+  margin-bottom: 3.5rem;
+}
+.m-image-hotspot-sidebar__product:last-child {
+  margin-bottom: 0;
+}
+.m-image-hotspot-sidebar__actions {
+  padding-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .m-image-hotspot-sidebar__actions {
+    padding-top: 3rem;
+  }
+}
+.m-image-hotspot-sidebar__message {
+  padding: 2rem 3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(var(--color-accent));
+  color: rgb(var(--color-accent-label));
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform 0.15s ease-out allow-discrete;
+  display: none;
+}
+.m-image-hotspot-sidebar__message--visible {
+  transform: translateY(0);
+  display: flex;
+}
+@starting-style {
+  .m-image-hotspot-sidebar__message--visible {
+    transform: translateY(100%);
+  }
+}
+
+.m-image-hotspot-optionsbar--visible .m-image-hotspot-optionsbar__content {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0);
+}
+.m-image-hotspot-optionsbar__content {
+  z-index: 3000;
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.m-image-hotspot-optionsbar__heading {
+  margin-bottom: 0;
+  flex: 1;
+  text-align: center;
+}
+.m-image-hotspot-optionsbar__variants {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .m-image-hotspot-optionsbar__variants {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+.m-image-hotspot-optionsbar__variants .m-variants__buy-buttons {
+  margin-top: auto;
+}
+.m-image-hotspot-optionsbar__close {
+  padding: 0;
+}
+
+body.u-sticky-header-hidden .m-image-hotspot-sidebar__content, body.u-no-sticky-header .m-image-hotspot-sidebar__content {
+  top: 0;
+}

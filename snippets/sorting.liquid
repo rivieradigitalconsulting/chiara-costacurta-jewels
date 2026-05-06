@@ -1,0 +1,34 @@
+{{ 'sort-style.css' | asset_url | stylesheet_tag }}
+
+<div class="no-js-hidden m-sort m-sort--drawer">
+  <div class="m-sort__form" id="facet-sort-form">
+    <div class="m-sort__sorting">
+      <div class="m-sort__field">
+        <span class="m-sort__label">
+          <label for="sort-by">{{ 'products.facets.sort_by_label' | t }}</label>
+        </span>
+        <div class="a-select m-sort__select">
+          {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
+          <select
+            name="sort_by"
+            class="a-select__field m-sort__select-field a-select__field--inline custom-select body-fs-sm"
+            id="sort-by"
+            aria-describedby="a11y-refresh-page-message"
+          >
+            {%- for option in results.sort_options -%}
+              <option
+                value="{{ option.value | escape }}"
+                {% if option.value == sort_by %}
+                  selected="selected"
+                {% endif %}
+                data-name="{{ option.name | escape }}"
+              >
+                {{ option.name | escape }}
+              </option>
+            {%- endfor -%}
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

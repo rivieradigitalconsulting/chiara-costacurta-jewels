@@ -1,0 +1,50 @@
+.o-awt__media-position--left {
+  order: 1;
+}
+.o-awt__media-position--right {
+  order: 1;
+}
+.o-awt__content-position--left {
+  order: 2;
+}
+.o-awt__content-position--right {
+  order: 2;
+}
+@media screen and (min-width: 768px) {
+  .o-awt__media-position--left, .o-awt__content-position--left {
+    order: 1;
+    padding-right: 3.8rem;
+  }
+  .o-awt__media-position--right, .o-awt__content-position--right {
+    order: 2;
+    padding-left: 3.8rem;
+  }
+}
+.o-awt__content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.o-awt__svg-container svg {
+  width: 100%;
+  overflow: visible;
+  display: block;
+}
+.o-awt__svg-container svg #clip-1 path,
+.o-awt__svg-container svg #clip-2 path,
+.o-awt__svg-container svg #clip-3 path {
+  animation: spin 30s linear infinite;
+}
+.o-awt__svg-container svg .outer-path {
+  animation: spin-inverse 30s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spin-inverse {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,71 @@
+{%- liquid
+  assign icon = block.settings.icon
+  assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true
+-%}
+
+<div
+  class="o-product__pickup-availability o-product__accordion m-pickup-availability m-accordion js-accordion {% unless block.settings.show_tab_collapsed %}m-accordion--open{% endunless %} a-spacing-content"
+  style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {{ block.shopify_attributes }}
+>
+  {{ 'pickup-availabilities-style.css' | asset_url | stylesheet_tag }}
+  <div class="m-accordion__header grid grid--center-v js-accordion-trigger" tabindex="0">
+    <h2 class="body-fs-md">{{ block.settings.title }}</h2>
+    {%- render 'icon-pack', icon: icon -%}
+  </div>
+  <div
+    class="m-accordion__content rte"
+    {% unless block.settings.show_tab_collapsed %}
+      style="display: block;"
+    {% endunless %}
+  >
+    <div class="m-accordion__text">
+      <div
+        class="m-pickup-availability__container"
+        {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %}
+          available
+        {% endif %}
+        data-root-url="{{ routes.root_url }}"
+        data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+        data-has-only-default-variant="{{ product.has_only_default_variant }}"
+      >
+        <div
+          class="m-pickup-availability__wrapper js-pickup-availability-wrapper"
+          id="pickup-availabilty-{{ section.id }}"
+        >
+          {%- for availability in pick_up_availabilities -%}
+            {%- assign address = availability.location.address -%}
+            <div class="m-pickup-availability__info">
+              <p class="m-pickup-availability__name">
+                {{ availability.location.name }}
+              </p>
+              {%- if availability.available -%}
+                <p class="m-pickup-availability__text rte">
+                  {%- render 'icon-checkmark' -%}
+                  <span>{{ availability.pick_up_time }}</span>
+                </p>
+              {%- else -%}
+                <p class="m-pickup-availability__text rte">
+                  {%- render 'icon-unavailable' -%}
+                  <span>
+                    {{-
+                      'products.product.pickup_availability.pick_up_unavailable_at_html'
+                      | t: location_name: availability.location.name
+                    -}}
+                  </span>
+                </p>
+              {%- endif -%}
+              <div class="m-pickup-availability__address">
+                {{ address | format_address }}
+
+                {%- if address.phone.size > 0 -%}
+                  <p>{{ address.phone }}</p>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

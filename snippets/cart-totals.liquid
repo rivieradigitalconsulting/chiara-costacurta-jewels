@@ -1,0 +1,33 @@
+{%- liquid
+  assign total_price_without_discount = 0
+
+  for item in cart.items
+    assign current_variant = item.product.variants | where: 'id', item.variant_id | first
+    assign variant_price = current_variant.price
+    assign line_item_price_without_discounts = 0
+
+    unless current_variant.compare_at_price == null
+      assign variant_price = current_variant.compare_at_price
+    endunless
+
+    assign line_item_price_without_discounts = variant_price | times: item.quantity
+    assign total_price_without_discount = total_price_without_discount | plus: line_item_price_without_discounts
+  endfor
+-%}
+
+<div class="o-cart__total grid grid--no-wrap grid--center-v body-fs-sm" role="status">
+  <div class="o-cart__total-label">{{ 'sections.cart.subtotal' | t }}</div>
+  <div class="o-cart__total-value">{{ total_price_without_discount | money }}</div>
+</div>
+
+<div class="o-cart__total grid grid--no-wrap grid--center-v body-fs-sm" role="status">
+  <div class="o-cart__total-label">{{ 'sections.cart.discount' | t }}</div>
+  <div class="o-cart__total-value">
+    {{ cart.total_price | minus: total_price_without_discount | money }}
+  </div>
+</div>
+
+<div class="o-cart__total grid grid--no-wrap grid--center-v body-fs-sm" role="status">
+  <div class="o-cart__total-label">{{ 'sections.cart.total' | t }}</div>
+  <div class="o-cart__total-value">{{ cart.total_price | money }}</div>
+</div>

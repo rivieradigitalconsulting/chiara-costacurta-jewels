@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta name="theme-color" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+    {%- endif -%}
+
+    <title>
+      {{ page_title }}
+      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    </title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    {%- render 'meta-tags' -%}
+
+    <script src="{{ 'base-script.min.js' | asset_url }}" defer="defer"></script>
+    {%- if settings.enable_animation -%}
+      <script src="{{ 'animation-script.min.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+    {%- if request.design_mode -%}
+      <script src="{{ 'base-script.min.js' | asset_url }}" defer="defer"></script>
+
+      {%- if settings.enable_animation -%}
+        <script src="{{ 'animation-script.min.js' | asset_url }}" defer="defer"></script>
+      {%- endif -%}
+
+      <script src="{{ 'theme-editor-script.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'product-recommendations-script.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'complementary-products-script.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'product-media-script.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'google-maps-script.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'image-hotspot-script.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'video-script.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'product-form-script.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'product-model-script.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'accordion-script.min.js' | asset_url }}" defer="defer"></script>
+
+      {%- if template contains 'collection' -%}
+        <script src="{{ 'filter-script.min.js' | asset_url }}" defer="defer"></script>
+        <script src="{{ 'filter-drawer-script.min.js' | asset_url }}" defer="defer"></script>
+      {%- endif -%}
+    {%- endif -%}
+
+    {{ content_for_header }}
+
+    {%- render 'fonts' -%}
+    {%- render 'custom-properties' -%}
+
+    {{ 'base-style.css' | asset_url | stylesheet_tag }}
+
+    {%- if settings.predictive_search_enabled -%}
+      <link
+        rel="stylesheet"
+        href="{{ 'predictive-search-style.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
+    {%- endif -%}
+
+    {%- if settings.cart_drawer_redirect -%}
+      <script>
+        window.cartRedirect = true
+        if (window.cartRedirect && window.location.href.indexOf('cart') > -1) {
+          window.location.href = '{{ request.origin }}'
+        }
+      </script>
+    {%- endif -%}
+  </head>
+
+  {%- assign requested_page_type = request.page_type | handle -%}
+
+  <body
+    class="template-{{ requested_page_type }} {% if template contains '.' %}template-{{ template | replace: '.', '-' }}{% endif %} {% if Shopify.designMode %}shopify-design-mode{% endif %}"
+    data-money-format="{{ cart.currency.symbol }}"
+  >
+    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+      {{ 'accessibility.skip_to_text' | t }}
+    </a>
+
+    {%- render 'cart-drawer' -%}
+    {%- render 'search-drawer' -%}
+
+    <div class="o-header-group">
+      {%- sections 'header-group' -%}
+      {%- render 'announcement-bar-script' -%}
+    </div>
+
+    <main id="MainContent" role="main" tabindex="-1">
+      {{ content_for_layout }}
+    </main>
+
+    <div class="o-footer-group o-footer-group--align-bottom">
+      {%- sections 'footer-group' -%}
+    </div>
+
+    <script>
+      window.shopUrl = '{{ request.origin }}'
+      window.moneyFormat = '{{ 0000 | money }}'
+
+      window.routes = {
+        cart_add_url: '{{ routes.cart_add_url }}',
+        cart_change_url: '{{ routes.cart_change_url }}',
+        cart_update_url: '{{ routes.cart_update_url }}',
+        cart_url: '{{ routes.cart_url }}',
+        predictive_search_url: '{{ routes.predictive_search_url }}',
+      }
+
+      window.cartStrings = {
+        error: `{{ 'sections.cart.cart_error' | t }}`,
+        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
+      }
+
+      window.variantStrings = {
+        addToCart: `{{ 'products.product.add_to_cart' | t }}`,
+        preOrder: `{{ 'products.product.preorder' | t }}`,
+        soldOut: `{{ 'products.product.sold_out' | t }}`,
+        unavailable: `{{ 'products.product.unavailable' | t }}`,
+        unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`,
+      }
+
+      window.quickOrderListStrings = {
+        itemsAdded: `{{ 'sections.quick_order_list.items_added.other' | t: quantity: '[quantity]' }}`,
+        itemAdded: `{{ 'sections.quick_order_list.items_added.one' | t: quantity: '[quantity]' }}`,
+        itemsRemoved: `{{ 'sections.quick_order_list.items_removed.other' | t: quantity: '[quantity]' }}`,
+        itemRemoved: `{{ 'sections.quick_order_list.items_removed.one' | t: quantity: '[quantity]' }}`,
+        viewCart: `{{- 'sections.quick_order_list.view_cart' | t -}}`,
+        each: `{{- 'sections.quick_order_list.each' | t: money: '[money]' }}`,
+      }
+
+      window.newsletterStrings = {
+        emailError: `{{ 'newsletter.email_error' | t }}`,
+        optinError: `{{ 'newsletter.optin_error' | t }}`,
+      }
+    </script>
+
+    {%- if settings.predictive_search_enabled -%}
+      <script src="{{ 'predictive-search-script.min.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+  </body>
+</html>

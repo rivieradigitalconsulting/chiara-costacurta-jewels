@@ -1,0 +1,32 @@
+<div
+  class="o-product__price a-spacing-content"
+  id="price-{{ section.id }}"
+  role="status"
+  style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {{ block.shopify_attributes }}
+>
+  {%- render 'price', product: product, use_variant: true, price_class: 'm-price--md' -%}
+  {%- if block.settings.show_tax_message -%}
+    {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+      <div
+        class="o-product__tax rte body-fs-xs"
+      >
+        {%- if cart.taxes_included -%}
+          {{ 'products.product.include_taxes' | t }}
+        {%- endif -%}
+        {%- if shop.shipping_policy.body != blank -%}
+          {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  {%- endif -%}
+</div>
+<div {{ block.shopify_attributes }}>
+  {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+  {%- if product != blank -%}
+    {%- form 'product', product, id: product_form_installment_id, class: 'installment body-fs-sm' -%}
+      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      {{ form | payment_terms }}
+    {%- endform -%}
+  {%- endif -%}
+</div>

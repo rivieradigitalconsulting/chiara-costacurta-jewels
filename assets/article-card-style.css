@@ -1,0 +1,28 @@
+.m-article-card a {
+  text-decoration: none;
+}
+.m-article-card__image {
+  margin-bottom: 2rem;
+}
+.m-article-card__image img,
+.m-article-card__image .a-placeholder-media {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.m-article-card__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.m-article-card__info span {
+  font-size: var(--body-fs-sm);
+  line-height: var(--body-lh-sm);
+}
+.m-article-card__heading {
+  margin-bottom: 1.5rem;
+}
+.m-article-card__intro {
+  margin-bottom: 1.5rem;
+}

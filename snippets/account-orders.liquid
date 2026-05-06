@@ -1,0 +1,92 @@
+{{ 'account-orders-style.css' | asset_url | stylesheet_tag }}
+
+{% paginate customer.orders by 20 %}
+  {%- if customer.orders.size > 0 -%}
+    <div>
+      <div class="m-account-orders m-account-orders__overview">
+        <div
+          class="m-account-orders__desktop-header"
+        >
+          <div class="m-account-orders__desktop-header-item">{{ 'customer.orders.order_number' | t }}</div>
+          <div class="m-account-orders__desktop-header-item">{{ 'customer.orders.date' | t }}</div>
+          <div class="m-account-orders__desktop-header-item">{{ 'customer.orders.payment_status' | t }}</div>
+          <div class="m-account-orders__desktop-header-item">{{ 'customer.orders.fulfillment_status' | t }}</div>
+          <div class="m-account-orders__desktop-header-item">{{ 'customer.orders.total' | t }}</div>
+        </div>
+
+        <div class="m-account-orders__details-wrapper">
+          {%- for order in customer.orders -%}
+            <div class="m-account-orders__details">
+              <div
+                class="m-account-orders__detail"
+                id="row{{ line_item.key }}"
+                data-label="{{ 'customer.orders.order_number' | t }}"
+              >
+                <div class="m-account-orders__detail-label">{{ 'customer.orders.order_number' | t }}</div>
+                <div class="m-account-orders__detail-value">
+                  <a
+                    href="{{ order.customer_url }}"
+                    aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"
+                    class="a-link"
+                  >
+                    {{ order.name }}
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="m-account-orders__detail"
+                id="row{{ line_item.key }}"
+                data-label="{{ 'customer.orders.date' | t }}"
+              >
+                <div class="m-account-orders__detail-label">{{ 'customer.orders.date' | t }}</div>
+                <div class="m-account-orders__detail-value">
+                  {%- comment -%}
+                    Use time_tag filter to translate the date, when you want a custom format for example month_day_year that is added in locale files
+                  {%- endcomment -%}
+                  <span>{{ order.created_at | time_tag: format: 'date' }}</span>
+                </div>
+              </div>
+
+              <div
+                class="m-account-orders__detail"
+                id="row{{ line_item.key }}"
+                data-label="{{ 'customer.orders.payment_status' | t }}"
+              >
+                <div class="m-account-orders__detail-label">{{ 'customer.orders.payment_status' | t }}</div>
+                <div class="m-account-orders__detail-value">
+                  <span>{{ order.financial_status_label }}</span>
+                </div>
+              </div>
+
+              <div
+                class="m-account-orders__detail"
+                id="row{{ line_item.key }}"
+                data-label="{{ 'customer.orders.fulfillment_status' | t }}"
+              >
+                <div class="m-account-orders__detail-label">{{ 'customer.orders.fulfillment_status' | t }}</div>
+                <div class="m-account-orders__detail-value">
+                  <span>{{ order.fulfillment_status_label }}</span>
+                </div>
+              </div>
+
+              <div
+                class="m-account-orders__detail"
+                id="row{{ line_item.key }}"
+                data-label="{{ 'customer.orders.total' | t }}"
+              >
+                <div class="m-account-orders__detail-label">{{ 'customer.orders.total' | t }}</div>
+                <div class="m-account-orders__detail-value">
+                  <span>{{ order.total_price | money_with_currency }}</span>
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  {%- else -%}
+    <p>{{ 'customer.orders.none' | t }}</p>
+  {%- endif -%}
+  {%- render 'pagination' -%}
+{% endpaginate %}

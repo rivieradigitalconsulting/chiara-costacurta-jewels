@@ -1,0 +1,38 @@
+{%- liquid
+  assign ratio = ratio
+  assign enable_autoplay_video_looping = enable_autoplay_video_looping
+  assign enable_zoom = enable_zoom
+  assign selected_or_first_featured_media = product.selected_or_first_available_variant.featured_media
+-%}
+
+<div class="m-product-media m-product-media--columns m-product-media--ratio-{{ratio}} m-swiper js-product-media-items swiper">
+  <div
+    class="m-product-media__wrapper swiper-wrapper"
+    {% if enable_zoom %}
+      id="product-media-zoom"
+    {% endif %}
+  >
+    {%- liquid
+      if selected_or_first_featured_media != null
+        render 'product-media-item', media: selected_or_first_featured_media, ratio: ratio, xr_button: true, enable_autoplay_video_looping: enable_autoplay_video_looping, enable_zoom: enable_zoom, enable_lazy_load: false
+      endif
+
+      for media in product.media
+        assign lazy_load = true
+        if forloop.index == 1
+          assign lazy_load = false
+        endif
+
+        unless selected_or_first_featured_media.id == media.id
+          render 'product-media-item', media: media, ratio: ratio, enable_autoplay_video_looping: enable_autoplay_video_looping, enable_zoom: enable_zoom, xr_button: true, enable_lazy_load: lazy_load
+        endunless
+      endfor
+    -%}
+  </div>
+  <div class="swiper-button-next m-swiper__arrow m-swiper__arrow--next">
+    {%- render 'icon-arrow-right' -%}
+  </div>
+  <div class="swiper-button-prev m-swiper__arrow m-swiper__arrow--prev">
+    {%- render 'icon-arrow-left' -%}
+  </div>
+</div>

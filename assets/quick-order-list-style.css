@@ -1,0 +1,27 @@
+.o-quick-order-list__content-top {
+  margin-bottom: 3rem;
+}
+.o-quick-order-list__contents.disabled {
+  pointer-events: none;
+}
+.o-quick-order-list__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgb(var(--color-border));
+}
+@media screen and (min-width: 768px) {
+  .o-quick-order-list__header {
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+  }
+}
+.o-quick-order-list__table {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.o-quick-order-list .a-loader circle {
+  stroke: rgb(var(--color-button));
+}

@@ -1,0 +1,144 @@
+{%- render '_styles-section', section: section -%}
+{{ 'account-style.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign color_scheme = section.settings.color_scheme
+  assign standard_color_scheme = settings.color_schemes['scheme-1']
+-%}
+
+<div
+  class="o-account o-section u-color--{{ color_scheme }}"
+  {% if section.settings.invert_navigation_color %}
+    data-invert-navigation
+  {% endif %}
+  {% if section.settings.section_id != blank %}
+    id="{{ section.settings.section_id | handleize }}"
+  {% endif %}
+>
+  <div class="o-section__constrict">
+    {%- render 'breadcrumbs',
+      b_link: routes.account_url,
+      b_label: 'general.breadcrumbs.account',
+      breadcrumb_type: 'manual'
+    -%}
+    <div class="o-account__heading">
+      <h1 class="h2">{{ 'customer.order.title' | t: name: order.name }}</h1>
+      {%- comment -%}
+        Use time_tag filter to translate the date, when you want a custom format for example month_day_year that is added in locale files
+      {%- endcomment -%}
+      {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
+      <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
+      {%- if order.cancelled -%}
+        {%- comment -%}
+          Use time_tag filter to translate the date, when you want a custom format for example month_day_year that is added in locale files
+        {%- endcomment -%}
+        {%- assign cancelled_at = order.cancelled_at | time_tag: format: 'date_at_time' -%}
+        <p>{{ 'customer.order.cancelled_html' | t: date: cancelled_at }}</p>
+        <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason_label }}</p>
+      {%- endif -%}
+    </div>
+    <div>
+      <div class="o-account__table-content grid__col-12">
+        {%- render 'account-order' -%}
+      </div>
+      <div class="grid o-account__addresses">
+        <div class="grid__col-12 grid__col-xs-6 grid__col-sm-4">
+          <h2 class="h3">{{ 'customer.order.billing_address' | t }}</h2>
+          {{ order.billing_address | format_address }}
+        </div>
+        <div class="grid__col-12 grid__col-xs-6 grid__col-sm-4">
+          <h2 class="h3">{{ 'customer.order.shipping_address' | t }}</h2>
+          {{ order.shipping_address | format_address }}
+        </div>
+        <div class="grid__col-12 grid__col-xs-6 grid__col-sm-4">
+          <h2 class="h3">{{ 'customer.order.details' | t }}</h2>
+          <p>
+            <strong>{{ 'customer.order.payment_status' | t }}:</strong> {{ order.financial_status_label }}
+            <br>
+            <strong>{{ 'customer.order.fulfillment_status' | t }}:</strong> {{ order.fulfillment_status_label }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:order.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.section.content"
+    },
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "t:sections.all.section_id.label",
+      "info": "t:sections.all.section_id.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.spacing.content"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.mobile.label",
+      "info": "t:sections.all.padding.top.mobile.info",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.mobile.label",
+      "info": "t:sections.all.padding.bottom.mobile.info",
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.color.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_navigation_color",
+      "label": "t:sections.all.invert_navigation_color.label",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:order.settings.color_scheme.label",
+      "default": "scheme-1"
+    }
+  ]
+}
+{% endschema %}

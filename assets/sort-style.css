@@ -1,0 +1,17 @@
+.m-sort__label label {
+  font-weight: 700;
+}
+.m-sort__field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.m-sort__select {
+  margin: 0;
+}
+.m-sort__select-field:not(.ts-wrapper) {
+  padding: 0;
+  background: transparent;
+  border: none;
+}

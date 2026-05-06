@@ -1,0 +1,130 @@
+{%- render '_styles-section', section: section -%}
+{{ 'account-style.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign color_scheme = section.settings.color_scheme
+  assign standard_color_scheme = settings.color_schemes['scheme-1']
+-%}
+
+<div
+  class="m-account o-section u-color--{{ color_scheme }}"
+  {% if section.settings.invert_navigation_color %}
+    data-invert-navigation
+  {% endif %}
+  {% if section.settings.section_id != blank %}
+    id="{{ section.settings.section_id | handleize }}"
+  {% endif %}
+>
+  <div class="o-account__inner o-section__constrict">
+    <div class="o-account__header">
+      <h1 class="h2">{{ 'customer.account.title' | t }}</h1>
+      <a href="{{ routes.account_logout_url }}" class="a-link">
+        {{ 'customer.log_out' | t }}
+      </a>
+    </div>
+    <div class="o-account__content grid">
+      <div class="grid__col-12 grid__col-xxl-8">
+        <h2 class="h3">{{ 'customer.orders.title' | t }}</h2>
+        {%- render 'account-orders' -%}
+      </div>
+      <div class="grid__col-12 grid__col-xxl-3">
+        <h2 class="h3">{{ 'customer.account.details' | t }}</h2>
+        {%- if customer.default_address != blank -%}
+          {{ customer.default_address | format_address }}
+        {%- else -%}
+          <p>
+            {% if customer.first_name != blank and customer.last_name != blank -%}
+              {{- customer.first_name }}
+              {{ customer.last_name }}
+              <br>
+            {%- endif %}
+            {{ customer.email }}
+          </p>
+        {%- endif -%}
+        <a href="{{ routes.account_addresses_url }}" class="a-link">
+          {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:account.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.section.content"
+    },
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "t:sections.all.section_id.label",
+      "info": "t:sections.all.section_id.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.spacing.content"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.mobile.label",
+      "info": "t:sections.all.padding.top.mobile.info",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.mobile.label",
+      "info": "t:sections.all.padding.bottom.mobile.info",
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.color.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_navigation_color",
+      "label": "t:sections.all.invert_navigation_color.label",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:account.settings.color_scheme.label",
+      "default": "scheme-1"
+    }
+  ]
+}
+{% endschema %}

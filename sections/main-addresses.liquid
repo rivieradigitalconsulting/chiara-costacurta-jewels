@@ -1,0 +1,139 @@
+{%- render '_styles-section', section: section -%}
+{{ 'account-style.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign color_scheme = section.settings.color_scheme
+  assign standard_color_scheme = settings.color_schemes['scheme-1']
+-%}
+
+<section
+  class="o-section u-color--{{ color_scheme }}"
+  {% if section.settings.invert_navigation_color %}
+    data-invert-navigation
+  {% endif %}
+  {% if section.settings.section_id != blank %}
+    id="{{ section.settings.section_id | handleize }}"
+  {% endif %}
+>
+  <div class="o-section__constrict">
+    {%- render 'breadcrumbs',
+      b_link: routes.account_url,
+      b_label: 'general.breadcrumbs.account',
+      breadcrumb_type: 'manual'
+    -%}
+    <div>
+      <h1 class="h2 o-account__heading">{{ 'customer.addresses.title' | t }}</h1>
+    </div>
+    <div>
+      {% render 'account-addresses', section: section %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:adresses.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.section.content"
+    },
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "t:sections.all.section_id.label",
+      "info": "t:sections.all.section_id.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.spacing.content"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.mobile.label",
+      "info": "t:sections.all.padding.top.mobile.info",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.mobile.label",
+      "info": "t:sections.all.padding.bottom.mobile.info",
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.color.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_navigation_color",
+      "label": "t:sections.all.invert_navigation_color.label",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:adresses.settings.color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.content.content"
+    },
+    {
+      "type": "select",
+      "id": "btn_style",
+      "label": "t:adresses.settings.btn_style.label",
+      "options": [
+        {
+          "value": "primary",
+          "label": "t:adresses.settings.btn_style.options.primary.label"
+        },
+        {
+          "value": "secondary",
+          "label": "t:adresses.settings.btn_style.options.secondary.label"
+        },
+        {
+          "value": "tertiary",
+          "label": "t:adresses.settings.btn_style.options.tertiary.label"
+        },
+        {
+          "value": "line",
+          "label": "t:adresses.settings.btn_style.options.line.label"
+        }
+      ],
+      "default": "primary"
+    }
+  ]
+}
+{% endschema %}

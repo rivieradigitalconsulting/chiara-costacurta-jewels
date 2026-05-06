@@ -1,0 +1,39 @@
+{%- liquid
+  assign classes = 'a-spacing-content ' | append: block.settings.text_size | append: ' u-text-' | append: block.settings.text_style
+
+  if block_class != blank
+    assign classes = classes | append: ' ' | append: block_class
+  endif
+
+  assign animation_classes = 'js-animation a-animation a-animation--fade-up'
+  if settings.enable_animation and disable_animation != true
+    assign classes = classes | append: ' ' | append: animation_classes
+  endif
+
+  if block.settings.text_column != blank
+    assign columns_wrapper_class = block_class | append: '-columns'
+    assign single_column_class = block_class | append: '-column ' | append: animation_classes
+
+    assign classes = classes | append: ' ' | append: columns_wrapper_class
+  endif
+
+  assign text = block.settings.text | default: override_content
+-%}
+<div
+  class="{{ classes }}"
+  {% if block_styles %}
+    style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  {%- if block.settings.text_column != blank -%}
+    <div class="{{ single_column_class }}">
+      {{ block.settings.text }}
+    </div>
+    <div class="{{ single_column_class }}">
+      {{ block.settings.text_column }}
+    </div>
+  {%- else -%}
+    {{ text }}
+  {%- endif -%}
+</div>

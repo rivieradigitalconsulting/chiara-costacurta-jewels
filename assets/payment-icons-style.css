@@ -1,0 +1,12 @@
+.m-list-payment {
+  margin: -0.5rem;
+  line-height: 0;
+}
+.m-list-payment__item {
+  padding: 0.5rem;
+}
+.m-list-payment__item .icon {
+  display: block;
+  width: 3.5rem;
+  height: auto;
+}

@@ -1,0 +1,46 @@
+.o-usp--border {
+  border-top: 1px solid rgba(var(--color-border));
+  border-bottom: 1px solid rgba(var(--color-border));
+}
+
+.m-usp__content {
+  flex: 1;
+}
+.m-usp__title, .m-usp__text p {
+  margin: 0;
+  color: inherit;
+}
+.m-usp__title {
+  margin-bottom: 0.5rem;
+}
+.m-usp__text {
+  font-size: var(--body-fs-sm);
+}
+.m-usp__text * {
+  color: inherit;
+}
+.m-usp__image img {
+  border-radius: 0;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+.m-usp__icon svg {
+  height: 2.4rem;
+  width: auto;
+  max-width: 100%;
+}
+.m-usp__icon svg path {
+  fill: currentColor;
+}
+.m-usp__inner {
+  display: flex;
+  gap: 1.6rem;
+}
+.m-usp__icon-alignment--top {
+  flex-direction: column;
+}
+.m-usp__icon-alignment--next {
+  flex-direction: row;
+}

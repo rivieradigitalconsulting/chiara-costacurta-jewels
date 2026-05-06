@@ -1,0 +1,26 @@
+<div class="o-slideshow__slide-image-panel">
+  {%- liquid
+    assign fetch_priority = 'high'
+    assign loading = 'eager'
+    assign rel = 'preload'
+    unless first_panel
+      assign loading = 'lazy'
+      assign fetch_priority = 'auto'
+      assign rel = ''
+    endunless
+
+    assign base_width = 768
+    assign widths = '165, 360, 535, 750, 1070, 1500'
+    assign sizes = '100vw'
+
+    if type == 'desktop'
+      assign base_width = 3840
+      unless full_width_media
+        assign sizes = '50vw'
+      endunless
+      assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 2250, 2500, 3000, 3840'
+    endif
+
+    echo image | image_url: width: base_width | image_tag: class: aspect_ratio_class, sizes: sizes, widths: widths, loading: loading, fetchpriority: fetch_priority, rel: rel
+  -%}
+</div>

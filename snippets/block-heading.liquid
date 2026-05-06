@@ -1,0 +1,33 @@
+{%- liquid
+  assign classes = 'a-spacing-content ' | append: block.settings.heading_size
+
+  if block_class != blank
+    assign classes = classes | append: ' ' | append: block_class
+  endif
+
+  if settings.enable_animation and disable_animation != true
+    assign classes = classes | append: ' js-animation a-animation a-animation--fade-up'
+  endif
+
+  assign tag = base_tag | default: 'h2'
+  if block.settings.convert_to_h1
+    assign tag = 'h1'
+  endif
+
+  assign title = block.settings.heading | default: override_content
+
+  if override_content != blank
+    assign title = override_content
+  endif
+-%}
+<{{ tag }}
+  class="{{ classes }}"
+  {% if block_styles %}
+    style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  {%- if title != blank -%}
+    {{- title | escape -}}
+  {%- endif -%}
+</{{ tag }}>

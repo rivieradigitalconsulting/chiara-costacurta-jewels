@@ -1,0 +1,7 @@
+{%- render 'icon-cart' -%}
+<span class="o-header__utility-label">{{ 'sections.header.cart' | t }}</span>
+{%- if cart != empty -%}
+  <div class="cart-count-bubble a-count-bubble">
+    <span class="cart-count-bubble-amount">{{ cart.item_count }}</span>
+  </div>
+{%- endif -%}

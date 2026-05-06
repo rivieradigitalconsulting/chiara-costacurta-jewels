@@ -1,0 +1,17 @@
+{%- if block.settings.title != blank -%}
+  <div
+    class="o-announcement-bar__item {% if is_slider %}swiper-slide{% endif %}"
+    {{ block.shopify_attributes }}
+  >
+    <p class="o-announcement-bar__text">
+      {%- assign text = block.settings.title -%}
+      {%- if block.settings.link != blank -%}
+        <a href="{{ block.settings.link }}" class="o-announcement-bar__link">
+          {{ text }}
+        </a>
+      {%- else -%}
+        {{ text }}
+      {%- endif -%}
+    </p>
+  </div>
+{%- endif -%}

@@ -1,0 +1,177 @@
+{% comment %}
+  Renders cart drawer
+
+  Usage:
+  {% render 'cart-drawer' %}
+{% endcomment %}
+
+{{ 'cart-drawer-style.css' | asset_url | stylesheet_tag }}
+{{ 'cart-drawer-item-style.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'cart-drawer-script.min.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign color_scheme = settings.cart_drawer_color_scheme
+  assign cart_upsell_color_scheme = settings.cart_upsell_color_scheme
+
+  assign has_cart_note = settings.show_cart_note
+  assign has_upsell = settings.show_cart_upsell
+
+  assign upsell_title = settings.cart_upsell_title
+  assign upsell_products = settings.cart_upsell_products
+  assign quick_add = true
+
+  assign t = template | split: '.' | first
+-%}
+
+{%- if has_cart_note -%}
+  {{ 'accordion-style.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'accordion-script.min.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<script src="{{ 'cart-script.min.js' | asset_url }}" defer="defer"></script>
+
+{%- if has_upsell -%}
+  {{ 'product-card-style.css' | asset_url | stylesheet_tag }}
+  {{ 'price-style.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- if has_upsell and quick_add -%}
+  {{ 'product-quick-add-style.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-form-script.min.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- unless t == 'cart' -%}
+  <div
+    id="cart-drawer"
+    class="m-cart-drawer cart-drawer js-cart-drawer {% if cart == empty %} is-empty{% endif %}"
+    tabindex="-1"
+  >
+    <div class="m-cart-drawer__inner">
+      <div
+        class="m-cart-drawer__content grid grid--no-wrap u-color--{{ color_scheme }}"
+        role="dialog"
+        aria-modal="true"
+        aria-label="{{ 'sections.cart.title' | t }}"
+      >
+        <div class="m-cart-drawer__header grid grid--no-wrap grid--center-v">
+          <p class="m-cart-drawer__heading body-fs-lg">{{ 'sections.cart.title' | t }}</p>
+          <button
+            class="u-unstyled-btn m-cart-drawer__close js-cart-drawer-close"
+            type="button"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
+            {%- render 'icon-close' -%}
+          </button>
+        </div>
+
+        {%- if cart == empty -%}
+          <div class="m-cart-drawer__empty grid grid--center-v grid--center-h u-text-center">
+            <div class="m-cart-drawer__empty-content">
+              <p class="m-cart-drawer__empty-title h3">{{ 'sections.cart.empty' | t }}</p>
+              <a href="{{ routes.all_products_collection_url }}" class="a-link">
+                {{ 'general.continue_shopping' | t }}
+              </a>
+            </div>
+          </div>
+        {%- endif -%}
+
+        <div class="m-cart-drawer__items js-cart-drawer-items">
+          <form
+            action="{{ routes.cart_url }}"
+            id="cart-drawer-Form"
+            class="cart__contents cart-drawer__form"
+            method="post"
+          >
+            <div id="cart-drawer-cart-items" class="drawer__contents js-contents">
+              {%- if cart != empty -%}
+                <div class="m-cart-drawer__items">
+                  {%- for item in cart.items -%}
+                    {%- render 'cart-drawer-item', item: item -%}
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
+            </div>
+            <div id="cart-drawer-cart-errors" class="m-cart-drawer__error body-fs-sm" role="alert"></div>
+          </form>
+          {%- if has_upsell -%}
+            <div
+              class="m-cart-drawer__upsell u-color--{{ cart_upsell_color_scheme }}"
+            >
+              {%- if upsell_title != blank -%}
+                <p class="m-cart-drawer__upsell-heading body-fs-md">
+                  {{ upsell_title }}
+                </p>
+              {%- endif -%}
+              {%- if upsell_products != blank -%}
+                <div
+                  class="m-cart-drawer__upsell-items"
+                >
+                  {%- for p_upsell in upsell_products -%}
+                    {%- liquid
+                      assign placeholder_media_index = forloop.index0 | modulo: 6 | plus: 1
+                      assign placeholder_media = 'product-' | append: placeholder_media_index
+                    -%}
+                    {%- render 'product-card-simple',
+                      card_product: p_upsell,
+                      force_quick_add: true,
+                      enable_price: true,
+                      forced_quick_add_value: true,
+                      placeholder_media: placeholder_media
+                    -%}
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+
+        <div class="m-cart-drawer__footer">
+          {%- if settings.show_cart_note -%}
+            {%- render 'cart-note',
+              cart: cart,
+              class: 'm-cart-drawer__accordion',
+              id: 'cart-drawer-note',
+              form_attr: ''
+            -%}
+          {%- endif -%}
+
+          {%- render 'cart-drawer-totals', cart: cart -%}
+
+          <div class="m-cart-drawer__actions">
+            <button
+              type="submit"
+              id="cart-drawer-checkout"
+              class="m-cart-drawer__checkout-button a-btn a-btn--primary"
+              name="checkout"
+              form="cart-drawer-Form"
+              aria-label="{{ 'sections.cart.checkout' | t }}"
+              {% if cart == empty %}
+                disabled
+              {% endif %}
+            >
+              {{ 'sections.cart.checkout' | t }}
+            </button>
+            {%- if settings.enable_view_cart -%}
+              <a class="m-cart-drawer__view-cart a-link" href="{{ routes.cart_url }}">
+                {{- 'sections.cart.view_cart' | t -}}
+              </a>
+            {%- endif -%}
+          </div>
+
+          <div class="m-cart-drawer__tax-note rte body-fs-sm">
+            {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+              {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+            {%- elsif cart.taxes_included -%}
+              {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
+            {%- elsif shop.shipping_policy.body != blank -%}
+              {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+            {%- else -%}
+              {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cart-drawer-underlay" class="u-backdrop js-cart-drawer-close"></div>
+  </div>
+{%- endunless -%}

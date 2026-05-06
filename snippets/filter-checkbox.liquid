@@ -1,0 +1,79 @@
+{%- liquid
+  assign presentation = filter.presentation | default: 'text'
+  assign has_swatch = false
+
+  unless presentation == 'text'
+    assign has_swatch = true
+  endunless
+-%}
+
+<div
+  class="m-filter-drawer__filter m-accordion js-accordion js-filter"
+  id="filter-{{ forloop.index }}-{{ section.id }}"
+  data-index="{{ forloop.index }}"
+>
+  <div
+    class="m-filter-drawer__filter-label m-accordion__header js-accordion-trigger body-fs-sm"
+    tabindex="0"
+  >
+    <span>
+      {{- filter.label | escape }}
+    </span>
+    {%- render 'icon-plus' -%}
+  </div>
+  <div class="m-filter-drawer__filter-values m-accordion__content">
+    {%- for value in filter.values -%}
+      {%- liquid
+        assign swatch_focal_point = null
+        if value.swatch.image
+          assign image_url = value.swatch.image | image_url: width: 50
+          assign swatch_value = 'url(' | append: image_url | append: ')'
+          assign swatch_focal_point = value.swatch.image.presentation.focal_point
+        elsif value.swatch.color
+          assign swatch_value = 'rgb(' | append: value.swatch.color.rgb | append: ')'
+        else
+          assign swatch_value = null
+        endif
+      -%}
+      <div
+        class="m-filter-drawer__filter-value a-checkbox {% if has_swatch %}a-checkbox--has-swatch{% endif %} {% if value.count == 0 and value.active == false %}a-checkbox--disabled{% endif %}"
+      >
+        <input
+          type="checkbox"
+          class="a-checkbox__input"
+          name="{{ value.param_name }}"
+          value="{{ value.value }}"
+          id="filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+          {% if value.active %}
+            checked
+          {% endif %}
+          {% if value.count == 0 and value.active == false %}
+            disabled
+          {% endif %}
+        >
+        <label
+          for="filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+          class="a-checkbox__label a-checkbox__label--small"
+        >
+          {%- if has_swatch -%}
+            {%- render 'swatch',
+              swatch_value: swatch_value,
+              swatch_focal_point: swatch_focal_point,
+              swatch_size: '1.8rem'
+            -%}
+          {%- endif -%}
+          <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
+          <span class="visually-hidden">
+            {{- value.label | escape }} (
+            {%- if value.count == 1 -%}
+              {{- 'products.facets.product_count_simple.one' | t: count: value.count -}}
+            {%- else -%}
+              {{- 'products.facets.product_count_simple.other' | t: count: value.count -}}
+            {%- endif -%}
+            )</span
+          >
+        </label>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>

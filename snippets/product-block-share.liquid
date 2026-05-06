@@ -1,0 +1,53 @@
+{%- liquid
+  assign product_url = product.url | within: collection
+  unless product.has_only_default_variant
+    assign variant = product.selected_or_first_available_variant.id
+    assign product_url = product_url | append: '?variant=' | append: variant
+  endunless
+-%}
+
+<div
+  class="o-product__share grid grid--center-v a-spacing-content"
+  id="share-{{ section.id }}"
+  style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {{ block.shopify_attributes }}
+>
+  {%- if block.settings.share_label != blank -%}
+    <div class="o-product__share-label">{{ block.settings.share_label }}</div>
+  {%- endif -%}
+  <ul class="u-unstyled-list u-list-inline m-list-social">
+    <li class="m-list-social__item">
+      <a
+        class="m-list-social__link"
+        href="https://www.facebook.com/sharer.php?u={{ shop.url | append: product_url }}"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        {%- render 'icon-facebook' -%}
+      </a>
+    </li>
+    <li class="m-list-social__item">
+      <a
+        class="m-list-social__link"
+        href="https://x.com/share?text={{ product.title }}&amp;url={{ shop.url | append: product_url }}"
+        target="_blank"
+        rel="noopener"
+        aria-label="X"
+      >
+        {%- render 'icon-x' -%}
+      </a>
+    </li>
+    <li class="m-list-social__item">
+      <a
+        class="m-list-social__link"
+        href="https://pinterest.com/pin/create/button/?url={{ shop.url | append: product_url }}&amp;media={{ product.featured_image | image_url: width: product.featured_image.width }}&amp;description={{ product.title }}"
+        target="_blank"
+        rel="noopener"
+        aria-label="Pinterest"
+      >
+        {%- render 'icon-pinterest' -%}
+      </a>
+    </li>
+  </ul>
+</div>

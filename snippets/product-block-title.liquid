@@ -1,0 +1,7 @@
+<div
+  class="o-product__title a-spacing-content"
+  style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {{ block.shopify_attributes }}
+>
+  <h1 class="{{ block.settings.heading_size }}">{{ product.title | escape }}</h1>
+</div>

@@ -1,0 +1,171 @@
+{%- liquid
+  assign color_scheme = section.settings.color_scheme
+  assign main_menu = section.settings.main_menu
+  assign enable_invertion = settings.enable_invertion | default: true
+  assign navigation_type = settings.menu_type | default: 'mega'
+-%}
+
+<script src="{{ 'header-script.min.js' | asset_url }}" defer="defer"></script>
+<link rel="stylesheet" href="{{ 'header-sidebar-style.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{%- if settings.predictive_search_enabled -%}
+  <link rel="stylesheet" href="{{ 'price-style.css' | asset_url }}" media="print" onload="this.media='all'">
+  <noscript>{{ 'price-style.css' | asset_url | stylesheet_tag }}</noscript>
+{%- endif -%}
+
+<noscript>{{ 'header-sidebar-style.css' | asset_url | stylesheet_tag }}</noscript>
+
+<header
+  class="o-header o-section"
+  style="--main-nav-letter-case: {{ section.settings.menu_letter_case }};"
+  {% if enable_invertion %}
+    data-invert-enabled
+    data-invert-scheme="{{ settings.inverted_color_scheme }}"
+    data-original-scheme="{{ color_scheme }}"
+  {% endif %}
+>
+  <div class="o-header__inner">
+    <div class="o-header__main u-color--{{ color_scheme }}">
+      <div class="o-header__main-inner grid">
+        <div class="o-header__hamburger">
+          <button class="o-header__hamburger-btn js-hamburger" aria-label="{{ 'sections.header.menu' | t }}">
+            <span class="a-hamburger"><span></span></span>
+          </button>
+        </div>
+
+        {%- render 'header-logo', enable_invertion: false -%}
+
+        <div class="o-header__nav">
+          <a href="#utilities-menu" class="skip-to-content-link button visually-hidden">
+            {{ 'accessibility.skip_to_user_menu' | t }}
+          </a>
+          {%- render 'header-main-nav', main_menu: main_menu, enable_invertion: enable_invertion, section: section, navigation_type: navigation_type -%}
+        </div>
+
+        {%- render 'header-utilities-mobile' -%}
+      </div>
+    </div>
+  </div>
+</header>
+
+{%- liquid
+  render 'header-sidebar', main_menu: main_menu, color_scheme: color_scheme, section: section
+-%}
+
+{%- render 'header-seo-schema' -%}
+
+{% schema %}
+{
+  "name": "t:header.name",
+  "class": "section-header section-header-sticky",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.section.content"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:header.settings.color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "link_list",
+      "id": "main_menu",
+      "label": "t:header.settings.main_menu.label",
+      "default": "main-menu"
+    },
+    {
+      "type": "select",
+      "id": "menu_letter_case",
+      "label": "t:header.settings.menu_letter_case.label",
+      "options": [
+        {
+          "value": "uppercase",
+          "label": "t:header.settings.menu_letter_case.options.uppercase.label"
+        },
+        {
+          "value": "unset",
+          "label": "t:header.settings.menu_letter_case.options.unset.label"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_uncollapsed_nav_active_page",
+      "label": "t:header.settings.enable_uncollapsed_nav_active_page.label",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "promotions",
+      "name": "Promotions",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Navigation title",
+          "info": "Add a top-level navigation item title to add promotions to the mega menu."
+        },
+        {
+          "type": "header",
+          "content": "Promotion"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "image_ratio",
+          "label": "Image ratio",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "1x1",
+              "label": "1x1"
+            },
+            {
+              "value": "2x3",
+              "label": "2x3"
+            },
+            {
+              "value": "3x2",
+              "label": "3x2"
+            },
+            {
+              "value": "4x3",
+              "label": "4x3"
+            },
+            {
+              "value": "4x5",
+              "label": "4x5"
+            },
+            {
+              "value": "16x9",
+              "label": "16x9"
+            }
+          ],
+          "default": "1x1"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

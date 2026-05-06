@@ -1,0 +1,106 @@
+{%- comment -%}
+  Renders a link to return to the previous page
+
+  Usage:
+  {%- render 'breadcrumb', b_link: 'https://yourlink.be', b_label: 'your text', b_target_blank: true, type: 'light', breadcrumb_type: 'manual' -%}
+
+  Accepts:
+  - b_link: {String}
+  - b_label: {String}
+  - b_target_blank: {Boolean}
+  - type: {String}
+
+  If the theme settings is set to manual otherwise the automatic breadcrumbs will be visible
+{%- endcomment -%}
+<link rel="stylesheet" href="{{ 'breadcrumbs-style.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'breadcrumbs-style.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- liquid
+  assign t = template | split: '.' | first
+
+  assign breadcrumb_type = breadcrumb_type | default: 'automatic'
+
+  assign b_link = b_link | default: '/'
+  assign b_label = b_label | default: 'general.breadcrumbs.home' | t
+  assign b_target_blank = b_target_blank | default: false
+-%}
+
+<nav class="m-breadcrumbs" role="navigation" aria-label="breadcrumbs">
+  <ul class="m-breadcrumbs__list grid grid--center-v u-unstyled-list {{ additional_classes }}">
+    {%- if breadcrumb_type == 'manual' -%}
+      <li class="m-breadcrumbs__item m-breadcrumbs__item--manual">
+        <a
+          class="m-breadcrumbs__link"
+          href="{{ b_link }}"
+          {% if b_target_blank %}
+            target="_blank"
+          {% endif %}
+        >
+          <span class="m-breadcrumbs__chevron">
+            {%- render 'icon-chevron-left' -%}
+          </span>
+          <span>{{ b_label }}</span>
+        </a>
+      </li>
+    {%- else -%}
+      <li class="m-breadcrumbs__item">
+        <a class="m-breadcrumbs__link" href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
+      </li>
+      {%- case t -%}
+        {%- when 'page' -%}
+          <li class="m-breadcrumbs__chevron">&nbsp;/&nbsp;</li>
+          <li class="m-breadcrumbs__item">
+            <span class="m-breadcrumbs__link" aria-current="page">{{ page.title }}</span>
+          </li>
+        {%- when 'product' -%}
+          {%- if collection.url -%}
+            <li class="m-breadcrumbs__chevron">&nbsp;/&nbsp;</li>
+            <li class="m-breadcrumbs__item">
+              {{ collection.title | link_to: collection.url, class: 'm-breadcrumbs__link' }}
+            </li>
+          {%- endif -%}
+          <li class="m-breadcrumbs__chevron">&nbsp;/&nbsp;</li>
+          <li class="m-breadcrumbs__item">
+            <span class="m-breadcrumbs__link" aria-current="page">{{ product.title }}</span>
+          </li>
+        {%- when 'collection' -%}
+          {%- if collection.handle -%}
+            <li class="m-breadcrumbs__chevron">&nbsp;/&nbsp;</li>
+            <li class="m-breadcrumbs__item">
+              <span class="m-breadcrumbs__link" aria-current="page">{{ collection.title }}</span>
+            </li>
+          {%- endif -%}
+        {%- when 'blog' -%}
+          {%- if current_tags -%}
+            <li class="m-breadcrumbs__chevron">&nbsp;/&nbsp;</li>
+            <li class="m-breadcrumbs__item">
+              {{ blog.title | link_to: blog.url, class: 'm-breadcrumbs__link' }}
+            </li>
+            <li class="m-breadcrumbs__chevron">&nbsp;/&nbsp;</li>
+            <li class="m-breadcrumbs__item">
+              <span class="m-breadcrumbs__link" aria-current="page">{{ current_tags | join: ' + ' }}</span>
+            </li>
+          {%- else -%}
+            <li class="m-breadcrumbs__chevron">&nbsp;/&nbsp;</li>
+            <li class="m-breadcrumbs__item">
+              <span class="m-breadcrumbs__link" aria-current="page">{{ blog.title }}</span>
+            </li>
+          {%- endif -%}
+        {%- when 'article' -%}
+          <li class="m-breadcrumbs__chevron">&nbsp;/&nbsp;</li>
+          <li class="m-breadcrumbs__item">
+            {{ blog.title | link_to: blog.url, class: 'm-breadcrumbs__link' }}
+          </li>
+          <li class="m-breadcrumbs__chevron">&nbsp;/&nbsp;</li>
+          <li class="m-breadcrumbs__item">
+            <span class="m-breadcrumbs__link" aria-current="page">{{ article.title }}</span>
+          </li>
+        {%- else -%}
+          <li class="m-breadcrumbs__chevron">&nbsp;/&nbsp;</li>
+          <li class="m-breadcrumbs__item">
+            <span class="m-breadcrumbs__link" aria-current="page">{{ page_title }}</span>
+          </li>
+      {%- endcase -%}
+    {%- endif -%}
+  </ul>
+</nav>

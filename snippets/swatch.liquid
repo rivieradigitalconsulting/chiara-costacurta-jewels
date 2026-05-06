@@ -1,0 +1,9 @@
+<span
+  {% if swatch_value %}
+    class="a-swatch"
+    style="--swatch-background: {{ swatch_value }};{% if swatch_focal_point %} --swatch-focal-point: {{ swatch_focal_point }};{% endif %}{% if swatch_size %}--swatch-size: {{ swatch_size }};{% endif %} "
+  {% else %}
+    class="a-swatch a-swatch--unavailable"
+    style="{% if swatch_size %}--swatch-size: {{ swatch_size }};{% endif %}"
+  {% endif %}
+></span>

@@ -1,0 +1,204 @@
+{%- liquid
+  assign ratio = ratio
+  assign ratio_class = 'a-img__ratio--' | append: ratio
+  assign enable_autoplay_video_looping = enable_autoplay_video_looping
+  assign enable_zoom = enable_zoom
+  assign controls = true
+  assign enable_lazy_load = enable_lazy_load
+
+  if enable_autoplay_video_looping
+    assign controls = false
+  endif
+-%}
+
+{%- case media.media_type -%}
+  {%- when 'image' -%}
+    {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+    {%- capture sizes -%}
+      (min-width: 750px) calc((100vw) / 2), calc((100vw) / 2)
+    {%- endcapture -%}
+    {%- if enable_zoom -%}
+      {%- comment -%}
+        Width and height multipler to be adjusted on project level
+      {%- endcomment -%}
+      {%- liquid
+        assign image_width_zoom = media.image.width | times: 2
+        assign image_height_zoom = media.image.height | times: 2
+      -%}
+      <a
+        class="m-product-media__item m-product-media__image m-product-zoom swiper-slide"
+        data-media-id="{{ media.id }}"
+        href="{{ media | image_url: width: image_width_zoom, height: image_height_zoom }}"
+        data-pswp-width="{{ image_width_zoom }}"
+        data-pswp-height="{{ image_height_zoom }}"
+        target="_blank"
+        data-cropped="true"
+      >
+        {%- if enable_lazy_load -%}
+          {{
+            media
+            | image_url: width: 1024
+            | image_tag: class: ratio_class, loading: 'lazy', sizes: sizes, widths: widths, fetchpriority: 'auto'
+          }}
+        {%- else -%}
+          {{
+            media
+            | image_url: width: 1024
+            | image_tag: class: ratio_class, sizes: sizes, widths: widths, fetchpriority: 'auto', rel: 'preload'
+          }}
+        {%- endif -%}
+      </a>
+    {%- else -%}
+      <div
+        class="m-product-media__item m-product-media__image swiper-slide"
+        data-media-id="{{ media.id }}"
+      >
+        {%- if enable_lazy_load -%}
+          {{
+            media
+            | image_url: width: 1024
+            | image_tag: class: ratio_class, loading: 'lazy', sizes: sizes, widths: widths, fetchpriority: 'auto'
+          }}
+        {%- else -%}
+          {{
+            media
+            | image_url: width: 1024
+            | image_tag: class: ratio_class, sizes: sizes, widths: widths, fetchpriority: 'auto', rel: 'preload'
+          }}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  {%- when 'external_video' -%}
+    <div
+      class="m-product-media__item m-product-media__external-video swiper-slide"
+      data-media-id="{{ media.id }}"
+    >
+      {%- assign video_host_class = 'js-' | append: media.host -%}
+      {%- assign external_video_class = ratio_class | append: ' ' | append: video_host_class -%}
+      <div class="a-video__overlay">
+        <button
+          class="o-video__video-button a-video__play-button js-play-btn"
+          data-type="{{ media.host }}"
+          tabindex="0"
+          aria-label="{{ "accessibility.play" | t }}"
+        >
+          {%- render 'icon-play' -%}
+        </button>
+
+        {{
+          media.preview_image
+          | image_url: width: 1946
+          | image_tag:
+            loading: lazy,
+            sizes: sizes,
+            widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
+            loading: 'lazy',
+            fetchpriority: 'auto'
+        }}
+      </div>
+      {{ media | external_video_tag: class: external_video_class }}
+    </div>
+  {%- when 'video' -%}
+    <div
+      class="m-product-media__item m-product-media__video swiper-slide"
+      data-media-id="{{ media.id }}"
+    >
+      {%- liquid
+        assign video_class = ratio_class
+
+        unless enable_autoplay_video_looping
+          assign video_class = ratio_class | append: ' js-video'
+        endunless
+      -%}
+
+      {%- unless enable_autoplay_video_looping -%}
+        <div class="a-video__overlay">
+          <button
+            class="o-video__video-button a-video__play-button js-play-btn"
+            data-type="video"
+            tabindex="0"
+            aria-label="{{ "accessibility.play" | t }}"
+          >
+            {%- render 'icon-play' -%}
+          </button>
+          {{
+            media.preview_image
+            | image_url: width: 1946
+            | image_tag:
+              loading: lazy,
+              sizes: sizes,
+              widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
+              loading: 'lazy',
+              fetchpriority: 'auto'
+          }}
+        </div>
+      {%- endunless -%}
+
+      {{
+        media
+        | video_tag:
+          controls: controls,
+          autoplay: enable_autoplay_video_looping,
+          loop: enable_autoplay_video_looping,
+          muted: enable_autoplay_video_looping,
+          class: video_class,
+          image_size: '1100x'
+      }}
+    </div>
+
+  {%- when 'model' -%}
+    <div
+      class="m-product-media__item m-product-media__model swiper-slide"
+      data-media-id="{{ media.id }}"
+    >
+      <div class="a-video__overlay">
+        <button
+          class="o-video__video-button a-video__play-button js-play-btn"
+          data-type="model"
+          tabindex="0"
+          aria-label="{{ "accessibility.play" | t }}"
+        >
+          {%- render 'icon-3d-model' -%}
+        </button>
+      </div>
+      {%- assign placeholder_class = ratio_class | append: ' model-placeholder' -%}
+      {{
+        media.preview_image
+        | image_url: width: 1946
+        | image_tag:
+          loading: lazy,
+          sizes: sizes,
+          class: placeholder_class,
+          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
+          loading: 'lazy',
+          fetchpriority: 'auto'
+      }}
+
+      <template>
+        {%- assign model_class = ratio_class | append: ' js-model' -%}
+        {{ media | model_viewer_tag: class: model_class, toggleable: true }}
+      </template>
+
+      {%- if xr_button -%}
+        <button
+          class="a-btn a-btn--primary xr-button"
+          type="button"
+          aria-label="{{ 'products.product.xr_button_label' | t }}"
+          data-shopify-xr
+          data-shopify-model3d-id="{{ media.id }}"
+          data-shopify-title="{{ product.title | escape }}"
+          data-shopify-xr-hidden
+        >
+          {% render 'icon-3d-model' %}
+          {{ 'products.product.xr_button' | t }}
+        </button>
+      {%- endif -%}
+    </div>
+  {%- else -%}
+    <div
+      class="m-product-media__item m-product-media__media swiper-slide"
+      data-media-id="{{ media.id }}"
+    >
+      {{ media | media_tag: class: ratio_class }}
+    </div>
+{%- endcase -%}

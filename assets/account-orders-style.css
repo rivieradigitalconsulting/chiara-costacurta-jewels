@@ -1,0 +1,191 @@
+.m-account-orders {
+  margin-bottom: 1.6rem;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders {
+    margin-bottom: 3.2rem;
+  }
+}
+.m-account-orders__details {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgb(var(--color-border));
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__details {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+.m-account-orders__details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.m-account-orders__detail {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__detail:last-child .m-account-orders__detail-value {
+    text-align: right;
+  }
+}
+.m-account-orders__detail-label {
+  font-weight: 700;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__detail-label {
+    display: none;
+  }
+}
+.m-account-orders__detail-value {
+  flex-grow: 1;
+  text-align: right;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__detail-value {
+    text-align: left;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+.m-account-orders__detail-discounts {
+  padding-inline-start: 0rem;
+  margin-top: 0.5rem;
+}
+.m-account-orders__detail-discounts li {
+  font-size: var(--body-fs-sm);
+}
+.m-account-orders__detail-properties-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.m-account-orders__detail-discount-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__detail-discount-item {
+    justify-content: flex-start;
+  }
+}
+.m-account-orders__detail-discount-item .icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.m-account-orders__desktop-header {
+  display: none;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__desktop-header {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
+    background: rgb(var(--color-button));
+    color: rgb(var(--color-button-label));
+  }
+}
+.m-account-orders__desktop-header-item {
+  font-weight: 700;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__desktop-header-item {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__desktop-header-item:last-child {
+    text-align: right;
+  }
+}
+.m-account-orders__totals {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__totals {
+    padding: 1.6rem;
+  }
+}
+.m-account-orders__subtotal, .m-account-orders__shipping, .m-account-orders__tax, .m-account-orders__total {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  font-size: var(--body-fs-md);
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__subtotal, .m-account-orders__shipping, .m-account-orders__tax, .m-account-orders__total {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.m-account-orders__total {
+  font-size: var(--body-fs-lg);
+  margin-top: 2rem;
+}
+.m-account-orders__discounts {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  font-size: var(--body-fs-md);
+  margin: 0.5rem 0;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__discounts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.m-account-orders__discounts-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.m-account-orders__discounts-info .icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.m-account-orders__discounts-discount {
+  font-weight: 700;
+  text-align: right;
+}
+.m-account-orders__discounts-discount .cart-discount {
+  display: none;
+}
+.m-account-orders__table {
+  min-width: 64rem;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__table {
+    width: 88rem;
+  }
+}
+.m-account-orders__table-container {
+  overflow-x: scroll;
+}
+.m-account-orders__header {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+.m-account-orders__header-item {
+  padding-left: 0.8rem;
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__header-item {
+    padding-left: 1.6rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .m-account-orders__overview .m-account-orders__desktop-header,
+  .m-account-orders__overview .m-account-orders__details {
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+  }
+}

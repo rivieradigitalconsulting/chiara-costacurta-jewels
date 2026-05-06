@@ -1,0 +1,6 @@
+<span class="o-header-utilities__link-label">
+  {%- render 'icon-cart' -%}
+  {%- if cart != empty -%}
+    <span class="cart-inline-dot" aria-label="{{ cart.item_count }}"></span>
+  {%- endif -%}
+</span>

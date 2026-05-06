@@ -1,0 +1,263 @@
+{%- render '_styles-section', section: section -%}
+{%- liquid
+  assign color_scheme = section.settings.color_scheme
+  assign standard_color_scheme = settings.color_schemes['scheme-1']
+  assign cart_upsell_color_scheme = settings.cart_upsell_color_scheme
+
+  assign cart_type = 'drawer'
+
+  assign has_cart_note = settings.show_cart_note
+  assign has_upsell = settings.show_cart_upsell
+
+  assign upsell_title = settings.cart_upsell_title
+  assign upsell_products = settings.cart_upsell_products
+  assign quick_add = true
+
+  assign has_sticky_info = section.settings.enable_sticky_info
+-%}
+
+{{ 'main-cart-style.css' | asset_url | stylesheet_tag }}
+{{ 'cart-item-style.css' | asset_url | stylesheet_tag }}
+{{ 'price-style.css' | asset_url | stylesheet_tag }}
+
+{%- if has_cart_note and cart_type != 'drawer' -%}
+  {{ 'accordion-style.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'accordion-script.min.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- unless cart_type == 'drawer' -%}
+  <script src="{{ 'cart-script.min.js' | asset_url }}" defer="defer"></script>
+{%- endunless -%}
+
+{%- if has_upsell and cart_type != 'drawer' -%}
+  {{ 'product-card-style.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- if has_upsell and quick_add and cart_type != 'drawer' -%}
+  {{ 'product-quick-add-style.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-form-script.min.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<section
+  id="main-cart"
+  class="o-cart o-section {% if cart == empty %} is-empty{% endif %} u-color--{{ color_scheme }}"
+  data-section="{{ section.id }}"
+  {% if section.settings.invert_navigation_color %}
+    data-invert-navigation
+  {% endif %}
+  {% if section.settings.section_id != blank %}
+    id="{{ section.settings.section_id | handleize }}"
+  {% endif %}
+>
+  <div class="o-cart__inner o-section__constrict">
+    <div class="o-cart__breadcrumbs">
+      {%- render 'breadcrumbs' -%}
+    </div>
+    <div class="o-cart__content">
+      <div class="o-cart__heading">
+        <h1>{{ 'sections.cart.title' | t }}</h1>
+      </div>
+      <div class="o-cart__empty">
+        <h1>{{ 'sections.cart.empty' | t }}</h1>
+        <a href="{{ routes.all_products_collection_url }}" class="a-link">
+          {{ 'general.continue_shopping' | t }}
+        </a>
+      </div>
+      <div class="o-cart__grid grid grid--top-v">
+        <div class="o-cart__items js-cart-items grid__col-12 grid__col-xxl-8">
+          <form action="{{ routes.cart_url }}" id="cart" class="cart__contents" method="post">
+            <div id="main-cart-items" data-id="{{ section.id }}">
+              <div class="js-contents">
+                {%- if cart != empty -%}
+                  <div class="o-cart__products">
+                    {%- for item in cart.items -%}
+                      {%- render 'cart-item', item: item -%}
+                    {%- endfor -%}
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+            <div id="cart-errors" class="o-cart__error body-fs-sm" role="alert"></div>
+          </form>
+        </div>
+        <div
+          id="main-cart-summary"
+          class="o-cart__summary {% if has_sticky_info %}o-cart__summary--sticky{% endif %} grid__col-12 grid__col-xxl-4"
+        >
+          {%- if has_upsell -%}
+            {%- liquid
+              assign upsell_padding = false
+              if cart_upsell_color_scheme != color_scheme
+                assign upsell_padding = true
+              endif
+            -%}
+
+            <div class="o-cart__upsell {% if upsell_padding %}o-cart__upsell--padding{% endif %}  u-color--{{ cart_upsell_color_scheme }}">
+              {%- if upsell_title != blank -%}
+                <div class="o-cart__upsell-heading body-fs-md">
+                  {{ upsell_title }}
+                </div>
+              {%- endif -%}
+              {%- if upsell_products != blank -%}
+                <div class="o-cart__upsell-items">
+                  {%- for p_upsell in upsell_products -%}
+                    {%- liquid
+                      assign placeholder_media_index = forloop.index0 | modulo: 6 | plus: 1
+                      assign placeholder_media = 'product-' | append: placeholder_media_index
+                    -%}
+                    {%- render 'product-card-simple',
+                      card_product: p_upsell,
+                      force_quick_add: true,
+                      enable_price: true,
+                      forced_quick_add_value: true,
+                      placeholder_media: placeholder_media
+                    -%}
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+
+          {%- if has_cart_note -%}
+            {%- render 'cart-note',
+              cart: cart,
+              class: 'o-cart__accordion',
+              id: 'cart-note',
+              form_attr: 'form="cart"'
+            -%}
+          {%- endif -%}
+
+          <div class="o-cart__totals js-contents">
+            {%- render 'cart-totals', cart: cart -%}
+          </div>
+
+          <div class="o-cart__actions">
+            <button
+              type="submit"
+              id="cart-checkout"
+              class="o-cart__checkout-button a-btn a-btn--primary"
+              name="checkout"
+              form="cart"
+              aria-label="{{ 'sections.cart.checkout' | t }}"
+              {% if cart == empty %}
+                disabled
+              {% endif %}
+            >
+              {{ 'sections.cart.checkout' | t }}
+            </button>
+
+            {% if additional_checkout_buttons and settings.enable_cart_additional_checkout_buttons %}
+              <div class="o-cart__dynamic-checkout-buttons additional-checkout-buttons">
+                {{ content_for_additional_checkout_buttons }}
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="o-cart__tax-note rte body-fs-sm">
+            {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+              {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+            {%- elsif cart.taxes_included -%}
+              {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
+            {%- elsif shop.shipping_policy.body != blank -%}
+              {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+            {%- else -%}
+              {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
+            {%- endif -%}
+          </div>
+
+          <div id="cart-errors"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:cart.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.section.content"
+    },
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "t:sections.all.section_id.label",
+      "info": "t:sections.all.section_id.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.spacing.content"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.desktop.label",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.top.mobile.label",
+      "info": "t:sections.all.padding.top.mobile.info",
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.all.padding.bottom.mobile.label",
+      "info": "t:sections.all.padding.bottom.mobile.info",
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.color.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_navigation_color",
+      "label": "t:sections.all.invert_navigation_color.label",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:cart.settings.color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.headers.layout.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_info",
+      "label": "t:cart.settings.enable_sticky_info.label",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

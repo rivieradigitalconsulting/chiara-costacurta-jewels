@@ -1,0 +1,70 @@
+{%- liquid
+  assign classes = 'a-spacing-content ' | append: block.settings.caption_size | append: ' u-text-' | append: block.settings.caption_style
+
+  if block.settings.video != blank
+    assign classes = classes | append: ' a-video'
+  elsif block.settings.video_yt_url != blank
+    assign classes = classes | append: ' a-video__video-url'
+  endif
+
+  if block_class != blank
+    assign classes = classes | append: ' ' | append: block_class
+  endif
+
+  if settings.enable_animation and disable_animation != true
+    assign classes = classes | append: ' js-animation a-animation a-animation--fade-up'
+  endif
+
+  assign aspect_ratio_class = ''
+  if block.settings.image_ratio
+    assign aspect_ratio_class = 'a-img__ratio--' | append: block.settings.video_ratio
+    assign placeholder_media_classes = placeholder_media_classes | append: ' a-img__ratio--' | append: block.settings.image_ratio
+  endif
+-%}
+
+<div
+  class="{{ classes }}"
+  {% if block_styles %}
+    style="{{ block_styles | strip_newlines | remove: ' ' }}"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  {%- if block.settings.video -%}
+    {{
+      block.settings.video
+      | video_tag:
+        controls: video_controls,
+        autoplay: video_autoplay,
+        loop: video_autoplay,
+        class: aspect_ratio_class,
+        image_size: '1100x'
+    }}
+    {% unless video_autoplay %}
+      <div class="a-video__overlay">
+        <button
+          class="a-video__play-button"
+          tabindex="0"
+          aria-label="{{ "accessibility.play" | t }}"
+        >
+          {%- render 'icon-play' -%}
+        </button>
+      </div>
+    {% endunless %}
+  {%- elsif block.settings.video_yt_url != blank -%}
+    {%- if block.settings.video_yt_url.type == 'youtube' -%}
+      <iframe
+        src="https://www.youtube.com/embed/{{ block.settings.video_yt_url.id }}?enablejsapi=1"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        title="{{ block.settings.description | escape }}"
+      ></iframe>
+    {%- elsif block.settings.video_yt_url.type == 'vimeo' -%}
+      <iframe
+        src="https://player.vimeo.com/video/{{ block.settings.video_yt_url.id }}"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        title="{{ block.settings.description | escape }}"
+      ></iframe>
+    {%- endif -%}
+  {%- endif -%}
+</div>
