@@ -3188,6 +3188,29 @@
       },
       "enable_uncollapsed_nav_active_page": {
         "label": "Abilita la navigazione espansa in base alla pagina attiva"
+      },
+      "transparency_header": {
+        "content": "Trasparenza header"
+      },
+      "enable_header_transparency": {
+        "label": "Abilita trasparenza header",
+        "info": "L'header sarà trasparente al caricamento della pagina. Diventerà opaco al primo scroll verso il basso e tornerà trasparente quando si torna al top."
+      },
+      "transparent_url": {
+        "label": "Pagine con header trasparente",
+        "info": "Inserisci i path separati da virgola, oppure * per tutto il sito. Esempio: /,/collections/,/pages/about",
+      },
+      "header_transparency_text_color": {
+        "label": "Colore testo quando trasparente",
+        "info": "Scegli il colore del testo (hamburger, logo, menu) quando l'header è trasparente.",
+        "options": {
+          "light": {
+            "label": "Chiaro"
+          },
+          "dark": {
+            "label": "Scuro"
+          }
+        }
       }
     }
   },

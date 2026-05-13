@@ -4114,14 +4114,17 @@ button.swiper-pagination-bullet {
 .o-header__logo .a-logo__link img.o-header__logo-image-inverted {
   display: none;
 }
+.o-header__logo .a-logo__link.inverted img.o-header__logo-image-inverted {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: var(--inverted-opacity);
+}
 @media screen and (min-width: 1100px) {
-  .o-header__logo .a-logo__link img.o-header__logo-image-inverted {
-    z-index: 2;
-    display: block;
+  .o-header__logo .a-logo__link.inverted img.o-header__logo-image-inverted {
     position: absolute;
-    top: 0;
-    left: 0;
-    opacity: var(--inverted-opacity);
   }
 }
 .o-header__logo .a-logo__link .h3 {

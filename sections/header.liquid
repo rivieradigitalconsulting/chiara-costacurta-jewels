@@ -3,10 +3,30 @@
   assign main_menu = section.settings.main_menu
   assign enable_invertion = settings.enable_invertion | default: true
   assign navigation_type = settings.menu_type | default: 'mega'
+  assign stripped_urls_transparent = section.settings.transparent_url | replace: ' ', '' | split: ','
+  assign enable_header_transparency = false
+  if section.settings.enable_header_transparency
+    if section.settings.transparent_url == '*'
+      assign enable_header_transparency = true
+    else
+      for url in stripped_urls_transparent
+        if template.name == 'index' and url == '/'
+          assign enable_header_transparency = true
+          break
+        elsif request.path contains url and url != '/'
+          assign enable_header_transparency = true
+          break
+        endif
+      endfor
+    endif
+  endif
+  assign header_transparency_text_color = section.settings.header_transparency_text_color
 -%}
 
 <script src="{{ 'header-script.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'header-transparency-script.js' | asset_url }}" defer="defer"></script>
 <link rel="stylesheet" href="{{ 'header-sidebar-style.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'header-transparency-style.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'price-style.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -14,10 +34,13 @@
 {%- endif -%}
 
 <noscript>{{ 'header-sidebar-style.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'header-transparency-style.css' | asset_url | stylesheet_tag }}</noscript>
 
 <header
   class="o-header o-section"
   style="--main-nav-letter-case: {{ section.settings.menu_letter_case }};"
+  data-transparent-enabled="{{ enable_header_transparency }}"
+  data-transparent-text-color="{{ header_transparency_text_color }}"
   {% if enable_invertion %}
     data-invert-enabled
     data-invert-scheme="{{ settings.inverted_color_scheme }}"
@@ -25,7 +48,7 @@
   {% endif %}
 >
   <div class="o-header__inner">
-    <div class="o-header__main u-color--{{ color_scheme }}">
+    <div class="o-header__main js-header-main u-color--{{ color_scheme }}"{% if enable_header_transparency %} data-transparent{% endif %} data-transparent-text-color="{{ header_transparency_text_color }}">
       <div class="o-header__main-inner grid">
         <div class="o-header__hamburger">
           <button class="o-header__hamburger-btn js-hamburger" aria-label="{{ 'sections.header.menu' | t }}">
@@ -33,7 +56,7 @@
           </button>
         </div>
 
-        {%- render 'header-logo', enable_invertion: false -%}
+        {%- render 'header-logo', enable_invertion: enable_invertion -%}
 
         <div class="o-header__nav">
           <a href="#utilities-menu" class="skip-to-content-link button visually-hidden">
@@ -96,6 +119,40 @@
       "id": "enable_uncollapsed_nav_active_page",
       "label": "t:header.settings.enable_uncollapsed_nav_active_page.label",
       "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:header.settings.transparency_header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_header_transparency",
+      "label": "t:header.settings.enable_header_transparency.label",
+      "info": "t:header.settings.enable_header_transparency.info",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "transparent_url",
+      "label": "t:header.settings.transparent_url.label",
+      "info": "t:header.settings.transparent_url.info"
+    },
+    {
+      "type": "select",
+      "id": "header_transparency_text_color",
+      "label": "t:header.settings.header_transparency_text_color.label",
+      "info": "t:header.settings.header_transparency_text_color.info",
+      "options": [
+        {
+          "value": "light",
+          "label": "t:header.settings.header_transparency_text_color.options.light.label"
+        },
+        {
+          "value": "dark",
+          "label": "t:header.settings.header_transparency_text_color.options.dark.label"
+        }
+      ],
+      "default": "light"
     }
   ],
   "blocks": [
