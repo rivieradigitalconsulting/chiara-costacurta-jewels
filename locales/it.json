@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -137,7 +146,7 @@
       "vendor": "Venditore",
       "xr_button": "Visualizza nel tuo spazio",
       "xr_button_label": "Visualizza nel tuo spazio, carica l'articolo in una finestra di realtà aumentata",
-      "include_taxes": "Tasse incluse.",
+      "include_taxes": "",
       "shipping_policy_html": "<a href=\"{{ link }}\">Spedizione</a> calcolata al checkout."
     },
     "facets": {
