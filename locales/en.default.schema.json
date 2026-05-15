@@ -709,6 +709,21 @@
       "product_card_alignment": {
         "label": "Text alignment"
       },
+      "card_images_background": {
+        "label": "Card images background"
+      },
+      "card_text_size_mobile": {
+        "label": "Mobile card text size"
+      },
+      "card_text_size_desktop": {
+        "label": "Desktop card text size"
+      },
+      "card_collection_color": {
+        "label": "Card collection color"
+      },
+      "card_description_color": {
+        "label": "Card description color"
+      },
       "product_card_enable_quick_add": {
         "label": "Enable quick add"
       },

@@ -473,6 +473,44 @@
         "default": "left"
       },
       {
+        "type": "color",
+        "id": "card_images_background",
+        "label": "t:product_card.settings.card_images_background.label",
+        "default": "#F5F2ED"
+      },
+      {
+        "type": "range",
+        "id": "card_text_size_mobile",
+        "min": 10,
+        "max": 15,
+        "step": 1,
+        "unit": "px",
+        "label": "t:product_card.settings.card_text_size_mobile.label",
+        "default": 12
+      },
+      {
+        "type": "range",
+        "id": "card_text_size_desktop",
+        "min": 10,
+        "max": 15,
+        "step": 1,
+        "unit": "px",
+        "label": "t:product_card.settings.card_text_size_desktop.label",
+        "default": 12
+      },
+      {
+        "type": "color",
+        "id": "card_collection_color",
+        "label": "t:product_card.settings.card_collection_color.label",
+        "default": "#202020"
+      },
+      {
+        "type": "color",
+        "id": "card_description_color",
+        "label": "t:product_card.settings.card_description_color.label",
+        "default": "#202020"
+      },
+      {
         "type": "select",
         "id": "product_hover_behavior",
         "label": "t:product_card.settings.product_hover_behavior.label",

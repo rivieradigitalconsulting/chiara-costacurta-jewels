@@ -643,6 +643,21 @@
       "product_card_alignment": {
         "label": "Allineamento del testo"
       },
+      "card_images_background": {
+        "label": "Sfondo immagini card"
+      },
+      "card_text_size_mobile": {
+        "label": "Dimensione testo card a mobile"
+      },
+      "card_text_size_desktop": {
+        "label": "Dimensione testo card a desktop"
+      },
+      "card_collection_color": {
+        "label": "Colore collezione card"
+      },
+      "card_description_color": {
+        "label": "Colore descrizione card"
+      },
       "product_hover_behavior": {
         "label": "Comportamento al passaggio del mouse",
         "options": {
