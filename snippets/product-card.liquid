@@ -46,6 +46,16 @@
   endif
 
   assign widths = '165, 360, 535, 750, 1070, 1500'
+
+  assign images_background = settings.card_images_background
+  assign card_text_size_mobile = settings.card_text_size_mobile
+  assign card_text_size_desktop = settings.card_text_size_desktop
+  assign card_collection_color = settings.card_collection_color
+  assign card_description_color = settings.card_description_color
+  assign show_collection = false
+  if template.name == 'collection' and collection.metafields.plp.show_collection == true
+    assign show_collection = true
+  endif
 -%}
 
 {%- capture sizes -%}
@@ -137,6 +147,11 @@
     <a href="{{ card_product.url | within: collection }}" class="m-product-card__url">
   {%- endif -%}
   <div class="m-product-card__content {% if padded_content %}m-product-card__content--padded{% endif %} u-text-{{ settings.product_card_alignment }}">
+    {%- if card_product.metafields.pdp.collezione.value != blank and show_collection -%}
+      <div class="m-product-card__collection">
+        {{ card_product.metafields.pdp.collezione.value | first }}
+      </div>
+    {%- endif -%}
     <h3 class="m-product-card__heading product-title" {{ block.shopify_attributes }}>
       {%- if placeholder_product -%}
         {{ 'products.product.default.product_title' | t }}
@@ -144,6 +159,11 @@
         {{ card_product.title | escape }}
       {%- endif -%}
     </h3>
+    {%- if card_product.metafields.pdp.descrizione_breve != blank -%}
+      <div class="m-product-card__description">
+        {{ card_product.metafields.pdp.descrizione_breve }}
+      </div>
+    {%- endif -%}
     <div class="m-product-card__price" id="price-{{ combined_section_id }}">
       {%- render 'price', product: card_product, price_class: 'm-price--sm', use_variant: use_variant -%}
     </div>
@@ -155,3 +175,31 @@
     </a>
   {%- endunless -%}
 </div>
+
+{% style %}
+  .m-product-card__image .swiper-slide {
+    background-color: {{ images_background }};
+  }
+  .m-product-card__image .swiper-slide img {
+    mix-blend-mode: multiply;
+  }
+
+  .m-product-card__content * {
+    font-size: {{ card_text_size_mobile }}px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .m-product-card__content * {
+      font-size: {{ card_text_size_desktop }}px;
+    }
+  }
+
+  .m-product-card__collection {
+    color: {{ card_collection_color }};
+    text-transform: uppercase;
+  }
+
+  .m-product-card__description {
+    color: {{ card_description_color }};
+  }
+{% endstyle %}

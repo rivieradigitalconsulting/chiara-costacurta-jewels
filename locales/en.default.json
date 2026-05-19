@@ -94,6 +94,7 @@
   "products": {
     "product": {
       "add_to_cart": "Add to cart",
+      "available_on_order": "Available on order",
       "preorder": "Pre-order",
       "choose_options": "Choose options",
       "select_options": "Select your options",

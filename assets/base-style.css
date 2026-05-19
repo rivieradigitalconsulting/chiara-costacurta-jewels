@@ -324,7 +324,7 @@ p:first-of-type {
   font-family: var(--ff-primary);
   font-size: var(--product-title-fs);
   line-height: var(--product-title-lh);
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: 0;
 }
 
@@ -1538,6 +1538,15 @@ body.no-scroll {
   font-weight: 600;
   font-size: var(--body-fs-sm);
   line-height: var(--body-lh-sm);
+}
+.a-badge--available_on_order {
+  padding: 4px 8px;
+  border: 1px solid;
+  border-color: var(--color-black);
+  color: var(--color-black);
+  font-weight: 300;
+  line-height: 100%;
+  font-size: 14px;
 }
 
 .a-btn, .shopify-challenge__container .btn, .m-product-form .shopify-payment-button__button--unbranded {
@@ -3108,10 +3117,10 @@ button.swiper-pagination-bullet {
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: var(--swiper-navigation-top-offset, 50%);
+  top: calc(100% - 28px);
   width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
-  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
+  /* margin-top: calc(0px - var(--swiper-navigation-size) / 2); */
   z-index: 10;
   cursor: pointer;
   display: flex;
@@ -3212,7 +3221,8 @@ button.swiper-pagination-bullet {
 }
 .m-swiper .m-swiper__arrow {
   width: auto;
-  height: 2.5rem;
+  height: 11px;
+  width: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
