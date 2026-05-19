@@ -8,6 +8,15 @@
 
   assign badge_color = blank
 
+  assign all_on_order = true
+
+  for v in product.variants
+    unless v.metafields.pdp.disponibilita_su_ordinazione.value == true
+      assign all_on_order = false
+      break
+    endunless
+  endfor
+
   assign listed_badges = settings.product_badges_names | split: '++'
 
   if product_availability
@@ -38,6 +47,11 @@
   else
     assign product_badge = 'sold-out'
     assign product_badge_value = 'products.product.sold_out' | t
+  endif
+
+  if all_on_order
+    assign product_badge = 'available_on_order'
+    assign product_badge_value = 'products.product.available_on_order' | t
   endif
 
   if block != blank

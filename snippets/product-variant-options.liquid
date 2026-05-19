@@ -33,6 +33,9 @@
 -%}
 
 {%- for value in option.values -%}
+  <script>
+    console.log({{ variants_option1_arr | json }});
+  </script>
   {%- liquid
     assign option_disabled = true
 

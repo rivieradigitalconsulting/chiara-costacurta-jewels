@@ -1539,6 +1539,15 @@ body.no-scroll {
   font-size: var(--body-fs-sm);
   line-height: var(--body-lh-sm);
 }
+.a-badge--available_on_order {
+  padding: 4px 8px;
+  border: 1px solid;
+  border-color: var(--color-black);
+  color: var(--color-black);
+  font-weight: 300;
+  line-height: 100%;
+  font-size: 14px;
+}
 
 .a-btn, .shopify-challenge__container .btn, .m-product-form .shopify-payment-button__button--unbranded {
   padding: 1.4rem 2.4rem;
