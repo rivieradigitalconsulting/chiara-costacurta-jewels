@@ -16,6 +16,15 @@
   background-image: none;
   box-shadow: none;
 }
+/* On desktop, override: always show the header normally on load.
+   JS will re-add the class only on mobile via scroll logic. */
+@media screen and (min-width: 1100px) {
+  .o-header__main.is-transparent {
+    background-color: revert;
+    background-image: revert;
+    box-shadow: revert;
+  }
+}
 
 /* Light text */
 .o-header__main.has-transparent-text-light {
@@ -30,6 +39,16 @@
 
 .o-header__main.has-transparent-text-light .js-logo-to-invert {
   color: #ffffff;
+}
+@media screen and (max-width: 1099px) {
+  .o-header__main.has-transparent-text-light .js-logo-to-invert img.o-header__logo-image-regular{
+    opacity: 0;
+    display: none;
+  }
+  .o-header__main.has-transparent-text-light .js-logo-to-invert img.o-header__logo-image-inverted {
+    opacity: 1;
+    display: block;
+  }
 }
 
 .o-header__main.has-transparent-text-light .m-main-nav a,

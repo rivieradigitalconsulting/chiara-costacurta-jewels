@@ -3263,20 +3263,12 @@
         "info": "The header will be transparent on page load. It will become opaque on the first scroll down and return to transparent when scrolling back to the top."
       },
       "transparent_url": {
-        "label": "Pages with transparent header",
-        "info": "Enter paths separated by commas, or * for the entire site. Example: /,/collections/,/pages/about",
+        "label": "Pages with transparent header and light elements",
+        "info": "Enter paths separated by commas, or * for the entire site. Example: /,/pages/about",
       },
-      "header_transparency_text_color": {
-        "label": "Text color when transparent",
-        "info": "Choose the text color (hamburger, logo, menu) when the header is transparent.",
-        "options": {
-          "light": {
-            "label": "Light"
-          },
-          "dark": {
-            "label": "Dark"
-          }
-        }
+      "transparent_url_dark": {
+        "label": "Pages with transparent header and dark elements",
+        "info": "Enter paths separated by commas, or * for the entire site. Example: /,/pages/about",
       }
     }
   },

@@ -13,39 +13,24 @@
   let updateTransparency = null;
 
   function init() {
-    const headerElement = document.querySelector('[data-transparent-enabled]');
     const headerMain = document.querySelector('.js-header-main');
+    if (!headerMain) return;
 
-    if (!headerElement || !headerMain) return;
-
-    const transparentEnabled = headerElement.getAttribute('data-transparent-enabled') === 'true';
-    const transparentTextColor = headerElement.getAttribute('data-transparent-text-color') || 'light';
-    const logoLink = document.querySelector('.js-logo-to-invert');
+    const transparentEnabled = headerMain.getAttribute('data-transparent-enabled') === 'true';
+    const transparentTextColor = headerMain.getAttribute('data-transparent-text-color') || 'light';
     const textColorClass = TEXT_COLOR_CLASS_PREFIX + transparentTextColor;
 
     if (!transparentEnabled) return;
 
-    function applyTransparency() {
-      headerMain.classList.add(TRANSPARENT_CLASS, textColorClass);
-      if (logoLink && isMobile() && transparentTextColor === 'light') {
-        logoLink.classList.add('inverted');
-      }
-    }
-
-    function removeTransparency() {
-      headerMain.classList.remove(TRANSPARENT_CLASS, textColorClass);
-      if (logoLink) logoLink.classList.remove('inverted');
-    }
-
+    // On mobile: toggle transparency based on scroll position.
+    // On desktop: always remove — the minified script handles inversion there.
     updateTransparency = function () {
       if (isMobile() && window.scrollY <= SCROLL_THRESHOLD) {
-        applyTransparency();
+        headerMain.classList.add(TRANSPARENT_CLASS, textColorClass);
       } else {
-        removeTransparency();
+        headerMain.classList.remove(TRANSPARENT_CLASS, textColorClass);
       }
     };
-
-    updateTransparency();
 
     window.addEventListener('scroll', updateTransparency, { passive: true });
     window.addEventListener('resize', updateTransparency, { passive: true });
