@@ -4,7 +4,9 @@
   assign enable_invertion = settings.enable_invertion | default: true
   assign navigation_type = settings.menu_type | default: 'mega'
   assign stripped_urls_transparent = section.settings.transparent_url | replace: ' ', '' | split: ','
+  assign stripped_urls_transparent_dark = section.settings.transparent_url_dark | replace: ' ', '' | split: ','
   assign enable_header_transparency = false
+  assign header_transparency_text_color = 'light'
   if section.settings.enable_header_transparency
     if section.settings.transparent_url == '*'
       assign enable_header_transparency = true
@@ -19,8 +21,23 @@
         endif
       endfor
     endif
+    if section.settings.transparent_url_dark == '*'
+      assign enable_header_transparency = true
+      assign header_transparency_text_color = 'dark'
+    else
+      for url in stripped_urls_transparent_dark
+        if template.name == 'index' and url == '/'
+          assign enable_header_transparency = true
+          assign header_transparency_text_color = 'dark'
+          break
+        elsif request.path contains url and url != '/'
+          assign enable_header_transparency = true
+          assign header_transparency_text_color = 'dark'
+          break
+        endif
+      endfor
+    endif
   endif
-  assign header_transparency_text_color = section.settings.header_transparency_text_color
 -%}
 
 <script src="{{ 'header-script.min.js' | asset_url }}" defer="defer"></script>
@@ -48,7 +65,9 @@
   {% endif %}
 >
   <div class="o-header__inner">
-    <div class="o-header__main js-header-main u-color--{{ color_scheme }}"{% if enable_header_transparency %} data-transparent{% endif %} data-transparent-text-color="{{ header_transparency_text_color }}">
+    <div class="o-header__main js-header-main u-color--{{ color_scheme }}{%- if enable_header_transparency %} is-transparent has-transparent-text-{{ header_transparency_text_color }}{%- endif -%}"
+      data-transparent-text-color="{{ header_transparency_text_color }}"
+      data-transparent-enabled="{{ enable_header_transparency }}">
       <div class="o-header__main-inner grid">
         <div class="o-header__hamburger">
           <button class="o-header__hamburger-btn js-hamburger" aria-label="{{ 'sections.header.menu' | t }}">
@@ -138,21 +157,10 @@
       "info": "t:header.settings.transparent_url.info"
     },
     {
-      "type": "select",
-      "id": "header_transparency_text_color",
-      "label": "t:header.settings.header_transparency_text_color.label",
-      "info": "t:header.settings.header_transparency_text_color.info",
-      "options": [
-        {
-          "value": "light",
-          "label": "t:header.settings.header_transparency_text_color.options.light.label"
-        },
-        {
-          "value": "dark",
-          "label": "t:header.settings.header_transparency_text_color.options.dark.label"
-        }
-      ],
-      "default": "light"
+      "type": "text",
+      "id": "transparent_url_dark",
+      "label": "t:header.settings.transparent_url_dark.label",
+      "info": "t:header.settings.transparent_url_dark.info"
     }
   ],
   "blocks": [
