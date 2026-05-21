@@ -11,6 +11,19 @@
   }
 }
 
+@media screen and (max-width: 1099px) {
+  .o-header[data-transparent-enabled="true"] .a-hamburger span {
+    transition-delay: 0s, 0s;
+    transition-duration: 0s;
+
+  }
+  .o-header[data-transparent-enabled="true"] .a-hamburger::before, .o-header[data-transparent-enabled="true"] .a-hamburger::after {
+    content: "";
+    transition-delay: 0s, 0s, 0s;
+    transition-duration: 0s;
+  }
+}
+
 .o-header__main.is-transparent {
   background-color: transparent;
   background-image: none;
