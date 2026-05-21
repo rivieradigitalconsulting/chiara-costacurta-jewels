@@ -96,9 +96,9 @@
 .m-product-card__content--padded {
   padding: 1rem;
 }
-.m-product-card__content .m-price {
+/* .m-product-card__content .m-price {
   margin-top: 0.5rem;
-}
+} */
 .m-product-card__content.u-text-center .m-price__sale {
   justify-content: center;
 }

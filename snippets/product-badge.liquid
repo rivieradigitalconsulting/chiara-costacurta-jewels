@@ -70,3 +70,12 @@
     {{ product_badge_value }}
   </div>
 {%- endif -%}
+
+{% style %}
+  .a-badge--available_on_order {
+    font-size: {{ settings.available_on_order_badge_font_size }}px;
+    color: {{ settings.available_on_order_badge_text_color }};
+    border-color: {{ settings.available_on_order_badge_border_color }};
+    background-color: {{ settings.available_on_order_badge_background_color }};
+  }
+{% endstyle %}
