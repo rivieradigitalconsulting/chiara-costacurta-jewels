@@ -47,26 +47,14 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Per informazioni, creazioni su misura o assistenza dedicata, il nostro team è a completa disposizione.</p><p><strong>Come possiamo aiutarti?</strong></p><p>Per assistenza immediata o richieste personalizzate, il team Chiara Costacurta è a completa disposizione.</p><p><strong>Contatti:</strong><br/><a href=\"mailto:info@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:info@chiaracostacurta.com\">info@chiaracostacurta.com</a></p><p><strong>Ufficio Stampa e PR:<br/></strong><a href=\"mailto:commerciale@chiaracostacurta.com\" title=\"mailto:commerciale@chiaracostacurta.com\">commerciale@chiaracostacurta.com</a></p><p><strong>Orari di Assistenza:</strong><br/>Lunedì — Venerdì: dalle 10:00 alle 18:00<br/>Sabato — Domenica: Chiuso <br/>Esclusi i giorni festivi.</p><p><strong>Vieni in Atelier<br/></strong>Ti invitiamo a visitare il nostro atelier a Milano, dove potrai scoprire le collezioni e incontrare il team. Per garantire un’esperienza dedicata, chiediamo gentilmente di riservare un appuntamento.<br/><br/><a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15 — 20121 Milano</a></p>",
-            "text_size": "body-fs-sm"
-          }
-        },
-        "paragraph_B9BdGK": {
-          "type": "paragraph",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "text": "<p><strong>Studio Hours:</strong><br/>Tuesday – Thursday: 10:30am – 6pm EST<br/>Friday – Saturday: 10:30am – 6:30pm EST</p><p><em>We welcome appointments for private consultations and in-studio viewings. Experience the collection in a space curated for quiet, intentional elegance.</em></p>",
+            "text": "<p>Per informazioni, creazioni su misura o assistenza dedicata, il nostro team è a completa disposizione.</p><p><strong>Come possiamo aiutarti?</strong></p><p>Per assistenza immediata o richieste personalizzate, il team Chiara Costacurta è a completa disposizione.</p><p><strong>Contatti:</strong><br/><a href=\"mailto:info@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:info@chiaracostacurta.com\">info@chiaracostacurta.com</a></p><p><strong>Ufficio Stampa e PR:<br/></strong><a href=\"mailto:commerciale@chiaracostacurta.com\" title=\"mailto:commerciale@chiaracostacurta.com\">commerciale@chiaracostacurta.com</a></p><p><strong>Orari di Assistenza:</strong><br/>Lunedì — Venerdì: dalle 10:00 alle 18:00<br/>Sabato — Domenica: Chiuso <br/>Esclusi i giorni festivi.</p><p><strong>Vieni in Atelier<br/></strong>Ti invitiamo a visitare il nostro atelier a Milano, dove potrai scoprire le collezioni e incontrare il team. Per garantire un’esperienza dedicata, chiediamo gentilmente di riservare un appuntamento.<br/><br/><a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15 — 20121 Milano<br/><br/></a><strong>Atelier</strong>:<br/><a href=\"mailto:atelier@chiaracostacurta.com\" target=\"_blank\"><span style=\"text-decoration:underline\">atelier@chiaracostacurta.com<br/><br/></span></a>Prima di inoltrare una richiesta, invitiamo a consultare la nostra sezione <span style=\"text-decoration:underline\">FAQ</span> per trovare risposte immediate alle domande più frequenti su spedizioni, resi e ordini.</p>",
             "text_size": "body-fs-sm"
           }
         }
       },
       "block_order": [
         "heading",
-        "paragraph",
-        "paragraph_B9BdGK"
+        "paragraph"
       ],
       "settings": {
         "section_id": "",
