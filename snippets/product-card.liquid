@@ -50,6 +50,7 @@
   assign images_background = settings.card_images_background
   assign card_text_size_mobile = settings.card_text_size_mobile
   assign card_text_size_desktop = settings.card_text_size_desktop
+  assign card_text_line_height = settings.card_text_line_height
   assign card_collection_color = settings.card_collection_color
   assign card_description_color = settings.card_description_color
   assign show_collection = false
@@ -186,6 +187,7 @@
 
   .m-product-card__content * {
     font-size: {{ card_text_size_mobile }}px;
+    line-height: {{ settings.card_text_line_height | divided_by: 10.0 }};
   }
 
   @media screen and (min-width: 768px) {
