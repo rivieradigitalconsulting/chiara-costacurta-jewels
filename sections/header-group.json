@@ -1,1 +1,64 @@
-{"name":"Header","type":"header","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement-block-1":{"type":"announcement","settings":{"title":"10% di sconto con iscrizione alla Newsletter","link":""}}},"block_order":["announcement-block-1"],"custom_css":[".o-announcement-bar__text {font-size: 14px;}"],"settings":{"color_scheme":"scheme-2","display_mode":"slider","show_only_on_homepage":false,"hide_homepage":false}},"header":{"type":"header","settings":{"color_scheme":"scheme-bef3b841-52e0-4dae-a7b0-d41f1ceccafe","main_menu":"main-menu","menu_letter_case":"unset","enable_uncollapsed_nav_active_page":false}},"header-utilities":{"type":"header-utilities","settings":{"color_scheme":"scheme-1","menu_letter_case":"unset","menu_display_as":"text"}}},"order":["announcement-bar","header","header-utilities"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "Header",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-block-1": {
+          "type": "announcement",
+          "settings": {
+            "title": "10% di sconto con iscrizione alla Newsletter",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-block-1"
+      ],
+      "custom_css": [
+        ".o-announcement-bar__text {font-size: 14px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "display_mode": "slider",
+        "show_only_on_homepage": false,
+        "hide_homepage": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "color_scheme": "scheme-bef3b841-52e0-4dae-a7b0-d41f1ceccafe",
+        "main_menu": "main-menu",
+        "menu_letter_case": "unset",
+        "enable_uncollapsed_nav_active_page": false,
+        "enable_header_transparency": true,
+        "transparent_url": "/products",
+        "transparent_url_dark": "/"
+      }
+    },
+    "header-utilities": {
+      "type": "header-utilities",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "menu_letter_case": "unset",
+        "menu_display_as": "text"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "header-utilities"
+  ]
+}
