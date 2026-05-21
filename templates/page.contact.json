@@ -91,7 +91,7 @@
         "form_size": 6,
         "form_position": "left",
         "content_alignment": "left",
-        "show_phone": false
+        "show_phone": true
       }
     }
   },
