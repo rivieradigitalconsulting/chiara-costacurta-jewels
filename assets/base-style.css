@@ -2576,14 +2576,14 @@ input[type=search]::-webkit-search-results-decoration {
 .a-hamburger span {
   transform: scale(1, 1);
   transform-origin: top left;
-  transition-delay: 0.4s, 0.1s;
+  transition-delay: 0.4s, 0.3s;
   transition-duration: 0.2s;
   transition-property: transform, background-color;
   transition-timing-function: ease-in-out;
 }
 .a-hamburger::before, .a-hamburger::after {
   content: "";
-  transition-delay: 0s, 0.2s, 0.1s;
+  transition-delay: 0s, 0.2s, 0.3s;
   transition-duration: 0.2s;
   transition-property: transform, top, background-color;
   transition-timing-function: ease-in-out;
