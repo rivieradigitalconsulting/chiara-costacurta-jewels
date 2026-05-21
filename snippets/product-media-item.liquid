@@ -202,3 +202,12 @@
       {{ media | media_tag: class: ratio_class }}
     </div>
 {%- endcase -%}
+
+{%- style -%}
+  .m-product-media__image {
+    background-color: {{ settings.card_images_background }};
+  }
+  .m-product-media__image img {
+    mix-blend-mode: multiply;
+  }
+{%- endstyle -%}

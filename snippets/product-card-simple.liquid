@@ -59,9 +59,19 @@
     </div>
 
     <div class="m-product-card__content">
+      {%- if card_product.metafields.pdp.collezione.value != blank -%}
+        <div class="mproduct-card__collection">
+          {{ card_product.metafields.pdp.collezione.value | first }}
+        </div>
+      {%- endif -%}
       <h3 class="m-product-card__heading product-title" {{ block.shopify_attributes }}>
         {{ card_product.title | escape }}
       </h3>
+      {%- if card_product.metafields.pdp.descrizione_breve != blank -%}
+        <div class="product-card__description">
+          {{ card_product.metafields.pdp.descrizione_breve }}
+        </div>
+      {%- endif -%}
       {%- if show_price -%}
         <div class="m-product-card__info grid grid--center-v body-fs-xs grid--right-h">
           <div class="m-product-card__price" id="price-{{ combined_section_id }}">

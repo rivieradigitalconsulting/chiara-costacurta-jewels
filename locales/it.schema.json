@@ -643,6 +643,25 @@
       "product_card_alignment": {
         "label": "Allineamento del testo"
       },
+      "card_images_background": {
+        "label": "Sfondo immagini card"
+      },
+      "card_text_size_mobile": {
+        "label": "Dimensione testo card a mobile"
+      },
+      "card_text_size_desktop": {
+        "label": "Dimensione testo card a desktop"
+      },
+      "card_text_line_height": {
+        "label": "Interlinea testo card prodotto",
+        "info": "Usa valori da 10 a 30, dove 10 = 1.0 di line-height e 30 = 3.0 di line-height."
+      },
+      "card_collection_color": {
+        "label": "Colore collezione card"
+      },
+      "card_description_color": {
+        "label": "Colore descrizione card"
+      },
       "product_hover_behavior": {
         "label": "Comportamento al passaggio del mouse",
         "options": {
@@ -663,6 +682,9 @@
       "header": {
         "badges": {
           "content": "Distintivi"
+        },
+        "available_on_order_badge": {
+          "content": "Badge disponibile su ordinazione"
         }
       },
       "product_card_show_badges": {
@@ -671,6 +693,18 @@
       "product_badges_names": {
         "label": "Inserisci i nomi dei badge",
         "info": "Inserisci il tag del badge seguito da un : e seguito dal testo che desideri mostrare nel badge. Più tag badge sono divisi per    Ad esempio: badge-new:Nuovo arrivo  badge-exclusive:Esclusivo"
+      },
+      "available_on_order_badge_font_size": {
+        "label": "Dimensione font badge Disponibile su ordinazione"
+      },
+      "available_on_order_badge_text_color": {
+        "label": "Colore del testo del badge Disponibile su ordinazione"
+      },
+      "available_on_order_badge_border_color": {
+        "label": "Colore del bordo del badge disponibile su ordinazione"
+      },
+      "available_on_order_badge_background_color": {
+        "label": "Colore dello sfondo del badge disponibile su ordinazione"
       }
     }
   },

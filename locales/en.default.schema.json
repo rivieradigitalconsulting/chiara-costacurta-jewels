@@ -709,6 +709,25 @@
       "product_card_alignment": {
         "label": "Text alignment"
       },
+      "card_images_background": {
+        "label": "Card images background"
+      },
+      "card_text_size_mobile": {
+        "label": "Mobile card text size"
+      },
+      "card_text_size_desktop": {
+        "label": "Desktop card text size"
+      },
+      "card_text_line_height": {
+        "label": "Product card text line height",
+        "info": "Use values from 10 to 30, where 10 = 1.0 line-height and 30 = 3.0 line-height."
+      },
+      "card_collection_color": {
+        "label": "Card collection color"
+      },
+      "card_description_color": {
+        "label": "Card description color"
+      },
       "product_card_enable_quick_add": {
         "label": "Enable quick add"
       },
@@ -729,6 +748,9 @@
       "header": {
         "badges": {
           "content": "Badges"
+        },
+        "available_on_order_badge": {
+          "content": "Available on order badge"
         }
       },
       "product_card_show_badges": {
@@ -737,6 +759,18 @@
       "product_badges_names": {
         "label": "Enter the badge names",
         "info": "Enter the badge tag followed by a : and followed by the text you want to show in the badge. Multiple badge tags are divided by ++ For example: badge-new:New arrival++badge-exclusive:Exclusive"
+      },
+      "available_on_order_badge_font_size": {
+        "label": "Available on order badge font size"
+      },
+      "available_on_order_badge_text_color": {
+        "label": "Available on order badge text color"
+      },
+      "available_on_order_badge_border_color": {
+        "label": "Available on order badge border color"
+      },
+      "available_on_order_badge_background_color": {
+        "label": "Available on order badge background color"
       }
     }
   },
