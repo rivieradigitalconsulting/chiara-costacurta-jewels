@@ -3189,6 +3189,25 @@
       },
       "enable_uncollapsed_nav_active_page": {
         "label": "Habilitar navegación expandida basada en la página activa"
+      },
+      "transparency_header": {
+        "content": "Transparencia del encabezado"
+      },
+      "enable_header_transparency": {
+        "label": "Habilitar transparencia del encabezado",
+        "info": "El encabezado será transparente al cargar la página. Se volverá opaco en el primer desplazamiento hacia abajo y volverá a ser transparente al desplazarse hacia arriba."
+      },
+      "header_transparency_text_color": {
+        "label": "Color del texto cuando es transparente",
+        "info": "Elige el color del texto (hamburger, logo, menú) cuando el encabezado es transparente.",
+        "options": {
+          "light": {
+            "label": "Claro"
+          },
+          "dark": {
+            "label": "Oscuro"
+          }
+        }
       }
     }
   },

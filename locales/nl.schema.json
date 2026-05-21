@@ -3188,6 +3188,25 @@
       },
       "enable_uncollapsed_nav_active_page": {
         "label": "Uitgeklapte navigatie inschakelen op basis van actieve pagina"
+      },
+      "transparency_header": {
+        "content": "Header-transparantie"
+      },
+      "enable_header_transparency": {
+        "label": "Header-transparantie inschakelen",
+        "info": "De header is transparant bij het laden van de pagina. Het wordt ondoorzichtig bij de eerste scroll naar beneden en wordt weer transparant bij het terugscrollen naar boven."
+      },
+      "header_transparency_text_color": {
+        "label": "Tekstkleur wanneer transparant",
+        "info": "Kies de tekstkleur (hamburger, logo, menu) wanneer de header transparant is.",
+        "options": {
+          "light": {
+            "label": "Licht"
+          },
+          "dark": {
+            "label": "Donker"
+          }
+        }
       }
     }
   },

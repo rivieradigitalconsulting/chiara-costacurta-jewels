@@ -1,0 +1,98 @@
+/* Transition always active on header */
+.o-header__main {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Transparent state */
+@media screen and (max-width: 1099px) {
+  .o-header[data-transparent-enabled="true"] {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .o-header[data-transparent-enabled="true"] .a-hamburger span {
+    transition-delay: 0s, 0s;
+    transition-duration: 0s;
+
+  }
+  .o-header[data-transparent-enabled="true"] .a-hamburger::before, .o-header[data-transparent-enabled="true"] .a-hamburger::after {
+    content: "";
+    transition-delay: 0s, 0s, 0s;
+    transition-duration: 0s;
+  }
+}
+
+.o-header__main.is-transparent {
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+}
+/* On desktop, override: always show the header normally on load.
+   JS will re-add the class only on mobile via scroll logic. */
+@media screen and (min-width: 1100px) {
+  .o-header__main.is-transparent {
+    background-color: revert;
+    background-image: revert;
+    box-shadow: revert;
+  }
+}
+
+/* Light text */
+.o-header__main.has-transparent-text-light {
+  color: #ffffff;
+}
+
+.o-header__main.has-transparent-text-light .o-header__hamburger-btn .a-hamburger span,
+.o-header__main.has-transparent-text-light .o-header__hamburger-btn .a-hamburger:before,
+.o-header__main.has-transparent-text-light .o-header__hamburger-btn .a-hamburger:after {
+  background-color: #ffffff;
+}
+
+.o-header__main.has-transparent-text-light .js-logo-to-invert {
+  color: #ffffff;
+}
+@media screen and (max-width: 1099px) {
+  .o-header__main.has-transparent-text-light .js-logo-to-invert img.o-header__logo-image-regular{
+    opacity: 0;
+    display: none;
+  }
+  .o-header__main.has-transparent-text-light .js-logo-to-invert img.o-header__logo-image-inverted {
+    opacity: 1;
+    display: block;
+  }
+}
+
+.o-header__main.has-transparent-text-light .m-main-nav a,
+.o-header__main.has-transparent-text-light .m-main-nav button {
+  color: #ffffff;
+}
+
+.o-header__main.has-transparent-text-light .m-header-utilities__item a,
+.o-header__main.has-transparent-text-light .m-header-utilities__item button {
+  color: #ffffff;
+}
+
+/* Dark text */
+.o-header__main.has-transparent-text-dark {
+  color: #000000;
+}
+
+.o-header__main.has-transparent-text-dark .o-header__hamburger-btn {
+  color: #000000;
+}
+
+.o-header__main.has-transparent-text-dark .js-logo-to-invert {
+  color: #000000;
+}
+
+.o-header__main.has-transparent-text-dark .m-main-nav a,
+.o-header__main.has-transparent-text-dark .m-main-nav button {
+  color: #000000;
+}
+
+.o-header__main.has-transparent-text-dark .m-header-utilities__item a,
+.o-header__main.has-transparent-text-dark .m-header-utilities__item button {
+  color: #000000;
+}

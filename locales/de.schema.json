@@ -3189,6 +3189,25 @@
       },
       "enable_uncollapsed_nav_active_page": {
         "label": "Navigation basierend auf der aktiven Seite ausklappen"
+      },
+      "transparency_header": {
+        "content": "Header-Transparenz"
+      },
+      "enable_header_transparency": {
+        "label": "Header-Transparenz aktivieren",
+        "info": "Der Header ist beim Laden der Seite transparent. Er wird beim ersten Herunterscrollen undurchsichtig und kehrt beim Zurückscrollen nach oben wieder transparent."
+      },
+      "header_transparency_text_color": {
+        "label": "Textfarbe wenn transparent",
+        "info": "Wählen Sie die Textfarbe (Hamburger, Logo, Menü) aus, wenn der Header transparent ist.",
+        "options": {
+          "light": {
+            "label": "Hell"
+          },
+          "dark": {
+            "label": "Dunkel"
+          }
+        }
       }
     }
   },

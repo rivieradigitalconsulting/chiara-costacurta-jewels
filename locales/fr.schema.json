@@ -3188,6 +3188,25 @@
       },
       "enable_uncollapsed_nav_active_page": {
         "label": "Activer la navigation déroulée en fonction de la page active"
+      },
+      "transparency_header": {
+        "content": "Transparence de l'en-tête"
+      },
+      "enable_header_transparency": {
+        "label": "Activer la transparence de l'en-tête",
+        "info": "L'en-tête sera transparent au chargement de la page. Il deviendra opaque au premier défilement vers le bas et reviendra transparent lors du retour en haut."
+      },
+      "header_transparency_text_color": {
+        "label": "Couleur du texte quand transparent",
+        "info": "Choisissez la couleur du texte (hamburger, logo, menu) lorsque l'en-tête est transparent.",
+        "options": {
+          "light": {
+            "label": "Clair"
+          },
+          "dark": {
+            "label": "Sombre"
+          }
+        }
       }
     }
   },
