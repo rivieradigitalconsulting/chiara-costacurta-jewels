@@ -14,13 +14,13 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 40,
-        "section_padding_bottom_desktop": 40,
+        "section_padding_bottom_desktop": 20,
         "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 20,
+        "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
         "column_width": 12,
-        "content_position": "center",
+        "content_position": "left",
         "content_alignment": "center",
         "heading_size": "h2",
         "text_size": "body-fs-sm"
@@ -44,9 +44,9 @@
           "type": "paragraph",
           "settings": {
             "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 50,
+            "block_spacing_bottom_desktop": 70,
             "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
+            "block_spacing_bottom_mobile": 60,
             "text": "<p>Per informazioni, creazioni su misura o assistenza dedicata, il nostro team è a completa disposizione.</p><p><strong>Come possiamo aiutarti?</strong></p><p>Per assistenza immediata o richieste personalizzate, il team Chiara Costacurta è a completa disposizione.</p>",
             "text_size": "body-fs-sm"
           }
@@ -61,23 +61,35 @@
             "text": "<p><strong>Contatti:</strong><br/><a href=\"mailto:info@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:info@chiaracostacurta.com\">info@chiaracostacurta.com<br/></a><a href=\"tel:+39 345 6979437\" target=\"_blank\" title=\"tel:+39 345 6979437\">+39 345 6979437<br/></a><br/><a href=\"https://wa.me/+393456979437\" target=\"_blank\" title=\"https://wa.me/+393456979437\">Chat diretta di Whatsapp</a> →<br/></p><p><strong>Ufficio Stampa e PR:<br/></strong><a href=\"mailto:commerciale@chiaracostacurta.com\" title=\"mailto:commerciale@chiaracostacurta.com\">commerciale@chiaracostacurta.com</a></p><p><strong>Orari di Assistenza:</strong><br/>Lunedì — Venerdì: dalle 10:00 alle 18:00<br/>Sabato — Domenica: Chiuso <br/>Esclusi i giorni festivi.</p><p><strong>Vieni in Atelier<br/></strong>Ti invitiamo a visitare il nostro atelier a Milano, dove potrai scoprire le collezioni e incontrare il team. Per garantire un’esperienza dedicata, chiediamo gentilmente di riservare un appuntamento.<br/><br/><a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15 — 20121 Milano</a> →<a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\"><br/></a></p><p><strong>Atelier</strong>:<br/><a href=\"mailto:atelier@chiaracostacurta.com\" target=\"_blank\"><span style=\"text-decoration:underline\">atelier@chiaracostacurta.com</span></a></p>",
             "text_size": "body-fs-sm"
           }
+        },
+        "paragraph_mcWPQ4": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 70,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 60,
+            "block_spacing_bottom_mobile": 60,
+            "text": "<p>Prima di inoltrare una richiesta, invitiamo a consultare la nostra sezione <span style=\"text-decoration:underline\">FAQ</span> per trovare risposte immediate alle domande più frequenti su spedizioni, resi e ordini.</p>",
+            "text_size": "body-fs-sm"
+          }
         }
       },
       "block_order": [
         "heading",
         "paragraph_ayXW9R",
-        "paragraph"
+        "paragraph",
+        "paragraph_mcWPQ4"
       ],
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_bottom_mobile": 60,
         "invert_navigation_color": false,
         "color_scheme": "",
         "form_size": 6,
-        "form_position": "right",
+        "form_position": "left",
         "content_alignment": "left",
         "show_phone": false
       }
