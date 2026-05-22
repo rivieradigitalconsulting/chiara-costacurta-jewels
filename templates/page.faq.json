@@ -321,8 +321,8 @@
           "type": "accordion_item",
           "settings": {
             "icon": "plus",
-            "title": "Quali sono i costi e i tempi di spedizione?",
-            "content": "<p>In Italia la consegna standard avviene in 1-2 giorni lavorativi ed è sempre gratuita. Per tutti i dettagli consulta la pagina <a href=\"/pages/ordini-spedizioni\" target=\"_blank\" title=\"Ordini & Spedizioni\">Ordini & Spedizioni.</a></p>"
+            "title": "Posso effettuare un reso direttamente presso l’atelier?",
+            "content": "<p>Sì, è possibile richiedere il reso via e-mail e, una volta confermato dal nostro team, effettuare la restituzione gratuitamente presso il nostro atelier di <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15 — Milano</a>, entro 14 giorni dalla consegna. Chiediamo gentilmente di comunicarcelo in anticipo via e-mail. </p>"
           }
         },
         "accordion_item_z7WbCK": {
