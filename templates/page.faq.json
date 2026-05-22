@@ -103,11 +103,38 @@
             "title": "In quale confezione riceverò il mio ordine?",
             "content": "<p>Tutte le creazioni Chiara Costacurta sono accuratamente confezionate a mano e consegnate all’interno del nostro packaging ufficiale, comprensivo di garanzia di autenticità del gioiello e specifiche dei materiali e delle pietre preziose utilizzate.</p>"
           }
+        },
+        "accordion_item_XUEzLg": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "È possibile scegliere una data/ora di consegna?",
+            "content": "<p>No, non è possibile scegliere una data o un'ora specifica. Puoi provare a contattare direttamente il corriere per concordare una data di consegna.</p>"
+          }
+        },
+        "accordion_item_ktmH3A": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Come posso prendermi cura del mio gioiello Chiara Costacurta?",
+            "content": "<p>Consigliamo di conservare ogni gioiello separatamente, così da preservarne la superficie ed evitare graffi. Per la pulizia quotidiana, è sufficiente immergerlo in acqua tiepida e sapone neutro e asciugarlo delicatamente con un panno morbido. Per preservare la brillantezza delle pietre preziose, è preferibile evitare il contatto con sostanze corrosive come alcool, acetone o candeggina.</p>"
+          }
+        },
+        "accordion_item_yrCj3c": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Come faccio a trovare la misura giusta per anelli e bracciali?",
+            "content": "<p>Sul sito è disponibile una guida alle misure per aiutarti a scegliere quella più adatta a te. Se hai dubbi, puoi <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\">contattarci</a> prima dell'acquisto: saremo felici di guidarti nella scelta.</p>"
+          }
         }
       },
       "block_order": [
         "accordion_item_1",
-        "accordion_item_2"
+        "accordion_item_2",
+        "accordion_item_XUEzLg",
+        "accordion_item_ktmH3A",
+        "accordion_item_yrCj3c"
       ],
       "settings": {
         "section_id": "heading-2",
