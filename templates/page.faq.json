@@ -454,7 +454,7 @@
         "section_padding_top_desktop": 20,
         "section_padding_bottom_desktop": 180,
         "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_bottom_mobile": 120,
         "invert_navigation_color": false,
         "color_scheme": "",
         "column_width": 10,
