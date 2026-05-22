@@ -152,11 +152,80 @@
         "text": "",
         "text_size": "body-fs-sm"
       }
+    },
+    "accordion_EDVCrn": {
+      "type": "accordion",
+      "blocks": {
+        "accordion_item_DtwTxT": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Dove si trova il vostro Atelier?",
+            "content": "<p>Il nostro atelier si trova nel cuore di Milano, in <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15 — 20121 MI</a>. </p>"
+          }
+        },
+        "accordion_item_GyppGb": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "In quale confezione riceverò il mio ordine?",
+            "content": "<p>Tutte le creazioni Chiara Costacurta sono accuratamente confezionate a mano e consegnate all’interno del nostro packaging ufficiale, comprensivo di garanzia di autenticità del gioiello e specifiche dei materiali e delle pietre preziose utilizzate.</p>"
+          }
+        },
+        "accordion_item_8t6DfU": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "È possibile scegliere una data/ora di consegna?",
+            "content": "<p>No, non è possibile scegliere una data o un'ora specifica. Puoi provare a contattare direttamente il corriere per concordare una data di consegna.</p>"
+          }
+        },
+        "accordion_item_FLTKFf": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Come posso prendermi cura del mio gioiello Chiara Costacurta?",
+            "content": "<p>Consigliamo di conservare ogni gioiello separatamente, così da preservarne la superficie ed evitare graffi. Per la pulizia quotidiana, è sufficiente immergerlo in acqua tiepida e sapone neutro e asciugarlo delicatamente con un panno morbido. Per preservare la brillantezza delle pietre preziose, è preferibile evitare il contatto con sostanze corrosive come alcool, acetone o candeggina.</p>"
+          }
+        },
+        "accordion_item_YUQf9y": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Come faccio a trovare la misura giusta per anelli e bracciali?",
+            "content": "<p>Sul sito è disponibile una guida alle misure per aiutarti a scegliere quella più adatta a te. Se hai dubbi, puoi <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\">contattarci</a> prima dell'acquisto: saremo felici di guidarti nella scelta.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_DtwTxT",
+        "accordion_item_GyppGb",
+        "accordion_item_8t6DfU",
+        "accordion_item_FLTKFf",
+        "accordion_item_YUQf9y"
+      ],
+      "settings": {
+        "section_id": "heading-2",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "heading": "Atelier",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm"
+      }
     }
   },
   "order": [
     "main",
     "accordion_1",
-    "accordion_2"
+    "accordion_2",
+    "accordion_EDVCrn"
   ]
 }
