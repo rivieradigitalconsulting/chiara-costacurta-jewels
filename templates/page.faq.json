@@ -433,6 +433,38 @@
         "text": "",
         "text_size": "body-fs-sm"
       }
+    },
+    "accordion_UdYPAd": {
+      "type": "accordion",
+      "blocks": {
+        "accordion_item_xFze7y": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Come posso contattare il vostro team?",
+            "content": "<p>Puoi contattare il team Chiara Costacurta nei seguenti modi:</p><p>Scrivendo una e-mail all’indirizzo generale: <a href=\"mailto:info@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:info@chiaracostacurta.com\">info@chiaracostacurta.com</a> </p><p>Scrivendo un messaggio o messaggio whatsapp al numero: <a href=\"tel:+39 345 6979437\" target=\"_blank\" title=\"tel:+39 345 6979437\">+39 345 6979437</a></p><p>Il nostro team è disponibile dal lunedì al venerdì, dalle 10:00 alle 18:00 (esclusi i giorni festivi). Ci impegniamo a rispondere entro 24-48 ore lavorative.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_xFze7y"
+      ],
+      "settings": {
+        "section_id": "heading-2",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 180,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "heading": "Assistenza",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm"
+      }
     }
   },
   "order": [
@@ -442,6 +474,7 @@
     "accordion_EDVCrn",
     "accordion_CLf6iz",
     "accordion_zqd379",
-    "accordion_hLzeRt"
+    "accordion_hLzeRt",
+    "accordion_UdYPAd"
   ]
 }
