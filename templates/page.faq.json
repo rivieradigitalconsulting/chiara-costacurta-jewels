@@ -382,48 +382,32 @@
           "type": "accordion_item",
           "settings": {
             "icon": "plus",
-            "title": "Entro quando posso effettuare un reso?",
-            "content": "<p>Puoi richiedere un reso entro 14 giorni dalla data di consegna, comunicandolo via e-mail a <a href=\"mailto:atelier@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:atelier@chiaracostacurta.com\"><span style=\"text-decoration:underline\">atelier@chiaracostacurta.com</span></a> e seguendo la procedura di reso online dedicata. Gli articoli devono essere restituiti integri, inutilizzati e nella confezione originale.</p>"
+            "title": "Quali metodi di pagamento accettate?",
+            "content": "<p>ccettiamo carta di credito (Visa, Mastercard, American Express, Maestro, Postepay, Union Pay), PayPal, Klarna, Apple Pay, Google Pay e bonifico bancario.</p>"
           }
         },
         "accordion_item_YqqXHX": {
           "type": "accordion_item",
           "settings": {
             "icon": "plus",
-            "title": "Come posso effettuare un reso online?",
-            "content": "<p>Accedi alla tua area personale, individua l'ordine nella sezione Ordini e avvia la procedura guidata. Attendi l'approvazione della richiesta: riceverai una conferma via e-mail non appena il reso sarà stato approvato. Una volta approvata la richiesta, dovrai provvedere autonomamente alla spedizione del reso al seguente indirizzo: <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli 15, 20121 Milano (MI)</a>. Puoi utilizzare il corriere che preferisci, purché la spedizione sia tracciata e il fornitore del servizio ti fornisca un numero di tracciamento. Per maggiori dettagli consulta la pagina <a href=\"/pages/resi-rimborsi\" target=\"_blank\" title=\"Resi & Rimborsi\">Resi & Rimborsi</a>.</p>"
+            "title": "Posso pagare a rate?",
+            "content": "<p>Sì, tramite PayPal e Klarna puoi suddividere il pagamento in rate senza interessi. Seleziona l'opzione desiderata al momento del checkout per maggiori dettagli.</p>"
           }
         },
         "accordion_item_6pMWqh": {
           "type": "accordion_item",
           "settings": {
             "icon": "plus",
-            "title": "Posso effettuare un reso direttamente presso l’atelier?",
-            "content": "<p>Sì, è possibile richiedere il reso via e-mail e, una volta confermato dal nostro team, effettuare la restituzione gratuitamente presso il nostro atelier di <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15 — Milano</a>, entro 14 giorni dalla consegna. Chiediamo gentilmente di comunicarcelo in anticipo via e-mail. </p>"
+            "title": "Quando viene addebitato il pagamento?",
+            "content": "<p>L'importo viene addebitato al momento della conferma dell'ordine. Riceverai un'email di conferma non appena il pagamento sarà andato a buon fine.</p>"
           }
         },
         "accordion_item_iK7p8g": {
           "type": "accordion_item",
           "settings": {
             "icon": "plus",
-            "title": "Il reso è gratuito?",
-            "content": "<p>Il reso online in Italia ha un costo fisso di € 8,00 che verrà detratto dal rimborso. Per i resi internazionali le spese di spedizione sono a carico del cliente. Il reso presso il nostro atelier è invece completamente gratuito.</p>"
-          }
-        },
-        "accordion_item_tpEiz9": {
-          "type": "accordion_item",
-          "settings": {
-            "icon": "plus",
-            "title": "Quanto tempo ci vuole per ricevere il rimborso?",
-            "content": "<p>Una volta ricevuto e verificato il reso, elaboreremo il rimborso entro 5-7 giorni lavorativi. L'importo verrà accreditato sullo stesso metodo di pagamento utilizzato al momento dell'acquisto. I tempi di accredito possono variare in base al circuito bancario o al provider di pagamento.</p>"
-          }
-        },
-        "accordion_item_mzCc7T": {
-          "type": "accordion_item",
-          "settings": {
-            "icon": "plus",
-            "title": "Posso cambiare la misura di un articolo?",
-            "content": "<p>Ti invitiamo a contattarci scrivendo una mail a <a href=\"mailto:atelier@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:atelier@chiaracostacurta.com\">atelier@chiaracostacurta.com</a>: valuteremo insieme la soluzione più adatta. Consigliamo sempre di consultare la nostra guida alle misure prima di effettuare l’acquisto.</p>"
+            "title": "I miei dati di pagamento sono al sicuro?",
+            "content": "<p>Sì. Tutti i pagamenti sono protetti da protocolli di sicurezza SSL e sistemi di crittografia dei dati. Chiara Costacurta non registra né conserva i dati delle carte di credito. Per ulteriori informazioni consulta la nostra Privacy Policy.</p>"
           }
         }
       },
@@ -431,9 +415,7 @@
         "accordion_item_AkLrVz",
         "accordion_item_YqqXHX",
         "accordion_item_6pMWqh",
-        "accordion_item_iK7p8g",
-        "accordion_item_tpEiz9",
-        "accordion_item_mzCc7T"
+        "accordion_item_iK7p8g"
       ],
       "settings": {
         "section_id": "heading-2",
@@ -446,7 +428,7 @@
         "column_width": 10,
         "content_position": "center",
         "content_alignment": "center",
-        "heading": "Resi & Rimborsi",
+        "heading": "Pagamenti",
         "heading_size": "h3",
         "text": "",
         "text_size": "body-fs-sm"
