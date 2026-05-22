@@ -243,8 +243,8 @@
           "type": "accordion_item",
           "settings": {
             "icon": "plus",
-            "title": "In cosa consiste la Piercing Station?",
-            "content": "<p>La Piercing Station è un servizio dedicato che unisce consulenza, piercing e alta gioielleria. Proponiamo una selezione di gioielli da piercing in oro 585/1000 e diamanti naturali, applicati contestualmente al foro durante un appuntamento personalizzato con la nostra piercer specializzata. Il servizio è attualmente disponibile il mercoledì, dalle 10.00 alle 18.00.</p>"
+            "title": "Posso ordinare online e ritirare il pacco presso il vostro Atelier?",
+            "content": "<p>Sì, durante il checkout potrai scegliere di effettuare il ritiro presso il nostro atelier di <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">via Fatebenefratelli, 15 a Milano</a>. Il servizio è gratuito e la disponibilità è prevista in 24-48 ore. Riceverai una notifica via e-mail non appena il tuo ordine sarà pronto per il ritiro.</p>"
           }
         }
       },
