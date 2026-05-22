@@ -329,32 +329,24 @@
           "type": "accordion_item",
           "settings": {
             "icon": "plus",
-            "title": "Posso ordinare online e ritirare il pacco presso il vostro Atelier?",
-            "content": "<p>Sì, durante il checkout potrai scegliere di effettuare il ritiro presso il nostro atelier di <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">via Fatebenefratelli, 15 a Milano</a>. Il servizio è gratuito e la disponibilità è prevista in 24-48 ore. Riceverai una notifica via e-mail non appena il tuo ordine sarà pronto per il ritiro.</p>"
+            "title": "Il reso è gratuito?",
+            "content": "<p>Il reso online in Italia ha un costo fisso di € 8,00 che verrà detratto dal rimborso. Per i resi internazionali le spese di spedizione sono a carico del cliente. Il reso presso il nostro atelier è invece completamente gratuito.</p>"
           }
         },
         "accordion_item_gP3RFR": {
           "type": "accordion_item",
           "settings": {
             "icon": "plus",
-            "title": "Posso modificare o annullare un ordine?",
-            "content": "<p>Puoi richiedere la modifica o la cancellazione di un ordine contattandoci il prima possibile a <a href=\"mailto:info@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:info@chiaracostacurta.com\">info@chiaracostacurta.com</a> o per telefono al <a href=\"tel:+39 345 6979437\" target=\"_blank\" title=\"tel:+39 345 6979437\">+39 345 6979437</a>. Possiamo intervenire solo se l'ordine non è ancora stato preso in carico per la preparazione. Una volta avviata la spedizione non sarà più possibile apportare modifiche.</p>"
+            "title": "Quanto tempo ci vuole per ricevere il rimborso?",
+            "content": "<p>Una volta ricevuto e verificato il reso, elaboreremo il rimborso entro 5-7 giorni lavorativi. L'importo verrà accreditato sullo stesso metodo di pagamento utilizzato al momento dell'acquisto. I tempi di accredito possono variare in base al circuito bancario o al provider di pagamento.</p>"
           }
         },
         "accordion_item_RzCjRd": {
           "type": "accordion_item",
           "settings": {
             "icon": "plus",
-            "title": "Come posso tracciare il mio ordine?",
-            "content": "<p>Non appena il tuo ordine sarà spedito, riceverai un'e-mail con il numero di tracking e un link diretto al portale del corriere. Puoi monitorare lo stato della spedizione in qualsiasi momento anche dalla tua area personale.</p>"
-          }
-        },
-        "accordion_item_pDBAHN": {
-          "type": "accordion_item",
-          "settings": {
-            "icon": "plus",
-            "title": "Sono un cliente extra-UE: i prezzi includono dazi e tasse doganali?",
-            "content": "<p>No, eventuali dazi doganali e tasse d'importazione sono a carico del cliente e verranno richiesti dal corriere secondo le normative locali vigenti. Questi oneri non sono inclusi nel totale dell'ordine.</p>"
+            "title": "Posso cambiare la misura di un articolo?",
+            "content": "<p>Ti invitiamo a contattarci scrivendo una mail a <a href=\"mailto:atelier@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:atelier@chiaracostacurta.com\">atelier@chiaracostacurta.com</a>: valuteremo insieme la soluzione più adatta. Consigliamo sempre di consultare la nostra guida alle misure prima di effettuare l’acquisto.</p>"
           }
         }
       },
@@ -364,8 +356,7 @@
         "accordion_item_zdUPkg",
         "accordion_item_z7WbCK",
         "accordion_item_gP3RFR",
-        "accordion_item_RzCjRd",
-        "accordion_item_pDBAHN"
+        "accordion_item_RzCjRd"
       ],
       "settings": {
         "section_id": "heading-2",
