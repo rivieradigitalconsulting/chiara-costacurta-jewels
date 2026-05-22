@@ -184,16 +184,8 @@
           "type": "accordion_item",
           "settings": {
             "icon": "plus",
-            "title": "Come posso prendermi cura del mio gioiello Chiara Costacurta?",
-            "content": "<p>Consigliamo di conservare ogni gioiello separatamente, così da preservarne la superficie ed evitare graffi. Per la pulizia quotidiana, è sufficiente immergerlo in acqua tiepida e sapone neutro e asciugarlo delicatamente con un panno morbido. Per preservare la brillantezza delle pietre preziose, è preferibile evitare il contatto con sostanze corrosive come alcool, acetone o candeggina.</p>"
-          }
-        },
-        "accordion_item_YUQf9y": {
-          "type": "accordion_item",
-          "settings": {
-            "icon": "plus",
-            "title": "Come faccio a trovare la misura giusta per anelli e bracciali?",
-            "content": "<p>Sul sito è disponibile una guida alle misure per aiutarti a scegliere quella più adatta a te. Se hai dubbi, puoi <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\">contattarci</a> prima dell'acquisto: saremo felici di guidarti nella scelta.</p>"
+            "title": "In cosa consiste la Piercing Station?",
+            "content": "<p>La Piercing Station è un servizio dedicato che unisce consulenza, piercing e alta gioielleria. Proponiamo una selezione di gioielli da piercing in oro 585/1000 e diamanti naturali, applicati contestualmente al foro durante un appuntamento personalizzato con la nostra piercer specializzata. Il servizio è attualmente disponibile il mercoledì, dalle 10.00 alle 18.00.</p>"
           }
         }
       },
@@ -201,8 +193,7 @@
         "accordion_item_DtwTxT",
         "accordion_item_GyppGb",
         "accordion_item_8t6DfU",
-        "accordion_item_FLTKFf",
-        "accordion_item_YUQf9y"
+        "accordion_item_FLTKFf"
       ],
       "settings": {
         "section_id": "heading-2",
@@ -220,12 +211,72 @@
         "text": "",
         "text_size": "body-fs-sm"
       }
+    },
+    "accordion_CLf6iz": {
+      "type": "accordion",
+      "blocks": {
+        "accordion_item_JQQiWN": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Ho bisogno di un account per acquistare?",
+            "content": "<p>No, non è necessario creare un account manualmente. Al momento del primo ordine, il sistema genererà automaticamente un account associato alla tua email, in cui saranno memorizzati ordini, dati anagrafici e indirizzi di spedizione. Per accedere alla tua area personale, inserisci la tua email nella sezione Accedi e utilizza il codice OTP che riceverai via email.</p>"
+          }
+        },
+        "accordion_item_BLTkxd": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "In quali paesi spedite?",
+            "content": "<p>Spediamo in tutto il mondo. I tempi e i costi variano in base al paese di destinazione. Per consultare l'elenco completo dei paesi serviti e i relativi costi, ti invitiamo a visitare la pagina <a href=\"/pages/ordini-spedizioni\" target=\"_blank\" title=\"Ordini & Spedizioni\">Ordini & Spedizioni</a>.</p>"
+          }
+        },
+        "accordion_item_iiJdRM": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Quali sono i costi e i tempi di spedizione?",
+            "content": "<p>In Italia la consegna standard avviene in 1-2 giorni lavorativi ed è sempre gratuita. Per tutti i dettagli consulta la pagina <a href=\"/pages/ordini-spedizioni\" target=\"_blank\" title=\"Ordini & Spedizioni\">Ordini & Spedizioni.</a></p>"
+          }
+        },
+        "accordion_item_M6jgGK": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "In cosa consiste la Piercing Station?",
+            "content": "<p>La Piercing Station è un servizio dedicato che unisce consulenza, piercing e alta gioielleria. Proponiamo una selezione di gioielli da piercing in oro 585/1000 e diamanti naturali, applicati contestualmente al foro durante un appuntamento personalizzato con la nostra piercer specializzata. Il servizio è attualmente disponibile il mercoledì, dalle 10.00 alle 18.00.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_JQQiWN",
+        "accordion_item_BLTkxd",
+        "accordion_item_iiJdRM",
+        "accordion_item_M6jgGK"
+      ],
+      "settings": {
+        "section_id": "heading-2",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "heading": "Ordini & Spedizioni",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm"
+      }
     }
   },
   "order": [
     "main",
     "accordion_1",
     "accordion_2",
-    "accordion_EDVCrn"
+    "accordion_EDVCrn",
+    "accordion_CLf6iz"
   ]
 }
