@@ -297,6 +297,92 @@
         "text": "",
         "text_size": "body-fs-sm"
       }
+    },
+    "accordion_zqd379": {
+      "type": "accordion",
+      "blocks": {
+        "accordion_item_LUaYBr": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Entro quando posso effettuare un reso?",
+            "content": "<p>Puoi richiedere un reso entro 14 giorni dalla data di consegna, comunicandolo via e-mail a <a href=\"mailto:atelier@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:atelier@chiaracostacurta.com\"><span style=\"text-decoration:underline\">atelier@chiaracostacurta.com</span></a> e seguendo la procedura di reso online dedicata. Gli articoli devono essere restituiti integri, inutilizzati e nella confezione originale.</p>"
+          }
+        },
+        "accordion_item_7qRJMN": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Come posso effettuare un reso online?",
+            "content": "<p>Accedi alla tua area personale, individua l'ordine nella sezione Ordini e avvia la procedura guidata. Attendi l'approvazione della richiesta: riceverai una conferma via e-mail non appena il reso sarà stato approvato. Una volta approvata la richiesta, dovrai provvedere autonomamente alla spedizione del reso al seguente indirizzo: <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli 15, 20121 Milano (MI)</a>. Puoi utilizzare il corriere che preferisci, purché la spedizione sia tracciata e il fornitore del servizio ti fornisca un numero di tracciamento. Per maggiori dettagli consulta la pagina <a href=\"/pages/resi-rimborsi\" target=\"_blank\" title=\"Resi & Rimborsi\">Resi & Rimborsi</a>.</p>"
+          }
+        },
+        "accordion_item_zdUPkg": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Quali sono i costi e i tempi di spedizione?",
+            "content": "<p>In Italia la consegna standard avviene in 1-2 giorni lavorativi ed è sempre gratuita. Per tutti i dettagli consulta la pagina <a href=\"/pages/ordini-spedizioni\" target=\"_blank\" title=\"Ordini & Spedizioni\">Ordini & Spedizioni.</a></p>"
+          }
+        },
+        "accordion_item_z7WbCK": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Posso ordinare online e ritirare il pacco presso il vostro Atelier?",
+            "content": "<p>Sì, durante il checkout potrai scegliere di effettuare il ritiro presso il nostro atelier di <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">via Fatebenefratelli, 15 a Milano</a>. Il servizio è gratuito e la disponibilità è prevista in 24-48 ore. Riceverai una notifica via e-mail non appena il tuo ordine sarà pronto per il ritiro.</p>"
+          }
+        },
+        "accordion_item_gP3RFR": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Posso modificare o annullare un ordine?",
+            "content": "<p>Puoi richiedere la modifica o la cancellazione di un ordine contattandoci il prima possibile a <a href=\"mailto:info@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:info@chiaracostacurta.com\">info@chiaracostacurta.com</a> o per telefono al <a href=\"tel:+39 345 6979437\" target=\"_blank\" title=\"tel:+39 345 6979437\">+39 345 6979437</a>. Possiamo intervenire solo se l'ordine non è ancora stato preso in carico per la preparazione. Una volta avviata la spedizione non sarà più possibile apportare modifiche.</p>"
+          }
+        },
+        "accordion_item_RzCjRd": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Come posso tracciare il mio ordine?",
+            "content": "<p>Non appena il tuo ordine sarà spedito, riceverai un'e-mail con il numero di tracking e un link diretto al portale del corriere. Puoi monitorare lo stato della spedizione in qualsiasi momento anche dalla tua area personale.</p>"
+          }
+        },
+        "accordion_item_pDBAHN": {
+          "type": "accordion_item",
+          "settings": {
+            "icon": "plus",
+            "title": "Sono un cliente extra-UE: i prezzi includono dazi e tasse doganali?",
+            "content": "<p>No, eventuali dazi doganali e tasse d'importazione sono a carico del cliente e verranno richiesti dal corriere secondo le normative locali vigenti. Questi oneri non sono inclusi nel totale dell'ordine.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_LUaYBr",
+        "accordion_item_7qRJMN",
+        "accordion_item_zdUPkg",
+        "accordion_item_z7WbCK",
+        "accordion_item_gP3RFR",
+        "accordion_item_RzCjRd",
+        "accordion_item_pDBAHN"
+      ],
+      "settings": {
+        "section_id": "heading-2",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "heading": "Resi & Rimborsi",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm"
+      }
     }
   },
   "order": [
@@ -304,6 +390,7 @@
     "accordion_1",
     "accordion_2",
     "accordion_EDVCrn",
-    "accordion_CLf6iz"
+    "accordion_CLf6iz",
+    "accordion_zqd379"
   ]
 }
