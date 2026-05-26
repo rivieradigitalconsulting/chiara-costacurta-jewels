@@ -68,7 +68,7 @@
             "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 0,
             "block_spacing_top_mobile": 40,
-            "block_spacing_bottom_mobile": 60,
+            "block_spacing_bottom_mobile": 45,
             "text": "<p>Prima di inoltrare una richiesta, invitiamo a consultare la nostra sezione <span style=\"text-decoration:underline\">FAQ</span> per trovare risposte immediate alle domande più frequenti su spedizioni, resi e ordini.</p>",
             "text_size": "body-fs-sm"
           }
