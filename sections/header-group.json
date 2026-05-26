@@ -37,9 +37,7 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [
-        ".m-header-sidebar__item-account {font-size: 15px;}"
-      ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-bef3b841-52e0-4dae-a7b0-d41f1ceccafe",
         "main_menu": "main-menu",
