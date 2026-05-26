@@ -22,7 +22,7 @@
         "column_width": 12,
         "content_position": "left",
         "content_alignment": "center",
-        "heading_size": "h2",
+        "heading_size": "h3",
         "text_size": "body-fs-sm"
       }
     },
