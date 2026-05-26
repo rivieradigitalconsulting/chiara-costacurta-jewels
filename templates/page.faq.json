@@ -22,8 +22,8 @@
         "column_width": 12,
         "content_position": "center",
         "content_alignment": "center",
-        "heading_size": "h2",
-        "text_size": "body-fs-md"
+        "heading_size": "h3",
+        "text_size": "body-fs-sm"
       }
     },
     "accordion_1": {
