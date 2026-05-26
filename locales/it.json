@@ -400,5 +400,10 @@
       "send_on_label": "Invia (opzionale)",
       "placeholder_send_on": "YYYY-MM-DD"
     }
+  },
+  "shopify": {
+    "links": {
+      "powered_by_shopify": "<a href=\"https://www.instagram.com/riviera.digitalconsulting/\" target=\"_blank\" rel=\"noopener noreferrer\">built by riviera</a>"
+    }
   }
 }
