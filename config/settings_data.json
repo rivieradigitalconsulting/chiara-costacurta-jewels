@@ -34,6 +34,8 @@
     "card_images_background": "#f6f6f6",
     "card_text_size_desktop": 13,
     "card_text_line_height": 16,
+    "card_collection_color": "#9d9d9d",
+    "card_description_color": "#9d9d9d",
     "product_hover_behavior": "slider",
     "product_card_enable_quick_add": false,
     "product_card_show_badges": false,
