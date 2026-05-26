@@ -24,7 +24,7 @@
         "content_position": "center",
         "content_alignment": "left",
         "heading_size": "h3",
-        "text_size": "body-fs-md"
+        "text_size": "body-fs-sm"
       }
     }
   },
