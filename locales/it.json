@@ -403,7 +403,7 @@
   },
   "shopify": {
     "links": {
-      "powered_by_shopify": "<a href=\"https://www.instagram.com/riviera.digitalconsulting/\" target=\"_blank\" rel=\"noopener noreferrer\">built by riviera</a>"
+      "powered_by_shopify": "<a href=\"https://www.instagram.com/riviera.digitalconsulting/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"font-weight: normal; text-decoration: none;\">built by riviera</a>"
     }
   }
 }
