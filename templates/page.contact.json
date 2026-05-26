@@ -44,9 +44,9 @@
           "type": "paragraph",
           "settings": {
             "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 70,
+            "block_spacing_bottom_desktop": 40,
             "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 60,
+            "block_spacing_bottom_mobile": 40,
             "text": "<p>Per informazioni, creazioni su misura o assistenza dedicata, il nostro team è a completa disposizione.</p><p><strong>Come possiamo aiutarti?</strong></p><p>Per assistenza immediata o richieste personalizzate, il team Chiara Costacurta è a completa disposizione.</p>",
             "text_size": "body-fs-sm"
           }
