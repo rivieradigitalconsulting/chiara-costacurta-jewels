@@ -44,7 +44,7 @@
         "enable_uncollapsed_nav_active_page": false,
         "enable_header_transparency": true,
         "transparent_url": "/",
-        "transparent_url_dark": ""
+        "transparent_url_dark": "/products"
       }
     },
     "header-utilities": {
