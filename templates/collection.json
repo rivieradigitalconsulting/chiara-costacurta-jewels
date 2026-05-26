@@ -33,6 +33,9 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "custom_css": [
+        ".sort-by-ts-control {font-size: 14px;}"
+      ],
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 20,
