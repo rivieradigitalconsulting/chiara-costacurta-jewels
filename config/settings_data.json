@@ -32,6 +32,8 @@
     "product_card_image_ratio": "2x3",
     "product_card_alignment": "left",
     "card_images_background": "#f6f6f6",
+    "card_text_size_desktop": 13,
+    "card_text_line_height": 16,
     "product_hover_behavior": "slider",
     "product_card_enable_quick_add": false,
     "product_card_show_badges": false,
