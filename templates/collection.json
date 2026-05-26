@@ -34,7 +34,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        ".sort-by-ts-control {font-size: 14px;}"
+        "label {font-size: 14px;}"
       ],
       "settings": {
         "section_id": "",
