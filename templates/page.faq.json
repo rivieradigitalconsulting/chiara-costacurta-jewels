@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "custom_css": [],
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 80,
@@ -67,6 +68,9 @@
         "accordion_item_1",
         "accordion_item_3",
         "accordion_item_8frYjL"
+      ],
+      "custom_css": [
+        "h3,p {font-size: 14px;}"
       ],
       "settings": {
         "section_id": "heading-1",
@@ -136,6 +140,9 @@
         "accordion_item_ktmH3A",
         "accordion_item_yrCj3c"
       ],
+      "custom_css": [
+        "h3,p {font-size: 14px;}"
+      ],
       "settings": {
         "section_id": "heading-2",
         "section_padding_top_desktop": 20,
@@ -194,6 +201,9 @@
         "accordion_item_GyppGb",
         "accordion_item_8t6DfU",
         "accordion_item_FLTKFf"
+      ],
+      "custom_css": [
+        "h3,p {font-size: 14px;}"
       ],
       "settings": {
         "section_id": "heading-2",
@@ -281,6 +291,9 @@
         "accordion_item_wLTFJ3",
         "accordion_item_ndqp4j"
       ],
+      "custom_css": [
+        "h3,p {font-size: 14px;}"
+      ],
       "settings": {
         "section_id": "heading-2",
         "section_padding_top_desktop": 20,
@@ -358,6 +371,9 @@
         "accordion_item_gP3RFR",
         "accordion_item_RzCjRd"
       ],
+      "custom_css": [
+        "h3,p {font-size: 14px;}"
+      ],
       "settings": {
         "section_id": "heading-2",
         "section_padding_top_desktop": 20,
@@ -416,6 +432,9 @@
         "accordion_item_YqqXHX",
         "accordion_item_6pMWqh",
         "accordion_item_iK7p8g"
+      ],
+      "custom_css": [
+        "h3, p {font-size: 14px;}"
       ],
       "settings": {
         "section_id": "heading-2",
