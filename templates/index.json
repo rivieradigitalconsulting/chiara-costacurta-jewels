@@ -195,14 +195,14 @@
         "button_PhTpTN": {
           "type": "button",
           "settings": {
-            "block_spacing_top_desktop": 20,
+            "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 30,
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 30,
             "btn_label": "Scopri di più",
             "btn_url": "",
             "btn_style": "tertiary",
-            "btn_icon": true
+            "btn_icon": false
           }
         }
       },
@@ -210,6 +210,9 @@
         "heading_irENrk",
         "paragraph_YTYcW6",
         "button_PhTpTN"
+      ],
+      "custom_css": [
+        "span {font-size: 14px;}"
       ],
       "name": "t:banner.presets.banner.name",
       "settings": {
