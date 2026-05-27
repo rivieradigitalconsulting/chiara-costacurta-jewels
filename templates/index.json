@@ -200,7 +200,7 @@
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 30,
             "btn_label": "Scopri di più",
-            "btn_url": "",
+            "btn_url": "shopify://collections/onda",
             "btn_style": "tertiary",
             "btn_icon": false
           }
