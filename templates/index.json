@@ -304,6 +304,9 @@
         "collection_item_MHeJ4F",
         "collection_item_kM9apL"
       ],
+      "custom_css": [
+        "button {font-size: 14px;}"
+      ],
       "name": "t:collections_list.presets.collections_list.name",
       "settings": {
         "section_id": "",
