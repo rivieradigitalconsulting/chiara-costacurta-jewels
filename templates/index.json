@@ -277,7 +277,17 @@
         },
         "collection_item_MHeJ4F": {
           "type": "collection_item",
-          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_0030-1-scaled.jpg",
+            "heading": "Orecchini",
+            "description": "<p>Fornisci una breve panoramica delle collezioni in evidenza</p>",
+            "btn_label": "Vedi tutti",
+            "url": ""
+          }
+        },
+        "collection_item_kM9apL": {
+          "type": "collection_item",
           "settings": {
             "collection": "",
             "image": "shopify://shop_images/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_0030-1-scaled.jpg",
@@ -291,7 +301,8 @@
       "block_order": [
         "collection_item_GEzCkc",
         "collection_item_Gxt8Fw",
-        "collection_item_MHeJ4F"
+        "collection_item_MHeJ4F",
+        "collection_item_kM9apL"
       ],
       "name": "t:collections_list.presets.collections_list.name",
       "settings": {
@@ -311,8 +322,8 @@
         "columns_desktop": 2,
         "columns_mobile": "1",
         "column_gap_desktop": 5,
-        "row_gap_desktop": 0,
-        "column_gap_mobile": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 0,
         "row_gap_mobile": 5,
         "color_scheme_card": "scheme-2",
         "show_description": false,
@@ -320,7 +331,7 @@
         "vertical_text_alignment": "bottom",
         "card_text_alignment": "center",
         "image_ratio": "1x1",
-        "heading": "Naviga tra le categorie",
+        "heading": "Esplora le Categorie",
         "heading_size": "h3",
         "text": "<p>Esplora tutte le categorie e trova il gioiello perfetto per ogni stile: anelli, collane, bracciali e orecchini pensati per valorizzare ogni momento con eleganza.</p>",
         "text_size": "body-fs-sm",
