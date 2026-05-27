@@ -355,7 +355,7 @@
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
             "heading": "Media con testo",
-            "heading_size": "h2",
+            "heading_size": "h3",
             "convert_to_h1": false
           }
         },
@@ -367,7 +367,7 @@
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
             "text": "<p>Abbina testo e immagine per mettere in risalto il prodotto, la collezione o l'articolo del blog che hai scelto. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
-            "text_size": "body-fs-md"
+            "text_size": "body-fs-sm"
           }
         },
         "button_z9Y9xh": {
@@ -403,10 +403,10 @@
         "section_bg_size": "auto",
         "section_bg_opacity": 100,
         "display_mode": "media-outside-container",
-        "grid_gap_desktop": 100,
+        "grid_gap_desktop": 50,
         "grid_gap_mobile": 20,
         "content_vertical_position": "center",
-        "content_top_position": 33,
+        "content_top_position": 0,
         "content_max_width": 600,
         "content_horizontal_position": "center",
         "content_alignment": "left",
