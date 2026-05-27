@@ -108,7 +108,7 @@
             "block_spacing_bottom_desktop": 0,
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 0,
-            "heading": "Linea Gocce di Diamante",
+            "heading": "Collezione Victoria",
             "heading_size": "h3",
             "convert_to_h1": false
           }
@@ -120,7 +120,7 @@
             "block_spacing_bottom_desktop": 0,
             "block_spacing_top_mobile": 5,
             "block_spacing_bottom_mobile": 0,
-            "text": "<p>Esplora la collezione make a wish</p>",
+            "text": "<p>Lorem Ipsum Dolor Sit Amet.</p>",
             "text_size": "body-fs-sm"
           }
         },
@@ -131,10 +131,10 @@
             "block_spacing_bottom_desktop": 30,
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 30,
-            "btn_label": "DISCOVER MORE",
+            "btn_label": "Scopri di più",
             "btn_url": "",
             "btn_style": "tertiary",
-            "btn_icon": true
+            "btn_icon": false
           }
         }
       },
