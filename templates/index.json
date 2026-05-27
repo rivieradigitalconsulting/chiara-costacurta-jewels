@@ -61,7 +61,7 @@
     "featured_collection_a7Xnrp": {
       "type": "featured-collection",
       "custom_css": [
-        ".grid__col-12 {margin-top: 20px; font-size: 14px;}"
+        "a {margin-top: 20px; font-size: 14px;}"
       ],
       "settings": {
         "section_id": "",
