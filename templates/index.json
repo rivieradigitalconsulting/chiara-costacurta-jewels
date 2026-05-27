@@ -71,7 +71,7 @@
         "collection": "anelli",
         "product_list": [],
         "display_mode": "grid",
-        "product_limit": 8,
+        "product_limit": 6,
         "columns_desktop": 3,
         "columns_mobile": "2",
         "column_gap_desktop": 5,
