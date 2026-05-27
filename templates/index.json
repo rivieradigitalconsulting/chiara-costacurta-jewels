@@ -389,6 +389,9 @@
         "paragraph_Qwce3M",
         "button_z9Y9xh"
       ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
       "name": "t:media_with_text.presets.media_with_text.name",
       "settings": {
         "section_id": "",
