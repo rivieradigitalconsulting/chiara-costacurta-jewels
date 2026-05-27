@@ -143,6 +143,9 @@
         "paragraph_TeirUh",
         "button_MDtMYn"
       ],
+      "custom_css": [
+        "span {font-size: 14px;}"
+      ],
       "name": "t:banner.presets.banner.name",
       "settings": {
         "section_id": "",
