@@ -123,6 +123,9 @@
       {%- else -%}
         {%- assign placeholder_classes = aspect_ratio_class | append: ' a-placeholder-media' -%}
         {{ placeholder_media | placeholder_svg_tag: placeholder_classes }}
+        <script>
+          console.log('{{ placeholder_classes }}')
+        </script>
       {%- endif -%}
     </div>
     {%- if has_image_slider -%}

@@ -1,0 +1,120 @@
+{%- liquid
+  assign color_variants = product.metafields.pdp.varianti_colore.value
+  assign variant_label = product.metafields.pdp.titolo_variante.value
+-%}
+
+{%- if color_variants != blank -%}
+  {%- comment -%} Settings {%- endcomment -%}
+  {%- assign card_width_desktop = block.settings.card_width_desktop -%}
+  {%- assign card_width_mobile = block.settings.card_width_mobile -%}
+  {%- assign gap_horizontal = block.settings.gap_horizontal -%}
+  {%- assign gap_vertical = block.settings.gap_vertical -%}
+
+  {% style %}
+    .m-variant-metafield--{{ block.id }} {
+      padding-top:    {{ block.settings.block_spacing_top_mobile }}px;
+      padding-bottom: {{ block.settings.block_spacing_bottom_mobile }}px;
+    }
+    .m-variant-metafield--{{ block.id }} .m-variant-metafield__swatches {
+      display: flex;
+      flex-wrap: wrap;
+      gap: {{ gap_vertical }}px {{ gap_horizontal }}px;
+    }
+    .m-variant-metafield--{{ block.id }} .m-variant-metafield__swatch {
+      display: block;
+      width: {{ card_width_mobile }}px;
+      aspect-ratio: 2 / 3;
+      overflow: hidden;
+      border-radius: var(--product-option-border-radius, 0px);
+      border: var(--product-option-border-width, 1px) solid transparent;
+      transition: border-color 0.2s ease;
+      flex-shrink: 0;
+    }
+    .m-variant-metafield--{{ block.id }} .m-variant-metafield__swatch img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .m-variant-metafield--{{ block.id }} .m-variant-metafield__swatch--active {
+      border-color: #000;
+    }
+    .m-variant-metafield--{{ block.id }} .m-variant-metafield__swatch:not(.m-variant-metafield__swatch--active):hover {
+      border-color: currentColor;
+    }
+    @media screen and (min-width: 768px) {
+      .m-variant-metafield--{{ block.id }} {
+        padding-top:    {{ block.settings.block_spacing_top_desktop }}px;
+        padding-bottom: {{ block.settings.block_spacing_bottom_desktop }}px;
+      }
+      .m-variant-metafield--{{ block.id }} .m-variant-metafield__swatch {
+        width: {{ card_width_desktop }}px;
+      }
+    }
+  {% endstyle %}
+
+  <div
+    class="m-variant-metafield m-variant-metafield--{{ block.id }}"
+    style="{{ block_styles | strip_newlines | remove: ' ' }}"
+    {{ block.shopify_attributes }}
+  >
+    {%- if variant_label != blank -%}
+      <div class="m-variant-metafield__label body-fs-sm">
+        {{ variant_label }}
+      </div>
+    {%- endif -%}
+
+    <div class="m-variant-metafield__swatches">
+      {%- comment -%} Prodotto corrente — sempre primo {%- endcomment -%}
+      <a
+        href="{{ product.url }}"
+        class="m-variant-metafield__swatch m-variant-metafield__swatch--active"
+        aria-label="{{ product.title | escape }}"
+        aria-current="page"
+      >
+        {%- if product.featured_media -%}
+            {%- render 'product-media-item',
+            media: product.featured_media,
+            ratio: 'none',
+            enable_lazy_load: false,
+            enable_zoom: false,
+            enable_autoplay_video_looping: false
+            -%}
+        {%- else -%}
+            {%- liquid
+                assign placeholder_media_index = 1
+                assign placeholder_media = 'product-' | append: placeholder_media_index
+                assign placeholder_classes = 'a-img__ratio--2x3' | append: ' a-placeholder-media'
+                echo placeholder_media | placeholder_svg_tag: placeholder_classes
+            -%}
+        {%- endif -%}  
+      </a>
+
+      {%- for color_product in color_variants -%}
+        {%- if color_product.id == product.id -%}{%- continue -%}{%- endif -%}
+        <a
+          href="{{ color_product.url }}"
+          class="m-variant-metafield__swatch"
+          aria-label="{{ color_product.title | escape }}"
+        >
+            {%- if color_product.featured_media -%}
+                {%- render 'product-media-item',
+                    media: color_product.featured_media,
+                    ratio: 'none',
+                    enable_lazy_load: true,
+                    enable_zoom: false,
+                    enable_autoplay_video_looping: false
+                -%}
+            {%- else -%}
+                {%- liquid
+                    assign placeholder_media_index = forloop.index0 | modulo: 6 | plus: 1
+                    assign placeholder_media = 'product-' | append: placeholder_media_index
+                    assign placeholder_classes = 'a-img__ratio--2x3' | append: ' a-placeholder-media'
+                    echo placeholder_media | placeholder_svg_tag: placeholder_classes
+                -%}
+            {%- endif -%}
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
