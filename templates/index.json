@@ -399,7 +399,7 @@
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "section_width": "page-width",
+        "section_width": "constrict",
         "content_width": 8,
         "content_position": "left",
         "content_alignment": "left",
