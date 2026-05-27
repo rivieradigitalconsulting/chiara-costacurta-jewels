@@ -82,9 +82,9 @@
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 60,
         "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 40,
+        "section_padding_top_mobile": 30,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
