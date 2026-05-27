@@ -37,7 +37,7 @@
             "btn_label": "Scopri la Nuova Collezione",
             "btn_url": "shopify://collections/frontpage",
             "btn_style": "line",
-            "btn_icon": false
+            "btn_icon": true
           }
         }
       },
