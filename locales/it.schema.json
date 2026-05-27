@@ -4967,6 +4967,36 @@
           }
         }
       },
+      "variant_metafield": {
+        "variant_metafield": {
+          "name": "Selettore colori",
+          "settings": {
+            "header": {
+              "block": { 
+                "content": "Spaziatura blocco" 
+              },
+              "card_size": { 
+                "content": "Dimensioni card" 
+              },
+              "card_gap": { 
+                "content": "Spaziatura tra card" 
+              }
+            },
+            "card_width_desktop": { 
+              "label": "Larghezza card (desktop)" 
+            },
+            "card_width_mobile": { 
+              "label": "Larghezza card (mobile)" 
+            },
+            "gap_horizontal": { 
+              "label": "Gap orizzontale" 
+            },
+            "gap_vertical": { 
+              "label": "Gap verticale" 
+            }
+          }
+        }
+      },
       "buy_buttons": {
         "buy_buttons": {
           "name": "Acquista bottoni",
@@ -5225,6 +5255,15 @@
             "title": {
               "label": "Etichetta",
               "default": "<p>Testo del punto di vendita unico</p>"
+            },
+            "text_color": {
+              "label": "Colore del testo"
+            },
+            "text_size_desktop": {
+              "label": "Dimensione testo (desktop)"
+            },
+            "text_size_mobile": {
+              "label": "Dimensione testo (mobile)"
             }
           }
         }
