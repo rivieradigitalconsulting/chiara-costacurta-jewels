@@ -34,7 +34,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        "label {font-size: 14px;}"
+        "label {font-size: 14px;}",
+        ".m-pagination__list {font-size: 10px;}"
       ],
       "settings": {
         "section_id": "",
