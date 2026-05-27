@@ -132,7 +132,7 @@
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 30,
             "btn_label": "Scopri di più",
-            "btn_url": "",
+            "btn_url": "shopify://collections/victoria",
             "btn_style": "tertiary",
             "btn_icon": false
           }
@@ -234,40 +234,6 @@
         "image": "shopify://shop_images/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_1120-scaled.jpg"
       }
     },
-    "featured_collection_1": {
-      "type": "featured-collection",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 70,
-        "section_padding_bottom_desktop": 40,
-        "section_padding_top_mobile": 40,
-        "section_padding_bottom_mobile": 40,
-        "invert_navigation_color": false,
-        "color_scheme": "scheme-1",
-        "collection": "collection-test-copia",
-        "product_list": [],
-        "display_mode": "slider",
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "column_gap_desktop": 5,
-        "row_gap_desktop": 20,
-        "column_gap_mobile": 5,
-        "row_gap_mobile": 20,
-        "section_width": "page-width",
-        "content_width": 12,
-        "content_position": "center",
-        "content_alignment": "left",
-        "heading": "Chiara's choice",
-        "heading_size": "h3",
-        "text": "<p>La collezione Chiara’s Picks è una selezione esclusiva di gioielli temporanei scelti con cura da Chiara, pensata per chi ama cambiare, sperimentare e vivere il gioiello come espressione del momento.</p>",
-        "text_size": "body-fs-sm",
-        "btn_label": "All products",
-        "btn_url": "",
-        "btn_style": "line",
-        "btn_icon": false
-      }
-    },
     "slideshow_c7yHWE": {
       "type": "slideshow",
       "settings": {
@@ -311,6 +277,7 @@
         },
         "collection_item_MHeJ4F": {
           "type": "collection_item",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify://shop_images/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_0030-1-scaled.jpg",
@@ -337,11 +304,11 @@
         "color_scheme": "",
         "collection_list": [],
         "display_mode": "grid",
-        "section_width": "page-width",
+        "section_width": "constrict",
         "content_width": 12,
         "content_position": "center",
         "content_alignment": "left",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "columns_mobile": "1",
         "column_gap_desktop": 5,
         "row_gap_desktop": 0,
@@ -440,7 +407,6 @@
     "featured_collection_a7Xnrp",
     "banner_cpc4cb",
     "banner_fBAYPw",
-    "featured_collection_1",
     "slideshow_c7yHWE",
     "collection_list_cpn77E",
     "brands_EUK7pP"
