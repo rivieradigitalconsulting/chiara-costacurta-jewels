@@ -9,10 +9,10 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/Chiara-Costacurta-Logotype-black2024.webp",
-    "inverted_logo": "shopify://shop_images/Chiara-Costacurta-Logotype-black2024white.webp",
+    "logo": "shopify://shop_images/CHIARA_COSTACURTA_orizz-black_e8c2fef8-af36-40cb-b027-b8b3649afe33.png",
+    "inverted_logo": "shopify://shop_images/CHIARA_COSTACURTA_orizz-white.png",
     "logo_width": 300,
-    "logo_width_mobile": 200,
+    "logo_width_mobile": 180,
     "white": "#ffffff",
     "black": "#333333",
     "ff_heading": "almarai_n4",
@@ -31,9 +31,17 @@
     "social_tiktok_link": "",
     "product_card_image_ratio": "2x3",
     "product_card_alignment": "left",
+    "card_images_background": "#f6f6f6",
+    "card_text_size_mobile": 12,
+    "card_text_size_desktop": 13,
+    "card_text_line_height": 16,
+    "card_collection_color": "#9d9d9d",
+    "card_description_color": "#9d9d9d",
     "product_hover_behavior": "slider",
     "product_card_enable_quick_add": false,
-    "product_card_show_badges": false,
+    "product_card_show_badges": true,
+    "available_on_order_badge_font_size": 10,
+    "available_on_order_badge_background_color": "#ffffff",
     "content_card_image_ratio": "2x3",
     "enable_gift_card_image": false,
     "currency_code_enabled": false,
@@ -46,13 +54,6 @@
     "section_spacing_large_desktop": 140,
     "section_spacing_large_mobile": 60,
     "content_for_index": [],
-    "blocks": {
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      }
-    },
     "color_schemes": {
       "scheme-1": {
         "settings": {

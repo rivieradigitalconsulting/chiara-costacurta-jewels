@@ -1,0 +1,112 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_width": 9,
+        "content_position": "center",
+        "content_alignment": "left",
+        "heading_size": "h1",
+        "text_size": "body-fs-md"
+      }
+    },
+    "slideshow_7Gpq6h": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_63BBrC": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "block_width": "constrict",
+            "background_media_size": "full-width",
+            "background_media_position": "left",
+            "column_width": 6,
+            "vertical_content_position": "center",
+            "content_position": "center",
+            "content_alignment": "center",
+            "overlay_color": "#000",
+            "overlay_opacity": 60,
+            "image_ratio": "default",
+            "title": "Aggiungi un slogan",
+            "caption_size": "h5",
+            "heading": "Titolo della presentazione",
+            "heading_size": "h2",
+            "convert_to_h1": false,
+            "text": "<p>Racconta la storia del tuo marchio attraverso le immagini</p>",
+            "text_size": "body-fs-md",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        },
+        "slide_yhxPLU": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "block_width": "constrict",
+            "background_media_size": "full-width",
+            "background_media_position": "left",
+            "column_width": 6,
+            "vertical_content_position": "center",
+            "content_position": "center",
+            "content_alignment": "center",
+            "overlay_color": "#000",
+            "overlay_opacity": 60,
+            "image_ratio": "default",
+            "title": "Aggiungi un slogan",
+            "caption_size": "h5",
+            "heading": "Titolo della presentazione",
+            "heading_size": "h2",
+            "convert_to_h1": false,
+            "text": "<p>Racconta la storia del tuo marchio attraverso le immagini</p>",
+            "text_size": "body-fs-md",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_63BBrC",
+        "slide_yhxPLU"
+      ],
+      "name": "t:slideshow.presets.slideshow.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": true,
+        "section_width": "page-width",
+        "section_height": "large",
+        "autoplay": true,
+        "change_slides_every": 5,
+        "pagination": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_7Gpq6h"
+  ]
+}
