@@ -399,7 +399,7 @@
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 60,
         "section_padding_bottom_mobile": 40,
-        "invert_navigation_color": false,
+        "invert_navigation_color": true,
         "color_scheme": "",
         "section_bg_repeat": false,
         "section_bg_position": "bottom center",
@@ -420,7 +420,8 @@
         "image_ratio_2": "default",
         "show_image_2_on_mobile": false,
         "video_ratio": "default",
-        "video_autoplay": false
+        "video_autoplay": false,
+        "video_yt_url": ""
       }
     },
     "brands_EUK7pP": {
