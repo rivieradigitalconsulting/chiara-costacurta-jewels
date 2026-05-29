@@ -21,7 +21,7 @@
             "block_spacing_bottom_mobile": 0,
             "available_on_order_badge_font_size": 12,
             "available_on_order_badge_text_color": "#202020",
-            "available_on_order_badge_background_color": "#ffffff",
+            "available_on_order_badge_background_color": "#ebebeb",
             "available_on_order_badge_border_color": "#202020"
           }
         },
