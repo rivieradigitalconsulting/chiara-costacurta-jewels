@@ -286,47 +286,6 @@
       ],
       "settings": {}
     },
-    "rich_text_aUYy8n": {
-      "type": "rich-text",
-      "blocks": {
-        "paragraph_qy8PgG": {
-          "type": "paragraph",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "text": "<p>{{ product.metafields.pdp.descrizione_narrativa.value }}</p>",
-            "text_column": "",
-            "grid_gap_desktop": 20,
-            "text_size": "body-fs-sm"
-          }
-        }
-      },
-      "block_order": [
-        "paragraph_qy8PgG"
-      ],
-      "disabled": true,
-      "name": "t:rich_text.presets.rich_text.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 80,
-        "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 40,
-        "section_padding_bottom_mobile": 40,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "section_bg_repeat": false,
-        "section_bg_position": "bottom center",
-        "section_bg_size": "auto",
-        "section_bg_opacity": 100,
-        "column_width": 10,
-        "content_position": "center",
-        "content_alignment": "center",
-        "title_position": "inline",
-        "grid_gap_desktop": 20
-      }
-    },
     "accordion_w6XtBi": {
       "type": "accordion",
       "blocks": {
@@ -400,7 +359,7 @@
         "content_width": 4,
         "content_position": "center",
         "content_alignment": "center",
-        "heading": "Recommended products",
+        "heading": "",
         "heading_size": "h3",
         "text": "",
         "text_size": "body-fs-sm",
@@ -626,7 +585,6 @@
     "main",
     "blocks_Rwfktp",
     "1780068900439b45f8",
-    "rich_text_aUYy8n",
     "accordion_w6XtBi",
     "product_recommendations_3VYMEY",
     "featured_collection_A3GmHz",
