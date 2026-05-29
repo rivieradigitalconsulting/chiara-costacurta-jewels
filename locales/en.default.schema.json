@@ -5374,7 +5374,8 @@
               "label": "Text Style",
               "uppercase": "Uppercase",
               "lowercase": "Lowercase",
-              "capitalize": "Capitalize"
+              "capitalize": "Capitalize",
+              "user_input": "User input"
             }
           }
         }
