@@ -1,6 +1,228 @@
+{% doc %}
+  @prompt
+    Generami un blocco di testo, che collego a un Metafield. Se il blocco è vuoto e non valorizzato, allora il blocco non appare. Possibilità di inserire un rich text. su mobile la larghezza si adatta al contenuto di pagina, con i bordi della pagina, su desktop decido io quanto larga la colonna di testo deve essere. Per ogni dispositivo devo poter scegliere margin top e bottom , fermo, non darmi metafield, dammi un tezo a cui posso collegare sorgente dinamica, mi devi far scegliere che giustifica il testo abbia e la dimensione per ogni device, dammi anche la possibilità di gestirmi interlinea per entrambi i dispositivi
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-dynamic-text-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: {{ block.settings.margin_top_mobile }}px;
+    margin-bottom: {{ block.settings.margin_bottom_mobile }}px;
+  }
+
+  .ai-dynamic-text-content-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.font_size_mobile }}px;
+    line-height: {{ block.settings.line_height_mobile }};
+    text-align: {{ block.settings.text_align_mobile }};
+  }
+
+  .ai-dynamic-text-content-{{ ai_gen_id }} p {
+    margin: 0 0 1em 0;
+  }
+
+  .ai-dynamic-text-content-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-dynamic-text-{{ ai_gen_id }} {
+      width: {{ block.settings.desktop_width_percent }}%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: {{ block.settings.margin_top_desktop }}px;
+      margin-bottom: {{ block.settings.margin_bottom_desktop }}px;
+    }
+
+    .ai-dynamic-text-content-{{ ai_gen_id }} {
+      font-size: {{ block.settings.font_size_desktop }}px;
+      line-height: {{ block.settings.line_height_desktop }};
+      text-align: {{ block.settings.text_align_desktop }};
+    }
+  }
+{% endstyle %}
+
+{% if block.settings.text != blank %}
+  <div class="ai-dynamic-text-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+    <div class="ai-dynamic-text-content-{{ ai_gen_id }}">
+      {{ block.settings.text }}
+    </div>
+  </div>
+{% endif %}
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Dynamic text",
+  "tag": null,
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#1d1d1d"
+    },
+    {
+      "type": "header",
+      "content": "Desktop layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "font_size_desktop",
+      "label": "Font size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "line_height_desktop",
+      "label": "Line height",
+      "min": 1,
+      "max": 2.5,
+      "step": 0.1,
+      "default": 1.5
+    },
+    {
+      "type": "select",
+      "id": "text_align_desktop",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "justify",
+          "label": "Justify"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "margin_top_desktop",
+      "label": "Margin top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_desktop",
+      "label": "Margin bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },
+    {
+      "type": "range",
+      "id": "font_size_mobile",
+      "label": "Font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "line_height_mobile",
+      "label": "Line height",
+      "min": 1,
+      "max": 2.5,
+      "step": 0.1,
+      "default": 1.5
+    },
+    {
+      "type": "select",
+      "id": "text_align_mobile",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "justify",
+          "label": "Justify"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "label": "Margin top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_mobile",
+      "label": "Margin bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dynamic text"
+    }
+  ]
+}
 {% endschema %}
