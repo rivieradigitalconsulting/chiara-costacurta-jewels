@@ -234,7 +234,7 @@
           "settings": {
             "desktop_image": "{{ closest.product.metafields.pdp.immagine_narrativa_desktop.value }}",
             "desktop_video": "{{ closest.product.metafields.pdp.immagine_narrativa_desktop.value }}",
-            "desktop_height": 600,
+            "desktop_height": 700,
             "desktop_max_width": 100,
             "desktop_object_fit": "cover",
             "desktop_margin_top": 0,
