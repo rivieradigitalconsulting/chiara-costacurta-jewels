@@ -226,55 +226,17 @@
         "enable_zoom": true
       }
     },
-    "image_AiVjJE": {
-      "type": "image",
-      "blocks": {
-        "image_7QGmWJ": {
-          "type": "image",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 80,
-            "block_spacing_bottom_mobile": 20,
-            "image": "shopify://shop_images/25_11_21_COSTACURTA65018.jpg",
-            "image_ratio": "16x9"
-          }
-        }
-      },
-      "block_order": [
-        "image_7QGmWJ"
-      ],
-      "disabled": true,
-      "name": "t:image.presets.image.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 0,
-        "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 0,
-        "invert_navigation_color": true,
-        "color_scheme": "",
-        "media_contain_width": false,
-        "column_width": 12,
-        "content_position": "center",
-        "content_alignment": "center"
-      }
-    },
-    "1780067586a1d4b496": {
+    "blocks_Rwfktp": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_e2e8ca0_MwrEX3": {
+        "ai_gen_block_e2e8ca0_H9XC7y": {
           "type": "ai_gen_block_e2e8ca0",
           "settings": {
-            "desktop_image": "{{ closest.product.metafields.pdp.immagine_narrativa_desktop.value }}",
-            "desktop_video": "{{ closest.product.metafields.pdp.immagine_narrativa_desktop.value }}",
             "desktop_height": 500,
             "desktop_max_width": 100,
             "desktop_object_fit": "cover",
             "desktop_margin_top": 0,
             "desktop_margin_bottom": 0,
-            "mobile_image": "{{ closest.product.metafields.pdp.immagine_narrativa_mobile.value }}",
-            "mobile_video": "{{ closest.product.metafields.pdp.immagine_narrativa_mobile.value }}",
             "mobile_height": 400,
             "mobile_max_width": 100,
             "mobile_object_fit": "cover",
@@ -286,8 +248,9 @@
         }
       },
       "block_order": [
-        "ai_gen_block_e2e8ca0_MwrEX3"
+        "ai_gen_block_e2e8ca0_H9XC7y"
       ],
+      "name": "Immagine / Video Narrativo",
       "settings": {}
     },
     "rich_text_aUYy8n": {
@@ -627,8 +590,7 @@
   },
   "order": [
     "main",
-    "image_AiVjJE",
-    "1780067586a1d4b496",
+    "blocks_Rwfktp",
     "rich_text_aUYy8n",
     "accordion_w6XtBi",
     "product_recommendations_3VYMEY",
