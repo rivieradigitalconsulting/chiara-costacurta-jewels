@@ -241,7 +241,7 @@
             "desktop_margin_bottom": 60,
             "mobile_image": "{{ closest.product.metafields.pdp.immagine_narrativa_mobile.value }}",
             "mobile_video": "{{ closest.product.metafields.pdp.immagine_narrativa_mobile.value }}",
-            "mobile_height": 400,
+            "mobile_height": 500,
             "mobile_max_width": 100,
             "mobile_object_fit": "cover",
             "mobile_margin_top": 0,
