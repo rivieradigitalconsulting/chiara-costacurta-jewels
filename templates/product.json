@@ -111,16 +111,6 @@
             "display_mode": "dropdown"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -130,31 +120,6 @@
             "block_spacing_bottom_mobile": 20,
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
-          }
-        },
-        "tab_1": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 0,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 0,
-            "show_tab_collapsed": true,
-            "icon": "plus",
-            "title": "Description",
-            "content": "<ul><li>Materiale: Oro 18K placcato rodio</li><li>Pietra: Zircone bianco taglio brillante</li><li>Finitura: Lucida specchiata</li><li>Nichel free e ipoallergenico</li><li>Resistente all’acqua e all’ossidazione</li></ul>"
-          }
-        },
-        "description_469iye": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "text_size": "body-fs-md"
           }
         },
         "tab_epHAfB": {
@@ -196,33 +161,6 @@
             "content": "<p>Expand this tab to reveal additional details and insights. You can include information such as key features, specifications, helpful tips, or any other relevant details that enhance your understanding.</p>"
           }
         },
-        "share_r8YgPP": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "share_label": "Share"
-          }
-        },
-        "usp_Lkd9rQ": {
-          "type": "usp",
-          "disabled": true,
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "icon": "checkmark",
-            "text_color": "#000000",
-            "text_size_desktop": 16,
-            "text_size_mobile": 14,
-            "title": "<p>Testo del punto di vendita unico</p>",
-            "text_style": "capitalize"
-          }
-        },
         "kiwi_size_chart_recommender_kiwi_sizing_WgRPib": {
           "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
           "settings": {
@@ -241,15 +179,10 @@
         "price",
         "variant_metafield_GafxBg",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
-        "tab_1",
-        "description_469iye",
         "tab_epHAfB",
         "tab_QUDqae",
         "tab_H3Fmn4",
-        "share_r8YgPP",
-        "usp_Lkd9rQ",
         "kiwi_size_chart_recommender_kiwi_sizing_WgRPib"
       ],
       "custom_css": [
