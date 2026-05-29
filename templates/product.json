@@ -105,8 +105,8 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "card_width_desktop": 64,
-            "card_width_mobile": 52,
+            "card_width_desktop": 120,
+            "card_width_mobile": 110,
             "gap_horizontal": 8,
             "gap_vertical": 8
           }
