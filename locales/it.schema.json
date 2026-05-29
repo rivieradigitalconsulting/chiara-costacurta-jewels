@@ -5284,7 +5284,8 @@
               "label": "Stile del testo",
               "uppercase": "Tutto maiuscolo",
               "lowercase": "Tutto minuscolo",
-              "capitalize": "Iniziali maiuscole"
+              "capitalize": "Iniziali maiuscole",
+              "user_input": "Come da input"
             }
           }
         }
