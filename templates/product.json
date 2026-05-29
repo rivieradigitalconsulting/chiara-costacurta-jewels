@@ -68,9 +68,9 @@
         "tab_2": {
           "type": "tab",
           "settings": {
-            "block_spacing_top_desktop": 0,
+            "block_spacing_top_desktop": 10,
             "block_spacing_bottom_desktop": 0,
-            "block_spacing_top_mobile": 0,
+            "block_spacing_top_mobile": 10,
             "block_spacing_bottom_mobile": 15,
             "show_tab_collapsed": false,
             "icon": "caret",
