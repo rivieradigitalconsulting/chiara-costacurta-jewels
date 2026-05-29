@@ -20,7 +20,11 @@
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 5,
             "icon": "none",
-            "title": "<p>{{ product.metafields.pdp.collezione | metafield_text }}</p>"
+            "text_color": "#000000",
+            "text_size_desktop": 16,
+            "text_size_mobile": 14,
+            "title": "<p>{{ product.metafields.pdp.collezione | metafield_text }}</p>",
+            "text_style": "capitalize"
           }
         },
         "title": {
@@ -41,7 +45,11 @@
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 0,
             "icon": "none",
-            "title": "{{ product.description }}"
+            "text_color": "#000000",
+            "text_size_desktop": 16,
+            "text_size_mobile": 14,
+            "title": "{{ product.description }}",
+            "text_style": "capitalize"
           }
         },
         "tab_2": {
@@ -66,7 +74,11 @@
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 15,
             "icon": "none",
-            "title": "<p>Oro Giallo 18kt – Diamanti bianchi naturali - Catene veneziane</p>"
+            "text_color": "#000000",
+            "text_size_desktop": 16,
+            "text_size_mobile": 14,
+            "title": "<p>Oro Giallo 18kt – Diamanti bianchi naturali - Catene veneziane</p>",
+            "text_style": "capitalize"
           }
         },
         "price": {
@@ -194,7 +206,19 @@
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
             "icon": "checkmark",
-            "title": "<p>Testo del punto di vendita unico</p>"
+            "text_color": "#000000",
+            "text_size_desktop": 16,
+            "text_size_mobile": 14,
+            "title": "<p>Testo del punto di vendita unico</p>",
+            "text_style": "capitalize"
+          }
+        },
+        "kiwi_size_chart_recommender_kiwi_sizing_WgRPib": {
+          "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
+          "settings": {
+            "fallbackToBlockPosition": false,
+            "waitForElementSelector": "",
+            "waitForElementDelay": 1
           }
         }
       },
@@ -214,7 +238,8 @@
         "tab_QUDqae",
         "tab_H3Fmn4",
         "share_r8YgPP",
-        "usp_Lkd9rQ"
+        "usp_Lkd9rQ",
+        "kiwi_size_chart_recommender_kiwi_sizing_WgRPib"
       ],
       "custom_css": [
         ".m-breadcrumbs__link,.m-breadcrumbs__chevron {font-size: 12px;}",
