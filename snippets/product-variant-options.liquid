@@ -9,14 +9,13 @@
   - product_form_id: {String} generated form id.
   - section_id: {string} section id.
 
-
   Usage:
   {%- render 'product-variant-options',
     product: product,
     option: option,
     label_class: 'm-variants__label--small',
     display_mode: display_mode,
-    product_form_id: product_form_id
+    product_form_id: product_form_id,
     section_id: section_id
   -%}
 {%- endcomment -%}
@@ -33,11 +32,10 @@
 -%}
 
 {%- for value in option.values -%}
-  <script>
-    console.log({{ variants_option1_arr | json }});
-  </script>
   {%- liquid
     assign option_disabled = true
+    assign current_variant = blank
+    assign on_order = false
 
     for option1_name in variants_option1_arr
       case option.position
@@ -45,15 +43,15 @@
           if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
             assign option_disabled = false
           endif
-        when 2
-          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
-            assign option_disabled = false
-          endif
-        when 3
-          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
-            assign option_disabled = false
-          endif
       endcase
+    endfor
+
+    for variant in product.variants
+      if variant.option1 == value
+        assign current_variant = variant
+        assign on_order = current_variant.metafields.pdp.disponibilita_su_ordinazione.value
+        break
+      endif
     endfor
 
     assign swatch_focal_point = null
@@ -88,11 +86,15 @@
         {%- render 'swatch', swatch_value: swatch_value, swatch_focal_point: swatch_focal_point -%}
       {%- else -%}
         {{ value }}
+        {% if on_order %}
+          <span class="variant-option-badge">{{- 'products.product.on_order' | t -}}</span>
+        {% endif %}
       {%- endif -%}
     </label>
   {%- else -%}
     <option
       value="{{ value | escape }}"
+      data-on-order="{% if on_order %}true{% else %}false{% endif %}"
       {% if option.selected_value == value %}
         selected="selected"
       {% endif %}
@@ -105,3 +107,133 @@
     </option>
   {%- endif -%}
 {%- endfor -%}
+
+{% javascript %}
+  (() => {
+    const APPLIED_ATTR = 'data-ts-on-order-render-applied';
+
+    function getOnOrderValue(select, optionValue) {
+      if (!select || !optionValue) return 'false';
+
+      const originalOption = Array.from(select.options).find((option) => option.value === optionValue);
+      if (!originalOption) return 'false';
+
+      return originalOption.getAttribute('data-on-order') || 'false';
+    }
+
+    function getBadgeLabel() {
+      return 'Su ordinazione';
+    }
+
+    function updateSelectedItemBadge(select) {
+      if (!select || !select.tomselect) return;
+
+      const tom = select.tomselect;
+      const selectedValue = select.value;
+      const selectedItem = tom.control.querySelector('.item');
+
+      if (!selectedItem || !selectedValue) return;
+
+      const originalOption = Array.from(select.options).find((option) => option.value === selectedValue);
+      const onOrder = originalOption && originalOption.getAttribute('data-on-order') === 'true';
+      const badgeLabel = getBadgeLabel();
+
+      const currentText = selectedItem.textContent.trim();
+
+      selectedItem.innerHTML = `
+        <span class="item__value">${currentText.replace(badgeLabel, '').trim()}</span>
+          ${onOrder ? `<span class="variant-option-badge">${badgeLabel}</span>` : ''}
+        `;
+    }
+
+    function applyCustomTomSelectRender(select) {
+      if (!select || select.getAttribute(APPLIED_ATTR) === 'true') return;
+      if (!select.classList.contains('custom-select')) return;
+      if (!select.tomselect) return;
+
+      const tom = select.tomselect;
+      select.setAttribute(APPLIED_ATTR, 'true');
+
+      tom.settings.render = tom.settings.render || {};
+
+      tom.settings.render.option = function(data, escape) {
+        const onOrder = getOnOrderValue(select, data.value) === 'true';
+
+        return `
+          <div class="option option--custom">
+            <span class="option__value">${escape(data.text)}</span>
+            ${onOrder ? `<span class="variant-option-badge">${getBadgeLabel()}</span>` : ''}
+          </div>
+        `;
+      };
+
+      tom.clearCache();
+      tom.refreshOptions(false);
+
+      updateSelectedItemBadge(select);
+
+      select.addEventListener('change', function () {
+        updateSelectedItemBadge(select);
+      });
+
+      tom.on('item_add', function () {
+        updateSelectedItemBadge(select);
+      });
+
+      tom.on('initialize', function () {
+        updateSelectedItemBadge(select);
+      });
+    }
+
+    function initExistingSelects(root = document) {
+      root.querySelectorAll('select.custom-select').forEach(applyCustomTomSelectRender);
+    }
+
+    function observeTomSelectInit() {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          mutation.addedNodes.forEach((node) => {
+            if (!(node instanceof HTMLElement)) return;
+
+            if (node.matches('.ts-wrapper')) {
+              const select = node.previousElementSibling;
+              if (select && select.matches('select.custom-select')) {
+                applyCustomTomSelectRender(select);
+              }
+            }
+
+            if (node.querySelectorAll) {
+              node.querySelectorAll('.ts-wrapper').forEach((wrapper) => {
+                const select = wrapper.previousElementSibling;
+                if (select && select.matches('select.custom-select')) {
+                  applyCustomTomSelectRender(select);
+                }
+              });
+
+              node.querySelectorAll('select.custom-select.tomselected').forEach(applyCustomTomSelectRender);
+            }
+          });
+        });
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        initExistingSelects();
+        observeTomSelectInit();
+      });
+    } else {
+      initExistingSelects();
+      observeTomSelectInit();
+    }
+
+    document.addEventListener('shopify:section:load', (event) => {
+      initExistingSelects(event.target);
+    });
+  })();
+{% endjavascript %}

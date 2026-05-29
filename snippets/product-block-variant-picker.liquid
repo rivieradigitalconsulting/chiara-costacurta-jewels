@@ -2,7 +2,7 @@
   assign product_form_id = product_form_id
 -%}
 
-{%- unless product.has_only_default_variant -%}
+{%- unless product.has_only_default_variant or product.variants.size <= 1 -%}
   {%- if block.settings.display_mode == 'button' -%}
     <div
       class="m-variants js-variants a-spacing-content"
@@ -68,7 +68,8 @@
       {%- for option in product.options_with_values -%}
         <div class="m-variants__fieldset">
           <label class="m-variants__legend a-input__label" for="option-{{ section.id }}-{{ forloop.index0 }}">
-            {{ option.name }}
+            <span>{{ option.name }}</span>
+            <span class="sizechart-trigger-placeholder"></span>
           </label>
           <div class="m-variants__select-wrapper">
             <select

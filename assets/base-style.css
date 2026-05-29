@@ -1870,7 +1870,8 @@ a {
   font-size: var(--body-fs-sm);
   line-height: var(--body-lh-sm);
   margin-bottom: 0.5rem;
-  display: block;
+  display: flex;
+  justify-content: space-between;
 }
 .a-input__field, .a-input__textarea {
   color: rgb(var(--color-text));
@@ -2020,6 +2021,11 @@ input[type=search]::-webkit-search-results-decoration {
 .ts-control > * {
   vertical-align: baseline;
   display: inline-block;
+}
+.ts-control > .item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .ts-wrapper.multi .ts-control > div {
   cursor: pointer;
@@ -2400,6 +2406,8 @@ input[type=search]::-webkit-search-results-decoration {
 .ts-dropdown .option {
   font-size: var(--body-fs-sm);
   line-height: var(--body-lh-sm);
+  display: flex;
+  justify-content: space-between;
 }
 
 .ts-wrapper.single.dropdown-active .ts-control {

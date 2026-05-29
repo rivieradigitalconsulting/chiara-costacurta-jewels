@@ -2994,6 +2994,9 @@
               "language_selector": {
                 "content": "Language selector",
                 "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+              },
+              "country_language_selectors": {
+                "content": "Country and language selectors settings"
               }
             },
             "title": {
@@ -3075,6 +3078,17 @@
             },
             "show_language_switcher": {
               "label": "Enable language switcher"
+            },
+            "selectors_layout": {
+              "label": "Selectors layout",
+              "row": "Row",
+              "column": "Column"
+            },
+            "selectors_alignment": {
+              "label": "Selectors alignment",
+              "left": "Left",
+              "center": "Center",
+              "right": "Right"
             }
           }
         }
@@ -5071,6 +5085,22 @@
           }
         }
       },
+      "variant_metafield": {
+        "variant_metafield": {
+          "name": "Color selector",
+          "settings": {
+            "header": {
+              "block": { "content": "Block spacing" },
+              "card_size": { "content": "Card size" },
+              "card_gap": { "content": "Spacing between cards" }
+            },
+            "card_width_desktop": { "label": "Card witdh (desktop)" },
+            "card_width_mobile": { "label": "Card width (mobile)" },
+            "gap_horizontal": { "label": "Horizontal Gap" },
+            "gap_vertical": { "label": "Vertical Gap" }
+          }
+        }
+      },
       "buy_buttons": {
         "buy_buttons": {
           "name": "Buy buttons",
@@ -5329,6 +5359,21 @@
             "title": {
               "label": "Label",
               "default": "<p>Unique selling point text</p>"
+            },
+            "text_color": {
+              "label": "Text color"
+            },
+            "text_size_desktop": {
+              "label": "Text size (desktop)"
+            },
+            "text_size_mobile": {
+              "label": "Text size (mobile)"
+            },
+            "text_style": {
+              "label": "Text Style",
+              "uppercase": "Uppercase",
+              "lowercase": "Lowercase",
+              "capitalize": "Capitalize"
             }
           }
         }

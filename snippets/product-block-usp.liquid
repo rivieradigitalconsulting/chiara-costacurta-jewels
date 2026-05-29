@@ -1,10 +1,30 @@
 {%- liquid
   assign usp_icon = block.settings.icon
   assign usp_label = block.settings.title
+  assign usp_text_color = block.settings.text_color
+  assign usp_size_desktop = block.settings.text_size_desktop
+  assign usp_size_mobile = block.settings.text_size_mobile
+  assign usp_text_style = block.settings.text_style
 -%}
 
+{% style %}
+  .m-product-usp--{{ block.id }} .m-product-usp__label.body-fs-sm {
+    {% if usp_text_color != blank %}
+      color: {{ usp_text_color }};
+    {% endif %}
+    font-size: {{ usp_size_mobile }}px;
+    text-transform: {{ usp_text_style }};
+  }
+
+  @media screen and (min-width: 768px) {
+    .m-product-usp--{{ block.id }} .m-product-usp__label.body-fs-sm {
+      font-size: {{ usp_size_desktop }}px;
+    }
+  }
+{% endstyle %}
+
 <div
-  class="o-product__usp m-product-usp grid grid--top-v a-spacing-content"
+  class="o-product__usp m-product-usp m-product-usp--{{ block.id }} grid grid--top-v a-spacing-content"
   style="{{ block_styles | strip_newlines | remove: ' ' }}"
   {{ block.shopify_attributes }}
 >
