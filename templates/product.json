@@ -259,9 +259,7 @@
         ".m-breadcrumbs__link,.m-breadcrumbs__chevron {font-size: 12px;}",
         ".o-product__description {font-size: 14px;}",
         ".o-product__accordion {border-top: none; border-bottom: none;}",
-        ".m-accordion__text {font-size: 14px;}",
-        "h1 {font-size: 22px;}",
-        "@media (max-width: 768px) {h1 {font-size: 20px; }}"
+        ".m-accordion__text {font-size: 14px;}"
       ],
       "settings": {
         "section_id": "",
