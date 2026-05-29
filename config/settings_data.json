@@ -60,6 +60,35 @@
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
+      },
+      "11813581335429059158": {
+        "type": "shopify://apps/seedgrow-whatsapp-chat/blocks/app-embed/b85b5e45-9cea-417a-9b9e-0aa961ccf3ef",
+        "disabled": false,
+        "settings": {
+          "show_on_desktop": true,
+          "show_on_mobile": true,
+          "show_label_on_desktop": false,
+          "show_dismiss_button_desktop": false,
+          "show_label_on_mobile": false,
+          "show_dismiss_button_mobile": false,
+          "show_scroll_bar": false,
+          "show_gdpr_notice": false,
+          "use_click_to_chat": false,
+          "widget_label_text": "",
+          "widget_text": "Hai bisono di aiuto?",
+          "description": "Clicca qui sotto per chattare su WhatsApp",
+          "response_text": "Il team di solito risponde in pochi minuti.",
+          "gdpr_text": "Please accept our privacy policy first to start a conversation.",
+          "background_color": "#373837",
+          "text_color": "#ffffff",
+          "position": "right",
+          "label_width": 155,
+          "scroll_bar_height": 500,
+          "icon_size": 56,
+          "distance_left": 30,
+          "distance_right": 30,
+          "distance_bottom": 30
+        }
       }
     },
     "color_schemes": {
