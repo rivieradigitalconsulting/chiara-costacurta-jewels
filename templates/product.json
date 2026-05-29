@@ -98,9 +98,9 @@
           "type": "price",
           "settings": {
             "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 0,
-            "block_spacing_bottom_mobile": 20,
+            "block_spacing_bottom_desktop": 30,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 30,
             "show_tax_message": true
           }
         },
