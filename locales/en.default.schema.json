@@ -2994,6 +2994,9 @@
               "language_selector": {
                 "content": "Language selector",
                 "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+              },
+              "country_language_selectors": {
+                "content": "Country and language selectors settings"
               }
             },
             "title": {
@@ -3075,6 +3078,17 @@
             },
             "show_language_switcher": {
               "label": "Enable language switcher"
+            },
+            "selectors_layout": {
+              "label": "Selectors layout",
+              "row": "Row",
+              "column": "Column"
+            },
+            "selectors_alignment": {
+              "label": "Selectors alignment",
+              "left": "Left",
+              "center": "Center",
+              "right": "Right"
             }
           }
         }
@@ -5354,6 +5368,12 @@
             },
             "text_size_mobile": {
               "label": "Text size (mobile)"
+            },
+            "text_style": {
+              "label": "Text Style",
+              "uppercase": "Uppercase",
+              "lowercase": "Lowercase",
+              "capitalize": "Capitalize"
             }
           }
         }

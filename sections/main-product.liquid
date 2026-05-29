@@ -1045,6 +1045,38 @@
           "unit": "px",
           "label": "t:sections.all.padding.bottom.mobile.label",
           "info": "t:sections.all.padding.bottom.mobile.info"
+        },
+        {
+          "type": "header",
+          "content": "t:product_card.settings.header.available_on_order_badge.content"
+        },
+        {
+          "type": "range",
+          "id": "available_on_order_badge_font_size",
+          "min": 10,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "label": "t:product_card.settings.available_on_order_badge_font_size.label",
+          "default": 12
+        },
+        {
+          "type": "color",
+          "id": "available_on_order_badge_text_color",
+          "label": "t:product_card.settings.available_on_order_badge_text_color.label",
+          "default": "#202020"
+        },
+        {
+          "type": "color",
+          "id": "available_on_order_badge_background_color",
+          "label": "t:product_card.settings.available_on_order_badge_background_color.label",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "available_on_order_badge_border_color",
+          "label": "t:product_card.settings.available_on_order_badge_border_color.label",
+          "default": "#202020"
         }
       ]
     },
@@ -1537,6 +1569,26 @@
           "id": "title",
           "label": "t:product.blocks.usp.unique_selling_point.settings.title.label",
           "default": "t:product.blocks.usp.unique_selling_point.settings.title.default"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "label": "t:product.blocks.usp.unique_selling_point.settings.text_style.label",
+          "options": [
+            {
+              "value": "lowercase",
+              "label": "t:product.blocks.usp.unique_selling_point.settings.text_style.lowercase"
+            },
+            {
+              "value": "uppercase",
+              "label": "t:product.blocks.usp.unique_selling_point.settings.text_style.uppercase"
+            },
+            {
+              "value": "capitalize",
+              "label": "t:product.blocks.usp.unique_selling_point.settings.text_style.capitalize"
+            }
+          ],
+          "default": "capitalize"
         }
       ]
     },

@@ -78,4 +78,11 @@
     border-color: {{ settings.available_on_order_badge_border_color }};
     background-color: {{ settings.available_on_order_badge_background_color }};
   }
+
+  .o-product__content .a-badge--available_on_order {
+    font-size: {{ block.settings.available_on_order_badge_font_size }}px;
+    color: {{ block.settings.available_on_order_badge_text_color }};
+    border-color: {{ block.settings.available_on_order_badge_border_color }};
+    background-color: {{ block.settings.available_on_order_badge_background_color }};
+  }
 {% endstyle %}
