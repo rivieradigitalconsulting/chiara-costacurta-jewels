@@ -135,6 +135,19 @@
             "content": "<p>Expand this tab to reveal additional details and insights. You can include information such as key features, specifications, helpful tips, or any other relevant details that enhance your understanding.</p>"
           }
         },
+        "tab_AjHYKE": {
+          "type": "tab",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 0,
+            "show_tab_collapsed": false,
+            "icon": "plus",
+            "title": "Disponibilità su ordinazione",
+            "content": "<p>Expand this tab to reveal additional details and insights. You can include information such as key features, specifications, helpful tips, or any other relevant details that enhance your understanding.</p>"
+          }
+        },
         "tab_QUDqae": {
           "type": "tab",
           "settings": {
@@ -181,6 +194,7 @@
         "variant_picker",
         "buy_buttons",
         "tab_epHAfB",
+        "tab_AjHYKE",
         "tab_QUDqae",
         "tab_H3Fmn4",
         "kiwi_size_chart_recommender_kiwi_sizing_WgRPib"
