@@ -28,9 +28,9 @@
         "usp": {
           "type": "usp",
           "settings": {
-            "block_spacing_top_desktop": 20,
+            "block_spacing_top_desktop": 15,
             "block_spacing_bottom_desktop": 5,
-            "block_spacing_top_mobile": 20,
+            "block_spacing_top_mobile": 15,
             "block_spacing_bottom_mobile": 5,
             "icon": "none",
             "text_color": "#9d9d9d",
