@@ -74,7 +74,7 @@
           "show_scroll_bar": false,
           "show_gdpr_notice": false,
           "use_click_to_chat": false,
-          "widget_label_text": "",
+          "widget_label_text": "Need Help? Chat with us",
           "widget_text": "Hai bisono di aiuto?",
           "description": "Clicca qui sotto per chattare su WhatsApp",
           "response_text": "Il team di solito risponde in pochi minuti.",
@@ -86,7 +86,7 @@
           "scroll_bar_height": 500,
           "icon_size": 56,
           "distance_left": 30,
-          "distance_right": 30,
+          "distance_right": 20,
           "distance_bottom": 30
         }
       }
