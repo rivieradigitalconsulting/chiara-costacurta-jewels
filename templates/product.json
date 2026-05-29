@@ -232,11 +232,15 @@
         "ai_gen_block_e2e8ca0_H9XC7y": {
           "type": "ai_gen_block_e2e8ca0",
           "settings": {
+            "desktop_image": "{{ closest.product.metafields.pdp.immagine_narrativa_desktop.value }}",
+            "desktop_video": "{{ closest.product.metafields.pdp.immagine_narrativa_desktop.value }}",
             "desktop_height": 500,
             "desktop_max_width": 100,
             "desktop_object_fit": "cover",
             "desktop_margin_top": 0,
             "desktop_margin_bottom": 0,
+            "mobile_image": "{{ closest.product.metafields.pdp.immagine_narrativa_mobile.value }}",
+            "mobile_video": "{{ closest.product.metafields.pdp.immagine_narrativa_mobile.value }}",
             "mobile_height": 400,
             "mobile_max_width": 100,
             "mobile_object_fit": "cover",
