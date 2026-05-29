@@ -210,7 +210,7 @@
         "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 0,
+        "section_padding_bottom_mobile": 80,
         "invert_navigation_color": false,
         "color_scheme": "scheme-1",
         "enable_sticky_info": true,
@@ -244,6 +244,7 @@
       "block_order": [
         "image_7QGmWJ"
       ],
+      "disabled": true,
       "name": "t:image.presets.image.name",
       "settings": {
         "section_id": "",
@@ -258,6 +259,36 @@
         "content_position": "center",
         "content_alignment": "center"
       }
+    },
+    "1780067586a1d4b496": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e2e8ca0_MwrEX3": {
+          "type": "ai_gen_block_e2e8ca0",
+          "settings": {
+            "desktop_image": "{{ closest.product.metafields.pdp.immagine_narrativa_desktop.value }}",
+            "desktop_video": "{{ closest.product.metafields.pdp.immagine_narrativa_desktop.value }}",
+            "desktop_height": 500,
+            "desktop_max_width": 100,
+            "desktop_object_fit": "cover",
+            "desktop_margin_top": 0,
+            "desktop_margin_bottom": 0,
+            "mobile_image": "{{ closest.product.metafields.pdp.immagine_narrativa_mobile.value }}",
+            "mobile_video": "{{ closest.product.metafields.pdp.immagine_narrativa_mobile.value }}",
+            "mobile_height": 400,
+            "mobile_max_width": 100,
+            "mobile_object_fit": "cover",
+            "mobile_margin_top": 0,
+            "mobile_margin_bottom": 0,
+            "border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e2e8ca0_MwrEX3"
+      ],
+      "settings": {}
     },
     "rich_text_aUYy8n": {
       "type": "rich-text",
@@ -597,6 +628,7 @@
   "order": [
     "main",
     "image_AiVjJE",
+    "1780067586a1d4b496",
     "rich_text_aUYy8n",
     "accordion_w6XtBi",
     "product_recommendations_3VYMEY",
