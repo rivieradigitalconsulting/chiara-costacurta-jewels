@@ -79,7 +79,7 @@
           "description": "Clicca qui sotto per chattare su WhatsApp",
           "response_text": "Il team di solito risponde in pochi minuti.",
           "gdpr_text": "Please accept our privacy policy first to start a conversation.",
-          "background_color": "#373837",
+          "background_color": "#262626",
           "text_color": "#ffffff",
           "position": "right",
           "label_width": 155,
