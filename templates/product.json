@@ -78,22 +78,6 @@
             "content": "<p>{{ product.metafields.pdp.dettagli_tecnici.value }}</p>"
           }
         },
-        "usp_37YhDH": {
-          "type": "usp",
-          "disabled": true,
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 0,
-            "block_spacing_bottom_mobile": 15,
-            "icon": "none",
-            "text_color": "#000000",
-            "text_size_desktop": 16,
-            "text_size_mobile": 14,
-            "title": "<p>Oro Giallo 18kt – Diamanti bianchi naturali - Catene veneziane</p>",
-            "text_style": "capitalize"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -112,6 +96,19 @@
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
             "display_mode": "dropdown"
+          }
+        },
+        "variant_metafield_GafxBg": {
+          "type": "variant_metafield",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "card_width_desktop": 64,
+            "card_width_mobile": 52,
+            "gap_horizontal": 8,
+            "gap_vertical": 8
           }
         },
         "quantity_selector": {
@@ -241,9 +238,9 @@
         "title",
         "usp_eiHL4J",
         "tab_2",
-        "usp_37YhDH",
         "price",
         "variant_picker",
+        "variant_metafield_GafxBg",
         "quantity_selector",
         "buy_buttons",
         "tab_1",
