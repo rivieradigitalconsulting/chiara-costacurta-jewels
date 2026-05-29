@@ -104,9 +104,9 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "block_spacing_top_desktop": 20,
+            "block_spacing_top_desktop": 30,
             "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
+            "block_spacing_top_mobile": 30,
             "block_spacing_bottom_mobile": 20,
             "display_mode": "dropdown"
           }
