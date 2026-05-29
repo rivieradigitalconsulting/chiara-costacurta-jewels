@@ -262,6 +262,7 @@
       "blocks": {
         "ai_gen_block_2c6dbe2_QJ7rFg": {
           "type": "ai_gen_block_2c6dbe2",
+          "name": "Testo narrativo",
           "settings": {
             "text": "<p>{{ closest.product.metafields.pdp.descrizione_narrativa.value }}</p>",
             "text_color": "#1d1d1d",
