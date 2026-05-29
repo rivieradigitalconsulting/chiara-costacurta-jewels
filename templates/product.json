@@ -276,7 +276,7 @@
             "line_height_mobile": 1.5,
             "text_align_mobile": "center",
             "margin_top_mobile": 15,
-            "margin_bottom_mobile": 15
+            "margin_bottom_mobile": 60
           },
           "blocks": {}
         }
@@ -359,7 +359,7 @@
         "content_width": 4,
         "content_position": "center",
         "content_alignment": "center",
-        "heading": "",
+        "heading": "Potrebbe piacerti anche",
         "heading_size": "h3",
         "text": "",
         "text_size": "body-fs-sm",
