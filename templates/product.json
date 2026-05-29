@@ -12,6 +12,19 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "badge_ynWwtK": {
+          "type": "badge",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 0,
+            "available_on_order_badge_font_size": 12,
+            "available_on_order_badge_text_color": "#202020",
+            "available_on_order_badge_background_color": "#ffffff",
+            "available_on_order_badge_border_color": "#202020"
+          }
+        },
         "usp": {
           "type": "usp",
           "settings": {
@@ -223,6 +236,7 @@
         }
       },
       "block_order": [
+        "badge_ynWwtK",
         "usp",
         "title",
         "usp_eiHL4J",
