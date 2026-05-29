@@ -44,7 +44,7 @@
                 class="o-accordion__item m-accordion js-accordion {% if settings.enable_animation %}js-animation a-animation a-animation--fade-up{% endif %}"
                 {{ block.shopify_attributes }}
               >
-                <div class="m-accordion__header grid grid--center-v js-accordion-trigger" tabindex="0">
+                <div class="m-accordion__header grid grid--center-v grid--no-wrap js-accordion-trigger" tabindex="0">
                   <h3 class="body-fs-md">{{ title }}</h3>
                   {%- render 'icon-pack', icon: icon -%}
                 </div>

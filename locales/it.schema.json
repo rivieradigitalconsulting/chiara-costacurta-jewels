@@ -3020,6 +3020,7 @@
             },
             "selectors_alignment": {
               "label": "Allineamento dei selettori",
+              "info": "L'allineamento si applica solamente ai dispositivi mobile. Su schermi da 768px in su, i selettori saranno sempre allineati a sinistra.",
               "left": "Sinistra",
               "center": "Centrati",
               "right": "Destra"

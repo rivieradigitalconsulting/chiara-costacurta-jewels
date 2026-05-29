@@ -126,8 +126,16 @@
               </div>
             {%- endif -%}
             {%- if block.settings.show_language_switcher or block.settings.show_country_switcher -%}
+              {%- case block.settings.selectors_alignment -%}
+                {%- when 'center' -%}
+                  {%- assign alignment_class = 'grid--center-h-mobile' -%}
+                {%- when 'right' -%}
+                  {%- assign alignment_class = 'grid--right-h-mobile' -%}
+                {%- else -%}
+                  {%- assign alignment_class = 'grid--left-h-mobile' -%}
+              {%- endcase -%}
               <div class="m-footer-column__item m-footer-column__localization">
-                <div class="m-localization grid grid--center-v">
+                <div class="m-localization grid grid--center-v {{ alignment_class }}">
                   {%- if block.settings.show_language_switcher and localization.available_languages.size > 1 -%}
                     {%- render 'language-switcher' -%}
                   {%- endif -%}
@@ -514,6 +522,31 @@
           "id": "show_language_switcher",
           "label": "t:footer.blocks.column.column.settings.show_language_switcher.label",
           "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:footer.blocks.column.column.settings.header.country_language_selectors.content",
+          "info": "t:footer.blocks.column.column.settings.selectors_alignment.info"
+        },
+        {
+          "type": "select",
+          "id": "selectors_alignment",
+          "label": "t:footer.blocks.column.column.settings.selectors_alignment.label",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:footer.blocks.column.column.settings.selectors_alignment.left"
+            },
+            {
+              "value": "center",
+              "label": "t:footer.blocks.column.column.settings.selectors_alignment.center"
+            },
+            {
+              "value": "right",
+              "label": "t:footer.blocks.column.column.settings.selectors_alignment.right"
+            }
+          ],
+          "default": "left"
         }
       ]
     }

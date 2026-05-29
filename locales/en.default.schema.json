@@ -3086,6 +3086,7 @@
             },
             "selectors_alignment": {
               "label": "Selectors alignment",
+              "info": "Alignment applies on mobile screens only. On screens 768px and wider, selectors are always aligned to the left.",
               "left": "Left",
               "center": "Center",
               "right": "Right"

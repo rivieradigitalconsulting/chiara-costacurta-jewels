@@ -3396,11 +3396,22 @@ button.swiper-pagination-bullet {
 }
 .m-localization.grid {
   width: auto;
-  flex-direction: column;
+}
+.m-localization.grid.grid--center-h-mobile {
+  justify-content: center;
+}
+.m-localization.grid.grid--right-h-mobile {
+  justify-content: right;
 }
 @media screen and (min-width: 768px) {
   .m-localization.grid {
     flex-direction: row;
+  }
+  .m-localization.grid.grid--center-h-mobile {
+    justify-content: left;
+  }
+  .m-localization.grid.grid--right-h-mobile {
+    justify-content: left;
   }
 }
 .m-localization .a-select__field {

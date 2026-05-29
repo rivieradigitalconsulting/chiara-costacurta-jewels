@@ -29,6 +29,7 @@
   assign product_form_id = product_form_id
   assign display_mode = display_mode
   assign label_class = label_class
+  assign label_on_order = 'products.product.on_order' | t
 -%}
 
 {%- for value in option.values -%}
@@ -95,6 +96,7 @@
     <option
       value="{{ value | escape }}"
       data-on-order="{% if on_order %}true{% else %}false{% endif %}"
+      data-on-order-label="{% if on_order %}{{ label_on_order }}{% endif %}"
       {% if option.selected_value == value %}
         selected="selected"
       {% endif %}
@@ -121,8 +123,11 @@
       return originalOption.getAttribute('data-on-order') || 'false';
     }
 
-    function getBadgeLabel() {
-      return 'Su ordinazione';
+    function getBadgeLabel(select) {
+      const option = Array.from(select.options).find(
+        (o) => o.dataset.onOrderLabel
+      );
+      return option ? option.dataset.onOrderLabel : '';
     }
 
     function updateSelectedItemBadge(select) {
@@ -136,7 +141,7 @@
 
       const originalOption = Array.from(select.options).find((option) => option.value === selectedValue);
       const onOrder = originalOption && originalOption.getAttribute('data-on-order') === 'true';
-      const badgeLabel = getBadgeLabel();
+      const badgeLabel = getBadgeLabel(select);
 
       const currentText = selectedItem.textContent.trim();
 
@@ -162,7 +167,7 @@
         return `
           <div class="option option--custom">
             <span class="option__value">${escape(data.text)}</span>
-            ${onOrder ? `<span class="variant-option-badge">${getBadgeLabel()}</span>` : ''}
+            ${onOrder ? `<span class="variant-option-badge">${getBadgeLabel(select)}</span>` : ''}
           </div>
         `;
       };
