@@ -1,6 +1,145 @@
+{% doc %}
+  @prompt
+    Generami un blocco di testo, che collego a un Metafield. Se il blocco è vuoto e non valorizzato, allora il blocco non appare. Possibilità di inserire un rich text. su mobile la larghezza si adatta al contenuto di pagina, con i bordi della pagina, su desktop decido io quanto larga la colonna di testo deve essere. Per ogni dispositivo devo poter scegliere margin top e bottom , fermo, non darmi metafield, dammi un tezo a cui posso collegare sorgente dinamica
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-dynamic-text-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: {{ block.settings.margin_top_mobile }}px;
+    margin-bottom: {{ block.settings.margin_bottom_mobile }}px;
+  }
+
+  .ai-dynamic-text-content-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.font_size }}px;
+    line-height: 1.5;
+  }
+
+  .ai-dynamic-text-content-{{ ai_gen_id }} p {
+    margin: 0 0 1em 0;
+  }
+
+  .ai-dynamic-text-content-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-dynamic-text-{{ ai_gen_id }} {
+      width: {{ block.settings.desktop_width_percent }}%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: {{ block.settings.margin_top_desktop }}px;
+      margin-bottom: {{ block.settings.margin_bottom_desktop }}px;
+    }
+  }
+{% endstyle %}
+
+{% if block.settings.text != blank %}
+  <div class="ai-dynamic-text-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+    <div class="ai-dynamic-text-content-{{ ai_gen_id }}">
+      {{ block.settings.text }}
+    </div>
+  </div>
+{% endif %}
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Dynamic text",
+  "tag": null,
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#1d1d1d"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Desktop layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "margin_top_desktop",
+      "label": "Margin top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_desktop",
+      "label": "Margin bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "label": "Margin top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_mobile",
+      "label": "Margin bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dynamic text"
+    }
+  ]
+}
 {% endschema %}
