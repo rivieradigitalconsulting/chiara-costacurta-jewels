@@ -257,6 +257,34 @@
       "name": "Immagine / Video Narrativo",
       "settings": {}
     },
+    "1780068900439b45f8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_2c6dbe2_QJ7rFg": {
+          "type": "ai_gen_block_2c6dbe2",
+          "settings": {
+            "text": "<p>{{ closest.product.metafields.pdp.descrizione_narrativa.value }}</p>",
+            "text_color": "#1d1d1d",
+            "desktop_width_percent": 60,
+            "font_size_desktop": 14,
+            "line_height_desktop": 1.5,
+            "text_align_desktop": "center",
+            "margin_top_desktop": 20,
+            "margin_bottom_desktop": 20,
+            "font_size_mobile": 14,
+            "line_height_mobile": 1.5,
+            "text_align_mobile": "left",
+            "margin_top_mobile": 15,
+            "margin_bottom_mobile": 15
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_2c6dbe2_QJ7rFg"
+      ],
+      "settings": {}
+    },
     "rich_text_aUYy8n": {
       "type": "rich-text",
       "blocks": {
@@ -277,6 +305,7 @@
       "block_order": [
         "paragraph_qy8PgG"
       ],
+      "disabled": true,
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
         "section_id": "",
@@ -595,6 +624,7 @@
   "order": [
     "main",
     "blocks_Rwfktp",
+    "1780068900439b45f8",
     "rich_text_aUYy8n",
     "accordion_w6XtBi",
     "product_recommendations_3VYMEY",
