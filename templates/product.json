@@ -238,14 +238,14 @@
             "desktop_max_width": 100,
             "desktop_object_fit": "cover",
             "desktop_margin_top": 0,
-            "desktop_margin_bottom": 60,
+            "desktop_margin_bottom": 70,
             "mobile_image": "{{ closest.product.metafields.pdp.immagine_narrativa_mobile.value }}",
             "mobile_video": "{{ closest.product.metafields.pdp.immagine_narrativa_mobile.value }}",
             "mobile_height": 500,
             "mobile_max_width": 100,
             "mobile_object_fit": "cover",
             "mobile_margin_top": 0,
-            "mobile_margin_bottom": 60,
+            "mobile_margin_bottom": 70,
             "border_radius": 0
           },
           "blocks": {}
