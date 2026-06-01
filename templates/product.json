@@ -290,7 +290,7 @@
     "product_recommendations_3VYMEY": {
       "type": "product-recommendations",
       "custom_css": [
-        "h2 {text-align: left;}"
+        "h2 {justify-content: start !important;}"
       ],
       "settings": {
         "section_padding_top_desktop": 80,
