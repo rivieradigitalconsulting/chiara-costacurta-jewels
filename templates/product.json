@@ -287,58 +287,6 @@
       "name": "Testo narrativo",
       "settings": {}
     },
-    "accordion_w6XtBi": {
-      "type": "accordion",
-      "blocks": {
-        "accordion_item_afkeL4": {
-          "type": "accordion_item",
-          "settings": {
-            "icon": "plus",
-            "title": "Accordion title",
-            "content": "<p>An accordion is a tool that helps keep your page organized by hiding content under expandable titles. Click on a title to reveal more information, making it easier to browse through sections without overwhelming the page.</p>"
-          }
-        },
-        "accordion_item_8qQWJL": {
-          "type": "accordion_item",
-          "settings": {
-            "icon": "plus",
-            "title": "Accordion title",
-            "content": "<p>An accordion is a tool that helps keep your page organized by hiding content under expandable titles. Click on a title to reveal more information, making it easier to browse through sections without overwhelming the page.</p>"
-          }
-        },
-        "accordion_item_DxKWd3": {
-          "type": "accordion_item",
-          "settings": {
-            "icon": "plus",
-            "title": "Accordion title",
-            "content": "<p>An accordion is a tool that helps keep your page organized by hiding content under expandable titles. Click on a title to reveal more information, making it easier to browse through sections without overwhelming the page.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "accordion_item_afkeL4",
-        "accordion_item_8qQWJL",
-        "accordion_item_DxKWd3"
-      ],
-      "disabled": true,
-      "name": "t:accordion.presets.accordion.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 80,
-        "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 40,
-        "section_padding_bottom_mobile": 40,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "column_width": 10,
-        "content_position": "center",
-        "content_alignment": "center",
-        "heading": "Heading",
-        "heading_size": "h2",
-        "text": "",
-        "text_size": "body-fs-md"
-      }
-    },
     "product_recommendations_3VYMEY": {
       "type": "product-recommendations",
       "settings": {
@@ -586,7 +534,6 @@
     "main",
     "blocks_Rwfktp",
     "1780068900439b45f8",
-    "accordion_w6XtBi",
     "product_recommendations_3VYMEY",
     "featured_collection_A3GmHz",
     "text_with_icons_KwCNVH",
