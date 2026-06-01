@@ -507,7 +507,7 @@
       "name": "t:collections_list.presets.collections_list.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 40,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
