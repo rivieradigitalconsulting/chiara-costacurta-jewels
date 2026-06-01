@@ -322,6 +322,82 @@
         "btn_icon": false
       }
     },
+    "media_with_text_M6HPXx": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_Mk6GEt": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Media con testo",
+            "heading_size": "h2",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_dkrxAd": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Abbina testo e immagine per mettere in risalto il prodotto, la collezione o l'articolo del blog che hai scelto. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
+            "text_size": "body-fs-md"
+          }
+        },
+        "button_6DbTLd": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Mk6GEt",
+        "paragraph_dkrxAd",
+        "button_6DbTLd"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 60,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "inside-container",
+        "grid_gap_desktop": 50,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 0,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "left",
+        "image": "shopify://shop_images/Foto-Chiara-Costacurta-960x1441.jpg",
+        "media_width": 50,
+        "image_ratio": "4x5",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video_ratio": "default",
+        "video_autoplay": false
+      }
+    },
     "featured_collection_A3GmHz": {
       "type": "featured-collection",
       "disabled": true,
@@ -539,6 +615,7 @@
     "blocks_Rwfktp",
     "1780068900439b45f8",
     "product_recommendations_3VYMEY",
+    "media_with_text_M6HPXx",
     "featured_collection_A3GmHz",
     "text_with_icons_KwCNVH",
     "collection_list_kqXENe",
