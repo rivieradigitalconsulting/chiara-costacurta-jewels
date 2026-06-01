@@ -440,6 +440,9 @@
         "column_HbgPxx",
         "column_R4Nx6k"
       ],
+      "custom_css": [
+        "a, p {font-size: 14px;}"
+      ],
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
