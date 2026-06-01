@@ -394,7 +394,7 @@
         "media_position": "left",
         "image": "shopify://shop_images/Foto-Chiara-Costacurta-960x1441.jpg",
         "media_width": 50,
-        "image_ratio": "4x5",
+        "image_ratio": "default",
         "image_ratio_2": "default",
         "show_image_2_on_mobile": false,
         "video_ratio": "default",
