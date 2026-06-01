@@ -289,6 +289,9 @@
     },
     "product_recommendations_3VYMEY": {
       "type": "product-recommendations",
+      "custom_css": [
+        "h2 {text-align: left;}"
+      ],
       "settings": {
         "section_padding_top_desktop": 80,
         "section_padding_bottom_desktop": 80,
