@@ -367,6 +367,9 @@
         "paragraph_dkrxAd",
         "button_6DbTLd"
       ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
       "name": "t:media_with_text.presets.media_with_text.name",
       "settings": {
         "section_id": "",
