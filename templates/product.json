@@ -441,7 +441,8 @@
         "column_R4Nx6k"
       ],
       "custom_css": [
-        "a, p {font-size: 14px;}"
+        "a,p {font-size: 14px;}",
+        ".h4 {font-size: 20px;}"
       ],
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
