@@ -410,7 +410,7 @@
             "title": "Elemento di colonna",
             "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
             "btn_label": "Scopri di più",
-            "btn_url": "",
+            "btn_url": "shopify://collections/earcuff",
             "btn_style": "line"
           }
         },
