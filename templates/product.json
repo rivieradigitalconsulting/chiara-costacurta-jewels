@@ -290,7 +290,7 @@
     "product_recommendations_3VYMEY": {
       "type": "product-recommendations",
       "custom_css": [
-        ".o-product-recommendations__heading{text-align: left !important; width: 100% !important; padding-left: 0;}",
+        ".o-product-recommendations__heading {text-align: left !important; width: 100% !important; padding-left: 0; white-space: nowrap;}",
         ".grid--center-h {justify-content: flex-start !important;}"
       ],
       "settings": {
