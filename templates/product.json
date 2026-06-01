@@ -464,7 +464,7 @@
         "column_gap_desktop": 5,
         "row_gap_desktop": 5,
         "column_gap_mobile": 0,
-        "row_gap_mobile": 5,
+        "row_gap_mobile": 30,
         "heading": "Scopri Chiara Costacurta",
         "heading_size": "h3",
         "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
