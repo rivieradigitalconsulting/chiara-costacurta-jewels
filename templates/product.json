@@ -383,7 +383,7 @@
         "section_bg_position": "bottom center",
         "section_bg_size": "auto",
         "section_bg_opacity": 100,
-        "display_mode": "inside-container",
+        "display_mode": "media-outside-container",
         "grid_gap_desktop": 50,
         "grid_gap_mobile": 20,
         "content_vertical_position": "center",
