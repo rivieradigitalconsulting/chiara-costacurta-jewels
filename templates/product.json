@@ -533,7 +533,7 @@
         "image_ratio": "1x1",
         "heading": "Scopri Chiara Costacurta",
         "heading_size": "h3",
-        "text": "<p>Fornisci una breve panoramica delle collezioni presentate in questa sezione. Spiega la varietà e la gamma di prodotti disponibili in ciascuna collezione e come soddisfano le diverse esigenze o preferenze dei clienti.</p>",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
         "text_size": "body-fs-sm",
         "btn_label": "Scopri di più",
         "btn_url": "",
@@ -580,7 +580,6 @@
         "column_HbgPxx",
         "column_R4Nx6k"
       ],
-      "disabled": true,
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
