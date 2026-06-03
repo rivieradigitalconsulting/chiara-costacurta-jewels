@@ -174,9 +174,9 @@
           "type": "heading",
           "settings": {
             "block_spacing_top_desktop": 0,
-            "block_spacing_bottom_desktop": 0,
+            "block_spacing_bottom_desktop": 15,
             "block_spacing_top_mobile": 0,
-            "block_spacing_bottom_mobile": 0,
+            "block_spacing_bottom_mobile": 15,
             "heading": "Collezione Onda",
             "heading_size": "h3",
             "convert_to_h1": false
@@ -184,6 +184,7 @@
         },
         "paragraph_YTYcW6": {
           "type": "paragraph",
+          "disabled": true,
           "settings": {
             "block_spacing_top_desktop": 5,
             "block_spacing_bottom_desktop": 0,
