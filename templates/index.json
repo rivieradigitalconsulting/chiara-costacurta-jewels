@@ -429,6 +429,15 @@
     "brands_EUK7pP": {
       "type": "brands",
       "blocks": {
+        "image_CLTR73": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6.01.png",
+            "image_ratio": "16x9",
+            "image_fit": "contain",
+            "url": ""
+          }
+        },
         "image_4Bcffg": {
           "type": "image",
           "settings": {
@@ -441,7 +450,7 @@
         "image_KEJ8Yf": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
+            "image": "shopify://shop_images/6.03.png",
             "image_ratio": "16x9",
             "image_fit": "contain",
             "url": ""
@@ -450,16 +459,7 @@
         "image_UPrJFj": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/huessers.png",
-            "image_ratio": "16x9",
-            "image_fit": "contain",
-            "url": ""
-          }
-        },
-        "image_y9jehh": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/logo-pm.png",
+            "image": "shopify://shop_images/6.04.png",
             "image_ratio": "16x9",
             "image_fit": "contain",
             "url": ""
@@ -467,10 +467,10 @@
         }
       },
       "block_order": [
+        "image_CLTR73",
         "image_4Bcffg",
         "image_KEJ8Yf",
-        "image_UPrJFj",
-        "image_y9jehh"
+        "image_UPrJFj"
       ],
       "name": "t:brands.presets.brands.name",
       "settings": {
@@ -491,9 +491,9 @@
         "row_gap_desktop": 20,
         "column_gap_mobile": 60,
         "row_gap_mobile": 0,
-        "heading": "Hanno parlato di noi",
+        "heading": "Rassegna Stampa",
         "heading_size": "h3",
-        "text": "<p>Scopri le testate, i magazine e i brand che hanno raccontato il nostro lavoro e riconosciuto la qualità delle nostre creazioni.</p>",
+        "text": "",
         "text_size": "body-fs-sm"
       }
     }
