@@ -132,7 +132,7 @@
             "block_spacing_bottom_desktop": 30,
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 30,
-            "btn_label": "Scopri di più",
+            "btn_label": "Scopri i dettagli",
             "btn_url": "shopify://collections/victoria",
             "btn_style": "tertiary",
             "btn_icon": false
@@ -164,7 +164,7 @@
         "content_alignment": "center",
         "overlay_color": "#000000",
         "overlay_opacity": 15,
-        "image": "shopify://shop_images/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_1919-scaled.jpg"
+        "image": "shopify://shop_images/3.01.jpg"
       }
     },
     "banner_fBAYPw": {
@@ -201,7 +201,7 @@
             "block_spacing_bottom_desktop": 30,
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 30,
-            "btn_label": "Scopri di più",
+            "btn_label": "Scopri i dettagli",
             "btn_url": "shopify://collections/onda",
             "btn_style": "tertiary",
             "btn_icon": false
