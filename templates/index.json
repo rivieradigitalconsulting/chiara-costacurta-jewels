@@ -293,10 +293,10 @@
           "settings": {
             "collection": "",
             "image": "shopify://shop_images/25_11_21_COSTACURTA63913-copia.jpg",
-            "heading": "Piercing",
+            "heading": "Bracciali",
             "description": "<p>Fornisci una breve panoramica delle collezioni in evidenza</p>",
-            "btn_label": "Vedi tutti",
-            "url": ""
+            "btn_label": "Bracciali",
+            "url": "shopify://collections/bracciali"
           }
         }
       },
