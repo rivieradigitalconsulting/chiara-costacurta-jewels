@@ -259,22 +259,22 @@
           "type": "collection_item",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/25_11_21_COSTACURTA65106.jpg",
+            "image": "shopify://shop_images/4.01.jpg",
             "heading": "Anelli",
             "description": "<p>Fornisci una breve panoramica delle collezioni in evidenza</p>",
             "btn_label": "Vedi tutti",
-            "url": ""
+            "url": "shopify://collections/anelli"
           }
         },
         "collection_item_Gxt8Fw": {
           "type": "collection_item",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_2037-scaled.jpg",
+            "image": "shopify://shop_images/4.02.jpg",
             "heading": "Collane",
             "description": "<p>Fornisci una breve panoramica delle collezioni in evidenza</p>",
             "btn_label": "Vedi tutti",
-            "url": ""
+            "url": "shopify://collections/collane"
           }
         },
         "collection_item_MHeJ4F": {
