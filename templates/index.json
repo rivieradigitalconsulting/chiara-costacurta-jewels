@@ -356,7 +356,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "Chiara Costacurta",
+            "heading": "La Piercing Station di Chiara Costacurta",
             "heading_size": "h3",
             "convert_to_h1": false
           }
@@ -368,7 +368,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+            "text": "<p>Nel cuore di Milano, un luogo dedicato al piercing contemporaneo, tra consulenza personalizzata e gioielli in oro e diamanti naturali.</p>",
             "text_size": "body-fs-sm"
           }
         },
@@ -379,7 +379,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "btn_label": "Scopri di più",
+            "btn_label": "Scopri i dettagli",
             "btn_url": "",
             "btn_style": "line",
             "btn_icon": true
