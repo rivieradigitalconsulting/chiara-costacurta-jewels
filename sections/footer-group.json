@@ -37,7 +37,8 @@
             "payments_title": "",
             "show_shopify_payment_icons": false,
             "show_country_switcher": false,
-            "show_language_switcher": false
+            "show_language_switcher": false,
+            "selectors_alignment": "left"
           }
         },
         "column_CVr8qD": {
@@ -61,7 +62,8 @@
             "payments_title": "",
             "show_shopify_payment_icons": false,
             "show_country_switcher": false,
-            "show_language_switcher": false
+            "show_language_switcher": false,
+            "selectors_alignment": "left"
           }
         },
         "column-4": {
@@ -85,7 +87,8 @@
             "payments_title": "",
             "show_shopify_payment_icons": false,
             "show_country_switcher": false,
-            "show_language_switcher": false
+            "show_language_switcher": false,
+            "selectors_alignment": "left"
           }
         },
         "column_ffXMbQ": {
@@ -109,7 +112,8 @@
             "payments_title": "",
             "show_shopify_payment_icons": false,
             "show_country_switcher": false,
-            "show_language_switcher": false
+            "show_language_switcher": false,
+            "selectors_alignment": "left"
           }
         },
         "column-5": {
@@ -120,10 +124,10 @@
             "menu": "",
             "enable_full_width": false,
             "logo_width": 100,
-            "text": "",
+            "text": "<p>Testo</p>",
             "newsletter_title": "",
             "newsletter_disclaimer": "",
-            "privacy_link": "",
+            "privacy_link": "shopify://pages/privacy-policy",
             "terms_link": "",
             "enable_newsletter": true,
             "show_optin": true,
@@ -133,7 +137,8 @@
             "payments_title": "Pagamenti sicuri",
             "show_shopify_payment_icons": true,
             "show_country_switcher": true,
-            "show_language_switcher": true
+            "show_language_switcher": true,
+            "selectors_alignment": "left"
           }
         },
         "column-3": {
@@ -158,7 +163,8 @@
             "payments_title": "",
             "show_shopify_payment_icons": false,
             "show_country_switcher": false,
-            "show_language_switcher": false
+            "show_language_switcher": false,
+            "selectors_alignment": "left"
           }
         }
       },
