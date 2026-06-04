@@ -224,8 +224,8 @@
       "cart_error": "Si è verificato un errore durante l'aggiornamento del carrello. Riprova.",
       "cart_quantity_error_html": "È possibile aggiungere solo {{ quantity }} di questo articolo al carrello.",
       "taxes_and_shipping_policy_at_checkout_html": "Tasse e <a href=\"{{ link }}\">spedizione</a> calcolate alla cassa",
-      "taxes_included_but_shipping_at_checkout": "IVA inclusa e spedizione calcolata alla cassa",
-      "taxes_included_and_shipping_policy_html": "IVA inclusa. <a href=\"{{ link }}\">Spedizione</a> calcolata alla cassa.",
+      "taxes_included_but_shipping_at_checkout": "Imposte incluse e spedizione calcolata al checkout.",
+      "taxes_included_and_shipping_policy_html": "Imposte incluse <a href=\"{{ link }}\">Spedizione</a> calcolata al checkout..",
       "taxes_and_shipping_at_checkout": "Tasse e spedizione calcolate alla cassa",
       "update": "Aggiorna"
     },
