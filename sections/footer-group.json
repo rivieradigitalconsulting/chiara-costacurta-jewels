@@ -128,7 +128,7 @@
             "newsletter_title": "Scopri in anteprima nuove collezioni, eventi esclusivi e un vantaggio di benvenuto riservato ai nuovi iscritti.",
             "newsletter_disclaimer": "",
             "privacy_link": "shopify://pages/privacy-policy",
-            "terms_link": "",
+            "terms_link": "shopify://pages/termini-condizioni",
             "enable_newsletter": true,
             "show_optin": true,
             "enable_follow_on_shop": true,
