@@ -50,7 +50,7 @@
     "cart_drawer_color_scheme": "scheme-1",
     "enable_view_cart": false,
     "cart_drawer_redirect": false,
-    "show_cart_upsell": true,
+    "show_cart_upsell": false,
     "cart_upsell_products": [
       "chiara-costacurta-2-mini-desideri-di-diamanti-in-oro-bianco-02omt-wg18d",
       "chiara-costacurta-2-mini-desideri-di-diamanti-in-oro-giallo-02omt-yg18d",
