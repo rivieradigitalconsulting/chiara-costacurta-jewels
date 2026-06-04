@@ -177,7 +177,8 @@
         "column-3"
       ],
       "custom_css": [
-        ".o-footer__made-by {font-weight: normal !important; text-decoration: none !important;}"
+        ".o-footer__made-by {font-weight: normal !important; text-decoration: none !important;}",
+        ".h5 {font-size: 14px;}"
       ],
       "settings": {
         "section_padding_top_desktop": 80,
