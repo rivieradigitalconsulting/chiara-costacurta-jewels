@@ -119,13 +119,13 @@
         "column-5": {
           "type": "column",
           "settings": {
-            "title": "Iscriviti alla newsletter",
+            "title": "Iscriviti alla newsletter di Chiara Costacurta",
             "width": "lg",
             "menu": "",
             "enable_full_width": false,
             "logo_width": 100,
-            "text": "<p>Testo</p>",
-            "newsletter_title": "",
+            "text": "",
+            "newsletter_title": "Scopri in anteprima nuove collezioni, eventi esclusivi e un vantaggio di benvenuto riservato ai nuovi iscritti.",
             "newsletter_disclaimer": "",
             "privacy_link": "shopify://pages/privacy-policy",
             "terms_link": "",
