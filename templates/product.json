@@ -392,7 +392,7 @@
         "content_horizontal_position": "center",
         "content_alignment": "left",
         "media_position": "left",
-        "image": "shopify://shop_images/Foto-Chiara-Costacurta-960x1441.jpg",
+        "image": "shopify://shop_images/ricerca_creativa.png",
         "media_width": 50,
         "image_ratio": "4x5",
         "image_ratio_2": "default",
@@ -408,30 +408,31 @@
         "column_Eg76Pf": {
           "type": "column",
           "settings": {
-            "title": "Elemento di colonna",
-            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
-            "btn_label": "Scopri di più",
-            "btn_url": "shopify://collections/earcuff",
+            "title": "Atelier Personalizzato",
+            "text": "<p>Il nostro Atelier Personalizzato nasce per accompagnare chi desidera dare forma a un gioiello unico. È possibile partire da una creazione esistente, reinterpretandone materiali e pietre, oppure sviluppare un progetto interamente su misura, dall'idea iniziale alla selezione dei materiali, fino alla ricerca e quotazione di diamanti e pietre preziose dedicate.</p>",
+            "image": "shopify://shop_images/atelier_personalizzato.png",
+            "btn_label": "",
+            "btn_url": "",
             "btn_style": "line"
           }
         },
         "column_HbgPxx": {
           "type": "column",
           "settings": {
-            "title": "Column item",
-            "text": "<p>Column item extra information</p>",
-            "btn_label": "Discover more",
-            "btn_url": "",
+            "title": "Materiali e Lavorazioni",
+            "text": "<p>La scelta dei nostri partner è parte integrante del processo creativo di Chiara Costacurta. Ci affidiamo a esperti del settore e a fornitori selezionati che condividono i nostri standard di qualità, tracciabilità e approvvigionamento responsabile. Diamanti e pietre preziose vengono scelti con la stessa attenzione che dedichiamo alla loro lavorazione, affidata a laboratori orafi di Milano, Valenza e Firenze con cui collaboriamo stabilmente.</p>",
+            "btn_label": "Scopri di più",
+            "btn_url": "shopify://pages/larte-del-gioiello",
             "btn_style": "line"
           }
         },
         "column_R4Nx6k": {
           "type": "column",
           "settings": {
-            "title": "Column item",
-            "text": "<p>Column item extra information</p>",
-            "btn_label": "Discover more",
-            "btn_url": "",
+            "title": "Consulenza Privata",
+            "text": "<p>Accogliamo ogni cliente attraverso un percorso di consulenza dedicato, pensato per accompagnare la scoperta delle collezioni e orientare ogni scelta con competenza, discrezione e attenzione. Gli appuntamenti possono svolgersi presso il nostro atelier di Milano o in videochiamata.</p>",
+            "btn_label": "Scopri di più",
+            "btn_url": "shopify://pages/contatti",
             "btn_style": "line"
           }
         }
@@ -456,7 +457,7 @@
         "color_scheme": "",
         "section_width": "constrict",
         "columns_alignment": "left",
-        "image_ratio": "1x1",
+        "image_ratio": "2x3",
         "content_width": 12,
         "content_position": "left",
         "content_alignment": "left",
@@ -466,9 +467,9 @@
         "row_gap_desktop": 5,
         "column_gap_mobile": 0,
         "row_gap_mobile": 30,
-        "heading": "Scopri Chiara Costacurta",
+        "heading": "Scopri i valori Chiara Costacurta",
         "heading_size": "h3",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+        "text": "",
         "text_size": "body-fs-sm",
         "btn_label": "Discover more",
         "btn_url": "",
