@@ -132,7 +132,7 @@
             "show_tab_collapsed": false,
             "icon": "plus",
             "title": "Disponibilità su ordinazione",
-            "content": "<p>Expand this tab to reveal additional details and insights. You can include information such as key features, specifications, helpful tips, or any other relevant details that enhance your understanding.</p>"
+            "content": "<p>Disponibile su ordinazione indica che il gioiello verrà realizzato appositamente per Lei. I tempi di produzione sono generalmente compresi tra 7 e 15 giorni lavorativi. Qualora avesse particolari esigenze di consegna, il nostro team sarà lieto di assisterLa.</p>"
           }
         },
         "tab_epHAfB": {
@@ -170,8 +170,8 @@
             "block_spacing_bottom_mobile": 0,
             "show_tab_collapsed": false,
             "icon": "plus",
-            "title": "Hai bisogno di aiuto?",
-            "content": "<p>Expand this tab to reveal additional details and insights. You can include information such as key features, specifications, helpful tips, or any other relevant details that enhance your understanding.</p>"
+            "title": "Prenota un appuntamento",
+            "content": "<p>Per provare un gioiello o approfondire una selezione, il nostro team sarà lieto di concordare un appuntamento, in presenza presso il nostro atelier di Milano o in videochiamata. La invitiamo a consultare la pagina <a href=\"/pages/contatti\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a>  per riservare la Sua consulenza dedicata.</p>"
           }
         },
         "kiwi_size_chart_recommender_kiwi_sizing_WgRPib": {
@@ -312,7 +312,7 @@
         "content_width": 4,
         "content_position": "center",
         "content_alignment": "center",
-        "heading": "Potrebbe piacerti anche",
+        "heading": "Altre creazioni da scoprire",
         "heading_size": "h3",
         "text": "",
         "text_size": "body-fs-sm",
