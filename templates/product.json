@@ -145,7 +145,7 @@
             "show_tab_collapsed": false,
             "icon": "plus",
             "title": "Ordini & Spedizioni",
-            "content": "<p>Expand this tab to reveal additional details and insights. You can include information such as key features, specifications, helpful tips, or any other relevant details that enhance your understanding.</p>"
+            "content": "<p>Spedizione Express in 1-2 giorni lavorativi GRATUITA in Italia.<br/>Chiara Costacurta spedisce in tutto il mondo a partire da € 18.<br/>È possibile effettuare il reso entro 14 giorni dalla data di consegna.<br/>Per maggiori informazioni visita <a href=\"/pages/ordini-spedizioni\" target=\"_blank\" title=\"Ordini & Spedizioni\">Ordini & Spedizioni</a> e <a href=\"/pages/resi-rimborsi\" target=\"_blank\" title=\"Resi & Rimborsi\">Resi & Rimborsi</a>.</p>"
           }
         },
         "tab_QUDqae": {
@@ -171,7 +171,7 @@
             "show_tab_collapsed": false,
             "icon": "plus",
             "title": "Prenota un appuntamento",
-            "content": "<p>Per provare un gioiello o approfondire una selezione, il nostro team sarà lieto di concordare un appuntamento, in presenza presso il nostro atelier di Milano o in videochiamata. La invitiamo a consultare la pagina <a href=\"/pages/contatti\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a>  per riservare la Sua consulenza dedicata.</p>"
+            "content": "<p>Per provare un gioiello o approfondire una selezione, il nostro team sarà lieto di concordare un appuntamento, in presenza presso il nostro atelier di Milano o in videochiamata. La invitiamo a consultare la pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a>  per riservare la Sua consulenza dedicata.</p>"
           }
         },
         "kiwi_size_chart_recommender_kiwi_sizing_WgRPib": {
