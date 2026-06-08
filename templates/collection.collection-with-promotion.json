@@ -58,10 +58,51 @@
         "enable_sorting": true,
         "enable_product_count": true
       }
+    },
+    "rich_text_8BaGyE": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_4Nqmfq": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Condividi informazioni sul tuo marchio con i tuoi clienti. Descrivi un prodotto, fai annunci o dai il benvenuto ai clienti nel tuo negozio.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-md"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_4Nqmfq"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 30,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "rich_text_8BaGyE"
   ]
 }
