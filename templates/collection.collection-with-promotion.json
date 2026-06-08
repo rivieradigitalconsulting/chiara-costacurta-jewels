@@ -1,1 +1,66 @@
-{"sections":{"banner":{"type":"main-collection-banner","custom_css":["h1 {font-size: 18px;}"],"settings":{"section_id":"","section_padding_top_desktop":0,"section_padding_bottom_desktop":0,"section_padding_top_mobile":0,"section_padding_bottom_mobile":0,"color_scheme":"","color_scheme_on_image":"","content_width":10,"content_position":"center","content_alignment":"center","show_collection_image":true,"show_collection_description":false,"heading_size":"h3","content_top_spacing":"none"}},"product-grid":{"type":"main-collection-product-grid","blocks":{"cta_PiNrTU":{"type":"cta","settings":{"index":2,"color_scheme":"scheme-2","card_vertical_text_alignment":"bottom","card_text_alignment":"left","image":"shopify:\/\/shop_images\/25_11_21_COSTACURTA63913-copia.jpg","image_ratio":"inherit","overlay_color":"#000000","overlay_opacity":0,"heading":"VICTORIA","text":"<p>Ciao<\/p>","btn_url":"shopify:\/\/collections\/frontpage","btn_label":"Scopri di più","btn_style":"line","btn_icon":false}},"cta_PAmdhT":{"type":"cta","settings":{"index":8,"color_scheme":"scheme-2","card_vertical_text_alignment":"bottom","card_text_alignment":"left","image":"shopify:\/\/shop_images\/25_11_21_COSTACURTA63851-copia.jpg","image_ratio":"inherit","overlay_color":"#000000","overlay_opacity":0,"heading":"","text":"","btn_url":"","btn_label":"shop the look","btn_style":"tertiary","btn_icon":false}}},"block_order":["cta_PiNrTU","cta_PAmdhT"],"custom_css":["p,span {font-size: 14px;}"],"settings":{"section_id":"","section_padding_top_desktop":40,"section_padding_bottom_desktop":120,"section_padding_top_mobile":20,"section_padding_bottom_mobile":40,"invert_navigation_color":false,"color_scheme":"","filter_drawer_color_scheme":"","products_per_page":48,"grid_type":"default","columns_desktop":3,"columns_mobile":"2","column_gap_desktop":10,"row_gap_desktop":42,"column_gap_mobile":6,"row_gap_mobile":15,"enable_filtering":true,"enable_sorting":true,"enable_product_count":true}},"text_with_icons_fNFCYL":{"type":"text-with-icons","blocks":{"usp_ijP8LH":{"type":"usp","settings":{"title":"","text":"<p>LUXURY & CRAFTMANSHIP<\/p>","icon_select":"none"}},"usp_CzatWF":{"type":"usp","settings":{"title":"","text":"<p>QUALITY GARMENTS<\/p>","icon_select":"none"}},"usp_waayfA":{"type":"usp","settings":{"title":"","text":"<p>LUXURY & CLASSIC TAILORING<\/p>","icon_select":"none"}}},"block_order":["usp_ijP8LH","usp_CzatWF","usp_waayfA"],"name":"t:unique_selling_points.presets.unique_selling_points.name","settings":{"section_id":"","section_padding_top_desktop":40,"section_padding_bottom_desktop":40,"section_padding_top_mobile":40,"section_padding_bottom_mobile":40,"invert_navigation_color":false,"color_scheme":"scheme-1","display_mode":"slider","columns_desktop":"3","columns_mobile":"1","icon_alignment":"next","column_gap_desktop":20,"row_gap_desktop":20,"column_gap_mobile":20,"row_gap_mobile":20,"content_alignment":"center","show_border":false,"autoplay":true}}},"order":["banner","product-grid","text_with_icons_fNFCYL"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "custom_css": [
+        "h1 {font-size: 18px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "color_scheme": "",
+        "color_scheme_on_image": "",
+        "content_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "show_collection_image": true,
+        "show_collection_description": false,
+        "heading_size": "h3",
+        "content_top_spacing": "none"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "custom_css": [
+        "p,span {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 120,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "filter_drawer_color_scheme": "",
+        "products_per_page": 48,
+        "grid_type": "default",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 10,
+        "row_gap_desktop": 42,
+        "column_gap_mobile": 6,
+        "row_gap_mobile": 15,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "enable_product_count": true
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid"
+  ]
+}
