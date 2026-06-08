@@ -33,6 +33,30 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "cta_ACkUjb": {
+          "type": "cta",
+          "settings": {
+            "index": 1,
+            "color_scheme": "scheme-1",
+            "card_vertical_text_alignment": "bottom",
+            "card_text_alignment": "left",
+            "image": "shopify://shop_images/Mano_1.jpg",
+            "image_ratio": "adaptive",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20,
+            "heading": "",
+            "text": "",
+            "btn_url": "",
+            "btn_label": "",
+            "btn_style": "primary",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "cta_ACkUjb"
+      ],
       "custom_css": [
         "label {font-size: 14px;}",
         ".m-pagination__list {font-size: 12px;}"
