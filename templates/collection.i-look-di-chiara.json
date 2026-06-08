@@ -44,7 +44,7 @@
             "image": "shopify://shop_images/Mano_1.jpg",
             "image_ratio": "adaptive",
             "overlay_color": "#000000",
-            "overlay_opacity": 20,
+            "overlay_opacity": 0,
             "heading": "",
             "text": "",
             "btn_url": "",
