@@ -72,7 +72,7 @@
             "text": "{{ collection.description }}",
             "text_column": "",
             "grid_gap_desktop": 20,
-            "text_size": "body-fs-md"
+            "text_size": "body-fs-sm"
           }
         }
       },
