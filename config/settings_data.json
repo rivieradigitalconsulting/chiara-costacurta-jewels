@@ -56,6 +56,8 @@
       "chiara-costacurta-2-mini-desideri-di-diamanti-in-oro-giallo-02omt-yg18d",
       "chiara-costacurta-2-mini-desideri-di-diamanti-in-oro-rosa-02omt-rg18d"
     ],
+    "swym_header_icon_enabled": true,
+    "swym_header_icon_show_count": true,
     "column_grid_gap": 10,
     "row_grid_gap": 10,
     "section_spacing_small_desktop": 80,
