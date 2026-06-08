@@ -69,7 +69,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Condividi informazioni sul tuo marchio con i tuoi clienti. Descrivi un prodotto, fai annunci o dai il benvenuto ai clienti nel tuo negozio.</p>",
+            "text": "{{ collection.description }}",
             "text_column": "",
             "grid_gap_desktop": 20,
             "text_size": "body-fs-md"
