@@ -25,7 +25,7 @@
     "backdrop_color": "#333333",
     "backdrop_opacity": 27,
     "backdrop_blur": 7,
-    "enable_animation": true,
+    "enable_animation": false,
     "button_letter_case": "uppercase",
     "button_border_radius": 0,
     "border_radius": 0,
