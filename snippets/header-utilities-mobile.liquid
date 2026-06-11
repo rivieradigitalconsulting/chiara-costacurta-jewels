@@ -18,6 +18,14 @@
     </a>
   {%- endif -%}
   <a
+    href="/pages/swym-wishlist"
+    class="swym-wishlist o-header__utility js-element-to-invert"
+  >
+    <span class="o-header-utilities__link-label">
+      {%- render 'icon-wishlist' -%}
+    </span>
+  </a>
+  <a
     href="{{ routes.cart_url }}"
     class="o-header__utility o-header__utility-cart js-cart-link"
     id="cart-icon-bubble"

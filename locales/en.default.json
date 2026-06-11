@@ -207,7 +207,8 @@
     "header": {
       "account": "Account",
       "cart": "Cart",
-      "search": "Search"
+      "search": "Search",
+      "wishlist": "Wishlist"
     },
     "cart": {
       "title": "Your cart",

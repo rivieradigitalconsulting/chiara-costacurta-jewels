@@ -64,13 +64,13 @@
   }
 }
 
-.o-header__main.has-transparent-text-light .m-main-nav a,
-.o-header__main.has-transparent-text-light .m-main-nav button {
+.o-header__main.has-transparent-text-light .m-main-nav > a,
+.o-header__main.has-transparent-text-light .m-main-nav > button {
   color: #ffffff;
 }
 
-.o-header__main.has-transparent-text-light .m-header-utilities__item a,
-.o-header__main.has-transparent-text-light .m-header-utilities__item button {
+.o-header__main.has-transparent-text-light .m-header-utilities__item > a,
+.o-header__main.has-transparent-text-light .m-header-utilities__item > button {
   color: #ffffff;
 }
 
@@ -87,12 +87,12 @@
   color: #000000;
 }
 
-.o-header__main.has-transparent-text-dark .m-main-nav a,
-.o-header__main.has-transparent-text-dark .m-main-nav button {
+.o-header__main.has-transparent-text-dark .m-main-nav > a,
+.o-header__main.has-transparent-text-dark .m-main-nav > button {
   color: #000000;
 }
 
-.o-header__main.has-transparent-text-dark .m-header-utilities__item a,
-.o-header__main.has-transparent-text-dark .m-header-utilities__item button {
+.o-header__main.has-transparent-text-dark .m-header-utilities__item > a,
+.o-header__main.has-transparent-text-dark .m-header-utilities__item > button {
   color: #000000;
 }
