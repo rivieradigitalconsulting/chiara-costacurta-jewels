@@ -4512,3 +4512,12 @@ button.swiper-pagination-bullet {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+
+/* Swym wishlist override */
+@media screen and (min-width: 768px) {
+  #swym-storefront-layout-container {
+    max-width: 70%;
+    margin-left: 20%;
+  }
+}

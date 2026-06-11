@@ -64,8 +64,37 @@
 .o-product__breadcrumbs .m-breadcrumbs__list {
   margin: 2.4rem 0 0.5rem 0;
 }
+.o-product__title {
+  display: flex;
+  position: relative;
+  padding-right: 42px;
+}
 .o-product__title h1 {
   margin-bottom: 0;
+}
+.o-product__title #swym-atw-button-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-height: var(--h3-lh);
+  display: flex;
+}
+.o-product__title .atw-button-icon path {
+  fill: #fff;
+  stroke: #000;
+} 
+.o-product__title .atw-button-add,
+.o-product__title .atw-button-added {
+  background: transparent;
+}
+.o-product__title .atw-button-added .atw-button-icon path {
+  fill: #000;
+  stroke: #000;
+} 
+.o-product__title .atw-button-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 .o-product__share {
   gap: 1rem;
@@ -74,3 +103,5 @@
 body.u-sticky-header-hidden .o-product__information--sticky, body.u-no-sticky-header .o-product__information--sticky {
   top: 0;
 }
+
+

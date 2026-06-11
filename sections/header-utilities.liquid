@@ -17,6 +17,16 @@
     <ul class="o-header-utilities__list grid u-unstyled-list" id="utilities-menu">
       <li class="o-header-utilities__list-item">
         <a
+          href="/pages/swym-wishlist"
+          class="swym-wishlist o-header-utilities__link o-header-utilities__link-search js-header-search js-element-to-invert"
+        >
+          <span class="o-header-utilities__link-label">
+            {{ 'sections.header.wishlist' | t }}
+          </span>
+        </a>
+      </li>
+      <li class="o-header-utilities__list-item">
+        <a
           href="{{ routes.cart_url }}"
           class="o-header-utilities__link o-header-utilities__link-cart js-cart-link js-element-to-invert"
           id="{% if display == 'icon' or display == 'icon_text' %}cart-icon-dot{% else %}cart-inline-count{%- endif -%}"
@@ -38,18 +48,13 @@
           </span>
         </a>
       </li>
-      <li class="o-header-utilities__list-item">
+      <li id="wishlist-placeholder" class="o-header-utilities__list-item">
         <a
-          href="{{ routes.search_url }}"
-          class="o-header-utilities__link o-header-utilities__link-search js-header-search js-element-to-invert"
+          href="/pages/swym-wishlist"
+          class="swym-wishlist o-header-utilities__link js-element-to-invert"
         >
           <span class="o-header-utilities__link-label">
-            {%- if display == 'text' or display == 'icon_text' -%}
-              {{ 'sections.header.search' | t }}
-            {%- endif -%}
-            {%- if display == 'icon' or display == 'icon_text' -%}
-              {%- render 'icon-search' -%}
-            {%- endif -%}
+            {{ 'sections.header.wishlist' | t }}
           </span>
         </a>
       </li>
