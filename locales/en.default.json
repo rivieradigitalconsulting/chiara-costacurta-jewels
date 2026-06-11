@@ -208,6 +208,7 @@
       "account": "Account",
       "cart": "Cart",
       "search": "Search",
+      "menu": "",
       "wishlist": "Wishlist"
     },
     "cart": {
