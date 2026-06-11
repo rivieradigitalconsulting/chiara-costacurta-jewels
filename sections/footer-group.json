@@ -11,6 +11,24 @@
   "name": "Footer",
   "type": "footer",
   "sections": {
+    "1781190721c2891538": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_639ede4_NWU4CY": {
+          "type": "ai_gen_block_639ede4",
+          "settings": {
+            "height_desktop": 50,
+            "height_mobile": 30,
+            "background_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_639ede4_NWU4CY"
+      ],
+      "settings": {}
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -195,6 +213,7 @@
     }
   },
   "order": [
+    "1781190721c2891538",
     "footer"
   ]
 }
