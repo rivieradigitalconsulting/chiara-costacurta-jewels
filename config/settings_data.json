@@ -133,7 +133,7 @@
       },
       "2734250573734242505": {
         "type": "shopify://apps/wishlist-plus/blocks/storefront-ui-elements/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": true,
+        "disabled": false,
         "settings": {
           "enable_variant_selector": false,
           "swym_add_to_wishlist_title_color": "#333333",
