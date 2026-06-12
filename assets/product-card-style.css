@@ -177,3 +177,6 @@
   width: 18px;
   height: 18px;
 }
+.m-product-card .swym-advanced-wishlist-collections-container .swym-advanced-wishlist-collections svg path {
+  stroke-width: 1;
+}

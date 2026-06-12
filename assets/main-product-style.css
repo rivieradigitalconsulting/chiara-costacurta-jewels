@@ -82,10 +82,12 @@
 .o-product__title .atw-button-icon path {
   fill: #fff;
   stroke: #1D1D1D;
+  stroke-width: 1;
 } 
 .o-product__title .atw-button-add,
 .o-product__title .atw-button-added {
   background: transparent;
+  padding-top: 0;
 }
 .o-product__title .atw-button-added .atw-button-icon path {
   fill: #1D1D1D;
