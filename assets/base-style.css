@@ -4522,7 +4522,8 @@ button.swiper-pagination-bullet {
   }
 }
 swym-storefront-layout-notification,
-.swym-storefront-layout-notification {
+.swym-storefront-layout-notification,
+.swym-storefront-layout-notification:has(button.swym-storefront-layout-action) {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;

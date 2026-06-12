@@ -160,9 +160,10 @@
 .m-product-card .swym-advanced-wishlist-collections-container {
   right: 0;
   left: unset;
-  top: 4px;
+  top: 0;
   display: flex;
   flex-direction: row-reverse;
+  padding: 10px 0 10px 10px;
 }
 .m-product-card .swym-advanced-wishlist-collections-container .swym-advanced-wishlist-collections {
   transform: translate(0) !important;
