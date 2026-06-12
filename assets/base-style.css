@@ -4523,7 +4523,8 @@ button.swiper-pagination-bullet {
 }
 swym-storefront-layout-notification,
 .swym-storefront-layout-notification,
-.swym-storefront-layout-notification:has(button.swym-storefront-layout-action) {
+.swym-storefront-layout-notification:has(button.swym-storefront-layout-action),
+.swym-popup-nudge-zindex {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
