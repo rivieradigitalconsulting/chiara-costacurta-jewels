@@ -3,9 +3,8 @@
     href="/pages/swym-wishlist"
     class="swym-wishlist o-header__utility js-element-to-invert"
   >
-    <span class="o-header-utilities__link-label">
-      {%- render 'icon-wishlist' -%}
-    </span>
+    {%- render 'icon-wishlist' -%}
+    <span class="o-header__utility-label">{{ 'sections.header.wishlist' | t }}</span>
   </a>
   <a
     href="{{ routes.search_url }}"

@@ -81,15 +81,15 @@
 }
 .o-product__title .atw-button-icon path {
   fill: #fff;
-  stroke: #000;
+  stroke: #1D1D1D;
 } 
 .o-product__title .atw-button-add,
 .o-product__title .atw-button-added {
   background: transparent;
 }
 .o-product__title .atw-button-added .atw-button-icon path {
-  fill: #000;
-  stroke: #000;
+  fill: #1D1D1D;
+  stroke: #1D1D1D;
 } 
 .o-product__title .atw-button-icon {
   width: 18px;

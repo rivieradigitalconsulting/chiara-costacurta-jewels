@@ -4521,3 +4521,9 @@ button.swiper-pagination-bullet {
     margin-left: 20%;
   }
 }
+swym-storefront-layout-notification,
+.swym-storefront-layout-notification {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
