@@ -12,6 +12,7 @@
 }
 .m-content-card__badges {
   position: absolute;
+  display: flex;
   left: 2rem;
   top: 2rem;
   z-index: 9;

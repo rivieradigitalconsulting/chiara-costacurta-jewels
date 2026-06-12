@@ -87,7 +87,13 @@
 .o-product__title .atw-button-add,
 .o-product__title .atw-button-added {
   background: transparent;
-  padding-top: 0;
+  padding-top: 4px;
+}
+@media screen and (min-width: 768px) {
+  .o-product__title .atw-button-add,
+  .o-product__title .atw-button-added {
+    padding-top: 6px;
+  }
 }
 .o-product__title .atw-button-added .atw-button-icon path {
   fill: #1D1D1D;

@@ -80,6 +80,7 @@
 }
 .m-product-card__badges {
   position: absolute;
+  display: flex;
   left: 1rem;
   top: 1rem;
   z-index: 9;
@@ -160,7 +161,7 @@
 .m-product-card .swym-advanced-wishlist-collections-container {
   right: 0;
   left: unset;
-  top: 0;
+  top: -1px;
   display: flex;
   flex-direction: row-reverse;
   padding: 10px 0 10px 10px;
