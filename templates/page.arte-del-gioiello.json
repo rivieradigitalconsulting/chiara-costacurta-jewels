@@ -30,30 +30,6 @@
     "rich_text_NKAEBk": {
       "type": "rich-text",
       "blocks": {
-        "caption_ErDpWa": {
-          "type": "caption",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "title": "Aggiungi uno slogan",
-            "caption_size": "body-fs-md",
-            "caption_style": "uppercase"
-          }
-        },
-        "heading_EYaHLV": {
-          "type": "heading",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "heading": "Testo formattato",
-            "heading_size": "h2",
-            "convert_to_h1": false
-          }
-        },
         "paragraph_ytX9aA": {
           "type": "paragraph",
           "settings": {
@@ -61,31 +37,15 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Condividi informazioni sul tuo marchio con i tuoi clienti. Descrivi un prodotto, fai annunci o dai il benvenuto ai clienti nel tuo negozio.</p>",
+            "text": "<p>Un gioiello è molto più della sua forma.</p><p>È la materia di cui è composto, il modo in cui viene lavorata, la luce che riflette e le emozioni che è in grado di custodire nel tempo.</p><p>Dall'oro ai diamanti, fino alle pietre naturali, Chiara Costacurta seleziona esclusivamente materiali preziosi e naturali, capaci di mantenere intatta la propria bellezza generazione dopo generazione.</p>",
             "text_column": "",
             "grid_gap_desktop": 20,
-            "text_size": "body-fs-md"
-          }
-        },
-        "button_bAQU94": {
-          "type": "button",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "btn_label": "Scopri di più",
-            "btn_url": "",
-            "btn_style": "line",
-            "btn_icon": false
+            "text_size": "body-fs-sm"
           }
         }
       },
       "block_order": [
-        "caption_ErDpWa",
-        "heading_EYaHLV",
-        "paragraph_ytX9aA",
-        "button_bAQU94"
+        "paragraph_ytX9aA"
       ],
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
@@ -100,9 +60,9 @@
         "section_bg_position": "bottom center",
         "section_bg_size": "auto",
         "section_bg_opacity": 100,
-        "column_width": 10,
-        "content_position": "center",
-        "content_alignment": "center",
+        "column_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
         "title_position": "inline",
         "grid_gap_desktop": 20
       }
