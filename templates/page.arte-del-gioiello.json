@@ -53,7 +53,7 @@
         "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 60,
+        "section_padding_bottom_mobile": 20,
         "invert_navigation_color": false,
         "color_scheme": "",
         "section_bg_repeat": false,
@@ -66,10 +66,141 @@
         "title_position": "inline",
         "grid_gap_desktop": 20
       }
+    },
+    "media_with_text_dzGYMt": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_9mVX9f": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Oro 750/1000",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_7dzWUB": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>L'oro è una delle poche materie capaci di attraversare i secoli senza perdere il proprio fascino.</p><p>Prezioso per natura, raro e incorruttibile, custodisce da sempre storie, affetti e momenti destinati a durare. È il materiale che più di ogni altro accompagna i passaggi importanti della vita, trasformandosi in un simbolo da conservare e tramandare.</p><p>Chiara Costacurta si impegna affinché ogni lavorazione nasca dalle mani di orafi esperti che plasmano l'oro con gesti antichi e con una sensibilità contemporanea. Perché dietro ogni gioiello non c'è solo una materia preziosa, ma il tempo, la competenza e la cura necessari per trasformarla in qualcosa di unico.</p>",
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9mVX9f",
+        "paragraph_7dzWUB"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "media-outside-container",
+        "grid_gap_desktop": 50,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 0,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "left",
+        "image": "shopify://shop_images/Arte_del_Gioiella_Chiara_Costacurta.png",
+        "media_width": 50,
+        "image_ratio": "4x5",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video_ratio": "default",
+        "video_autoplay": false
+      }
+    },
+    "media_with_text_ndraPD": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_tWqDzh": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Oro 750/1000",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_eH46wD": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>L'oro è una delle poche materie capaci di attraversare i secoli senza perdere il proprio fascino.</p><p>Prezioso per natura, raro e incorruttibile, custodisce da sempre storie, affetti e momenti destinati a durare. È il materiale che più di ogni altro accompagna i passaggi importanti della vita, trasformandosi in un simbolo da conservare e tramandare.</p><p>Chiara Costacurta si impegna affinché ogni lavorazione nasca dalle mani di orafi esperti che plasmano l'oro con gesti antichi e con una sensibilità contemporanea. Perché dietro ogni gioiello non c'è solo una materia preziosa, ma il tempo, la competenza e la cura necessari per trasformarla in qualcosa di unico.</p>",
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tWqDzh",
+        "paragraph_eH46wD"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "media-outside-container",
+        "grid_gap_desktop": 50,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 0,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "right",
+        "media_width": 50,
+        "image_ratio": "4x5",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video_ratio": "default",
+        "video_autoplay": false
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_NKAEBk"
+    "rich_text_NKAEBk",
+    "media_with_text_dzGYMt",
+    "media_with_text_ndraPD"
   ]
 }
