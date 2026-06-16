@@ -380,6 +380,9 @@
     },
     "featured_collection_JfKRNy": {
       "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
       "name": "t:featured_collection.presets.featured_collection.name",
       "settings": {
         "section_id": "",
@@ -415,6 +418,9 @@
     },
     "featured_collection_iNWpAX": {
       "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
       "name": "t:featured_collection.presets.featured_collection.name",
       "settings": {
         "section_id": "",
@@ -450,6 +456,9 @@
     },
     "featured_collection_BJJtLG": {
       "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
       "name": "t:featured_collection.presets.featured_collection.name",
       "settings": {
         "section_id": "",
@@ -529,6 +538,9 @@
         "heading_w6rrhf",
         "paragraph_DDWaei",
         "button_V3BUVL"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
       ],
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
