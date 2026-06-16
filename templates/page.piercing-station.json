@@ -152,11 +152,51 @@
         "video_ratio": "default",
         "video_autoplay": false
       }
+    },
+    "collection_list_tBFgYb": {
+      "type": "collection-list",
+      "name": "t:collections_list.presets.collections_list.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection_list": [],
+        "display_mode": "grid",
+        "section_width": "constrict",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "color_scheme_card": "",
+        "show_description": true,
+        "content_card_position": "below-card",
+        "vertical_text_alignment": "bottom",
+        "card_text_alignment": "left",
+        "image_ratio": "1x1",
+        "heading": "L'esperienza",
+        "heading_size": "h3",
+        "text": "<p>Fornisci una breve panoramica delle collezioni presentate in questa sezione. Spiega la varietà e la gamma di prodotti disponibili in ciascuna collezione e come soddisfano le diverse esigenze o preferenze dei clienti.</p>",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
     }
   },
   "order": [
     "main",
     "slideshow_3Ngfdn",
-    "media_with_text_4GHcwf"
+    "media_with_text_4GHcwf",
+    "collection_list_tBFgYb"
   ]
 }
