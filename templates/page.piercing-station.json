@@ -123,6 +123,9 @@
         "paragraph_RH9Rmm",
         "button_tikF7H"
       ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
       "name": "t:media_with_text.presets.media_with_text.name",
       "settings": {
         "section_id": "",
