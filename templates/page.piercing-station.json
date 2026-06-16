@@ -151,7 +151,8 @@
         "image_ratio_2": "default",
         "show_image_2_on_mobile": false,
         "video_ratio": "default",
-        "video_autoplay": false
+        "video_autoplay": false,
+        "video_yt_url": ""
       }
     },
     "multicolumn_YmiBKU": {
@@ -358,6 +359,7 @@
         "paragraph_UK3WQ9",
         "image_PU6RVK"
       ],
+      "disabled": true,
       "name": "t:image.presets.image.name",
       "settings": {
         "section_id": "",
@@ -398,7 +400,7 @@
         "content_width": 10,
         "content_position": "left",
         "content_alignment": "left",
-        "heading": "",
+        "heading": "Oro giallo",
         "heading_size": "h3",
         "text": "",
         "text_size": "body-fs-md",
