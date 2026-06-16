@@ -43,8 +43,9 @@
             "content_position": "center",
             "content_alignment": "center",
             "overlay_color": "#000",
-            "overlay_opacity": 60,
+            "overlay_opacity": 30,
             "image_ratio": "default",
+            "video": "shopify://files/videos/MAGNIFICA - LISA & ZENDAYA x B.ZERO1 IN BVLGARI S NEW BRAND CAMPAIGN_1080p.mp4",
             "title": "",
             "caption_size": "h5",
             "heading": "Piercing Station",
@@ -237,9 +238,10 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
+            "video": "shopify://files/videos/MAGNIFICA - LISA & ZENDAYA x B.ZERO1 IN BVLGARI S NEW BRAND CAMPAIGN_1080p.mp4",
             "video_ratio": "default",
             "video_autoplay": false,
-            "video_yt_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+            "video_yt_url": ""
           }
         }
       },
@@ -250,7 +252,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 40,
-        "section_padding_bottom_desktop": 80,
+        "section_padding_bottom_desktop": 40,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -260,6 +262,94 @@
         "content_position": "center",
         "content_alignment": "center"
       }
+    },
+    "rich_text_JP9GgG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3t8bbk": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "L'aftercare",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_dHTKLg": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Al termine dell'appuntamento Le verrà consegnato un aftercare kit completo, accompagnato da indicazioni personalizzate per una corretta guarigione. Rimarremo a Sua disposizione anche nelle settimane successive, per offrirLe supporto e assistenza in ogni fase del percorso.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3t8bbk",
+        "paragraph_dHTKLg"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 40,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "featured_collection_JfKRNy": {
+      "type": "featured-collection",
+      "name": "t:featured_collection.presets.featured_collection.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection": "",
+        "product_list": [],
+        "display_mode": "grid",
+        "product_limit": 3,
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "heading": "La collezione",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
     }
   },
   "order": [
@@ -267,6 +357,8 @@
     "slideshow_3Ngfdn",
     "media_with_text_4GHcwf",
     "multicolumn_YmiBKU",
-    "video_kpPndJ"
+    "video_kpPndJ",
+    "rich_text_JP9GgG",
+    "featured_collection_JfKRNy"
   ]
 }
