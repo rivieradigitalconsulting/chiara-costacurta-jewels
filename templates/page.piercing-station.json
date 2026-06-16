@@ -514,7 +514,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Presso il nostro Atelier in Via Fatebenefratelli, 15.</p><p>Per garantire a ogni ospite il tempo e l'attenzione che desideriamo dedicare, riceviamo <em>esclusivamente</em> su appuntamento.</p><p>Potrà prenotare la Sua visita tramite la nostra pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\"><strong>Contatti & Appuntamenti</strong></a>, con conferma immediata via e-mail, oppure contattarci direttamente. Saremo felici di accompagnarLa nella scelta del momento più adatto per vivere l'esperienza Piercing Station.</p>",
+            "text": "<p>Presso il nostro Atelier in <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15</a>.</p><p>Per garantire a ogni ospite il tempo e l'attenzione che desideriamo dedicare, riceviamo esclusivamente su appuntamento.</p><p>Potrà prenotare la Sua visita tramite la nostra pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a>, con conferma immediata via e-mail, oppure contattarci direttamente. Saremo felici di accompagnarLa nella scelta del momento più adatto per vivere l'esperienza Piercing Station.</p>",
             "text_column": "",
             "grid_gap_desktop": 20,
             "text_size": "body-fs-sm"
