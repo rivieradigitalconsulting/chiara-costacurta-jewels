@@ -125,7 +125,7 @@
       "name": "t:media_with_text.presets.media_with_text.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 60,
+        "section_padding_top_desktop": 80,
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 60,
         "section_padding_bottom_mobile": 40,
@@ -200,9 +200,9 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 40,
-        "section_padding_bottom_desktop": 80,
+        "section_padding_bottom_desktop": 40,
         "section_padding_top_mobile": 40,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_bottom_mobile": 20,
         "invert_navigation_color": false,
         "color_scheme": "",
         "section_width": "constrict",
@@ -230,41 +230,6 @@
     "video_kpPndJ": {
       "type": "video",
       "blocks": {
-        "caption_FGUQrf": {
-          "type": "caption",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "title": "Aggiungi uno slogan",
-            "caption_size": "body-fs-md",
-            "caption_style": "uppercase"
-          }
-        },
-        "heading_RXnULH": {
-          "type": "heading",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "heading": "Titolo del video",
-            "heading_size": "h2",
-            "convert_to_h1": false
-          }
-        },
-        "paragraph_pUyJbN": {
-          "type": "paragraph",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "text": "<p>Condividi informazioni sul tuo video con i tuoi clienti.</p>",
-            "text_size": "body-fs-md"
-          }
-        },
         "video_Wh3Efe": {
           "type": "video",
           "settings": {
@@ -272,36 +237,19 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "video_ratio": "16x9",
+            "video_ratio": "default",
             "video_autoplay": false,
             "video_yt_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-          }
-        },
-        "button_z63CmF": {
-          "type": "button",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "btn_label": "Scopri di più",
-            "btn_url": "",
-            "btn_style": "line",
-            "btn_icon": false
           }
         }
       },
       "block_order": [
-        "caption_FGUQrf",
-        "heading_RXnULH",
-        "paragraph_pUyJbN",
-        "video_Wh3Efe",
-        "button_z63CmF"
+        "video_Wh3Efe"
       ],
       "name": "t:video.presets.video.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 40,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
