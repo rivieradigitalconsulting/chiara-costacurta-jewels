@@ -14,9 +14,9 @@
       "custom_css": [],
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
-        "section_padding_bottom_desktop": 0,
-        "section_padding_top_mobile": 40,
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 20,
         "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
@@ -434,7 +434,7 @@
         "accordion_item_iK7p8g"
       ],
       "custom_css": [
-        "h3, p {font-size: 14px;}"
+        "h3,p {font-size: 14px;}"
       ],
       "settings": {
         "section_id": "heading-2",
