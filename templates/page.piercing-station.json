@@ -169,8 +169,8 @@
         "column_YBiHFh": {
           "type": "column",
           "settings": {
-            "title": "Elemento di colonna",
-            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
+            "title": "",
+            "text": "<p>Step 2: <strong>Piercing Styling</strong></p><p>Scelta del gioiello e definizione della composizione finale.Attraverso una consulenza dedicata, verranno valutati proporzioni, equilibrio e posizionamento per creare un risultato armonioso e in linea con il Suo stile.</p>",
             "btn_label": "Scopri di più",
             "btn_url": "",
             "btn_style": "line"
@@ -179,8 +179,8 @@
         "column_e3tcab": {
           "type": "column",
           "settings": {
-            "title": "Elemento di colonna",
-            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
+            "title": "",
+            "text": "<p>Step 3: <strong>Foratura</strong></p><p>La foratura viene eseguita direttamente in Atelier da personale qualificato.Il servizio è omaggiato contestualmente all'acquisto di un gioiello della collezione Piercing & Earcuff.</p>",
             "btn_label": "Scopri di più",
             "btn_url": "",
             "btn_style": "line"
