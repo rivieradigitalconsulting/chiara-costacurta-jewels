@@ -14,15 +14,15 @@
       "custom_css": [],
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
-        "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 40,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
         "column_width": 9,
         "content_position": "center",
-        "content_alignment": "left",
+        "content_alignment": "center",
         "heading_size": "h3",
         "text_size": "body-fs-sm"
       }
