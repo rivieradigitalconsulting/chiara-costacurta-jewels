@@ -153,38 +153,69 @@
         "video_autoplay": false
       }
     },
-    "collection_list_tBFgYb": {
-      "type": "collection-list",
-      "name": "t:collections_list.presets.collections_list.name",
+    "multicolumn_YmiBKU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7BckD7": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Step 1: <strong>Consulenza</strong></p><p>Incontro con la piercer certificata Chiara Venturelli.</p><p>Valutazione dell'anatomia dell'orecchio, delle possibilità di foratura e del posizionamento più armonioso. Consulenza dedicata a nuovi piercing, riapertura di fori esistenti, sistemazione di forature precedenti e studio di composizioni personalizzate.</p>",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_YBiHFh": {
+          "type": "column",
+          "settings": {
+            "title": "Elemento di colonna",
+            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_e3tcab": {
+          "type": "column",
+          "settings": {
+            "title": "Elemento di colonna",
+            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_7BckD7",
+        "column_YBiHFh",
+        "column_e3tcab"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 40,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "collection_list": [],
-        "display_mode": "grid",
         "section_width": "constrict",
-        "content_width": 10,
+        "columns_alignment": "left",
+        "image_ratio": "1x1",
+        "content_width": 12,
         "content_position": "left",
         "content_alignment": "left",
         "columns_desktop": 3,
         "columns_mobile": "1",
-        "column_gap_desktop": 20,
-        "row_gap_desktop": 20,
-        "column_gap_mobile": 20,
-        "row_gap_mobile": 20,
-        "color_scheme_card": "",
-        "show_description": true,
-        "content_card_position": "below-card",
-        "vertical_text_alignment": "bottom",
-        "card_text_alignment": "left",
-        "image_ratio": "1x1",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 0,
+        "row_gap_mobile": 30,
         "heading": "L'esperienza",
         "heading_size": "h3",
-        "text": "<p>Fornisci una breve panoramica delle collezioni presentate in questa sezione. Spiega la varietà e la gamma di prodotti disponibili in ciascuna collezione e come soddisfano le diverse esigenze o preferenze dei clienti.</p>",
+        "text": "",
         "text_size": "body-fs-md",
         "btn_label": "Scopri di più",
         "btn_url": "",
@@ -197,6 +228,6 @@
     "main",
     "slideshow_3Ngfdn",
     "media_with_text_4GHcwf",
-    "collection_list_tBFgYb"
+    "multicolumn_YmiBKU"
   ]
 }
