@@ -192,6 +192,10 @@
         "column_YBiHFh",
         "column_e3tcab"
       ],
+      "custom_css": [
+        "a,p {font-size: 14px;}",
+        ".h4 {font-size: 20px;}"
+      ],
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
