@@ -160,7 +160,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>Step 1: <strong>Consulenza</strong></p><p>Incontro con la piercer certificata Chiara Venturelli.</p><p>Valutazione dell'anatomia dell'orecchio, delle possibilità di foratura e del posizionamento più armonioso. Consulenza dedicata a nuovi piercing, riapertura di fori esistenti, sistemazione di forature precedenti e studio di composizioni personalizzate.</p>",
+            "text": "<p>Step 1: <strong>Consulenza<br/></strong><br/>Incontro con la piercer certificata Chiara Venturelli.<br/>Valutazione dell'anatomia dell'orecchio, delle possibilità di foratura e del posizionamento più armonioso. Consulenza dedicata a nuovi piercing, riapertura di fori esistenti, sistemazione di forature precedenti e studio di composizioni personalizzate.</p>",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -226,12 +226,99 @@
         "btn_style": "line",
         "btn_icon": false
       }
+    },
+    "video_kpPndJ": {
+      "type": "video",
+      "blocks": {
+        "caption_FGUQrf": {
+          "type": "caption",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "title": "Aggiungi uno slogan",
+            "caption_size": "body-fs-md",
+            "caption_style": "uppercase"
+          }
+        },
+        "heading_RXnULH": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Titolo del video",
+            "heading_size": "h2",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_pUyJbN": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Condividi informazioni sul tuo video con i tuoi clienti.</p>",
+            "text_size": "body-fs-md"
+          }
+        },
+        "video_Wh3Efe": {
+          "type": "video",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "video_ratio": "16x9",
+            "video_autoplay": false,
+            "video_yt_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "button_z63CmF": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_FGUQrf",
+        "heading_RXnULH",
+        "paragraph_pUyJbN",
+        "video_Wh3Efe",
+        "button_z63CmF"
+      ],
+      "name": "t:video.presets.video.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "center"
+      }
     }
   },
   "order": [
     "main",
     "slideshow_3Ngfdn",
     "media_with_text_4GHcwf",
-    "multicolumn_YmiBKU"
+    "multicolumn_YmiBKU",
+    "video_kpPndJ"
   ]
 }
