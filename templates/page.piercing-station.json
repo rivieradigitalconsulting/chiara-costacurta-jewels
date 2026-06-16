@@ -384,7 +384,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 60,
-        "section_padding_bottom_desktop": 40,
+        "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 30,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -419,7 +419,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 20,
-        "section_padding_bottom_desktop": 40,
+        "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 20,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -443,7 +443,7 @@
         "text": "",
         "text_size": "body-fs-md",
         "btn_label": "Scopri di più",
-        "btn_url": "",
+        "btn_url": "#",
         "btn_style": "line",
         "btn_icon": false
       }
@@ -454,7 +454,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 20,
-        "section_padding_bottom_desktop": 40,
+        "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 20,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -478,7 +478,7 @@
         "text": "",
         "text_size": "body-fs-md",
         "btn_label": "Scopri di più",
-        "btn_url": "",
+        "btn_url": "#",
         "btn_style": "line",
         "btn_icon": false
       }
