@@ -189,12 +189,72 @@
         "content_alignment": "left",
         "media_position": "right",
         "media_width": 50,
-        "image_ratio": "4x5",
+        "image_ratio": "1x1",
         "image_ratio_2": "default",
         "show_image_2_on_mobile": false,
         "video": "shopify://files/videos/Arte del Gioiello MOV Chiara Costacurta.mp4",
         "video_ratio": "4x5",
         "video_autoplay": true
+      }
+    },
+    "video_gN8RMp": {
+      "type": "video",
+      "blocks": {
+        "heading_qc8Cne": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "L'arte del gioiello, dietro a ogni gioiello",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "video_cCK8fN": {
+          "type": "video",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "video": "shopify://files/videos/Arte del Gioiello MOV2 Chiara Costacurta.mov",
+            "video_ratio": "16x9",
+            "video_autoplay": true,
+            "video_yt_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "paragraph_TTRPWK": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Un gioiello non nasce soltanto da materiali preziosi.</p><p>Nasce dal tempo, dalla competenza e dalla cura necessarie per trasformarli in qualcosa destinato a durare.</p>",
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qc8Cne",
+        "video_cCK8fN",
+        "paragraph_TTRPWK"
+      ],
+      "name": "t:video.presets.video.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left"
       }
     }
   },
@@ -202,6 +262,7 @@
     "main",
     "rich_text_NKAEBk",
     "media_with_text_dzGYMt",
-    "media_with_text_ndraPD"
+    "media_with_text_ndraPD",
+    "video_gN8RMp"
   ]
 }
