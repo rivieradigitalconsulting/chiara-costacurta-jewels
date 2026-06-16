@@ -173,7 +173,7 @@
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
-        "invert_navigation_color": true,
+        "invert_navigation_color": false,
         "color_scheme": "",
         "section_bg_repeat": false,
         "section_bg_position": "bottom center",
@@ -192,8 +192,9 @@
         "image_ratio": "4x5",
         "image_ratio_2": "default",
         "show_image_2_on_mobile": false,
-        "video_ratio": "default",
-        "video_autoplay": false
+        "video": "shopify://files/videos/Arte del Gioiello MOV Chiara Costacurta.mp4",
+        "video_ratio": "4x5",
+        "video_autoplay": true
       }
     }
   },
