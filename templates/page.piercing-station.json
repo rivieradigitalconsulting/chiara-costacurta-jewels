@@ -87,8 +87,8 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "Media con testo",
-            "heading_size": "h2",
+            "heading": "Non è un semplice piecing",
+            "heading_size": "h3",
             "convert_to_h1": false
           }
         },
@@ -99,8 +99,8 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Abbina testo e immagine per mettere in risalto il prodotto, la collezione o l'articolo del blog che hai scelto. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
-            "text_size": "body-fs-md"
+            "text": "<p>Da noi, ogni appuntamento inizia con una conversazione: analizziamo la forma dell'orecchio, ascoltiamo i Suoi desideri e costruiamo insieme una composizione armoniosa. <br/><br/>Uno spazio intimo, lontano dalla frenesia, dove scegliere con calma il gioiello più adatto a Lei.</p>",
+            "text_size": "body-fs-sm"
           }
         },
         "button_tikF7H": {
@@ -110,7 +110,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "btn_label": "Scopri di più",
+            "btn_label": "",
             "btn_url": "",
             "btn_style": "line",
             "btn_icon": false
