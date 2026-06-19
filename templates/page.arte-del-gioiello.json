@@ -37,7 +37,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Un gioiello è molto più della sua forma.</p><p>È la materia di cui è composto, il modo in cui viene lavorata, la luce che riflette e le emozioni che è in grado di custodire nel tempo.</p><p>Dall'oro ai diamanti, fino alle pietre naturali, Chiara Costacurta seleziona esclusivamente materiali preziosi e naturali, capaci di mantenere intatta la propria bellezza generazione dopo generazione.</p>",
+            "text": "<p>Un gioiello è molto più della sua forma.</p><p>È la materia di cui è composto, il modo in cui viene lavorato, la luce che riflette e le emozioni che è in grado di custodire nel tempo.</p><p>Dall'oro ai diamanti, fino alle pietre naturali, Chiara Costacurta seleziona esclusivamente materiali preziosi e naturali, capaci di mantenere intatta la propria bellezza generazione dopo generazione.</p>",
             "text_column": "",
             "grid_gap_desktop": 20,
             "text_size": "body-fs-sm"
@@ -129,7 +129,8 @@
         "image_ratio_2": "default",
         "show_image_2_on_mobile": false,
         "video_ratio": "default",
-        "video_autoplay": false
+        "video_autoplay": false,
+        "video_yt_url": ""
       }
     },
     "media_with_text_ndraPD": {
@@ -194,7 +195,8 @@
         "show_image_2_on_mobile": false,
         "video": "shopify://files/videos/Arte del Gioiello MOV Chiara Costacurta.mp4",
         "video_ratio": "4x5",
-        "video_autoplay": true
+        "video_autoplay": true,
+        "video_yt_url": ""
       }
     },
     "video_gN8RMp": {
