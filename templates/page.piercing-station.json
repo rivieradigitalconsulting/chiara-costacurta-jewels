@@ -165,7 +165,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>Step 1: <strong>Consulenza<br/></strong><br/>Incontro con la piercer certificata Chiara Venturelli.<br/>Valutazione dell'anatomia dell'orecchio, delle possibilità di foratura e del posizionamento più armonioso. Consulenza dedicata a nuovi piercing, riapertura di fori esistenti, sistemazione di forature precedenti e studio di composizioni personalizzate.</p>",
+            "text": "<p>Step 1: <strong>Consulenza<br/></strong><br/>Incontro con la piercer certificata Chiara Venturelli.<br/><br/>Valutazione dell'anatomia dell'orecchio, delle possibilità di foratura e del posizionamento più armonioso. Consulenza dedicata a nuovi piercing, riapertura di fori esistenti, sistemazione di forature precedenti e studio di composizioni personalizzate.</p>",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
