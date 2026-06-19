@@ -393,9 +393,14 @@
         "invert_navigation_color": false,
         "color_scheme": "",
         "collection": "",
-        "product_list": [],
+        "product_list": [
+          "chiara-costacurta-peace-07p0133-yg14",
+          "chiara-costacurta-bottoncino-07p0136-yg14",
+          "chiara-costacurta-blue-eye-07p0153-yg14",
+          "chiara-costacurta-bottone-di-opalite-07p0159-yg14"
+        ],
         "display_mode": "slider",
-        "product_limit": 12,
+        "product_limit": 6,
         "columns_desktop": 3,
         "columns_mobile": "1",
         "column_gap_desktop": 20,
