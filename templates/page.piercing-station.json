@@ -540,6 +540,7 @@
         },
         "button_V3BUVL": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
