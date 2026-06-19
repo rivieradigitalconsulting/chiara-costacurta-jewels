@@ -481,7 +481,13 @@
         "invert_navigation_color": false,
         "color_scheme": "",
         "collection": "",
-        "product_list": [],
+        "product_list": [
+          "chiara-costacurta-goccia-di-zaffiro-blu-07p0185-yg14sb",
+          "chiara-costacurta-goccia-di-smeraldo-07p0185-yg14e",
+          "chiara-costacurta-fiore-di-smeraldo-07p0166-yg14e",
+          "chiara-costacurta-emerald-conch-07p0147-yg14e",
+          "chiara-costacurta-daith-baguette-di-smeraldo-07p0055-yg14e"
+        ],
         "display_mode": "slider",
         "product_limit": 12,
         "columns_desktop": 3,
