@@ -436,7 +436,14 @@
         "invert_navigation_color": false,
         "color_scheme": "",
         "collection": "",
-        "product_list": [],
+        "product_list": [
+          "chiara-costacurta-stella-cadente-07p0027-yg14d",
+          "chiara-costacurta-mini-punta-di-diamante-in-oro-bianco-07p0203-wg14d",
+          "chiara-costacurta-aurora-07p0192-yg14d",
+          "chiara-costacurta-mini-aurora-07p0302-yg14d",
+          "chiara-costacurta-pave-07p0116-yg14d",
+          "chiara-costacurta-double-diamonds-07p0280-yg14d"
+        ],
         "display_mode": "slider",
         "product_limit": 12,
         "columns_desktop": 3,
