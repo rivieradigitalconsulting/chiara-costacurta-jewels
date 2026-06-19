@@ -400,7 +400,7 @@
           "chiara-costacurta-bottone-di-opalite-07p0159-yg14"
         ],
         "display_mode": "slider",
-        "product_limit": 6,
+        "product_limit": 9,
         "columns_desktop": 3,
         "columns_mobile": "1",
         "column_gap_desktop": 20,
@@ -416,7 +416,7 @@
         "text": "",
         "text_size": "body-fs-md",
         "btn_label": "Scopri di più",
-        "btn_url": "#",
+        "btn_url": "https://chiara-costacurta-jewels.myshopify.com/collections/piercing?filter.p.m.pdp.materiale_filtri=Oro+Giallo+14kt&filter.v.price.gte=&filter.v.price.lte=&sort_by=most-relevant",
         "btn_style": "line",
         "btn_icon": false
       }
