@@ -96,7 +96,7 @@
             "block_spacing_top_mobile": 10,
             "block_spacing_bottom_mobile": 20,
             "image": "shopify://shop_images/Chiara_Costacurta_About.jpg",
-            "image_ratio": "4x5"
+            "image_ratio": "default"
           }
         },
         "paragraph_3cxmbi": {
