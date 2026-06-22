@@ -1,0 +1,270 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_width": 9,
+        "content_position": "center",
+        "content_alignment": "center",
+        "heading_size": "h3",
+        "text_size": "body-fs-sm"
+      }
+    },
+    "rich_text_NKAEBk": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_ytX9aA": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Un gioiello è molto più della sua forma.</p><p>È la materia di cui è composto, il modo in cui viene lavorato, la luce che riflette e le emozioni che è in grado di custodire nel tempo.</p><p>Dall'oro ai diamanti, fino alle pietre naturali, Chiara Costacurta seleziona esclusivamente materiali preziosi e naturali, capaci di mantenere intatta la propria bellezza generazione dopo generazione.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_ytX9aA"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "media_with_text_dzGYMt": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_9mVX9f": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Oro 750/1000",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_7dzWUB": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>L'oro è una delle poche materie capaci di attraversare i secoli senza perdere il proprio fascino.</p><p>Prezioso per natura, raro e incorruttibile, custodisce da sempre storie, affetti e momenti destinati a durare. È il materiale che più di ogni altro accompagna i passaggi importanti della vita, trasformandosi in un simbolo da conservare e tramandare.</p><p>Chiara Costacurta si impegna affinché ogni lavorazione nasca dalle mani di orafi esperti che plasmano l'oro con gesti antichi e con una sensibilità contemporanea. Perché dietro ogni gioiello non c'è solo una materia preziosa, ma il tempo, la competenza e la cura necessari per trasformarla in qualcosa di unico.</p>",
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9mVX9f",
+        "paragraph_7dzWUB"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "media-outside-container",
+        "grid_gap_desktop": 50,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 0,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "left",
+        "image": "shopify://shop_images/Arte_del_gioiello_Chiara_Costacurta.png",
+        "media_width": 50,
+        "image_ratio": "4x5",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video_ratio": "default",
+        "video_autoplay": false,
+        "video_yt_url": ""
+      }
+    },
+    "media_with_text_ndraPD": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_tWqDzh": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Diamanti naturali",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_eH46wD": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Nati nelle profondità della Terra e plasmati nel corso di milioni di anni, i diamanti naturali custodiscono una storia unica fatta di tempo, pressione e trasformazione chimica. La loro luce non è soltanto una qualità estetica: è il risultato di un percorso straordinario che rende ogni pietra irripetibile.</p><p>Per le creazioni Chiara Costacurta vengono selezionati esclusivamente diamanti naturali certificati, scelti per la loro bellezza, luminosità e qualità. Crediamo che il valore di una pietra non risieda soltanto nella sua rarità, ma anche nella trasparenza e nell'etica che ne accompagnano il percorso.</p><p>Per questo collaboriamo con fornitori che aderiscono al <strong>Kimberley Process</strong>, il sistema internazionale nato per garantire la tracciabilità dei diamanti grezzi e promuovere pratiche di approvvigionamento responsabili. Una scelta che ci permette di offrire diamanti naturali ottenuti nel rispetto delle persone, delle comunità coinvolte e dei territori da cui provengono.</p><p>Per Chiara Costacurta il diamante è davvero prezioso solo quando la sua bellezza è accompagnata da rispetto, responsabilità e trasparenza.</p>",
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tWqDzh",
+        "paragraph_eH46wD"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "media-outside-container",
+        "grid_gap_desktop": 50,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 0,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "right",
+        "media_width": 50,
+        "image_ratio": "1x1",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video": "shopify://files/videos/Arte del Gioiello MOV Chiara Costacurta.mp4",
+        "video_ratio": "4x5",
+        "video_autoplay": true,
+        "video_yt_url": ""
+      }
+    },
+    "video_gN8RMp": {
+      "type": "video",
+      "blocks": {
+        "heading_qc8Cne": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "L'arte del gioiello, dietro a ogni gioiello",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "video_cCK8fN": {
+          "type": "video",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "video": "shopify://files/videos/Arte del Gioiello MOV2 Chiara Costacurta.mov",
+            "video_ratio": "16x9",
+            "video_autoplay": true,
+            "video_yt_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "paragraph_TTRPWK": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Un gioiello non nasce soltanto da materiali preziosi.</p><p>Nasce dal tempo, dalla competenza e dalla cura necessarie per trasformarli in qualcosa destinato a durare.</p>",
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qc8Cne",
+        "video_cCK8fN",
+        "paragraph_TTRPWK"
+      ],
+      "name": "t:video.presets.video.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_NKAEBk",
+    "media_with_text_dzGYMt",
+    "media_with_text_ndraPD",
+    "video_gN8RMp"
+  ]
+}
