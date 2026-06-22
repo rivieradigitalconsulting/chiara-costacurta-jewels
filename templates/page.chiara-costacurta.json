@@ -27,229 +27,112 @@
         "text_size": "body-fs-sm"
       }
     },
-    "rich_text_NKAEBk": {
-      "type": "rich-text",
+    "image_DAyjjW": {
+      "type": "image",
       "blocks": {
-        "paragraph_ytX9aA": {
-          "type": "paragraph",
+        "image_ArMCPH": {
+          "type": "image",
           "settings": {
-            "block_spacing_top_desktop": 20,
+            "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Un gioiello è molto più della sua forma.</p><p>È la materia di cui è composto, il modo in cui viene lavorato, la luce che riflette e le emozioni che è in grado di custodire nel tempo.</p><p>Dall'oro ai diamanti, fino alle pietre naturali, Chiara Costacurta seleziona esclusivamente materiali preziosi e naturali, capaci di mantenere intatta la propria bellezza generazione dopo generazione.</p>",
-            "text_column": "",
-            "grid_gap_desktop": 20,
-            "text_size": "body-fs-sm"
+            "image": "shopify://shop_images/About_Chiara_Costacurta.jpg",
+            "image_ratio": "default"
           }
-        }
-      },
-      "block_order": [
-        "paragraph_ytX9aA"
-      ],
-      "name": "t:rich_text.presets.rich_text.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 20,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "section_bg_repeat": false,
-        "section_bg_position": "bottom center",
-        "section_bg_size": "auto",
-        "section_bg_opacity": 100,
-        "column_width": 12,
-        "content_position": "left",
-        "content_alignment": "left",
-        "title_position": "inline",
-        "grid_gap_desktop": 20
-      }
-    },
-    "media_with_text_dzGYMt": {
-      "type": "media-with-text",
-      "blocks": {
-        "heading_9mVX9f": {
+        },
+        "heading_iGLHmr": {
           "type": "heading",
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "Oro 750/1000",
+            "heading": "A volte non siamo noi a scegliere le nostre passioni, sono loro a scegliere noi.",
             "heading_size": "h3",
             "convert_to_h1": false
           }
         },
-        "paragraph_7dzWUB": {
+        "paragraph_D6VCFB": {
           "type": "paragraph",
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>L'oro è una delle poche materie capaci di attraversare i secoli senza perdere il proprio fascino.</p><p>Prezioso per natura, raro e incorruttibile, custodisce da sempre storie, affetti e momenti destinati a durare. È il materiale che più di ogni altro accompagna i passaggi importanti della vita, trasformandosi in un simbolo da conservare e tramandare.</p><p>Chiara Costacurta si impegna affinché ogni lavorazione nasca dalle mani di orafi esperti che plasmano l'oro con gesti antichi e con una sensibilità contemporanea. Perché dietro ogni gioiello non c'è solo una materia preziosa, ma il tempo, la competenza e la cura necessari per trasformarla in qualcosa di unico.</p>",
+            "text": "<p>La passione per i gioielli nasce con me.<br/>Sono ormai certa che questa ossessione faccia parte del mio DNA.</p><p>Il primo ricordo risale a un pranzo di famiglia, quando incontrai per la prima volta le sorelle di mia nonna paterna. Dell'ambiente ricordo poco: era semplice, elegante. Avevo forse sei anni.<br/>A un certo punto, una di loro si alzò da tavola e si allontanò per qualche minuto. Quando tornò, indossava alcuni gioielli. Erano semplici, ma li ricordo ancora oggi con sorprendente nitidezza.</p><p>Da quel momento la prima cosa che noto - a volte anche rischiando di essere invadente - sono i gioielli che una donna indossa: parlano di lei, della sua vita, della sua personalità e dei suoi sogni.</p><p>Le donne sono da sempre la mia più grande fonte di ispirazione. Donne indipendenti, o determinate a diventarlo. Donne che costruiscono la propria strada, che si trasformano, che evolvono. A loro sono dedicati i gioielli che creo.</p><p>Credo nell'amore alla pari, quell'amore che valorizza l'altro e lo rende migliore.<br/>Credo nel reinventare vecchi gioielli per poterli indossare e tramandare di nuovo.<br/>Credo nell'evoluzione del futuro: dalle nuove generazioni colgo i segnali di trasformazione e il desiderio di cambiamento.</p><p>Per molti anni la gioielleria è stata una passione coltivata quasi in segreto. Dopo il Liceo Classico e gli studi in Economia Aziendale, sembrava un interesse insolito, distante dal percorso che avevo scelto.<br/>Di notte, quando la casa era silenziosa, iniziavo a lavorare argento e pietre semipreziose. Nascevano collane, anelli e orecchini di ogni forma. Senza che me ne accorgessi, prendeva forma anche la vera magia del mio lavoro: le amiche diventavano clienti e le nuove clienti diventavano amiche.</p><p>Nel 2011 mi trovavo a Londra quando decisi di intraprendere un corso GIA. Non sapevo ancora che quella scelta avrebbe cambiato il mio percorso. Lo studio della gemmologia mi ha aperto le porte del mondo dell'alta gioielleria e mi ha dato gli strumenti per approfondire una passione che ormai faceva parte della mia vita.</p><p>Negli anni successivi ho continuato a costruire il mio progetto, conciliandolo con la mia famiglia, i miei quattro figli e i miei cani, che restano ancora oggi tra i miei più grandi amori.</p><p>Dopo l'esperienza a Lugano e il primo laboratorio aperto a Treviso, nel 2023 mi sono trasferita a Milano. Qui ho deciso di compiere un passo importante: aprire il mio atelier nel cuore della città.<br/>Un luogo che immaginavo da tempo. Uno spazio in cui accogliere le clienti, sviluppare nuove idee, creare relazioni e offrire un ambiente sicuro in cui dare forma a desideri, ricordi e progetti personali. Un salotto nel cuore di Brera, completato da una Piercing Station certificata e da una comunità di donne che continua a crescere ogni giorno.</p>",
             "text_size": "body-fs-sm"
           }
         }
       },
       "block_order": [
-        "heading_9mVX9f",
-        "paragraph_7dzWUB"
+        "image_ArMCPH",
+        "heading_iGLHmr",
+        "paragraph_D6VCFB"
       ],
-      "custom_css": [
-        "a {font-size: 14px;}"
-      ],
-      "name": "t:media_with_text.presets.media_with_text.name",
+      "name": "t:image.presets.image.name",
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 50,
-        "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 20,
-        "invert_navigation_color": true,
-        "color_scheme": "",
-        "section_bg_repeat": false,
-        "section_bg_position": "bottom center",
-        "section_bg_size": "auto",
-        "section_bg_opacity": 100,
-        "display_mode": "media-outside-container",
-        "grid_gap_desktop": 50,
-        "grid_gap_mobile": 20,
-        "content_vertical_position": "center",
-        "content_top_position": 0,
-        "content_max_width": 600,
-        "content_horizontal_position": "center",
-        "content_alignment": "left",
-        "media_position": "left",
-        "image": "shopify://shop_images/Arte_del_gioiello_Chiara_Costacurta.png",
-        "media_width": 50,
-        "image_ratio": "4x5",
-        "image_ratio_2": "default",
-        "show_image_2_on_mobile": false,
-        "video_ratio": "default",
-        "video_autoplay": false,
-        "video_yt_url": ""
-      }
-    },
-    "media_with_text_ndraPD": {
-      "type": "media-with-text",
-      "blocks": {
-        "heading_tWqDzh": {
-          "type": "heading",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "heading": "Diamanti naturali",
-            "heading_size": "h3",
-            "convert_to_h1": false
-          }
-        },
-        "paragraph_eH46wD": {
-          "type": "paragraph",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "text": "<p>Nati nelle profondità della Terra e plasmati nel corso di milioni di anni, i diamanti naturali custodiscono una storia unica fatta di tempo, pressione e trasformazione chimica. La loro luce non è soltanto una qualità estetica: è il risultato di un percorso straordinario che rende ogni pietra irripetibile.</p><p>Per le creazioni Chiara Costacurta vengono selezionati esclusivamente diamanti naturali certificati, scelti per la loro bellezza, luminosità e qualità. Crediamo che il valore di una pietra non risieda soltanto nella sua rarità, ma anche nella trasparenza e nell'etica che ne accompagnano il percorso.</p><p>Per questo collaboriamo con fornitori che aderiscono al <strong>Kimberley Process</strong>, il sistema internazionale nato per garantire la tracciabilità dei diamanti grezzi e promuovere pratiche di approvvigionamento responsabili. Una scelta che ci permette di offrire diamanti naturali ottenuti nel rispetto delle persone, delle comunità coinvolte e dei territori da cui provengono.</p><p>Per Chiara Costacurta il diamante è davvero prezioso solo quando la sua bellezza è accompagnata da rispetto, responsabilità e trasparenza.</p>",
-            "text_size": "body-fs-sm"
-          }
-        }
-      },
-      "block_order": [
-        "heading_tWqDzh",
-        "paragraph_eH46wD"
-      ],
-      "custom_css": [
-        "a {font-size: 14px;}"
-      ],
-      "name": "t:media_with_text.presets.media_with_text.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 60,
-        "section_padding_bottom_desktop": 50,
+        "section_padding_bottom_desktop": 40,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "section_bg_repeat": false,
-        "section_bg_position": "bottom center",
-        "section_bg_size": "auto",
-        "section_bg_opacity": 100,
-        "display_mode": "media-outside-container",
-        "grid_gap_desktop": 50,
-        "grid_gap_mobile": 20,
-        "content_vertical_position": "center",
-        "content_top_position": 0,
-        "content_max_width": 600,
-        "content_horizontal_position": "center",
-        "content_alignment": "left",
-        "media_position": "right",
-        "media_width": 50,
-        "image_ratio": "1x1",
-        "image_ratio_2": "default",
-        "show_image_2_on_mobile": false,
-        "video": "shopify://files/videos/Arte del Gioiello MOV Chiara Costacurta.mp4",
-        "video_ratio": "4x5",
-        "video_autoplay": true,
-        "video_yt_url": ""
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left"
       }
     },
-    "video_gN8RMp": {
-      "type": "video",
+    "image_zUWahn": {
+      "type": "image",
       "blocks": {
-        "heading_qc8Cne": {
-          "type": "heading",
+        "image_gMH6Ur": {
+          "type": "image",
           "settings": {
-            "block_spacing_top_desktop": 20,
+            "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "L'arte del gioiello, dietro a ogni gioiello",
-            "heading_size": "h3",
-            "convert_to_h1": false
+            "image": "shopify://shop_images/Chiara_Costacurta_About.jpg",
+            "image_ratio": "4x5"
           }
         },
-        "video_cCK8fN": {
-          "type": "video",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "video": "shopify://files/videos/Arte del Gioiello MOV2 Chiara Costacurta.mov",
-            "video_ratio": "16x9",
-            "video_autoplay": true,
-            "video_yt_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-          }
-        },
-        "paragraph_TTRPWK": {
+        "paragraph_3cxmbi": {
           "type": "paragraph",
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Un gioiello non nasce soltanto da materiali preziosi.</p><p>Nasce dal tempo, dalla competenza e dalla cura necessarie per trasformarli in qualcosa destinato a durare.</p>",
+            "text": "<p>Il brand Chiara Costacurta oggi porta il mio nome, ma racconta una storia che va oltre la mia: una storia fatta di creatività, indipendenza, trasformazione e legami.</p><p>Chiara Costacurta parla di me, ma soprattutto parla delle donne che scelgono di indossare le mie creazioni.</p><p>Il mio brand parla di voi.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "paragraph_QTJbpU": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 60,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Con affetto,</p><p><em>Chiara Costacurta</em></p>",
             "text_size": "body-fs-sm"
           }
         }
       },
       "block_order": [
-        "heading_qc8Cne",
-        "video_cCK8fN",
-        "paragraph_TTRPWK"
+        "image_gMH6Ur",
+        "paragraph_3cxmbi",
+        "paragraph_QTJbpU"
       ],
-      "name": "t:video.presets.video.name",
+      "name": "t:image.presets.image.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 0,
+        "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
@@ -262,9 +145,7 @@
   },
   "order": [
     "main",
-    "rich_text_NKAEBk",
-    "media_with_text_dzGYMt",
-    "media_with_text_ndraPD",
-    "video_gN8RMp"
+    "image_DAyjjW",
+    "image_zUWahn"
   ]
 }
