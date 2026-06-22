@@ -35,7 +35,7 @@
           "settings": {
             "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
+            "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 20,
             "image": "shopify://shop_images/About_Chiara_Costacurta.jpg",
             "image_ratio": "default"
@@ -44,7 +44,7 @@
         "heading_iGLHmr": {
           "type": "heading",
           "settings": {
-            "block_spacing_top_desktop": 20,
+            "block_spacing_top_desktop": 40,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
@@ -75,8 +75,8 @@
         "section_id": "",
         "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 40,
-        "section_padding_top_mobile": 40,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
         "media_contain_width": true,
@@ -93,7 +93,7 @@
           "settings": {
             "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
+            "block_spacing_top_mobile": 10,
             "block_spacing_bottom_mobile": 20,
             "image": "shopify://shop_images/Chiara_Costacurta_About.jpg",
             "image_ratio": "4x5"
@@ -102,7 +102,7 @@
         "paragraph_3cxmbi": {
           "type": "paragraph",
           "settings": {
-            "block_spacing_top_desktop": 20,
+            "block_spacing_top_desktop": 40,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
@@ -115,7 +115,7 @@
           "settings": {
             "block_spacing_top_desktop": 60,
             "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
+            "block_spacing_top_mobile": 50,
             "block_spacing_bottom_mobile": 20,
             "text": "<p>Con affetto,</p><p><em>Chiara Costacurta</em></p>",
             "text_size": "body-fs-sm"
@@ -132,7 +132,7 @@
         "section_id": "",
         "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 40,
+        "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
