@@ -1,0 +1,172 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "custom_css": [
+        ".m-breadcrumbs__link,.m-breadcrumbs__chevron {font-size: 12px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "color_scheme": "",
+        "color_scheme_on_image": "",
+        "content_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "show_collection_image": true,
+        "show_collection_description": false,
+        "heading_size": "h3",
+        "content_top_spacing": "medium"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "cta_ACkUjb": {
+          "type": "cta",
+          "settings": {
+            "index": 1,
+            "color_scheme": "scheme-1",
+            "card_vertical_text_alignment": "bottom",
+            "card_text_alignment": "left",
+            "image": "shopify://shop_images/Mano_1.jpg",
+            "image_ratio": "inherit",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "heading": "",
+            "text": "",
+            "btn_url": "",
+            "btn_label": "",
+            "btn_style": "primary",
+            "btn_icon": false
+          }
+        },
+        "cta_UdUXJy": {
+          "type": "cta",
+          "settings": {
+            "index": 4,
+            "color_scheme": "scheme-1",
+            "card_vertical_text_alignment": "bottom",
+            "card_text_alignment": "left",
+            "image": "shopify://shop_images/lifestyle.jpg",
+            "image_ratio": "inherit",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "heading": "",
+            "text": "",
+            "btn_url": "",
+            "btn_label": "",
+            "btn_style": "primary",
+            "btn_icon": false
+          }
+        },
+        "cta_4CetNK": {
+          "type": "cta",
+          "settings": {
+            "index": 5,
+            "color_scheme": "scheme-1",
+            "card_vertical_text_alignment": "bottom",
+            "card_text_alignment": "left",
+            "image": "shopify://shop_images/orecchino_1.jpg",
+            "image_ratio": "inherit",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "heading": "",
+            "text": "",
+            "btn_url": "",
+            "btn_label": "",
+            "btn_style": "primary",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "cta_ACkUjb",
+        "cta_UdUXJy",
+        "cta_4CetNK"
+      ],
+      "custom_css": [
+        "label {font-size: 14px;}",
+        ".m-pagination__list {font-size: 12px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 120,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "filter_drawer_color_scheme": "",
+        "products_per_page": 24,
+        "grid_type": "default",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "enable_product_count": true
+      }
+    },
+    "rich_text_8BaGyE": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_4Nqmfq": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "{{ collection.description }}",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_4Nqmfq"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 30,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "rich_text_8BaGyE"
+  ]
+}
