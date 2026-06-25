@@ -41,7 +41,7 @@
             "color_scheme": "scheme-1",
             "card_vertical_text_alignment": "bottom",
             "card_text_alignment": "left",
-            "image": "shopify://shop_images/Mano_1.jpg",
+            "image": "{{ collection.metafields.plp.immagine_1_collezione_grid.value }}",
             "image_ratio": "inherit",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
@@ -56,11 +56,11 @@
         "cta_UdUXJy": {
           "type": "cta",
           "settings": {
-            "index": 4,
+            "index": 8,
             "color_scheme": "scheme-1",
             "card_vertical_text_alignment": "bottom",
             "card_text_alignment": "left",
-            "image": "shopify://shop_images/lifestyle.jpg",
+            "image": "{{ collection.metafields.plp.immagine_2_collezione_grid.value }}",
             "image_ratio": "inherit",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
