@@ -37,7 +37,7 @@
         "cta_ACkUjb": {
           "type": "cta",
           "settings": {
-            "index": 1,
+            "index": 2,
             "color_scheme": "scheme-1",
             "card_vertical_text_alignment": "bottom",
             "card_text_alignment": "left",
@@ -56,7 +56,7 @@
         "cta_UdUXJy": {
           "type": "cta",
           "settings": {
-            "index": 8,
+            "index": 9,
             "color_scheme": "scheme-1",
             "card_vertical_text_alignment": "bottom",
             "card_text_alignment": "left",
@@ -75,11 +75,11 @@
         "cta_4CetNK": {
           "type": "cta",
           "settings": {
-            "index": 5,
+            "index": 13,
             "color_scheme": "scheme-1",
             "card_vertical_text_alignment": "bottom",
             "card_text_alignment": "left",
-            "image": "shopify://shop_images/orecchino_1.jpg",
+            "image": "{{ collection.metafields.plp.immagine_3_collezione_grid.value }}",
             "image_ratio": "inherit",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
