@@ -56,7 +56,7 @@
         "cta_UdUXJy": {
           "type": "cta",
           "settings": {
-            "index": 9,
+            "index": 8,
             "color_scheme": "scheme-1",
             "card_vertical_text_alignment": "bottom",
             "card_text_alignment": "left",
@@ -75,7 +75,7 @@
         "cta_4CetNK": {
           "type": "cta",
           "settings": {
-            "index": 13,
+            "index": 11,
             "color_scheme": "scheme-1",
             "card_vertical_text_alignment": "bottom",
             "card_text_alignment": "left",
