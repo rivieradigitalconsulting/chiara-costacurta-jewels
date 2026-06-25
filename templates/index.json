@@ -108,7 +108,7 @@
             "block_spacing_bottom_desktop": 15,
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 15,
-            "heading": "Collezione Victoria",
+            "heading": "Collezione Saint Tropez",
             "heading_size": "h3",
             "convert_to_h1": false
           }
@@ -133,7 +133,7 @@
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 30,
             "btn_label": "Scopri i dettagli",
-            "btn_url": "shopify://collections/victoria",
+            "btn_url": "shopify://collections/saint-tropez",
             "btn_style": "tertiary",
             "btn_icon": false
           }
@@ -143,6 +143,75 @@
         "heading_DYFAGp",
         "paragraph_TeirUh",
         "button_MDtMYn"
+      ],
+      "custom_css": [
+        "span {font-size: 14px;}"
+      ],
+      "name": "t:banner.presets.banner.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 5,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_width": "page-width",
+        "section_height": "medium",
+        "column_width": 8,
+        "vertical_content_position": "bottom",
+        "content_position": "center",
+        "content_alignment": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 15,
+        "image": "shopify://shop_images/6R6A5840.jpg"
+      }
+    },
+    "banner_qJTiPR": {
+      "type": "banner",
+      "blocks": {
+        "heading_fDqtGH": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 15,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 15,
+            "heading": "Collezione Victoria",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_6inCXh": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "block_spacing_top_desktop": 5,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 5,
+            "block_spacing_bottom_mobile": 0,
+            "text": "<p>Lorem Ipsum Dolor Sit Amet.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_w7eWVm": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 30,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 30,
+            "btn_label": "Scopri i dettagli",
+            "btn_url": "shopify://collections/victoria",
+            "btn_style": "tertiary",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fDqtGH",
+        "paragraph_6inCXh",
+        "button_w7eWVm"
       ],
       "custom_css": [
         "span {font-size: 14px;}"
@@ -502,6 +571,7 @@
     "slideshow",
     "featured_collection_a7Xnrp",
     "banner_cpc4cb",
+    "banner_qJTiPR",
     "banner_fBAYPw",
     "slideshow_c7yHWE",
     "collection_list_cpn77E",
