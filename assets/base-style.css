@@ -4529,3 +4529,8 @@ swym-storefront-layout-notification,
   visibility: hidden !important;
   opacity: 0 !important;
 }
+.swym-advanced-header-icon,
+.swym-advanced-header-icon#swym-advanced-header-icon.swym-header-icon-wrapper,
+#swym-advanced-header-icon-mobile {
+  display: none !important;
+}
