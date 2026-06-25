@@ -157,7 +157,7 @@
         "invert_navigation_color": true,
         "color_scheme": "",
         "section_width": "page-width",
-        "section_height": "small",
+        "section_height": "medium",
         "column_width": 8,
         "vertical_content_position": "bottom",
         "content_position": "center",
