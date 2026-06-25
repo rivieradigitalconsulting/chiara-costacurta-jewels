@@ -167,6 +167,43 @@
         "image": "shopify://shop_images/6R6A5840.jpg"
       }
     },
+    "featured_collection_NJtEpV": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {margin-top: 20px; font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 70,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "scheme-1",
+        "collection": "saint-tropez",
+        "product_list": [],
+        "display_mode": "slider",
+        "product_limit": 6,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri la nuova Saint-Tropez",
+        "btn_url": "shopify://collections/saint-tropez",
+        "btn_style": "line",
+        "btn_icon": true
+      }
+    },
     "banner_qJTiPR": {
       "type": "banner",
       "blocks": {
@@ -571,6 +608,7 @@
     "slideshow",
     "featured_collection_a7Xnrp",
     "banner_cpc4cb",
+    "featured_collection_NJtEpV",
     "banner_qJTiPR",
     "banner_fBAYPw",
     "slideshow_c7yHWE",
