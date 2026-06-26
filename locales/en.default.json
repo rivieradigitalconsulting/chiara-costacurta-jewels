@@ -406,6 +406,209 @@
   "shopify": {
     "links": {
       "powered_by_shopify": "<a href=\"https://www.instagram.com/riviera.digitalconsulting/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"font-weight: normal; text-decoration: none;\">built by riviera</a>"
+    },
+    "checkout": {
+      "local_pickup": {
+        "location_information_far_away_other_items": {
+          "many": "There are %{count} locations with items"
+        },
+        "location_nearby_one_item": {
+          "many": "There are %{count} nearby locations with the item"
+        },
+        "location_nearby_other_items": {
+          "many": "There are %{count} nearby locations with items"
+        },
+        "location_nearby_short_one_item": {
+          "many": "%{count} nearby locations with the item"
+        },
+        "location_nearby_short_other_items": {
+          "many": "%{count} nearby locations with items"
+        },
+        "location_far_away_one_item": {
+          "many": "%{count} locations with article"
+        },
+        "location_far_away_other_items": {
+          "many": "%{count} locations with items"
+        }
+      },
+      "split_delivery": {
+        "inventory_issue_banner": {
+          "heading": {
+            "cannot_be_picked_up": {
+              "many": "%{count} items cannot be picked up"
+            },
+            "cannot_be_shipped": {
+              "many": "%{count} items cannot be shipped"
+            }
+          },
+          "remove_item": {
+            "many": "remove items"
+          },
+          "ship_separately": {
+            "many": "Send them separately"
+          },
+          "pick_them_up_in_store": {
+            "many": "Collect in-store"
+          },
+          "remove_item_only": {
+            "many": "Remove items"
+          }
+        },
+        "pickup_items_count": {
+          "many": "Retrieve %{count} items"
+        },
+        "ship_items_count": {
+          "many": "Ship %{count} items"
+        },
+        "items_count": {
+          "many": "%{count} items"
+        }
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "remove_items_action": {
+          "many": "remove unavailable items"
+        }
+      },
+      "review_address_modal": {
+        "subtitle": {
+          "many": "This order will be shipped to an address provided by {{merchant}}. Please select a shipping address."
+        }
+      },
+      "remote_merchandise_only": {
+        "detail_item_label": {
+          "many": "{{count}} items"
+        }
+      }
+    },
+    "notices": {
+      "order": {
+        "cancel_reason": {
+          "many": "Other"
+        }
+      }
+    },
+    "page_titles": {
+      "search_results": {
+        "many": "Search: %{count} results found for \"%{terms}\""
+      }
+    }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_list": {
+        "items": {
+          "many": "{{count}} items"
+        }
+      },
+      "order_status": {
+        "delivered_description_gift_card": {
+          "many": "Gift vouchers sent by email."
+        },
+        "gift_card_label": {
+          "many": "Gift cards"
+        },
+        "confirmed_gift_card_additional_description": {
+          "many": "Each gift voucher will be sent in a separate email."
+        },
+        "delivered_description_gift_card_text": {
+          "many": "The gift cards have been sent by message."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "many": "Each gift voucher will be sent in a separate message."
+        },
+        "gift_resend_success": {
+          "many": "Gift cards resent"
+        },
+        "gift_resend_failure": {
+          "many": "There was a problem resending the gift vouchers. Please try again or contact us."
+        },
+        "tracking_number": {
+          "many": "Tracking numbers"
+        },
+        "gift_card_resend_button": {
+          "many": "Resend gift vouchers"
+        }
+      }
+    },
+    "order_details": {
+      "image_gallery": {
+        "load_more_items": {
+          "many": "Load {{count}} more items"
+        }
+      },
+      "subtotal_label_with_quantity": {
+        "many": "Subtotal · {{count}} items"
+      },
+      "discount_order_stacking": {
+        "many": "Order discounts"
+      }
+    },
+    "B2B": {
+      "orders": {
+        "draft_order_list": {
+          "pending_tab_accessibility_label": {
+            "pending_orders": {
+              "many": "You have {{count}} pending orders"
+            }
+          }
+        }
+      },
+      "draft_order_details": {
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "many": "The payment is {{count}} days late"
+            },
+            "banner_due": {
+              "many": "Payment due in {{count}} days"
+            },
+            "banner_overdue_for_single_fulfillment": {
+              "many": "The payment of {{amount}} is {{count}} days overdue. {{link}}"
+            }
+          }
+        }
+      }
+    },
+    "errors": {
+      "banner_title": {
+        "many": "There were {{count}} errors"
+      }
+    },
+    "payment_methods": {
+      "add_payment_method": {
+        "subscription_contracts": {
+          "more_items": {
+            "many": "{{count}} more products"
+          },
+          "product_count": {
+            "many": "{{count}} products"
+          }
+        },
+        "updating_contracts": {
+          "many": "Updating {{count}} subscription contracts..."
+        },
+        "contracts_updated": {
+          "many": "{{count}} subscription contracts successfully updated"
+        }
+      }
+    },
+    "ui_components": {
+      "autocompleteOptionsAvailable": {
+        "many": "{{count}} items available"
+      },
+      "month": {
+        "many": "months"
+      },
+      "mapClusterTitle": {
+        "many": "Grouping of {{number}} indicators"
+      }
+    },
+    "date": {
+      "humanize": {
+        "lessThanOneHourAgo": {
+          "many": "{{count}} minutes ago"
+        }
+      }
     }
   }
 }
