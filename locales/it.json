@@ -406,6 +406,11 @@
   "shopify": {
     "links": {
       "powered_by_shopify": "<a href=\"https://www.instagram.com/riviera.digitalconsulting/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"font-weight: normal; text-decoration: none;\">built by riviera</a>"
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Benvenuta nel mondo Chiara Costacurta. <br>Controlla la tua casella email (anche lo SPAM) — ti abbiamo inviato il codice sconto del 15% da usare sul tuo primo acquisto.<br>Da oggi sarai la prima a scoprire le nuove collezioni, i progetti e le storie che stanno dietro a ogni gioiello."
+      }
     }
   }
 }
