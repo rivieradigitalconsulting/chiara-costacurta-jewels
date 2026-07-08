@@ -231,7 +231,8 @@
         ".o-product__description {font-size: 14px;}",
         ".o-product__accordion {border-top: none; border-bottom: none;}",
         ".m-accordion__text {font-size: 14px;}",
-        ".m-price-item--regular {font-size: 16px;}"
+        ".m-price-item--regular {font-size: 16px;}",
+        ".a-badge--sold-out {display: none;}"
       ],
       "settings": {
         "section_id": "",
