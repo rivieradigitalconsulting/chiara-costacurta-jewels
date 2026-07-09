@@ -39,16 +39,17 @@
       endif
     endfor
 
+    if all_on_order
+      assign product_badge = 'available_on_order'
+      assign product_badge_value = 'products.product.available_on_order' | t
+    endif
+
 
   else
     assign product_badge = 'sold-out'
     assign product_badge_value = 'products.product.sold_out' | t
   endif
 
-  if all_on_order
-    assign product_badge = 'available_on_order'
-    assign product_badge_value = 'products.product.available_on_order' | t
-  endif
 
   if block != blank
     assign badge_classes = badge_classes | append: ' a-spacing-content'
