@@ -39,10 +39,6 @@
       endif
     endfor
 
-    if product.compare_at_price > product.price
-      assign product_badge = 'sale'
-      assign product_badge_value = 'products.product.on_sale' | t
-    endif
 
   else
     assign product_badge = 'sold-out'
@@ -72,14 +68,16 @@
 {%- endif -%}
 
 {% style %}
-  .a-badge--available_on_order {
+  .a-badge--available_on_order,
+  .a-badge--sold-out {
     font-size: {{ settings.available_on_order_badge_font_size }}px;
     color: {{ settings.available_on_order_badge_text_color }};
     border-color: {{ settings.available_on_order_badge_border_color }};
     background-color: {{ settings.available_on_order_badge_background_color }};
   }
 
-  .o-product__content .a-badge--available_on_order {
+  .o-product__content .a-badge--available_on_order,
+  .o-product__content .a-badge--sold-out {
     font-size: {{ block.settings.available_on_order_badge_font_size }}px;
     color: {{ block.settings.available_on_order_badge_text_color }};
     border-color: {{ block.settings.available_on_order_badge_border_color }};

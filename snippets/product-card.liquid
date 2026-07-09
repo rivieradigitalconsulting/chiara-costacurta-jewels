@@ -188,13 +188,16 @@
     mix-blend-mode: multiply;
   }
 
-  .m-product-card__content * {
+  .m-product-card__content *,
+  .m-product-card__content .m-price--on-sale .m-price__sale .m-price-item--regular {
     font-size: {{ card_text_size_mobile }}px;
     line-height: {{ settings.card_text_line_height | divided_by: 10.0 }};
   }
 
   @media screen and (min-width: 768px) {
-    .m-product-card__content * {
+    .m-product-card__content *,
+    .m-product-card__content .m-price--on-sale .m-price__sale .m-price-item--regular {
+
       font-size: {{ card_text_size_desktop }}px;
     }
   }

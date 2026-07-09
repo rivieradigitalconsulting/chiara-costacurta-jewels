@@ -1539,7 +1539,8 @@ body.no-scroll {
   font-size: var(--body-fs-sm);
   line-height: var(--body-lh-sm);
 }
-.a-badge--available_on_order {
+.a-badge--available_on_order,
+.a-badge--sold-out {
   padding: 4px 8px;
   border: 1px solid;
   border-color: var(--color-black);
