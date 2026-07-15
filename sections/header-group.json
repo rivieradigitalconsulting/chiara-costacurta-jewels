@@ -20,10 +20,18 @@
             "title": "Un benvenuto speciale del 15% sul primo acquisto",
             "link": "#footer"
           }
+        },
+        "announcement_tWF4e6": {
+          "type": "announcement",
+          "settings": {
+            "title": "Gli ordini effettuati durante il mese di agosto verranno spediti a partire dall’1 settembre",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-block-1"
+        "announcement-block-1",
+        "announcement_tWF4e6"
       ],
       "custom_css": [
         ".o-announcement-bar__text {font-size: 14px;}"
