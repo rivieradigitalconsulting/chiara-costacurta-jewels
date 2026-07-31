@@ -414,7 +414,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "Saint Tropez",
+            "heading": "Make A Wish",
             "heading_size": "h3",
             "convert_to_h1": false
           }
@@ -426,7 +426,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Perline colorate e dettagli in oro per un’estate senza tempo.</p>",
+            "text": "<p>Un cielo stellato di luce.</p>",
             "text_size": "body-fs-sm"
           }
         },
@@ -500,111 +500,98 @@
         "btn_icon": false
       }
     },
-    "video_kpPndJ": {
-      "type": "video",
+    "image_kxmaNL": {
+      "type": "image",
       "blocks": {
-        "video_Wh3Efe": {
-          "type": "video",
+        "heading_WYEqk7": {
+          "type": "heading",
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "video": "shopify://files/videos/MAGNIFICA - LISA & ZENDAYA x B.ZERO1 IN BVLGARI S NEW BRAND CAMPAIGN_1080p.mp4",
-            "video_ratio": "default",
-            "video_autoplay": false,
-            "video_yt_url": ""
+            "heading": "Piercing",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_UcEfnd": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Oro 14kt e diamanti naturali, per un lusso quotidiano.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "image_7V4RQB": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "image": "shopify://shop_images/collezione_piercing_lead_generation_chiara_costcurta.png",
+            "image_ratio": "4x3"
           }
         }
       },
       "block_order": [
-        "video_Wh3Efe"
+        "heading_WYEqk7",
+        "paragraph_UcEfnd",
+        "image_7V4RQB"
       ],
-      "name": "t:video.presets.video.name",
+      "name": "t:image.presets.image.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 40,
-        "section_padding_bottom_desktop": 40,
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
         "media_contain_width": true,
         "column_width": 12,
-        "content_position": "center",
-        "content_alignment": "center"
+        "content_position": "left",
+        "content_alignment": "left"
       }
     },
-    "multicolumn_YmiBKU": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_7BckD7": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<p>Step 1: <strong>Consulenza<br/></strong></p><p>Incontro con la piercer certificata Chiara Venturelli.</p><p>Valutazione dell'anatomia dell'orecchio e brainstorming creativo: una vera e propria consulenza dedicata a nuovi piercing, alla riapertura di fori esistenti, alla sistemazione di forature precedenti o allo studio di composizioni nuove e personalizzate.</p>",
-            "btn_label": "",
-            "btn_url": "",
-            "btn_style": "line"
-          }
-        },
-        "column_YBiHFh": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<p>Step 2: <strong>Piercing Styling</strong></p><p>Scelta del gioiello e definizione della composizione.</p><p>Dopo aver valutato proporzioni, equilibrio e posizionamento si procederà con la scelta del gioiello: dall’oro semplice alle pietre più colorate, il nostro obiettivo è quello di creare insieme un risultato armonioso e in piena linea con il Suo stile.</p>",
-            "btn_label": "Scopri di più",
-            "btn_url": "",
-            "btn_style": "line"
-          }
-        },
-        "column_e3tcab": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<p>Step 3: <strong>Foratura</strong></p><p>La foratura viene eseguita direttamente in Atelier dalla piercer certificata, in uno spazio dedicato e certificato.</p><p>Il servizio di consulenza, foratura e accompagnamento aftercare è omaggiato contestualmente all'acquisto di un gioiello della collezione Piercing & Earcuff.</p>",
-            "btn_label": "Scopri di più",
-            "btn_url": "",
-            "btn_style": "line"
-          }
-        }
-      },
-      "block_order": [
-        "column_7BckD7",
-        "column_YBiHFh",
-        "column_e3tcab"
-      ],
+    "featured_collection_V9VTMm": {
+      "type": "featured-collection",
       "custom_css": [
-        "a,p {font-size: 14px;}",
-        ".h4 {font-size: 20px;}"
+        "a {font-size: 14px;}"
       ],
-      "name": "t:multicolumn.presets.multicolumn.name",
+      "name": "t:featured_collection.presets.featured_collection.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 40,
-        "section_padding_bottom_desktop": 40,
-        "section_padding_top_mobile": 40,
-        "section_padding_bottom_mobile": 20,
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 30,
+        "section_padding_bottom_mobile": 60,
         "invert_navigation_color": false,
         "color_scheme": "",
+        "collection": "piercing",
+        "product_list": [],
+        "display_mode": "slider",
+        "product_limit": 9,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
         "section_width": "constrict",
-        "columns_alignment": "left",
-        "image_ratio": "1x1",
         "content_width": 12,
         "content_position": "left",
         "content_alignment": "left",
-        "columns_desktop": 3,
-        "columns_mobile": "1",
-        "column_gap_desktop": 5,
-        "row_gap_desktop": 5,
-        "column_gap_mobile": 0,
-        "row_gap_mobile": 30,
-        "heading": "L'esperienza",
+        "heading": "",
         "heading_size": "h3",
         "text": "",
-        "text_size": "body-fs-md",
+        "text_size": "body-fs-sm",
         "btn_label": "Scopri di più",
-        "btn_url": "",
+        "btn_url": "shopify://collections/piercing",
         "btn_style": "line",
         "btn_icon": false
       }
@@ -706,8 +693,8 @@
     "featured_collection_JfKRNy",
     "image_8r9mAP",
     "featured_collection_aciqrg",
-    "video_kpPndJ",
-    "multicolumn_YmiBKU",
+    "image_kxmaNL",
+    "featured_collection_V9VTMm",
     "rich_text_LfPncN",
     "custom_liquid_nErNUR"
   ]
