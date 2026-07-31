@@ -1,0 +1,598 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_width": 9,
+        "content_position": "center",
+        "content_alignment": "left",
+        "heading_size": "h3",
+        "text_size": "body-fs-sm"
+      }
+    },
+    "slideshow_3Ngfdn": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_dAgTmn": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "block_width": "constrict",
+            "background_media_size": "full-width",
+            "background_media_position": "left",
+            "column_width": 6,
+            "vertical_content_position": "center",
+            "content_position": "center",
+            "content_alignment": "center",
+            "overlay_color": "#000",
+            "overlay_opacity": 30,
+            "image_ratio": "default",
+            "video": "shopify://files/videos/MAGNIFICA - LISA & ZENDAYA x B.ZERO1 IN BVLGARI S NEW BRAND CAMPAIGN_1080p.mp4",
+            "title": "",
+            "caption_size": "h5",
+            "heading": "Piercing Station",
+            "heading_size": "h3",
+            "convert_to_h1": false,
+            "text": "",
+            "text_size": "body-fs-md",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_dAgTmn"
+      ],
+      "name": "t:slideshow.presets.slideshow.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": true,
+        "section_width": "page-width",
+        "section_height": "large",
+        "autoplay": true,
+        "change_slides_every": 5,
+        "pagination": false
+      }
+    },
+    "media_with_text_4GHcwf": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_zE8cin": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Non è un semplice piercing",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_RH9Rmm": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Da noi, ogni appuntamento inizia con una conversazione: analizziamo la forma dell'orecchio, ascoltiamo i Suoi desideri e costruiamo insieme una composizione armoniosa. <br/><br/>Uno spazio intimo, lontano dalla frenesia, dove scegliere con calma il gioiello più adatto a Lei.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_tikF7H": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zE8cin",
+        "paragraph_RH9Rmm",
+        "button_tikF7H"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 60,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "media-outside-container",
+        "grid_gap_desktop": 50,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 0,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "left",
+        "image": "shopify://shop_images/Piercing_Station_Chiara_Costacurta.jpg",
+        "media_width": 50,
+        "image_ratio": "4x5",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video_ratio": "default",
+        "video_autoplay": false,
+        "video_yt_url": ""
+      }
+    },
+    "multicolumn_YmiBKU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7BckD7": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Step 1: <strong>Consulenza<br/></strong></p><p>Incontro con la piercer certificata Chiara Venturelli.</p><p>Valutazione dell'anatomia dell'orecchio e brainstorming creativo: una vera e propria consulenza dedicata a nuovi piercing, alla riapertura di fori esistenti, alla sistemazione di forature precedenti o allo studio di composizioni nuove e personalizzate.</p>",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_YBiHFh": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Step 2: <strong>Piercing Styling</strong></p><p>Scelta del gioiello e definizione della composizione.</p><p>Dopo aver valutato proporzioni, equilibrio e posizionamento si procederà con la scelta del gioiello: dall’oro semplice alle pietre più colorate, il nostro obiettivo è quello di creare insieme un risultato armonioso e in piena linea con il Suo stile.</p>",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_e3tcab": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Step 3: <strong>Foratura</strong></p><p>La foratura viene eseguita direttamente in Atelier dalla piercer certificata, in uno spazio dedicato e certificato.</p><p>Il servizio di consulenza, foratura e accompagnamento aftercare è omaggiato contestualmente all'acquisto di un gioiello della collezione Piercing & Earcuff.</p>",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_7BckD7",
+        "column_YBiHFh",
+        "column_e3tcab"
+      ],
+      "custom_css": [
+        "a,p {font-size: 14px;}",
+        ".h4 {font-size: 20px;}"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 40,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "1x1",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 0,
+        "row_gap_mobile": 30,
+        "heading": "L'esperienza",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "video_kpPndJ": {
+      "type": "video",
+      "blocks": {
+        "video_Wh3Efe": {
+          "type": "video",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "video": "shopify://files/videos/MAGNIFICA - LISA & ZENDAYA x B.ZERO1 IN BVLGARI S NEW BRAND CAMPAIGN_1080p.mp4",
+            "video_ratio": "default",
+            "video_autoplay": false,
+            "video_yt_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_Wh3Efe"
+      ],
+      "name": "t:video.presets.video.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 40,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "center"
+      }
+    },
+    "rich_text_JP9GgG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3t8bbk": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "L'aftercare",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_dHTKLg": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Al termine dell'appuntamento Le verrà consegnato un aftercare kit completo, accompagnato da indicazioni personalizzate per una corretta guarigione. Rimarremo a Sua disposizione anche nelle settimane successive, per offrirLe supporto e assistenza in ogni fase del percorso.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3t8bbk",
+        "paragraph_dHTKLg"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 40,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "image_BM4T7V": {
+      "type": "image",
+      "blocks": {
+        "heading_zQNzim": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "La collezione",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_UK3WQ9": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "",
+            "text_size": "body-fs-md"
+          }
+        },
+        "image_PU6RVK": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "image_ratio": "16x9"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zQNzim",
+        "paragraph_UK3WQ9",
+        "image_PU6RVK"
+      ],
+      "disabled": true,
+      "name": "t:image.presets.image.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "left",
+        "content_alignment": "left"
+      }
+    },
+    "featured_collection_JfKRNy": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:featured_collection.presets.featured_collection.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 30,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection": "",
+        "product_list": [
+          "chiara-costacurta-peace-07p0133-yg14",
+          "chiara-costacurta-bottoncino-07p0136-yg14",
+          "chiara-costacurta-blue-eye-07p0153-yg14",
+          "chiara-costacurta-bottone-di-opalite-07p0159-yg14"
+        ],
+        "display_mode": "slider",
+        "product_limit": 9,
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "heading": "Essential Gold",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "https://chiara-costacurta-jewels.myshopify.com/collections/piercing?filter.p.m.pdp.materiale_filtri=Oro+Giallo+14kt&filter.v.price.gte=&filter.v.price.lte=&sort_by=most-relevant",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "featured_collection_iNWpAX": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:featured_collection.presets.featured_collection.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection": "",
+        "product_list": [
+          "chiara-costacurta-stella-cadente-07p0027-yg14d",
+          "chiara-costacurta-mini-punta-di-diamante-in-oro-bianco-07p0203-wg14d",
+          "chiara-costacurta-aurora-07p0192-yg14d",
+          "chiara-costacurta-mini-aurora-07p0302-yg14d",
+          "chiara-costacurta-pave-07p0116-yg14d",
+          "chiara-costacurta-double-diamonds-07p0280-yg14d"
+        ],
+        "display_mode": "slider",
+        "product_limit": 12,
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "heading": "Diamond Light",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "https://chiara-costacurta-jewels.myshopify.com/collections/piercing?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.pdp.materiale_pietre=Diamanti+bianchi&sort_by=most-relevant",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "featured_collection_BJJtLG": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:featured_collection.presets.featured_collection.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection": "",
+        "product_list": [
+          "chiara-costacurta-goccia-di-zaffiro-blu-07p0185-yg14sb",
+          "chiara-costacurta-goccia-di-smeraldo-07p0185-yg14e",
+          "chiara-costacurta-fiore-di-smeraldo-07p0166-yg14e",
+          "chiara-costacurta-emerald-conch-07p0147-yg14e",
+          "chiara-costacurta-daith-baguette-di-smeraldo-07p0055-yg14e"
+        ],
+        "display_mode": "slider",
+        "product_limit": 12,
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "heading": "Vivid Colors",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "https://chiara-costacurta-jewels.myshopify.com/collections/piercing?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.pdp.materiale_pietre=Opalite&filter.p.m.pdp.materiale_pietre=Smeraldi&filter.p.m.pdp.materiale_pietre=Zaffiri+blu&sort_by=most-relevant",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_LfPncN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_w6rrhf": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Ti aspettiamo a Milano",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_DDWaei": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Presso il nostro Atelier in <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15</a>.</p><p>Per garantire a ogni ospite il tempo e l'attenzione che desideriamo dedicare, riceviamo esclusivamente su appuntamento.</p><p>Potrà prenotare la Sua visita tramite <a href=\"https://calendly.com/chiaracostacurta/piercing-station?month=2026-06\" target=\"_blank\" title=\"https://calendly.com/chiaracostacurta/piercing-station?month=2026-06\">Calendly</a>, con conferma immediata via e-mail, oppure contattarci direttamente visitando la nostra pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a>. Saremo felici di accompagnarLa nella scelta del momento più adatto per vivere l'esperienza Piercing Station.<br/><br/></p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_V3BUVL": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "Scopri di più",
+            "btn_url": "shopify://pages/contatti",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_w6rrhf",
+        "paragraph_DDWaei",
+        "button_V3BUVL"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_3Ngfdn",
+    "media_with_text_4GHcwf",
+    "multicolumn_YmiBKU",
+    "video_kpPndJ",
+    "rich_text_JP9GgG",
+    "image_BM4T7V",
+    "featured_collection_JfKRNy",
+    "featured_collection_iNWpAX",
+    "featured_collection_BJJtLG",
+    "rich_text_LfPncN"
+  ]
+}
