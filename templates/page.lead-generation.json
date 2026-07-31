@@ -196,7 +196,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 40,
-        "section_padding_bottom_desktop": 40,
+        "section_padding_bottom_desktop": 0,
         "section_padding_top_mobile": 20,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -215,50 +215,50 @@
     "image_BM4T7V": {
       "type": "image",
       "blocks": {
-        "heading_zQNzim": {
+        "heading_UmhPtm": {
           "type": "heading",
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "La collezione",
+            "heading": "Victoria",
             "heading_size": "h3",
             "convert_to_h1": false
           }
         },
-        "paragraph_UK3WQ9": {
+        "paragraph_Y4biCP": {
           "type": "paragraph",
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "",
-            "text_size": "body-fs-md"
+            "text": "<p>L’eleganza in movimento, ispirata alla forza della natura.</p>",
+            "text_size": "body-fs-sm"
           }
         },
         "image_PU6RVK": {
           "type": "image",
           "settings": {
-            "block_spacing_top_desktop": 20,
+            "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "image_ratio": "16x9"
+            "image": "shopify://shop_images/collezione_victoria_lead_generation_chiara_costacurta.png",
+            "image_ratio": "4x3"
           }
         }
       },
       "block_order": [
-        "heading_zQNzim",
-        "paragraph_UK3WQ9",
+        "heading_UmhPtm",
+        "paragraph_Y4biCP",
         "image_PU6RVK"
       ],
-      "disabled": true,
       "name": "t:image.presets.image.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 40,
+        "section_padding_top_desktop": 20,
         "section_padding_bottom_desktop": 20,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
@@ -278,7 +278,7 @@
       "name": "t:featured_collection.presets.featured_collection.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 60,
+        "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 30,
         "section_padding_bottom_mobile": 60,
@@ -303,12 +303,12 @@
         "content_width": 12,
         "content_position": "left",
         "content_alignment": "left",
-        "heading": "Essential Gold",
+        "heading": "",
         "heading_size": "h3",
         "text": "",
-        "text_size": "body-fs-md",
+        "text_size": "body-fs-sm",
         "btn_label": "Scopri di più",
-        "btn_url": "https://chiara-costacurta-jewels.myshopify.com/collections/piercing?filter.p.m.pdp.materiale_filtri=Oro+Giallo+14kt&filter.v.price.gte=&filter.v.price.lte=&sort_by=most-relevant",
+        "btn_url": "shopify://collections/victoria",
         "btn_style": "line",
         "btn_icon": false
       }
