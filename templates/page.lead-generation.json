@@ -404,6 +404,102 @@
         "btn_icon": false
       }
     },
+    "featured_collection_aciqrg": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:featured_collection.presets.featured_collection.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 30,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection": "saint-tropez",
+        "product_list": [],
+        "display_mode": "slider",
+        "product_limit": 9,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "shopify://collections/saint-tropez",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "image_8r9mAP": {
+      "type": "image",
+      "blocks": {
+        "heading_hWthr9": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Saint Tropez",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_UEz6mc": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Perline colorate e dettagli in oro per un’estate senza tempo.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "image_Lk87M7": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "image": "shopify://shop_images/collezione_saint_tropez_lead_generation_chiara_costcurta.png",
+            "image_ratio": "4x3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hWthr9",
+        "paragraph_UEz6mc",
+        "image_Lk87M7"
+      ],
+      "name": "t:image.presets.image.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "left",
+        "content_alignment": "left"
+      }
+    },
     "video_kpPndJ": {
       "type": "video",
       "blocks": {
@@ -608,6 +704,8 @@
     "featured_collection_NF3cHm",
     "image_dCYxzz",
     "featured_collection_JfKRNy",
+    "featured_collection_aciqrg",
+    "image_8r9mAP",
     "video_kpPndJ",
     "multicolumn_YmiBKU",
     "rich_text_LfPncN",
