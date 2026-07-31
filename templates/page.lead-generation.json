@@ -196,7 +196,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 40,
-        "section_padding_bottom_desktop": 0,
+        "section_padding_bottom_desktop": 40,
         "section_padding_top_mobile": 20,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -207,7 +207,7 @@
         "section_bg_opacity": 100,
         "column_width": 12,
         "content_position": "center",
-        "content_alignment": "left",
+        "content_alignment": "center",
         "title_position": "inline",
         "grid_gap_desktop": 20
       }
