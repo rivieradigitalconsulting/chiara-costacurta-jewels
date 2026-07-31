@@ -270,6 +270,44 @@
         "content_alignment": "left"
       }
     },
+    "featured_collection_NF3cHm": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:featured_collection.presets.featured_collection.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 30,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection": "victoria",
+        "product_list": [],
+        "display_mode": "slider",
+        "product_limit": 9,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "shopify://collections/victoria",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
     "image_dCYxzz": {
       "type": "image",
       "blocks": {
@@ -567,6 +605,7 @@
     "media_with_text_4GHcwf",
     "rich_text_JP9GgG",
     "image_BM4T7V",
+    "featured_collection_NF3cHm",
     "image_dCYxzz",
     "featured_collection_JfKRNy",
     "video_kpPndJ",
