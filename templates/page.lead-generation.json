@@ -192,6 +192,7 @@
         "heading_3t8bbk",
         "paragraph_dHTKLg"
       ],
+      "disabled": true,
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
         "section_id": "",
