@@ -596,6 +596,86 @@
         "btn_icon": false
       }
     },
+    "media_with_text_FKFYif": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_Hz3wBE": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Un gioiello, una storia",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_YDWTUF": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Ogni gioiello racconta una storia diversa, e personale. Per un consiglio nella scelta o per un realizzare una creazione personalizzata, il team di Chiara Costacurta sarà lieto di accompagnarLa in ogni fase.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_WG9QcE": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Hz3wBE",
+        "paragraph_YDWTUF",
+        "button_WG9QcE"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "media-outside-container",
+        "grid_gap_desktop": 50,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 0,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "left",
+        "image": "shopify://shop_images/leade-generation-chiara-costacurta-foto-2.jpg",
+        "media_width": 50,
+        "image_ratio": "4x5",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video_ratio": "default",
+        "video_autoplay": false,
+        "video_yt_url": ""
+      }
+    },
     "rich_text_LfPncN": {
       "type": "rich-text",
       "blocks": {
@@ -606,13 +686,14 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "Ti aspettiamo a Milano",
+            "heading": "Inizi il Suo viaggio.",
             "heading_size": "h3",
             "convert_to_h1": false
           }
         },
         "paragraph_DDWaei": {
           "type": "paragraph",
+          "disabled": true,
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
@@ -651,7 +732,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 20,
-        "section_padding_bottom_desktop": 80,
+        "section_padding_bottom_desktop": 0,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -695,6 +776,7 @@
     "featured_collection_aciqrg",
     "image_kxmaNL",
     "featured_collection_V9VTMm",
+    "media_with_text_FKFYif",
     "rich_text_LfPncN",
     "custom_liquid_nErNUR"
   ]
