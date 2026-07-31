@@ -270,6 +270,64 @@
         "content_alignment": "left"
       }
     },
+    "image_dCYxzz": {
+      "type": "image",
+      "blocks": {
+        "heading_FtAAjh": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Saint Tropez",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_x8kzkr": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Perline colorate e dettagli in oro per un’estate senza tempo.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "image_ka83RN": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "image": "shopify://shop_images/collezione_saint_tropez_lead_generation_chiara_costcurta.png",
+            "image_ratio": "4x3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FtAAjh",
+        "paragraph_x8kzkr",
+        "image_ka83RN"
+      ],
+      "name": "t:image.presets.image.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "left",
+        "content_alignment": "left"
+      }
+    },
     "featured_collection_JfKRNy": {
       "type": "featured-collection",
       "custom_css": [
@@ -284,7 +342,7 @@
         "section_padding_bottom_mobile": 60,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "collection": "victoria",
+        "collection": "saint-tropez",
         "product_list": [],
         "display_mode": "slider",
         "product_limit": 9,
@@ -303,96 +361,7 @@
         "text": "",
         "text_size": "body-fs-sm",
         "btn_label": "Scopri di più",
-        "btn_url": "shopify://collections/victoria",
-        "btn_style": "line",
-        "btn_icon": false
-      }
-    },
-    "featured_collection_iNWpAX": {
-      "type": "featured-collection",
-      "custom_css": [
-        "a {font-size: 14px;}"
-      ],
-      "name": "t:featured_collection.presets.featured_collection.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 20,
-        "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 60,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "collection": "",
-        "product_list": [
-          "chiara-costacurta-stella-cadente-07p0027-yg14d",
-          "chiara-costacurta-mini-punta-di-diamante-in-oro-bianco-07p0203-wg14d",
-          "chiara-costacurta-aurora-07p0192-yg14d",
-          "chiara-costacurta-mini-aurora-07p0302-yg14d",
-          "chiara-costacurta-pave-07p0116-yg14d",
-          "chiara-costacurta-double-diamonds-07p0280-yg14d"
-        ],
-        "display_mode": "slider",
-        "product_limit": 12,
-        "columns_desktop": 3,
-        "columns_mobile": "1",
-        "column_gap_desktop": 20,
-        "row_gap_desktop": 20,
-        "column_gap_mobile": 20,
-        "row_gap_mobile": 20,
-        "section_width": "constrict",
-        "content_width": 12,
-        "content_position": "left",
-        "content_alignment": "left",
-        "heading": "Diamond Light",
-        "heading_size": "h3",
-        "text": "",
-        "text_size": "body-fs-md",
-        "btn_label": "Scopri di più",
-        "btn_url": "https://chiara-costacurta-jewels.myshopify.com/collections/piercing?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.pdp.materiale_pietre=Diamanti+bianchi&sort_by=most-relevant",
-        "btn_style": "line",
-        "btn_icon": false
-      }
-    },
-    "featured_collection_BJJtLG": {
-      "type": "featured-collection",
-      "custom_css": [
-        "a {font-size: 14px;}"
-      ],
-      "name": "t:featured_collection.presets.featured_collection.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 20,
-        "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 20,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "collection": "",
-        "product_list": [
-          "chiara-costacurta-goccia-di-zaffiro-blu-07p0185-yg14sb",
-          "chiara-costacurta-goccia-di-smeraldo-07p0185-yg14e",
-          "chiara-costacurta-fiore-di-smeraldo-07p0166-yg14e",
-          "chiara-costacurta-emerald-conch-07p0147-yg14e",
-          "chiara-costacurta-daith-baguette-di-smeraldo-07p0055-yg14e"
-        ],
-        "display_mode": "slider",
-        "product_limit": 12,
-        "columns_desktop": 3,
-        "columns_mobile": "1",
-        "column_gap_desktop": 20,
-        "row_gap_desktop": 20,
-        "column_gap_mobile": 20,
-        "row_gap_mobile": 20,
-        "section_width": "constrict",
-        "content_width": 12,
-        "content_position": "left",
-        "content_alignment": "left",
-        "heading": "Vivid Colors",
-        "heading_size": "h3",
-        "text": "",
-        "text_size": "body-fs-md",
-        "btn_label": "Scopri di più",
-        "btn_url": "https://chiara-costacurta-jewels.myshopify.com/collections/piercing?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.pdp.materiale_pietre=Opalite&filter.p.m.pdp.materiale_pietre=Smeraldi&filter.p.m.pdp.materiale_pietre=Zaffiri+blu&sort_by=most-relevant",
+        "btn_url": "shopify://collections/saint-tropez",
         "btn_style": "line",
         "btn_icon": false
       }
@@ -598,9 +567,8 @@
     "media_with_text_4GHcwf",
     "rich_text_JP9GgG",
     "image_BM4T7V",
+    "image_dCYxzz",
     "featured_collection_JfKRNy",
-    "featured_collection_iNWpAX",
-    "featured_collection_BJJtLG",
     "video_kpPndJ",
     "multicolumn_YmiBKU",
     "rich_text_LfPncN",
