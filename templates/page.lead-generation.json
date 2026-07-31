@@ -404,44 +404,6 @@
         "btn_icon": false
       }
     },
-    "featured_collection_aciqrg": {
-      "type": "featured-collection",
-      "custom_css": [
-        "a {font-size: 14px;}"
-      ],
-      "name": "t:featured_collection.presets.featured_collection.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 30,
-        "section_padding_bottom_mobile": 60,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "collection": "saint-tropez",
-        "product_list": [],
-        "display_mode": "slider",
-        "product_limit": 9,
-        "columns_desktop": 3,
-        "columns_mobile": "2",
-        "column_gap_desktop": 5,
-        "row_gap_desktop": 20,
-        "column_gap_mobile": 5,
-        "row_gap_mobile": 20,
-        "section_width": "constrict",
-        "content_width": 12,
-        "content_position": "left",
-        "content_alignment": "left",
-        "heading": "",
-        "heading_size": "h3",
-        "text": "",
-        "text_size": "body-fs-sm",
-        "btn_label": "Scopri di più",
-        "btn_url": "shopify://collections/saint-tropez",
-        "btn_style": "line",
-        "btn_icon": false
-      }
-    },
     "image_8r9mAP": {
       "type": "image",
       "blocks": {
@@ -475,7 +437,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "image": "shopify://shop_images/collezione_saint_tropez_lead_generation_chiara_costcurta.png",
+            "image": "shopify://shop_images/collezione_make_a_wish_lead_generation_chiara_costacurta.png",
             "image_ratio": "4x3"
           }
         }
@@ -498,6 +460,44 @@
         "column_width": 12,
         "content_position": "left",
         "content_alignment": "left"
+      }
+    },
+    "featured_collection_aciqrg": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:featured_collection.presets.featured_collection.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 30,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection": "make-a-wish",
+        "product_list": [],
+        "display_mode": "slider",
+        "product_limit": 9,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "shopify://collections/make-a-wish",
+        "btn_style": "line",
+        "btn_icon": false
       }
     },
     "video_kpPndJ": {
@@ -704,8 +704,8 @@
     "featured_collection_NF3cHm",
     "image_dCYxzz",
     "featured_collection_JfKRNy",
-    "featured_collection_aciqrg",
     "image_8r9mAP",
+    "featured_collection_aciqrg",
     "video_kpPndJ",
     "multicolumn_YmiBKU",
     "rich_text_LfPncN",
