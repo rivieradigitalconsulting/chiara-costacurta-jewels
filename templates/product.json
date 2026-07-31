@@ -123,8 +123,8 @@
             "block_spacing_bottom_mobile": 30,
             "card_width_desktop": 120,
             "card_width_mobile": 110,
-            "gap_horizontal": 8,
-            "gap_vertical": 8
+            "gap_horizontal": 5,
+            "gap_vertical": 5
           }
         },
         "variant_picker": {
@@ -245,8 +245,8 @@
         "action_bar_color_scheme": "scheme-1",
         "enable_sticky_add_to_cart_bar": true,
         "media_layout": "columns",
-        "column_gap_desktop": 10,
-        "row_gap_desktop": 10,
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
         "media_position": "left",
         "media_ratio": "2x3",
         "hide_thumbs_mobile": true,
