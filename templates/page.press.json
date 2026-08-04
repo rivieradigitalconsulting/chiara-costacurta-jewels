@@ -87,6 +87,46 @@
         "btn_icon": false
       }
     },
+    "rich_text_BGCFBx": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_EiKHL3": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>D de la Repubblica<strong> </strong>- 6 dicembre 2025</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_EiKHL3"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 30,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
     "multicolumn_TiKXiR": {
       "type": "multicolumn",
       "blocks": {
@@ -95,7 +135,7 @@
           "settings": {
             "title": "",
             "text": "",
-            "image": "shopify://shop_images/D_de_la_Repubblica_6.jpg",
+            "image": "shopify://shop_images/D_de_la_Repubblica_14_2.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -106,7 +146,7 @@
           "settings": {
             "title": "",
             "text": "",
-            "image": "shopify://shop_images/D_de_la_Repubblica_6_2.jpg",
+            "image": "shopify://shop_images/D_de_la_Repubblica_14.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -147,52 +187,12 @@
         "btn_style": "line",
         "btn_icon": false
       }
-    },
-    "rich_text_BGCFBx": {
-      "type": "rich-text",
-      "blocks": {
-        "paragraph_EiKHL3": {
-          "type": "paragraph",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "text": "<p>D de la Repubblica<strong> </strong>- 6 dicembre 2025</p>",
-            "text_column": "",
-            "grid_gap_desktop": 20,
-            "text_size": "body-fs-sm"
-          }
-        }
-      },
-      "block_order": [
-        "paragraph_EiKHL3"
-      ],
-      "name": "t:rich_text.presets.rich_text.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 60,
-        "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 30,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "section_bg_repeat": false,
-        "section_bg_position": "bottom center",
-        "section_bg_size": "auto",
-        "section_bg_opacity": 100,
-        "column_width": 10,
-        "content_position": "center",
-        "content_alignment": "center",
-        "title_position": "inline",
-        "grid_gap_desktop": 20
-      }
     }
   },
   "order": [
     "main",
     "multicolumn_DGAq6E",
-    "multicolumn_TiKXiR",
-    "rich_text_BGCFBx"
+    "rich_text_BGCFBx",
+    "multicolumn_TiKXiR"
   ]
 }
