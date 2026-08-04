@@ -46,7 +46,7 @@
           "settings": {
             "title": "",
             "text": "",
-            "image": "shopify://shop_images/GRAZIA_2_b.jpg",
+            "image": "shopify://shop_images/GRAZIA_2_b_3d8dbb72-9fd0-48ab-88c5-d24bec72f474.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -66,7 +66,7 @@
         "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "section_width": "page-width",
+        "section_width": "constrict",
         "columns_alignment": "left",
         "image_ratio": "default",
         "content_width": 10,
@@ -167,7 +167,7 @@
         "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "section_width": "page-width",
+        "section_width": "constrict",
         "columns_alignment": "left",
         "image_ratio": "default",
         "content_width": 10,
@@ -268,7 +268,7 @@
         "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "section_width": "page-width",
+        "section_width": "constrict",
         "columns_alignment": "left",
         "image_ratio": "default",
         "content_width": 10,
@@ -369,7 +369,7 @@
         "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "section_width": "page-width",
+        "section_width": "constrict",
         "columns_alignment": "left",
         "image_ratio": "default",
         "content_width": 10,
@@ -470,7 +470,7 @@
         "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "section_width": "page-width",
+        "section_width": "constrict",
         "columns_alignment": "left",
         "image_ratio": "default",
         "content_width": 10,
@@ -546,17 +546,6 @@
             "btn_style": "line"
           }
         },
-        "column_iQEatM": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify://shop_images/GRAZIA_21_2b.jpg",
-            "btn_label": "",
-            "btn_url": "",
-            "btn_style": "line"
-          }
-        },
         "column_WMNWQL": {
           "type": "column",
           "settings": {
@@ -571,7 +560,6 @@
       },
       "block_order": [
         "column_BGdfBG",
-        "column_iQEatM",
         "column_WMNWQL"
       ],
       "name": "t:multicolumn.presets.multicolumn.name",
@@ -583,13 +571,13 @@
         "section_padding_bottom_mobile": 0,
         "invert_navigation_color": true,
         "color_scheme": "",
-        "section_width": "page-width",
+        "section_width": "constrict",
         "columns_alignment": "left",
         "image_ratio": "default",
         "content_width": 10,
         "content_position": "left",
         "content_alignment": "left",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "columns_mobile": "2",
         "column_gap_desktop": 5,
         "row_gap_desktop": 5,
