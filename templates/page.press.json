@@ -35,7 +35,7 @@
           "settings": {
             "title": "",
             "text": "",
-            "image": "shopify://shop_images/D_de_la_Repubblica_14_2.jpg",
+            "image": "shopify://shop_images/GRAZIA-2.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -46,7 +46,7 @@
           "settings": {
             "title": "",
             "text": "",
-            "image": "shopify://shop_images/D_de_la_Repubblica_14.jpg",
+            "image": "shopify://shop_images/GRAZIA_2_b.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -485,6 +485,7 @@
         "column_DtjfbN",
         "column_DFUFby"
       ],
+      "disabled": true,
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
@@ -536,6 +537,7 @@
       "block_order": [
         "paragraph_r3E93U"
       ],
+      "disabled": true,
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
         "section_id": "",
