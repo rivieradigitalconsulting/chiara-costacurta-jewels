@@ -26,78 +26,111 @@
         "text_size": "body-fs-sm"
       }
     },
-    "form": {
-      "type": "contact-form",
+    "multicolumn_DGAq6E": {
+      "type": "multicolumn",
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "disabled": true,
+        "column_EM6jAh": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/D_de_la_Repubblica_6.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_DmGY89": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/D_de_la_Repubblica_6_2.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_EM6jAh",
+        "column_DmGY89"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "page-width",
+        "columns_alignment": "left",
+        "image_ratio": "4x5",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_BGCFBx": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_EiKHL3": {
+          "type": "paragraph",
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "Scopri il mondo Chiara Costacurta",
-            "heading_size": "h3"
-          }
-        },
-        "paragraph_ayXW9R": {
-          "type": "paragraph",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 40,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 40,
-            "text": "<p>Per informazioni, creazioni su misura o assistenza dedicata, il nostro team è a completa disposizione.</p><p><strong>Come possiamo aiutarti?</strong></p><p>Per assistenza immediata o richieste personalizzate, il team Chiara Costacurta è a completa disposizione.</p>",
-            "text_size": "body-fs-sm"
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "block_spacing_top_desktop": 0,
-            "block_spacing_bottom_desktop": 40,
-            "block_spacing_top_mobile": 0,
-            "block_spacing_bottom_mobile": 20,
-            "text": "<p><strong>Contatti:<br/></strong> <a href=\"mailto:info@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:info@chiaracostacurta.com\">info@chiaracostacurta.com<br/></a><a href=\"tel:+39 345 6979437\" target=\"_blank\" title=\"tel:+39 345 6979437\">+39 345 6979437<br/></a><br/><a href=\"https://wa.me/+393456979437\" target=\"_blank\" title=\"https://wa.me/+393456979437\">Chat diretta di Whatsapp</a> →<br/></p><p><strong>Ufficio Stampa e PR:<br/></strong><a href=\"mailto:commerciale@chiaracostacurta.com\" title=\"mailto:commerciale@chiaracostacurta.com\">commerciale@chiaracostacurta.com</a></p><p><strong>Orari di Assistenza:</strong><br/>Lunedì — Venerdì: dalle 10:00 alle 18:00<br/>Sabato — Domenica: Chiuso <br/>Esclusi i giorni festivi.</p><p><strong>Vieni in Atelier<br/></strong>Ti invitiamo a visitare il nostro atelier a Milano, dove potrai scoprire le collezioni e incontrare il team. Per garantire un’esperienza dedicata, chiediamo gentilmente di riservare un appuntamento.<br/><br/><a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15 — 20121 Milano</a> →<a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\"><br/></a></p><p><strong>Atelier</strong>:<br/><a href=\"mailto:atelier@chiaracostacurta.com\" target=\"_blank\"><span style=\"text-decoration:underline\">atelier@chiaracostacurta.com</span></a></p>",
-            "text_size": "body-fs-sm"
-          }
-        },
-        "paragraph_mcWPQ4": {
-          "type": "paragraph",
-          "settings": {
-            "block_spacing_top_desktop": 0,
-            "block_spacing_bottom_desktop": 0,
-            "block_spacing_top_mobile": 40,
-            "block_spacing_bottom_mobile": 45,
-            "text": "<p>Prima di inoltrare una richiesta, invitiamo a consultare la nostra sezione <span style=\"text-decoration:underline\">FAQ</span> per trovare risposte immediate alle domande più frequenti su spedizioni, resi e ordini.</p>",
+            "text": "<p>D de la Repubblica - 6 dicembre 2025</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
             "text_size": "body-fs-sm"
           }
         }
       },
       "block_order": [
-        "heading",
-        "paragraph_ayXW9R",
-        "paragraph",
-        "paragraph_mcWPQ4"
+        "paragraph_EiKHL3"
       ],
+      "name": "t:rich_text.presets.rich_text.name",
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 60,
+        "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "form_size": 6,
-        "form_position": "left",
-        "content_alignment": "left",
-        "show_phone": true
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "multicolumn_DGAq6E",
+    "rich_text_BGCFBx"
   ]
 }
