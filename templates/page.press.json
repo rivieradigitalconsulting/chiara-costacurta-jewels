@@ -87,6 +87,67 @@
         "btn_icon": false
       }
     },
+    "multicolumn_TiKXiR": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_KdVyEM": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/D_de_la_Repubblica_6.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_V7X6J6": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/D_de_la_Repubblica_6_2.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_KdVyEM",
+        "column_V7X6J6"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "page-width",
+        "columns_alignment": "left",
+        "image_ratio": "4x5",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
     "rich_text_BGCFBx": {
       "type": "rich-text",
       "blocks": {
@@ -111,9 +172,9 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 80,
+        "section_padding_bottom_desktop": 60,
         "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 0,
+        "section_padding_bottom_mobile": 30,
         "invert_navigation_color": false,
         "color_scheme": "",
         "section_bg_repeat": false,
@@ -131,6 +192,7 @@
   "order": [
     "main",
     "multicolumn_DGAq6E",
+    "multicolumn_TiKXiR",
     "rich_text_BGCFBx"
   ]
 }
