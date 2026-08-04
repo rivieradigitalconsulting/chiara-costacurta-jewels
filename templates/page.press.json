@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 40,
@@ -71,8 +72,8 @@
         "content_width": 10,
         "content_position": "left",
         "content_alignment": "left",
-        "columns_desktop": 3,
-        "columns_mobile": "2",
+        "columns_desktop": 2,
+        "columns_mobile": "1",
         "column_gap_desktop": 5,
         "row_gap_desktop": 5,
         "column_gap_mobile": 5,
@@ -286,7 +287,7 @@
         "content_position": "left",
         "content_alignment": "left",
         "columns_desktop": 3,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "column_gap_desktop": 5,
         "row_gap_desktop": 5,
         "column_gap_mobile": 5,
