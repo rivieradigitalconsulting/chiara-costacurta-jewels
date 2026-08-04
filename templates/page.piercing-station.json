@@ -581,6 +581,70 @@
         "title_position": "inline",
         "grid_gap_desktop": 20
       }
+    },
+    "text_with_icons_di8MAH": {
+      "type": "text-with-icons",
+      "blocks": {
+        "usp_hY8kVr": {
+          "type": "usp",
+          "settings": {
+            "title": "Testo con icona",
+            "text": "<p>Testo con icona e informazioni aggiuntive</p>",
+            "icon_select": "checkmark"
+          }
+        },
+        "usp_n88D9M": {
+          "type": "usp",
+          "settings": {
+            "title": "Testo con icona",
+            "text": "<p>Testo con icona e informazioni aggiuntive</p>",
+            "icon_select": "checkmark"
+          }
+        },
+        "usp_Y9nXtH": {
+          "type": "usp",
+          "settings": {
+            "title": "Testo con icona",
+            "text": "<p>Testo con icona e informazioni aggiuntive</p>",
+            "icon_select": "checkmark"
+          }
+        },
+        "usp_GBz4jk": {
+          "type": "usp",
+          "settings": {
+            "title": "Testo con icona",
+            "text": "<p>Testo con icona e informazioni aggiuntive</p>",
+            "icon_select": "checkmark"
+          }
+        }
+      },
+      "block_order": [
+        "usp_hY8kVr",
+        "usp_n88D9M",
+        "usp_Y9nXtH",
+        "usp_GBz4jk"
+      ],
+      "name": "t:unique_selling_points.presets.unique_selling_points.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "display_mode": "grid",
+        "columns_desktop": "4",
+        "columns_mobile": "1",
+        "icon_alignment": "next",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "content_alignment": "left",
+        "show_border": false,
+        "autoplay": true
+      }
     }
   },
   "order": [
@@ -594,6 +658,7 @@
     "featured_collection_JfKRNy",
     "featured_collection_iNWpAX",
     "featured_collection_BJJtLG",
-    "rich_text_LfPncN"
+    "rich_text_LfPncN",
+    "text_with_icons_di8MAH"
   ]
 }
