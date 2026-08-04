@@ -72,7 +72,7 @@
         "content_width": 10,
         "content_position": "left",
         "content_alignment": "left",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "columns_mobile": "1",
         "column_gap_desktop": 5,
         "row_gap_desktop": 5,
@@ -173,7 +173,7 @@
         "content_width": 10,
         "content_position": "left",
         "content_alignment": "left",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "columns_mobile": "2",
         "column_gap_desktop": 5,
         "row_gap_desktop": 5,
@@ -248,7 +248,7 @@
           "settings": {
             "title": "",
             "text": "",
-            "image": "shopify://shop_images/GRAZIA_21_2_d0be1db1-39cd-4358-883b-2b136a54c311.jpg",
+            "image": "shopify://shop_images/GRAZIA_21_2b.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -259,7 +259,7 @@
           "settings": {
             "title": "",
             "text": "",
-            "image": "shopify://shop_images/GRAZIA_21_3_5cf58e4f-4144-4c2d-b67e-90d10bc619a9.jpg",
+            "image": "shopify://shop_images/GRAZIA_21_3b.jpg",
             "btn_label": "Scopri di più",
             "btn_url": "",
             "btn_style": "line"
@@ -341,6 +341,119 @@
         "title_position": "inline",
         "grid_gap_desktop": 20
       }
+    },
+    "multicolumn_CUyTFp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6QWxGk": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/GRAZIA_21.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_DtjfbN": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/GRAZIA_21_2_d0be1db1-39cd-4358-883b-2b136a54c311.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_DFUFby": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/GRAZIA_21_3_5cf58e4f-4144-4c2d-b67e-90d10bc619a9.jpg",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_6QWxGk",
+        "column_DtjfbN",
+        "column_DFUFby"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_width": "page-width",
+        "columns_alignment": "left",
+        "image_ratio": "default",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_ccEynt": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_r3E93U": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>GRAZIA - 21 Luglio 2025</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_r3E93U"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 30,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
     }
   },
   "order": [
@@ -350,6 +463,8 @@
     "multicolumn_TiKXiR",
     "rich_text_Q3wFJH",
     "multicolumn_iHLMtT",
-    "rich_text_iGgmR7"
+    "rich_text_iGgmR7",
+    "multicolumn_CUyTFp",
+    "rich_text_ccEynt"
   ]
 }
