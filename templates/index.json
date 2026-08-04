@@ -570,13 +570,23 @@
             "image_fit": "contain",
             "url": ""
           }
+        },
+        "image_CY4hTz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D_la_Repubblica_-_logo.webp",
+            "image_ratio": "16x9",
+            "image_fit": "contain",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "image_CLTR73",
         "image_4Bcffg",
         "image_KEJ8Yf",
-        "image_UPrJFj"
+        "image_UPrJFj",
+        "image_CY4hTz"
       ],
       "name": "t:brands.presets.brands.name",
       "settings": {
@@ -591,7 +601,7 @@
         "content_width": 8,
         "content_position": "left",
         "content_alignment": "left",
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "columns_mobile": "2",
         "column_gap_desktop": 100,
         "row_gap_desktop": 20,
