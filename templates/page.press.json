@@ -330,6 +330,208 @@
         "grid_gap_desktop": 20
       }
     },
+    "multicolumn_yWMBzn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nY7zCf": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/Elle_n_44_del_2025_-_copertina.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_WJxtYx": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/Elle_n_44_del_2025_-_pubblicazione.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_nY7zCf",
+        "column_WJxtYx"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "page-width",
+        "columns_alignment": "left",
+        "image_ratio": "default",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_TUVLcB": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_CEkxzP": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p><strong>ELLE - </strong>Numero 44 - Novembre 2025</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_CEkxzP"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 30,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "multicolumn_kkFqkp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7RQnAt": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/Elle_n_44_del_2025_-_copertina.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_3CCMyx": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/Elle_n_44_del_2025_-_pubblicazione.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_7RQnAt",
+        "column_3CCMyx"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "page-width",
+        "columns_alignment": "left",
+        "image_ratio": "default",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_tGcGJQ": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_WrAJhn": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p><strong>Vogue -</strong> Settembre 2025</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_WrAJhn"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 30,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
     "multicolumn_iHLMtT": {
       "type": "multicolumn",
       "blocks": {
@@ -422,107 +624,6 @@
       },
       "block_order": [
         "paragraph_PHGE4w"
-      ],
-      "name": "t:rich_text.presets.rich_text.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 60,
-        "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 30,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "section_bg_repeat": false,
-        "section_bg_position": "bottom center",
-        "section_bg_size": "auto",
-        "section_bg_opacity": 100,
-        "column_width": 10,
-        "content_position": "center",
-        "content_alignment": "center",
-        "title_position": "inline",
-        "grid_gap_desktop": 20
-      }
-    },
-    "multicolumn_yWMBzn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_nY7zCf": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify://shop_images/Elle_n_44_del_2025_-_copertina.jpg",
-            "btn_label": "",
-            "btn_url": "",
-            "btn_style": "line"
-          }
-        },
-        "column_WJxtYx": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify://shop_images/Elle_n_44_del_2025_-_pubblicazione.jpg",
-            "btn_label": "",
-            "btn_url": "",
-            "btn_style": "line"
-          }
-        }
-      },
-      "block_order": [
-        "column_nY7zCf",
-        "column_WJxtYx"
-      ],
-      "name": "t:multicolumn.presets.multicolumn.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 0,
-        "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 0,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "section_width": "page-width",
-        "columns_alignment": "left",
-        "image_ratio": "default",
-        "content_width": 10,
-        "content_position": "left",
-        "content_alignment": "left",
-        "columns_desktop": 3,
-        "columns_mobile": "2",
-        "column_gap_desktop": 5,
-        "row_gap_desktop": 5,
-        "column_gap_mobile": 5,
-        "row_gap_mobile": 5,
-        "heading": "",
-        "heading_size": "h2",
-        "text": "",
-        "text_size": "body-fs-md",
-        "btn_label": "Scopri di più",
-        "btn_url": "",
-        "btn_style": "line",
-        "btn_icon": false
-      }
-    },
-    "rich_text_TUVLcB": {
-      "type": "rich-text",
-      "blocks": {
-        "paragraph_CEkxzP": {
-          "type": "paragraph",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "text": "<p><strong>ELLE - </strong>Numero 44 - Novembre 2025</p>",
-            "text_column": "",
-            "grid_gap_desktop": 20,
-            "text_size": "body-fs-sm"
-          }
-        }
-      },
-      "block_order": [
-        "paragraph_CEkxzP"
       ],
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
@@ -668,10 +769,12 @@
     "rich_text_Q3wFJH",
     "multicolumn_DGAq6E",
     "rich_text_BGCFBx",
-    "multicolumn_iHLMtT",
-    "rich_text_iGgmR7",
     "multicolumn_yWMBzn",
     "rich_text_TUVLcB",
+    "multicolumn_kkFqkp",
+    "rich_text_tGcGJQ",
+    "multicolumn_iHLMtT",
+    "rich_text_iGgmR7",
     "multicolumn_CUyTFp",
     "rich_text_ccEynt"
   ]
