@@ -114,8 +114,8 @@
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 40,
-        "section_padding_bottom_desktop": 40,
+        "section_padding_top_desktop": 50,
+        "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 20,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -177,7 +177,8 @@
         "image_ratio_2": "default",
         "show_image_2_on_mobile": false,
         "video_ratio": "default",
-        "video_autoplay": false
+        "video_autoplay": false,
+        "video_yt_url": ""
       }
     },
     "slideshow_8CcbEE": {
