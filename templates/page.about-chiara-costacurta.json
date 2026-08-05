@@ -43,9 +43,9 @@
             "content_position": "center",
             "content_alignment": "center",
             "overlay_color": "#000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
+            "image_1": "shopify://shop_images/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_1815.jpg",
             "image_ratio": "default",
-            "video": "shopify://files/videos/MAGNIFICA - LISA & ZENDAYA x B.ZERO1 IN BVLGARI S NEW BRAND CAMPAIGN_1080p.mp4",
             "title": "",
             "caption_size": "h5",
             "heading": "Piercing Station",
@@ -63,7 +63,6 @@
       "block_order": [
         "slide_dAgTmn"
       ],
-      "disabled": true,
       "name": "t:slideshow.presets.slideshow.name",
       "settings": {
         "section_id": "",
@@ -71,7 +70,7 @@
         "section_padding_bottom_desktop": 0,
         "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 0,
-        "invert_navigation_color": true,
+        "invert_navigation_color": false,
         "section_width": "page-width",
         "section_height": "large",
         "autoplay": true,
