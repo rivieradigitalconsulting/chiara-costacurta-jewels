@@ -134,18 +134,6 @@
     "media_with_text_VbGT3d": {
       "type": "media-with-text",
       "blocks": {
-        "heading_VqfbJc": {
-          "type": "heading",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "heading": "Media con testo",
-            "heading_size": "h3",
-            "convert_to_h1": false
-          }
-        },
         "paragraph_bEdPBa": {
           "type": "paragraph",
           "settings": {
@@ -153,13 +141,12 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Abbina testo e immagine per mettere in risalto il prodotto, la collezione o l'articolo del blog che hai scelto. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
+            "text": "<p>Nasce così <strong>Victoria</strong>, la collezione che diventa simbolo dell’atelier: una cascata di sottili catene veneziane che, intrecciandosi, catturano la luce fino a trasformarla in un unico riflesso. È questa creazione a proiettare ufficialmente Chiara Costacurta nel panorama della gioielleria contemporanea.</p><p>A Victoria seguono <strong>Make a Wish</strong> e <strong>Onda</strong>, collezioni che consolidano l'identità del brand attraverso un linguaggio riconoscibile, un forte valore simbolico e la continua ricerca di materiali preziosi e manifattura d'eccellenza.</p>",
             "text_size": "body-fs-sm"
           }
         }
       },
       "block_order": [
-        "heading_VqfbJc",
         "paragraph_bEdPBa"
       ],
       "name": "t:media_with_text.presets.media_with_text.name",
