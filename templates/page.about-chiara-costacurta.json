@@ -153,7 +153,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 50,
+        "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -179,12 +179,63 @@
         "video_ratio": "default",
         "video_autoplay": false
       }
+    },
+    "slideshow_8CcbEE": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_4gKwiL": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "block_width": "constrict",
+            "background_media_size": "full-width",
+            "background_media_position": "left",
+            "column_width": 6,
+            "vertical_content_position": "center",
+            "content_position": "center",
+            "content_alignment": "center",
+            "overlay_color": "#000",
+            "overlay_opacity": 0,
+            "image_1": "shopify://shop_images/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_1498-copia.jpg",
+            "image_ratio": "4x5",
+            "title": "",
+            "caption_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "convert_to_h1": false,
+            "text": "",
+            "text_size": "body-fs-md",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_4gKwiL"
+      ],
+      "name": "t:slideshow.presets.slideshow.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "section_width": "page-width",
+        "section_height": "large",
+        "autoplay": true,
+        "change_slides_every": 5,
+        "pagination": false
+      }
     }
   },
   "order": [
     "main",
     "slideshow_3Ngfdn",
     "rich_text_JP9GgG",
-    "media_with_text_VbGT3d"
+    "media_with_text_VbGT3d",
+    "slideshow_8CcbEE"
   ]
 }
