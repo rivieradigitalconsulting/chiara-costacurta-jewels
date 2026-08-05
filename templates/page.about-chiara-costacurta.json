@@ -117,7 +117,7 @@
         "section_padding_top_desktop": 50,
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_bottom_mobile": 30,
         "invert_navigation_color": false,
         "color_scheme": "",
         "section_bg_repeat": false,
@@ -139,7 +139,7 @@
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
+            "block_spacing_top_mobile": 40,
             "block_spacing_bottom_mobile": 20,
             "text": "<p>Nasce così <strong>Victoria</strong>, la collezione che diventa simbolo dell’atelier: una cascata di sottili catene veneziane che, intrecciandosi, catturano la luce fino a trasformarla in un unico riflesso. È questa creazione a proiettare ufficialmente Chiara Costacurta nel panorama della gioielleria contemporanea.</p><p>A Victoria seguono <strong>Make a Wish</strong> e <strong>Onda</strong>, collezioni che consolidano l'identità del brand attraverso un linguaggio riconoscibile, un forte valore simbolico e la continua ricerca di materiali preziosi e manifattura d'eccellenza.</p>",
             "text_size": "body-fs-sm"
