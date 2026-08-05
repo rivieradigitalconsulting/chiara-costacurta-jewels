@@ -230,6 +230,46 @@
         "change_slides_every": 5,
         "pagination": false
       }
+    },
+    "rich_text_pjhBtU": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_VAbdii": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Oggi Chiara Costacurta continua a raccontare storie attraverso il gioiello, unendo design contemporaneo, artigianalità italiana e una profonda attenzione ai dettagli. Ogni collezione nasce per custodire un significato, accompagnare un ricordo e diventare parte della vita di chi la sceglie.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_VAbdii"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 50,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
     }
   },
   "order": [
@@ -237,6 +277,7 @@
     "slideshow_3Ngfdn",
     "rich_text_JP9GgG",
     "media_with_text_VbGT3d",
-    "slideshow_8CcbEE"
+    "slideshow_8CcbEE",
+    "rich_text_pjhBtU"
   ]
 }
