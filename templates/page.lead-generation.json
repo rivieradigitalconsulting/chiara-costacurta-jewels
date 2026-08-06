@@ -101,7 +101,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Fondato da Chiara Costacurta, l’Atelier nasce dal desiderio di dare forma alle emozioni attraverso il gioiello contemporaneo. Ogni creazione è pensata per accompagnare momenti, ricordi e desideri unendo ricerca estetica e grande artigianalità.<br/><br/><br/><strong>Scopri le collezioni: </strong>un universo  di creazioni pensato per raccontare storie, custodire ricordi e accompagnare ogni momento della vita.</p>",
+            "text": "<p>Fondato da Chiara Costacurta, l’Atelier nasce dal desiderio di dare forma alle emozioni attraverso il gioiello contemporaneo. Ogni creazione è pensata per accompagnare momenti, ricordi e desideri unendo ricerca estetica e grande artigianalità.<br/><br/><br/><strong>Scopri le collezioni: </strong>un universo  di creazioni pensato per raccontare storie, custodire ricordi e accompagnare ogni momento della vita.<br/><br/>Inizi il suo viaggio.</p>",
             "text_size": "body-fs-sm"
           }
         },
@@ -157,6 +157,79 @@
         "video_ratio": "default",
         "video_autoplay": false,
         "video_yt_url": ""
+      }
+    },
+    "rich_text_LfPncN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_w6rrhf": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Inizi il Suo viaggio.",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_DDWaei": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Presso il nostro Atelier in <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15</a>.</p><p>Per garantire a ogni ospite il tempo e l'attenzione che desideriamo dedicare, riceviamo esclusivamente su appuntamento.</p><p>Potrà prenotare la Sua visita tramite <a href=\"https://calendly.com/chiaracostacurta/piercing-station?month=2026-06\" target=\"_blank\" title=\"https://calendly.com/chiaracostacurta/piercing-station?month=2026-06\">Calendly</a>, con conferma immediata via e-mail, oppure contattarci direttamente visitando la nostra pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a>. Saremo felici di accompagnarLa nella scelta del momento più adatto per vivere l'esperienza Piercing Station.<br/><br/></p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_V3BUVL": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "Scopri di più",
+            "btn_url": "shopify://pages/contatti",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_w6rrhf",
+        "paragraph_DDWaei",
+        "button_V3BUVL"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
       }
     },
     "custom_liquid_nErNUR": {
@@ -689,78 +762,6 @@
         "video_ratio": "default",
         "video_autoplay": false,
         "video_yt_url": ""
-      }
-    },
-    "rich_text_LfPncN": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_w6rrhf": {
-          "type": "heading",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "heading": "Inizi il Suo viaggio.",
-            "heading_size": "h3",
-            "convert_to_h1": false
-          }
-        },
-        "paragraph_DDWaei": {
-          "type": "paragraph",
-          "disabled": true,
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "text": "<p>Presso il nostro Atelier in <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15</a>.</p><p>Per garantire a ogni ospite il tempo e l'attenzione che desideriamo dedicare, riceviamo esclusivamente su appuntamento.</p><p>Potrà prenotare la Sua visita tramite <a href=\"https://calendly.com/chiaracostacurta/piercing-station?month=2026-06\" target=\"_blank\" title=\"https://calendly.com/chiaracostacurta/piercing-station?month=2026-06\">Calendly</a>, con conferma immediata via e-mail, oppure contattarci direttamente visitando la nostra pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a>. Saremo felici di accompagnarLa nella scelta del momento più adatto per vivere l'esperienza Piercing Station.<br/><br/></p>",
-            "text_column": "",
-            "grid_gap_desktop": 20,
-            "text_size": "body-fs-sm"
-          }
-        },
-        "button_V3BUVL": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "btn_label": "Scopri di più",
-            "btn_url": "shopify://pages/contatti",
-            "btn_style": "line",
-            "btn_icon": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_w6rrhf",
-        "paragraph_DDWaei",
-        "button_V3BUVL"
-      ],
-      "custom_css": [
-        "a {font-size: 14px;}"
-      ],
-      "name": "t:rich_text.presets.rich_text.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 40,
-        "section_padding_bottom_desktop": 0,
-        "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 0,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "section_bg_repeat": false,
-        "section_bg_position": "bottom center",
-        "section_bg_size": "auto",
-        "section_bg_opacity": 100,
-        "column_width": 10,
-        "content_position": "center",
-        "content_alignment": "center",
-        "title_position": "inline",
-        "grid_gap_desktop": 20
       }
     }
   },
