@@ -72,7 +72,7 @@
         "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "section_width": "page-width",
-        "section_height": "large",
+        "section_height": "medium",
         "autoplay": true,
         "change_slides_every": 5,
         "pagination": false
