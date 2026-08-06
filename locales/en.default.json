@@ -670,7 +670,9 @@
         },
         "unbranded_description_with_fulfillment_weeks": {
           "many": "Ships within %{count} weeks"
-        }
+        },
+        "split_shipping_merchandise_quantity_label_inline_primary": "Quantity: %{quantity}",
+        "split_shipping_merchandise_quantity_label_inline": "%{merchandise_title} × %{quantity}"
       },
       "payment": {
         "order_covered_by_gift_cards_notice": {
@@ -982,6 +984,11 @@
         "lessThanOneHourAgo": {
           "many": "{{count}} minutes ago"
         }
+      }
+    },
+    "navigation_and_structure": {
+      "store_credit_multi_currency_accessibility_label": {
+        "many": "{{formattedBalance}} and store credit in {{count}} other currencies"
       }
     }
   }
