@@ -568,7 +568,7 @@
         "section_padding_bottom_desktop": 0,
         "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 0,
-        "invert_navigation_color": true,
+        "invert_navigation_color": false,
         "color_scheme": "",
         "section_width": "constrict",
         "columns_alignment": "left",
