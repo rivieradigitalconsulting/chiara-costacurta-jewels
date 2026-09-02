@@ -415,6 +415,9 @@
     "checkout": {
       "delivery_options": {
         "pick_up": "Ritiro in Atelier"
+      },
+      "order_summary": {
+        "pickup_label": "Ritiro in Atelier"
       }
     }
   }
