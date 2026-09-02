@@ -857,7 +857,9 @@
         }
       },
       "delivery_options": {
-        "pick_up": "Pick up at Atelier"
+        "pick_up": "Pick up at Atelier",
+        "pick_up_from_store": "Pick up at Atelier",
+        "pickup_store": "Pick up at Atelier"
       }
     },
     "notices": {
