@@ -45,7 +45,6 @@
             "overlay_color": "#000",
             "overlay_opacity": 30,
             "image_ratio": "default",
-            "video": "shopify://files/videos/MAGNIFICA - LISA & ZENDAYA x B.ZERO1 IN BVLGARI S NEW BRAND CAMPAIGN_1080p.mp4",
             "title": "",
             "caption_size": "h5",
             "heading": "Piercing Station",
@@ -132,7 +131,7 @@
         "section_id": "",
         "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 50,
-        "section_padding_top_mobile": 60,
+        "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": true,
         "color_scheme": "",
@@ -243,7 +242,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "video": "shopify://files/videos/MAGNIFICA - LISA & ZENDAYA x B.ZERO1 IN BVLGARI S NEW BRAND CAMPAIGN_1080p.mp4",
+            "video": "shopify://files/videos/Video piercing station (1).mov",
             "video_ratio": "default",
             "video_autoplay": false,
             "video_yt_url": ""
@@ -253,7 +252,6 @@
       "block_order": [
         "video_Wh3Efe"
       ],
-      "disabled": true,
       "name": "t:video.presets.video.name",
       "settings": {
         "section_id": "",
