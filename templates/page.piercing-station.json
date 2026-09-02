@@ -158,6 +158,45 @@
         "video_yt_url": ""
       }
     },
+    "rich_text_hm8Ppa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WJyetm": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "L'esperienza",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_WJyetm"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 40,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
     "text_with_icons_di8MAH": {
       "type": "text-with-icons",
       "blocks": {
@@ -194,7 +233,7 @@
       "name": "t:unique_selling_points.presets.unique_selling_points.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
@@ -203,11 +242,11 @@
         "display_mode": "grid",
         "columns_desktop": "3",
         "columns_mobile": "1",
-        "icon_alignment": "next",
-        "column_gap_desktop": 20,
+        "icon_alignment": "top",
+        "column_gap_desktop": 60,
         "row_gap_desktop": 20,
         "column_gap_mobile": 20,
-        "row_gap_mobile": 20,
+        "row_gap_mobile": 40,
         "content_alignment": "left",
         "show_border": false,
         "autoplay": true
@@ -642,6 +681,7 @@
     "main",
     "slideshow_3Ngfdn",
     "media_with_text_4GHcwf",
+    "rich_text_hm8Ppa",
     "text_with_icons_di8MAH",
     "multicolumn_YmiBKU",
     "video_kpPndJ",
