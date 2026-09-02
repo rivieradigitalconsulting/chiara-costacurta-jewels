@@ -158,6 +158,61 @@
         "video_yt_url": ""
       }
     },
+    "text_with_icons_di8MAH": {
+      "type": "text-with-icons",
+      "blocks": {
+        "usp_n88D9M": {
+          "type": "usp",
+          "settings": {
+            "title": "Consulenza",
+            "text": "<p>Incontro con la piercer certificata Chiara Venturelli.<br/><br/>Valutazione dell'anatomia dell'orecchio e brainstorming creativo: una vera e propria consulenza dedicata a nuovi piercing, alla riapertura di fori esistenti, alla sistemazione di forature precedenti o allo studio di composizioni nuove e personalizzate.</p>",
+            "icon_select": "arrow-right"
+          }
+        },
+        "usp_Y9nXtH": {
+          "type": "usp",
+          "settings": {
+            "title": "Piercing Styling",
+            "text": "<p>Scelta del gioiello e definizione della composizione.<br/><br/>Dopo aver valutato proporzioni, equilibrio e posizionamento si procederà con la scelta del gioiello: dall’oro semplice alle pietre più colorate, il nostro obiettivo è quello di creare insieme un risultato armonioso e in piena linea con il Suo stile.</p>",
+            "icon_select": "arrow-right"
+          }
+        },
+        "usp_GBz4jk": {
+          "type": "usp",
+          "settings": {
+            "title": "Foratura",
+            "text": "<p>La foratura viene eseguita direttamente in Atelier dalla piercer certificata, in uno spazio dedicato e certificato.<br/><br/>Il servizio di consulenza, foratura e accompagnamento aftercare è omaggiato contestualmente all'acquisto di un gioiello della collezione Piercing & Earcuff.</p>",
+            "icon_select": "arrow-right"
+          }
+        }
+      },
+      "block_order": [
+        "usp_n88D9M",
+        "usp_Y9nXtH",
+        "usp_GBz4jk"
+      ],
+      "name": "t:unique_selling_points.presets.unique_selling_points.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "display_mode": "grid",
+        "columns_desktop": "3",
+        "columns_mobile": "1",
+        "icon_alignment": "next",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "content_alignment": "left",
+        "show_border": false,
+        "autoplay": true
+      }
+    },
     "multicolumn_YmiBKU": {
       "type": "multicolumn",
       "blocks": {
@@ -197,6 +252,7 @@
         "column_YBiHFh",
         "column_e3tcab"
       ],
+      "disabled": true,
       "custom_css": [
         "a,p {font-size: 14px;}",
         ".h4 {font-size: 20px;}"
@@ -580,76 +636,13 @@
         "title_position": "inline",
         "grid_gap_desktop": 20
       }
-    },
-    "text_with_icons_di8MAH": {
-      "type": "text-with-icons",
-      "blocks": {
-        "usp_hY8kVr": {
-          "type": "usp",
-          "settings": {
-            "title": "Testo con icona",
-            "text": "<p>Testo con icona e informazioni aggiuntive</p>",
-            "icon_select": "checkmark"
-          }
-        },
-        "usp_n88D9M": {
-          "type": "usp",
-          "settings": {
-            "title": "Testo con icona",
-            "text": "<p>Testo con icona e informazioni aggiuntive</p>",
-            "icon_select": "checkmark"
-          }
-        },
-        "usp_Y9nXtH": {
-          "type": "usp",
-          "settings": {
-            "title": "Testo con icona",
-            "text": "<p>Testo con icona e informazioni aggiuntive</p>",
-            "icon_select": "checkmark"
-          }
-        },
-        "usp_GBz4jk": {
-          "type": "usp",
-          "settings": {
-            "title": "Testo con icona",
-            "text": "<p>Testo con icona e informazioni aggiuntive</p>",
-            "icon_select": "checkmark"
-          }
-        }
-      },
-      "block_order": [
-        "usp_hY8kVr",
-        "usp_n88D9M",
-        "usp_Y9nXtH",
-        "usp_GBz4jk"
-      ],
-      "name": "t:unique_selling_points.presets.unique_selling_points.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 80,
-        "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 40,
-        "section_padding_bottom_mobile": 40,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "display_mode": "grid",
-        "columns_desktop": "4",
-        "columns_mobile": "1",
-        "icon_alignment": "next",
-        "column_gap_desktop": 20,
-        "row_gap_desktop": 20,
-        "column_gap_mobile": 20,
-        "row_gap_mobile": 20,
-        "content_alignment": "left",
-        "show_border": false,
-        "autoplay": true
-      }
     }
   },
   "order": [
     "main",
     "slideshow_3Ngfdn",
     "media_with_text_4GHcwf",
+    "text_with_icons_di8MAH",
     "multicolumn_YmiBKU",
     "video_kpPndJ",
     "rich_text_JP9GgG",
@@ -657,7 +650,6 @@
     "featured_collection_JfKRNy",
     "featured_collection_iNWpAX",
     "featured_collection_BJJtLG",
-    "rich_text_LfPncN",
-    "text_with_icons_di8MAH"
+    "rich_text_LfPncN"
   ]
 }
