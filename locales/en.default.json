@@ -854,6 +854,9 @@
             "many": "There are {{count}} errors:"
           }
         }
+      },
+      "delivery_options": {
+        "pick_up": "Pick up at Atelier"
       }
     },
     "notices": {
