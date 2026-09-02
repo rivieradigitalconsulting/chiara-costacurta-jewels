@@ -414,7 +414,9 @@
     },
     "checkout": {
       "delivery_options": {
-        "pick_up": "Ritiro in Atelier"
+        "pick_up": "Ritiro in Atelier",
+        "pick_up_from_store": "Ritiro in Atelier",
+        "pickup_store": "Ritiro in Atelier"
       },
       "order_summary": {
         "pickup_label": "Ritiro in Atelier"
