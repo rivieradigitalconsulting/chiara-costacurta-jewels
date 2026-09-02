@@ -89,7 +89,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "Non è un semplice piercing",
+            "heading": "Non è un semplice piercing.",
             "heading_size": "h3",
             "convert_to_h1": false
           }
@@ -166,7 +166,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>Step 1: <strong>Consulenza<br/></strong></p><p>Incontro con la piercer certificata Chiara Venturelli.</p><p>Valutazione dell'anatomia dell'orecchio e brainstorming creativo: una vera e propria consulenza dedicata a nuovi piercing, alla riapertura di fori esistenti, alla sistemazione di forature precedenti o allo studio di composizioni nuove e personalizzate.</p>",
+            "text": "<p>Step 1 → <strong>Consulenza<br/></strong></p><p>Incontro con la piercer certificata Chiara Venturelli.</p><p>Valutazione dell'anatomia dell'orecchio e brainstorming creativo: una vera e propria consulenza dedicata a nuovi piercing, alla riapertura di fori esistenti, alla sistemazione di forature precedenti o allo studio di composizioni nuove e personalizzate.</p>",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -176,7 +176,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>Step 2: <strong>Piercing Styling</strong></p><p>Scelta del gioiello e definizione della composizione.</p><p>Dopo aver valutato proporzioni, equilibrio e posizionamento si procederà con la scelta del gioiello: dall’oro semplice alle pietre più colorate, il nostro obiettivo è quello di creare insieme un risultato armonioso e in piena linea con il Suo stile.</p>",
+            "text": "<p>Step 2 → <strong>Piercing Styling</strong></p><p>Scelta del gioiello e definizione della composizione.</p><p>Dopo aver valutato proporzioni, equilibrio e posizionamento si procederà con la scelta del gioiello: dall’oro semplice alle pietre più colorate, il nostro obiettivo è quello di creare insieme un risultato armonioso e in piena linea con il Suo stile.</p>",
             "btn_label": "Scopri di più",
             "btn_url": "",
             "btn_style": "line"
