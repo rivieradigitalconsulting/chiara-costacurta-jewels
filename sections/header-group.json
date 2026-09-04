@@ -23,6 +23,7 @@
         },
         "announcement_tWF4e6": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "title": "Gli ordini effettuati ad agosto verranno spediti dal 1° settembre",
             "link": ""
