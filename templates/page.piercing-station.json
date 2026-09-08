@@ -446,9 +446,9 @@
         "button_V3BUVL": {
           "type": "button",
           "settings": {
-            "block_spacing_top_desktop": 20,
+            "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
+            "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 20,
             "btn_label": "PRENOTA UN APPUNTAMENTO",
             "btn_url": "https://calendly.com/chiaracostacurta/piercing-station",
