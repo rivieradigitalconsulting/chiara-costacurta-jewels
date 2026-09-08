@@ -635,14 +635,13 @@
         },
         "button_V3BUVL": {
           "type": "button",
-          "disabled": true,
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
             "btn_label": "Scopri di più",
-            "btn_url": "shopify://pages/contatti",
+            "btn_url": "https://calendly.com/chiaracostacurta/piercing-station",
             "btn_style": "line",
             "btn_icon": false
           }
