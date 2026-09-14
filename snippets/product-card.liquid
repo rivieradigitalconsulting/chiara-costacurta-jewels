@@ -57,6 +57,15 @@
   if template.name == 'collection' and collection.metafields.plp.show_collection == true
     assign show_collection = true
   endif
+
+  capture price_on_request_check
+    render 'price-on-request-check', product: card_product
+  endcapture
+  assign is_price_on_request = price_on_request_check | strip
+
+  if is_price_on_request == 'true'
+    assign show_quick_add = false
+  endif
 -%}
 
 {%- capture sizes -%}

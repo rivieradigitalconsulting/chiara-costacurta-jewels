@@ -11,6 +11,31 @@
 {% endcomment %}
 
 {%- liquid
+  capture price_on_request_check
+    render 'price-on-request-check', product: product
+  endcapture
+  assign is_price_on_request = price_on_request_check | strip
+-%}
+
+{%- comment -%}
+  Price on request products never output a price: the text set in the theme
+  settings is rendered instead (empty setting renders nothing at all).
+{%- endcomment -%}
+{%- if is_price_on_request == 'true' -%}
+  {%- if settings.price_on_request_price_text != blank -%}
+    <div class="m-price m-price--on-request{% if price_class %} {{ price_class }}{% endif %}">
+      <div class="m-price__inner">
+        <div class="m-price__regular">
+          <span class="m-price-item price-item--regular">
+            {{- settings.price_on_request_price_text -}}
+          </span>
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+{%- else -%}
+
+{%- liquid
   assign use_variant = use_variant
   assign price_class = price_class
 
@@ -109,3 +134,4 @@
     </div>
   </div>
 </div>
+{%- endif -%}

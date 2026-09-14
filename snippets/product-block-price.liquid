@@ -1,3 +1,10 @@
+{%- liquid
+  capture price_on_request_check
+    render 'price-on-request-check', product: product
+  endcapture
+  assign is_price_on_request = price_on_request_check | strip
+-%}
+
 <div
   class="o-product__price a-spacing-content"
   id="price-{{ section.id }}"
@@ -6,7 +13,7 @@
   {{ block.shopify_attributes }}
 >
   {%- render 'price', product: product, use_variant: true, price_class: 'm-price--md' -%}
-  {%- if block.settings.show_tax_message -%}
+  {%- if block.settings.show_tax_message and is_price_on_request != 'true' -%}
     {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
       <div
         class="o-product__tax rte body-fs-xs"
@@ -23,7 +30,7 @@
 </div>
 <div {{ block.shopify_attributes }}>
   {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
-  {%- if product != blank -%}
+  {%- if product != blank and is_price_on_request != 'true' -%}
     {%- form 'product', product, id: product_form_installment_id, class: 'installment body-fs-sm' -%}
       <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
       {{ form | payment_terms }}

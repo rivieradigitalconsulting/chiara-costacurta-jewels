@@ -49,6 +49,11 @@
       assign is_preorder = true
     endif
   endfor
+
+  capture price_on_request_check
+    render 'price-on-request-check', product: product
+  endcapture
+  assign is_price_on_request = price_on_request_check | strip
 -%}
 
 {%- if enable_zoom -%}
@@ -178,6 +183,13 @@
           </h3>
         </div>
         <div class="m-action-bar__actions">
+          {%- if is_price_on_request == 'true' -%}
+            {%- render 'price-on-request-button',
+              product: product,
+              button_class: 'm-action-bar__button a-btn a-btn--primary js-action-bar-button',
+              text_class: 'm-action-bar__submit-text'
+            -%}
+          {%- else -%}
           <button
             aria-label="
               {% if product.selected_or_first_available_variant.available %}
@@ -199,6 +211,7 @@
               {%- render 'icon-loader', loader_classes: 'a-loader--light' -%}
             </span>
           </button>
+          {%- endif -%}
         </div>
       </div>
     </div>

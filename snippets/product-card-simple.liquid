@@ -21,6 +21,15 @@
     assign show_quick_add = forced_quick_add_value
   endif
 
+  capture price_on_request_check
+    render 'price-on-request-check', product: card_product
+  endcapture
+  assign is_price_on_request = price_on_request_check | strip
+
+  if is_price_on_request == 'true'
+    assign show_quick_add = false
+  endif
+
   if card_product.variants.size > 1
     assign use_variant = true
   else
