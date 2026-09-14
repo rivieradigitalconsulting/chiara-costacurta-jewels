@@ -1,1 +1,629 @@
-{"sections":{"slideshow":{"type":"slideshow","blocks":{"slide":{"type":"slide","settings":{"color_scheme":"scheme-2","block_width":"page-width","background_media_size":"full-width","background_media_position":"left","column_width":6,"vertical_content_position":"bottom","content_position":"center","content_alignment":"center","overlay_color":"#ffffff","overlay_opacity":5,"image_ratio":"1x1","video":"shopify:\/\/files\/videos\/MAGNIFICA - LISA & ZENDAYA x B.ZERO1 IN BVLGARI S NEW BRAND CAMPAIGN_1080p.mp4","title":"","caption_size":"h5","heading":"","heading_size":"h3","convert_to_h1":false,"text":"","text_size":"body-fs-sm","btn_label":"Scopri la Nuova Collezione","btn_url":"shopify:\/\/collections\/frontpage","btn_style":"line","btn_icon":false}}},"block_order":["slide"],"settings":{"section_id":"","section_padding_top_desktop":0,"section_padding_bottom_desktop":0,"section_padding_top_mobile":0,"section_padding_bottom_mobile":0,"invert_navigation_color":true,"section_width":"page-width","section_height":"large","autoplay":true,"change_slides_every":5,"pagination":true}},"featured_collection_a7Xnrp":{"type":"featured-collection","settings":{"section_id":"","section_padding_top_desktop":60,"section_padding_bottom_desktop":40,"section_padding_top_mobile":40,"section_padding_bottom_mobile":20,"invert_navigation_color":false,"color_scheme":"scheme-1","collection":"frontpage","product_list":[],"display_mode":"slider","product_limit":8,"columns_desktop":4,"columns_mobile":"2","column_gap_desktop":5,"row_gap_desktop":20,"column_gap_mobile":5,"row_gap_mobile":20,"section_width":"page-width","content_width":12,"content_position":"center","content_alignment":"left","heading":"Ultime creazioni","heading_size":"h3","text":"<p>Scopri i gioielli più recenti: nuove creazioni pensate per chi ama rinnovare il proprio stile con design sempre attuali, eleganti e ricchi di personalità.<\/p>","text_size":"body-fs-sm","btn_label":"All products","btn_url":"","btn_style":"line","btn_icon":false}},"banner_cpc4cb":{"type":"banner","blocks":{"heading_DYFAGp":{"type":"heading","settings":{"block_spacing_top_desktop":0,"block_spacing_bottom_desktop":0,"block_spacing_top_mobile":0,"block_spacing_bottom_mobile":0,"heading":"Linea Gocce di Diamante","heading_size":"h3","convert_to_h1":false}},"paragraph_TeirUh":{"type":"paragraph","settings":{"block_spacing_top_desktop":5,"block_spacing_bottom_desktop":0,"block_spacing_top_mobile":5,"block_spacing_bottom_mobile":0,"text":"<p>Esplora la collezione make a wish<\/p>","text_size":"body-fs-sm"}},"button_MDtMYn":{"type":"button","settings":{"block_spacing_top_desktop":20,"block_spacing_bottom_desktop":30,"block_spacing_top_mobile":0,"block_spacing_bottom_mobile":30,"btn_label":"DISCOVER MORE","btn_url":"","btn_style":"tertiary","btn_icon":true}}},"block_order":["heading_DYFAGp","paragraph_TeirUh","button_MDtMYn"],"name":"t:banner.presets.banner.name","settings":{"section_id":"","section_padding_top_desktop":0,"section_padding_bottom_desktop":0,"section_padding_top_mobile":0,"section_padding_bottom_mobile":5,"invert_navigation_color":true,"color_scheme":"","section_width":"page-width","section_height":"medium","column_width":8,"vertical_content_position":"bottom","content_position":"center","content_alignment":"center","overlay_color":"#000000","overlay_opacity":15,"image":"shopify:\/\/shop_images\/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_1919-scaled.jpg"}},"banner_fBAYPw":{"type":"banner","blocks":{"heading_irENrk":{"type":"heading","settings":{"block_spacing_top_desktop":0,"block_spacing_bottom_desktop":0,"block_spacing_top_mobile":0,"block_spacing_bottom_mobile":0,"heading":"Linea Onda","heading_size":"h3","convert_to_h1":false}},"paragraph_YTYcW6":{"type":"paragraph","settings":{"block_spacing_top_desktop":5,"block_spacing_bottom_desktop":0,"block_spacing_top_mobile":5,"block_spacing_bottom_mobile":0,"text":"<p>Esplora la collezione make a wish<\/p>","text_size":"body-fs-sm"}},"button_PhTpTN":{"type":"button","settings":{"block_spacing_top_desktop":20,"block_spacing_bottom_desktop":30,"block_spacing_top_mobile":0,"block_spacing_bottom_mobile":30,"btn_label":"Scopri di più","btn_url":"","btn_style":"tertiary","btn_icon":true}}},"block_order":["heading_irENrk","paragraph_YTYcW6","button_PhTpTN"],"name":"t:banner.presets.banner.name","settings":{"section_id":"","section_padding_top_desktop":10,"section_padding_bottom_desktop":0,"section_padding_top_mobile":0,"section_padding_bottom_mobile":5,"invert_navigation_color":true,"color_scheme":"","section_width":"page-width","section_height":"medium","column_width":8,"vertical_content_position":"bottom","content_position":"center","content_alignment":"center","overlay_color":"#000000","overlay_opacity":15,"image":"shopify:\/\/shop_images\/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_1120-scaled.jpg"}},"featured_collection_1":{"type":"featured-collection","settings":{"section_id":"","section_padding_top_desktop":70,"section_padding_bottom_desktop":40,"section_padding_top_mobile":40,"section_padding_bottom_mobile":40,"invert_navigation_color":false,"color_scheme":"scheme-1","collection":"collection-test-copia","product_list":[],"display_mode":"slider","product_limit":8,"columns_desktop":4,"columns_mobile":"2","column_gap_desktop":5,"row_gap_desktop":20,"column_gap_mobile":5,"row_gap_mobile":20,"section_width":"page-width","content_width":12,"content_position":"center","content_alignment":"left","heading":"Chiara's choice","heading_size":"h3","text":"<p>La collezione Chiara’s Picks è una selezione esclusiva di gioielli temporanei scelti con cura da Chiara, pensata per chi ama cambiare, sperimentare e vivere il gioiello come espressione del momento.<\/p>","text_size":"body-fs-sm","btn_label":"All products","btn_url":"","btn_style":"line","btn_icon":false}},"slideshow_c7yHWE":{"type":"slideshow","settings":{"section_id":"","section_padding_top_desktop":0,"section_padding_bottom_desktop":0,"section_padding_top_mobile":0,"section_padding_bottom_mobile":0,"invert_navigation_color":true,"section_width":"page-width","section_height":"large","autoplay":true,"change_slides_every":5,"pagination":true}},"collection_list_cpn77E":{"type":"collection-list","blocks":{"collection_item_GEzCkc":{"type":"collection_item","settings":{"collection":"","image":"shopify:\/\/shop_images\/25_11_21_COSTACURTA65106.jpg","heading":"Anelli","description":"<p>Fornisci una breve panoramica delle collezioni in evidenza<\/p>","btn_label":"Vedi tutti","url":""}},"collection_item_Gxt8Fw":{"type":"collection_item","settings":{"collection":"","image":"shopify:\/\/shop_images\/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_2037-scaled.jpg","heading":"Collane","description":"<p>Fornisci una breve panoramica delle collezioni in evidenza<\/p>","btn_label":"Vedi tutti","url":""}},"collection_item_MHeJ4F":{"type":"collection_item","settings":{"collection":"","image":"shopify:\/\/shop_images\/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_0030-1-scaled.jpg","heading":"Orecchini","description":"<p>Fornisci una breve panoramica delle collezioni in evidenza<\/p>","btn_label":"Vedi tutti","url":""}}},"block_order":["collection_item_GEzCkc","collection_item_Gxt8Fw","collection_item_MHeJ4F"],"name":"t:collections_list.presets.collections_list.name","settings":{"section_id":"","section_padding_top_desktop":50,"section_padding_bottom_desktop":100,"section_padding_top_mobile":20,"section_padding_bottom_mobile":0,"invert_navigation_color":true,"color_scheme":"","collection_list":[],"display_mode":"grid","section_width":"page-width","content_width":12,"content_position":"center","content_alignment":"left","columns_desktop":3,"columns_mobile":"1","column_gap_desktop":5,"row_gap_desktop":0,"column_gap_mobile":5,"row_gap_mobile":5,"color_scheme_card":"scheme-2","show_description":false,"content_card_position":"on-card","vertical_text_alignment":"bottom","card_text_alignment":"center","image_ratio":"1x1","heading":"Naviga tra le categorie","heading_size":"h3","text":"<p>Esplora tutte le categorie e trova il gioiello perfetto per ogni stile: anelli, collane, bracciali e orecchini pensati per valorizzare ogni momento con eleganza.<\/p>","text_size":"body-fs-sm","btn_label":"","btn_url":"","btn_style":"primary","btn_icon":false}},"brands_EUK7pP":{"type":"brands","blocks":{"image_4Bcffg":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Vanity_Fair_Logo_svg.png","image_ratio":"16x9","image_fit":"contain","url":""}},"image_KEJ8Yf":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Marie_Claire_Magazine_logo_svg.png","image_ratio":"16x9","image_fit":"contain","url":""}},"image_UPrJFj":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/huessers.png","image_ratio":"16x9","image_fit":"contain","url":""}},"image_y9jehh":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/logo-pm.png","image_ratio":"16x9","image_fit":"contain","url":""}}},"block_order":["image_4Bcffg","image_KEJ8Yf","image_UPrJFj","image_y9jehh"],"name":"t:brands.presets.brands.name","settings":{"section_id":"","section_padding_top_desktop":10,"section_padding_bottom_desktop":80,"section_padding_top_mobile":60,"section_padding_bottom_mobile":40,"invert_navigation_color":false,"color_scheme":"","section_width":"page-width","content_width":8,"content_position":"left","content_alignment":"left","columns_desktop":4,"columns_mobile":"2","column_gap_desktop":100,"row_gap_desktop":20,"column_gap_mobile":50,"row_gap_mobile":20,"heading":"Hanno parlato di noi","heading_size":"h3","text":"<p>Scopri le testate, i magazine e i brand che hanno raccontato il nostro lavoro e riconosciuto la qualità delle nostre creazioni.<\/p>","text_size":"body-fs-sm"}}},"order":["slideshow","featured_collection_a7Xnrp","banner_cpc4cb","banner_fBAYPw","featured_collection_1","slideshow_c7yHWE","collection_list_cpn77E","brands_EUK7pP"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "block_width": "page-width",
+            "background_media_size": "full-width",
+            "background_media_position": "left",
+            "column_width": 6,
+            "vertical_content_position": "bottom",
+            "content_position": "center",
+            "content_alignment": "center",
+            "overlay_color": "#1d1d1d",
+            "overlay_opacity": 0,
+            "image_1": "shopify://shop_images/25_03_16_CHIARA_COSTACURTA_01_CESALPINO_7_0300.jpg",
+            "image_ratio": "1x1",
+            "title": "",
+            "caption_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "convert_to_h1": false,
+            "text": "",
+            "text_size": "body-fs-sm",
+            "btn_label": "Scopri la collezione Victoria",
+            "btn_url": "shopify://collections/victoria",
+            "btn_style": "line",
+            "btn_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "slide"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": true,
+        "section_width": "page-width",
+        "section_height": "large",
+        "autoplay": true,
+        "change_slides_every": 5,
+        "pagination": true
+      }
+    },
+    "featured_collection_a7Xnrp": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {margin-top: 20px; font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 70,
+        "section_padding_top_mobile": 50,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "scheme-1",
+        "collection": "chiaras-choice",
+        "product_list": [],
+        "display_mode": "grid",
+        "product_limit": 6,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "heading": "I Look di Chiara",
+        "heading_size": "h3",
+        "text": "<p>Scopri i gioielli preferiti di Chiara: nuovi modi di combinarli e interpretarli.</p>",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "shopify://collections/chiaras-choice",
+        "btn_style": "line",
+        "btn_icon": true
+      }
+    },
+    "banner_cpc4cb": {
+      "type": "banner",
+      "blocks": {
+        "heading_DYFAGp": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 15,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 15,
+            "heading": "Collezione Saint-Tropez",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_TeirUh": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "block_spacing_top_desktop": 5,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 5,
+            "block_spacing_bottom_mobile": 0,
+            "text": "<p>Lorem Ipsum Dolor Sit Amet.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_MDtMYn": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 30,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 30,
+            "btn_label": "Scopri i dettagli",
+            "btn_url": "shopify://collections/saint-tropez",
+            "btn_style": "tertiary",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DYFAGp",
+        "paragraph_TeirUh",
+        "button_MDtMYn"
+      ],
+      "custom_css": [
+        "span {font-size: 14px;}"
+      ],
+      "name": "t:banner.presets.banner.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 5,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_width": "page-width",
+        "section_height": "medium",
+        "column_width": 8,
+        "vertical_content_position": "bottom",
+        "content_position": "center",
+        "content_alignment": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 15,
+        "image": "shopify://shop_images/SAINTTROPEZ-PIETRA_LAVICA.png"
+      }
+    },
+    "featured_collection_NJtEpV": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {margin-top: 20px; font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 70,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "scheme-1",
+        "collection": "saint-tropez",
+        "product_list": [],
+        "display_mode": "slider",
+        "product_limit": 12,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri la nuova Saint-Tropez",
+        "btn_url": "shopify://collections/saint-tropez",
+        "btn_style": "line",
+        "btn_icon": true
+      }
+    },
+    "banner_qJTiPR": {
+      "type": "banner",
+      "blocks": {
+        "heading_fDqtGH": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 15,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 15,
+            "heading": "Collezione Victoria",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_6inCXh": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "block_spacing_top_desktop": 5,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 5,
+            "block_spacing_bottom_mobile": 0,
+            "text": "<p>Lorem Ipsum Dolor Sit Amet.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_w7eWVm": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 30,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 30,
+            "btn_label": "Scopri i dettagli",
+            "btn_url": "shopify://collections/victoria",
+            "btn_style": "tertiary",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fDqtGH",
+        "paragraph_6inCXh",
+        "button_w7eWVm"
+      ],
+      "custom_css": [
+        "span {font-size: 14px;}"
+      ],
+      "name": "t:banner.presets.banner.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 10,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 5,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_width": "page-width",
+        "section_height": "small",
+        "column_width": 8,
+        "vertical_content_position": "bottom",
+        "content_position": "center",
+        "content_alignment": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 15,
+        "image": "shopify://shop_images/3.01.jpg"
+      }
+    },
+    "banner_fBAYPw": {
+      "type": "banner",
+      "blocks": {
+        "heading_irENrk": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 15,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 15,
+            "heading": "Collezione Onda",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_YTYcW6": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "block_spacing_top_desktop": 5,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 5,
+            "block_spacing_bottom_mobile": 0,
+            "text": "<p>Lorem Ipsum Dolor Sit Amet.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_PhTpTN": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 30,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 30,
+            "btn_label": "Scopri i dettagli",
+            "btn_url": "shopify://collections/onda",
+            "btn_style": "tertiary",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_irENrk",
+        "paragraph_YTYcW6",
+        "button_PhTpTN"
+      ],
+      "custom_css": [
+        "span {font-size: 14px;}"
+      ],
+      "name": "t:banner.presets.banner.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 10,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 5,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_width": "page-width",
+        "section_height": "small",
+        "column_width": 8,
+        "vertical_content_position": "bottom",
+        "content_position": "center",
+        "content_alignment": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 15,
+        "image": "shopify://shop_images/3.02.jpg"
+      }
+    },
+    "slideshow_c7yHWE": {
+      "type": "slideshow",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": true,
+        "section_width": "page-width",
+        "section_height": "large",
+        "autoplay": true,
+        "change_slides_every": 5,
+        "pagination": true
+      }
+    },
+    "collection_list_cpn77E": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_item_GEzCkc": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/4.01.jpg",
+            "heading": "Anelli",
+            "description": "<p>Fornisci una breve panoramica delle collezioni in evidenza</p>",
+            "btn_label": "Vedi tutti",
+            "url": "shopify://collections/anelli"
+          }
+        },
+        "collection_item_Gxt8Fw": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/4.02.jpg",
+            "heading": "Collane",
+            "description": "<p>Fornisci una breve panoramica delle collezioni in evidenza</p>",
+            "btn_label": "Vedi tutti",
+            "url": "shopify://collections/collane"
+          }
+        },
+        "collection_item_MHeJ4F": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/1.png",
+            "heading": "Orecchini",
+            "description": "<p>Fornisci una breve panoramica delle collezioni in evidenza</p>",
+            "btn_label": "Vedi tutti",
+            "url": "shopify://collections/orecchini"
+          }
+        },
+        "collection_item_kM9apL": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/2.png",
+            "heading": "Bracciali",
+            "description": "<p>Fornisci una breve panoramica delle collezioni in evidenza</p>",
+            "btn_label": "Bracciali",
+            "url": "shopify://collections/bracciali"
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_GEzCkc",
+        "collection_item_Gxt8Fw",
+        "collection_item_MHeJ4F",
+        "collection_item_kM9apL"
+      ],
+      "custom_css": [
+        "button {font-size: 14px;}"
+      ],
+      "name": "t:collections_list.presets.collections_list.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 75,
+        "section_padding_top_mobile": 50,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection_list": [],
+        "display_mode": "grid",
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "1",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 0,
+        "row_gap_mobile": 5,
+        "color_scheme_card": "scheme-2",
+        "show_description": false,
+        "content_card_position": "on-card",
+        "vertical_text_alignment": "bottom",
+        "card_text_alignment": "center",
+        "image_ratio": "1x1",
+        "heading": "Esplora le Categorie",
+        "heading_size": "h3",
+        "text": "<p>Lasciati guidare tra i nostri anelli, collane, orecchini e bracciali: gioielli pensati per essere indossati e custoditi nel tempo.</p>",
+        "text_size": "body-fs-sm",
+        "btn_label": "",
+        "btn_url": "",
+        "btn_style": "primary",
+        "btn_icon": false
+      }
+    },
+    "media_with_text_b4RNVj": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_FjJme7": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "La Piercing Station di Chiara Costacurta",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_Qwce3M": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Nel cuore di Milano, un luogo dedicato al piercing contemporaneo, tra consulenza personalizzata e gioielli in oro e diamanti naturali.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_z9Y9xh": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "Scopri di più",
+            "btn_url": "shopify://pages/piercing-station",
+            "btn_style": "line",
+            "btn_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_FjJme7",
+        "paragraph_Qwce3M",
+        "button_z9Y9xh"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 60,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "media-outside-container",
+        "grid_gap_desktop": 50,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 0,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "left",
+        "image": "shopify://shop_images/5.01.jpg",
+        "media_width": 50,
+        "image_ratio": "4x5",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video_ratio": "default",
+        "video_autoplay": false,
+        "video_yt_url": ""
+      }
+    },
+    "brands_EUK7pP": {
+      "type": "brands",
+      "blocks": {
+        "image_CLTR73": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6.01.png",
+            "image_ratio": "16x9",
+            "image_fit": "contain",
+            "url": ""
+          }
+        },
+        "image_4Bcffg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Vanity_Fair_Logo_svg.png",
+            "image_ratio": "16x9",
+            "image_fit": "contain",
+            "url": ""
+          }
+        },
+        "image_KEJ8Yf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6.03.png",
+            "image_ratio": "16x9",
+            "image_fit": "contain",
+            "url": ""
+          }
+        },
+        "image_UPrJFj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6.04.png",
+            "image_ratio": "16x9",
+            "image_fit": "contain",
+            "url": ""
+          }
+        },
+        "image_CY4hTz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D_la_Repubblica_-_logo.webp",
+            "image_ratio": "16x9",
+            "image_fit": "contain",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_CLTR73",
+        "image_4Bcffg",
+        "image_KEJ8Yf",
+        "image_UPrJFj",
+        "image_CY4hTz"
+      ],
+      "name": "t:brands.presets.brands.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 10,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 80,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "content_width": 8,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 5,
+        "columns_mobile": "2",
+        "column_gap_desktop": 100,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 60,
+        "row_gap_mobile": 0,
+        "heading": "Rassegna Stampa",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured_collection_a7Xnrp",
+    "banner_cpc4cb",
+    "featured_collection_NJtEpV",
+    "banner_qJTiPR",
+    "banner_fBAYPw",
+    "slideshow_c7yHWE",
+    "collection_list_cpn77E",
+    "media_with_text_b4RNVj",
+    "brands_EUK7pP"
+  ]
+}

@@ -33,6 +33,70 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "cta_ACkUjb": {
+          "type": "cta",
+          "settings": {
+            "index": 1,
+            "color_scheme": "scheme-1",
+            "card_vertical_text_alignment": "bottom",
+            "card_text_alignment": "left",
+            "image": "shopify://shop_images/IMG_8105.jpg",
+            "image_ratio": "inherit",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "heading": "",
+            "text": "",
+            "btn_url": "",
+            "btn_label": "",
+            "btn_style": "primary",
+            "btn_icon": false
+          }
+        },
+        "cta_UdUXJy": {
+          "type": "cta",
+          "settings": {
+            "index": 4,
+            "color_scheme": "scheme-1",
+            "card_vertical_text_alignment": "bottom",
+            "card_text_alignment": "left",
+            "image": "shopify://shop_images/IMG_8134.jpg",
+            "image_ratio": "inherit",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "heading": "",
+            "text": "",
+            "btn_url": "",
+            "btn_label": "",
+            "btn_style": "primary",
+            "btn_icon": false
+          }
+        },
+        "cta_4CetNK": {
+          "type": "cta",
+          "settings": {
+            "index": 5,
+            "color_scheme": "scheme-1",
+            "card_vertical_text_alignment": "bottom",
+            "card_text_alignment": "left",
+            "image": "shopify://shop_images/d849bb40-6855-450c-9ca3-e4921e88f99b.jpg",
+            "image_ratio": "inherit",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "heading": "",
+            "text": "",
+            "btn_url": "",
+            "btn_label": "",
+            "btn_style": "primary",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "cta_ACkUjb",
+        "cta_UdUXJy",
+        "cta_4CetNK"
+      ],
       "custom_css": [
         "label {font-size: 14px;}",
         ".m-pagination__list {font-size: 12px;}"

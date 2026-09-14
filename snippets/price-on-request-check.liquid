@@ -1,0 +1,30 @@
+{%- comment -%}
+  Checks whether a product must be handled as "price on request".
+
+  A product is "price on request" when the suffix of its product template is
+  listed in Theme settings > Prezzo su richiesta.
+
+  Accepts:
+  - product: {Object} Product Liquid object
+
+  Returns the string "true" (empty output otherwise).
+
+  Usage:
+  {%- liquid
+    capture price_on_request_check
+      render 'price-on-request-check', product: product
+    endcapture
+    assign is_price_on_request = price_on_request_check | strip
+  -%}
+  {%- if is_price_on_request == 'true' -%} ... {%- endif -%}
+{%- endcomment -%}
+{%- liquid
+  assign template_suffix = product.template_suffix | strip
+
+  if settings.price_on_request_enabled and template_suffix != blank
+    assign price_on_request_templates = settings.price_on_request_templates | replace: ' ', '' | split: ','
+    if price_on_request_templates contains template_suffix
+      echo 'true'
+    endif
+  endif
+-%}

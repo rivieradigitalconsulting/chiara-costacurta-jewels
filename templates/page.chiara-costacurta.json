@@ -1,0 +1,151 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_width": 9,
+        "content_position": "center",
+        "content_alignment": "center",
+        "heading_size": "h3",
+        "text_size": "body-fs-sm"
+      }
+    },
+    "image_DAyjjW": {
+      "type": "image",
+      "blocks": {
+        "image_ArMCPH": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 20,
+            "image": "shopify://shop_images/About_Chiara_Costacurta.jpg",
+            "image_ratio": "1x1"
+          }
+        },
+        "heading_iGLHmr": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 40,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "A volte non siamo noi a scegliere le nostre passioni, sono loro a scegliere noi.",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_D6VCFB": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>La passione per i gioielli nasce con me.<br/>Sono ormai certa che questa ossessione faccia parte del mio DNA.</p><p>Il primo ricordo risale a un pranzo di famiglia, quando incontrai per la prima volta le sorelle di mia nonna paterna. Dell'ambiente ricordo poco: era semplice, elegante. Avevo forse sei anni.<br/>A un certo punto, una di loro si alzò da tavola e si allontanò per qualche minuto. Quando tornò, indossava alcuni gioielli. Erano semplici, ma li ricordo ancora oggi con sorprendente nitidezza.</p><p>Da quel momento la prima cosa che noto - a volte anche rischiando di essere invadente - sono i gioielli che una donna indossa: parlano di lei, della sua vita, della sua personalità e dei suoi sogni.</p><p>Le donne sono da sempre la mia più grande fonte di ispirazione. Donne indipendenti, o determinate a diventarlo. Donne che costruiscono la propria strada, che si trasformano, che evolvono. A loro sono dedicati i gioielli che creo.</p><p>Credo nell'amore alla pari, quell'amore che valorizza l'altro e lo rende migliore.<br/>Credo nel reinventare vecchi gioielli per poterli indossare e tramandare di nuovo.<br/>Credo nell'evoluzione del futuro: dalle nuove generazioni colgo i segnali di trasformazione e il desiderio di cambiamento.</p><p>Per molti anni la gioielleria è stata una passione coltivata quasi in segreto. Dopo il Liceo Classico e gli studi in Economia Aziendale, sembrava un interesse insolito, distante dal percorso che avevo scelto.<br/>Di notte, quando la casa era silenziosa, iniziavo a lavorare argento e pietre semipreziose. Nascevano collane, anelli e orecchini di ogni forma. Senza che me ne accorgessi, prendeva forma anche la vera magia del mio lavoro: le amiche diventavano clienti e le nuove clienti diventavano amiche.</p><p>Nel 2011 mi trovavo a Londra quando decisi di intraprendere un corso GIA. Non sapevo ancora che quella scelta avrebbe cambiato il mio percorso. Lo studio della gemmologia mi ha aperto le porte del mondo dell'alta gioielleria e mi ha dato gli strumenti per approfondire una passione che ormai faceva parte della mia vita.</p><p>Negli anni successivi ho continuato a costruire il mio progetto, conciliandolo con la mia famiglia, i miei quattro figli e i miei cani, che restano ancora oggi tra i miei più grandi amori.</p><p>Dopo l'esperienza a Lugano e il primo laboratorio aperto a Treviso, nel 2023 mi sono trasferita a Milano. Qui ho deciso di compiere un passo importante: aprire il mio atelier nel cuore della città.<br/>Un luogo che immaginavo da tempo. Uno spazio in cui accogliere le clienti, sviluppare nuove idee, creare relazioni e offrire un ambiente sicuro in cui dare forma a desideri, ricordi e progetti personali. Un salotto nel cuore di Brera, completato da una Piercing Station certificata e da una comunità di donne che continua a crescere ogni giorno.</p>",
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "image_ArMCPH",
+        "heading_iGLHmr",
+        "paragraph_D6VCFB"
+      ],
+      "name": "t:image.presets.image.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 40,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left"
+      }
+    },
+    "image_zUWahn": {
+      "type": "image",
+      "blocks": {
+        "image_gMH6Ur": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 10,
+            "block_spacing_bottom_mobile": 20,
+            "image": "shopify://shop_images/Chiara_Costacurta_About.jpg",
+            "image_ratio": "1x1"
+          }
+        },
+        "paragraph_3cxmbi": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 40,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Il brand Chiara Costacurta oggi porta il mio nome, ma racconta una storia che va oltre la mia: una storia fatta di creatività, indipendenza, trasformazione e legami.</p><p>Chiara Costacurta parla di me, ma soprattutto parla delle donne che scelgono di indossare le mie creazioni.</p><p>Il mio brand parla di voi.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "paragraph_QTJbpU": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 60,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 50,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Con affetto,</p><p><em>Chiara Costacurta</em></p>",
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "image_gMH6Ur",
+        "paragraph_3cxmbi",
+        "paragraph_QTJbpU"
+      ],
+      "name": "t:image.presets.image.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_DAyjjW",
+    "image_zUWahn"
+  ]
+}

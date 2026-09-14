@@ -1,0 +1,55 @@
+{%- comment -%}
+  Renders the "price on request" call to action that replaces the add to cart button.
+
+  The destination is the one set in Theme settings > Prezzo su richiesta, unless the
+  product overrides it through the pdp.price_on_request_url metafield.
+
+  Accepts:
+  - product: {Object} Product Liquid object
+  - button_class: {String} Classes applied to the button (optional)
+  - text_class: {String} Class applied to the label wrapper (optional)
+  - show_note: {Boolean} Renders the note below the button (optional)
+
+  Usage:
+  {%- render 'price-on-request-button', product: product, show_note: true -%}
+{%- endcomment -%}
+
+{%- liquid
+  assign button_class = button_class | default: 'm-product-form__submit a-btn a-btn--primary'
+  assign text_class = text_class | default: 'm-product-form__submit-text'
+  assign label = settings.price_on_request_button_label | default: 'Prezzo su richiesta'
+
+  assign link = product.metafields.pdp.price_on_request_url.value
+  if link == blank
+    assign link = settings.price_on_request_url
+  endif
+-%}
+
+{%- if link != blank -%}
+  <a
+    class="{{ button_class }}"
+    href="{{ link }}"
+    {% if settings.price_on_request_new_tab %}
+      target="_blank"
+      rel="noopener"
+    {% endif %}
+  >
+    <span class="{{ text_class }}">{{ label }}</span>
+  </a>
+{%- else -%}
+  {%- comment -%} No destination set yet: keep the layout but do not expose a dead link. {%- endcomment -%}
+  <span class="{{ button_class }} disabled" aria-disabled="true">
+    <span class="{{ text_class }}">{{ label }}</span>
+  </span>
+  {%- if request.design_mode -%}
+    <p class="body-fs-xs">
+      Imposta il link del pulsante in Impostazioni tema &gt; Prezzo su richiesta.
+    </p>
+  {%- endif -%}
+{%- endif -%}
+
+{%- if show_note and settings.price_on_request_note != blank -%}
+  <div class="o-product__price-on-request-note rte body-fs-sm">
+    {{ settings.price_on_request_note }}
+  </div>
+{%- endif -%}

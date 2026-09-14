@@ -1,6 +1,11 @@
 {%- liquid
+  capture price_on_request_check
+    render 'price-on-request-check', product: product
+  endcapture
+  assign is_price_on_request = price_on_request_check | strip
+
   assign gift_card_recipient_feature_active = false
-  if block.settings.show_gift_card_recipient and product.gift_card?
+  if block.settings.show_gift_card_recipient and product.gift_card? and is_price_on_request != 'true'
     assign gift_card_recipient_feature_active = true
   endif
 -%}
@@ -38,8 +43,11 @@
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}
-
+        
         <div class="m-product-form__buttons">
+          {%- if is_price_on_request == 'true' -%}
+            {%- render 'price-on-request-button', product: product, show_note: true -%}
+          {%- else -%}
           <button
             type="submit"
             name="add"
@@ -76,6 +84,7 @@
           </button>
           {%- if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false -%}
             {{ form | payment_button }}
+          {%- endif -%}
           {%- endif -%}
         </div>
       {%- endform -%}

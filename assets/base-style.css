@@ -1539,7 +1539,8 @@ body.no-scroll {
   font-size: var(--body-fs-sm);
   line-height: var(--body-lh-sm);
 }
-.a-badge--available_on_order {
+.a-badge--available_on_order,
+.a-badge--sold-out {
   padding: 4px 8px;
   border: 1px solid;
   border-color: var(--color-black);
@@ -4511,4 +4512,26 @@ button.swiper-pagination-bullet {
 .shopify-policy__container {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+
+/* Swym wishlist override */
+@media screen and (min-width: 768px) {
+  #swym-storefront-layout-container {
+    max-width: 70%;
+    margin-left: 20%;
+  }
+}
+swym-storefront-layout-notification,
+.swym-storefront-layout-notification,
+.swym-storefront-layout-notification:has(button.swym-storefront-layout-action),
+.swym-popup-nudge-zindex {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+.swym-advanced-header-icon,
+.swym-advanced-header-icon#swym-advanced-header-icon.swym-header-icon-wrapper,
+#swym-advanced-header-icon-mobile {
+  display: none !important;
 }

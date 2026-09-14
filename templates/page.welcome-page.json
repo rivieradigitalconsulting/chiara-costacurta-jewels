@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "section_id": "",
@@ -26,9 +27,24 @@
         "heading_size": "h3",
         "text_size": "body-fs-sm"
       }
+    },
+    "custom_liquid_trNqr9": {
+      "type": "custom-liquid",
+      "name": "t:custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "custom_liquid": "<div class=\"klaviyo-form-SBTs7E\"></div>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_liquid_trNqr9"
   ]
 }

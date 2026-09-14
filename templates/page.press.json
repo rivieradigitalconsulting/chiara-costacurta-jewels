@@ -1,0 +1,768 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_width": 12,
+        "content_position": "left",
+        "content_alignment": "center",
+        "heading_size": "h3",
+        "text_size": "body-fs-sm"
+      }
+    },
+    "multicolumn_QMBjJj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7CdRfz": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/GRAZIA-2.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_BhiFAi": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/GRAZIA_2_b_3d8dbb72-9fd0-48ab-88c5-d24bec72f474.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_7CdRfz",
+        "column_BhiFAi"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "default",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "1",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_CWhhQ9": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_RC8RwA": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p><strong>GRAZIA </strong>- Speciale Milano Cortina - Febbraio 2026</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_RC8RwA"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "multicolumn_TiKXiR": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_KdVyEM": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/D_de_la_Repubblica_14_2.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_V7X6J6": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/D_de_la_Repubblica_14.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_KdVyEM",
+        "column_V7X6J6"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "default",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "1",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_Q3wFJH": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_VtBxc7": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p><strong>D la Repubblica </strong>- 14 Gennaio 2026</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_VtBxc7"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "multicolumn_DGAq6E": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_EM6jAh": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/D_de_la_Repubblica_6.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_DmGY89": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/D_de_la_Repubblica_6_2.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_EM6jAh",
+        "column_DmGY89"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "default",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "1",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_BGCFBx": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_EiKHL3": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p><strong>D la Repubblica </strong>- 6 dicembre 2025</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_EiKHL3"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "multicolumn_yWMBzn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nY7zCf": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/Elle_n_44_del_2025_-_copertina.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_WJxtYx": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/Elle_n_44_del_2025_-_pubblicazione.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_nY7zCf",
+        "column_WJxtYx"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "default",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "1",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_TUVLcB": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_CEkxzP": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p><strong>ELLE - </strong>Numero 44 - Novembre 2025</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_CEkxzP"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "multicolumn_kkFqkp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7RQnAt": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/Vogue_9.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_3CCMyx": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/Vogue_9_b_e5f7018e-c433-496a-99a8-bea52881638c.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_7RQnAt",
+        "column_3CCMyx"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "default",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "1",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_tGcGJQ": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_WrAJhn": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p><strong>Vogue -</strong> Settembre 2025</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_WrAJhn"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "multicolumn_iHLMtT": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BGdfBG": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/GRAZIA_21.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_WMNWQL": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/GRAZIA_21_3b.jpg",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_BGdfBG",
+        "column_WMNWQL"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "default",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "1",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_iGgmR7": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_PHGE4w": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p><strong>GRAZIA</strong> - 21 Luglio 2025</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_PHGE4w"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 30,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "multicolumn_CUyTFp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6QWxGk": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/GRAZIA_21.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_DtjfbN": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/GRAZIA_21_2_d0be1db1-39cd-4358-883b-2b136a54c311.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_DFUFby": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/GRAZIA_21_3_5cf58e4f-4144-4c2d-b67e-90d10bc619a9.jpg",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_6QWxGk",
+        "column_DtjfbN",
+        "column_DFUFby"
+      ],
+      "disabled": true,
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_width": "page-width",
+        "columns_alignment": "left",
+        "image_ratio": "default",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_ccEynt": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_r3E93U": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p><strong>GRAZIA</strong> - 21 Luglio 2025</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_r3E93U"
+      ],
+      "disabled": true,
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 30,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_QMBjJj",
+    "rich_text_CWhhQ9",
+    "multicolumn_TiKXiR",
+    "rich_text_Q3wFJH",
+    "multicolumn_DGAq6E",
+    "rich_text_BGCFBx",
+    "multicolumn_yWMBzn",
+    "rich_text_TUVLcB",
+    "multicolumn_kkFqkp",
+    "rich_text_tGcGJQ",
+    "multicolumn_iHLMtT",
+    "rich_text_iGgmR7",
+    "multicolumn_CUyTFp",
+    "rich_text_ccEynt"
+  ]
+}

@@ -1,5 +1,12 @@
 <div class="o-header__utilities">
   <a
+    href="/pages/swym-wishlist"
+    class="swym-wishlist o-header__utility js-element-to-invert"
+  >
+    {%- render 'icon-wishlist' -%}
+    <span class="o-header__utility-label">{{ 'sections.header.wishlist' | t }}</span>
+  </a>
+  <a
     href="{{ routes.search_url }}"
     class="o-header__utility o-header__utility-search js-header-search"
     aria-label="{{ 'sections.header.search' | t }}"

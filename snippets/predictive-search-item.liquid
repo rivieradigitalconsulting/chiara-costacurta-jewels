@@ -40,3 +40,12 @@
     {%- endfor -%}
   </div>
 </div>
+
+{%- style -%}
+  .m-predictive-search__image-wrapper {
+    background-color: {{ settings.card_images_background }};
+  }
+  .m-predictive-search__image-wrapper img {
+    mix-blend-mode: multiply;
+  }
+{%- endstyle -%}

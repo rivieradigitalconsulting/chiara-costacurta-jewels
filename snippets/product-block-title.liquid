@@ -1,7 +1,22 @@
 <div
-  class="o-product__title a-spacing-content"
+  class="o-product__title a-spacing-content custom-swym"
   style="{{ block_styles | strip_newlines | remove: ' ' }}"
   {{ block.shopify_attributes }}
 >
   <h1 class="{{ block.settings.heading_size }}">{{ product.title | escape }}</h1>
+  <span class="swym-placeholder"></span>
 </div>
+
+{% javascript %}
+  function fixSwymIcons() {
+    document.querySelectorAll('#swym-atw-pdp-button-icon').forEach((svg) => {
+      if (!svg.hasAttribute('viewBox')) {
+        svg.setAttribute('viewBox', '0 0 24 24');
+        svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', fixSwymIcons);
+  setTimeout(fixSwymIcons, 1000);
+{% endjavascript %}

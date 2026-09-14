@@ -33,6 +33,70 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "cta_ACkUjb": {
+          "type": "cta",
+          "settings": {
+            "index": 2,
+            "color_scheme": "scheme-1",
+            "card_vertical_text_alignment": "bottom",
+            "card_text_alignment": "left",
+            "image": "{{ collection.metafields.plp.immagine_1_collezione_grid.value }}",
+            "image_ratio": "inherit",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "heading": "",
+            "text": "",
+            "btn_url": "",
+            "btn_label": "",
+            "btn_style": "primary",
+            "btn_icon": false
+          }
+        },
+        "cta_UdUXJy": {
+          "type": "cta",
+          "settings": {
+            "index": 8,
+            "color_scheme": "scheme-1",
+            "card_vertical_text_alignment": "bottom",
+            "card_text_alignment": "left",
+            "image": "{{ collection.metafields.plp.immagine_2_collezione_grid.value }}",
+            "image_ratio": "inherit",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "heading": "",
+            "text": "",
+            "btn_url": "",
+            "btn_label": "",
+            "btn_style": "primary",
+            "btn_icon": false
+          }
+        },
+        "cta_4CetNK": {
+          "type": "cta",
+          "settings": {
+            "index": 11,
+            "color_scheme": "scheme-1",
+            "card_vertical_text_alignment": "bottom",
+            "card_text_alignment": "left",
+            "image": "{{ collection.metafields.plp.immagine_3_collezione_grid.value }}",
+            "image_ratio": "inherit",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "heading": "",
+            "text": "",
+            "btn_url": "",
+            "btn_label": "",
+            "btn_style": "primary",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "cta_ACkUjb",
+        "cta_UdUXJy",
+        "cta_4CetNK"
+      ],
       "custom_css": [
         "label {font-size: 14px;}",
         ".m-pagination__list {font-size: 12px;}"

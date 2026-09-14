@@ -1,0 +1,785 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_width": 9,
+        "content_position": "center",
+        "content_alignment": "left",
+        "heading_size": "h3",
+        "text_size": "body-fs-sm"
+      }
+    },
+    "slideshow_3Ngfdn": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_dAgTmn": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "block_width": "constrict",
+            "background_media_size": "full-width",
+            "background_media_position": "left",
+            "column_width": 6,
+            "vertical_content_position": "center",
+            "content_position": "center",
+            "content_alignment": "center",
+            "overlay_color": "#000",
+            "overlay_opacity": 30,
+            "image_ratio": "default",
+            "video": "shopify://files/videos/MAGNIFICA - LISA & ZENDAYA x B.ZERO1 IN BVLGARI S NEW BRAND CAMPAIGN_1080p.mp4",
+            "title": "",
+            "caption_size": "h5",
+            "heading": "Piercing Station",
+            "heading_size": "h3",
+            "convert_to_h1": false,
+            "text": "",
+            "text_size": "body-fs-md",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_dAgTmn"
+      ],
+      "disabled": true,
+      "name": "t:slideshow.presets.slideshow.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": true,
+        "section_width": "page-width",
+        "section_height": "large",
+        "autoplay": true,
+        "change_slides_every": 5,
+        "pagination": false
+      }
+    },
+    "media_with_text_4GHcwf": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_zE8cin": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Dove tutto ha inizio",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_RH9Rmm": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Fondato da Chiara Costacurta, l’Atelier nasce dal desiderio di dare forma alle emozioni attraverso il gioiello contemporaneo. Ogni creazione è pensata per accompagnare momenti, ricordi e desideri unendo ricerca estetica e grande artigianalità.<br/><br/><br/><strong>Scopri le collezioni: </strong>un universo  di creazioni pensato per raccontare storie, custodire ricordi e accompagnare ogni momento della vita.<br/><br/>Inizi il suo viaggio.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_tikF7H": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zE8cin",
+        "paragraph_RH9Rmm",
+        "button_tikF7H"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "media-outside-container",
+        "grid_gap_desktop": 50,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 0,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "right",
+        "image": "shopify://shop_images/lead_generation_chiara_costacurta.jpg",
+        "media_width": 50,
+        "image_ratio": "4x5",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video_ratio": "default",
+        "video_autoplay": false,
+        "video_yt_url": ""
+      }
+    },
+    "rich_text_LfPncN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_w6rrhf": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Inizi il Suo viaggio.",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_DDWaei": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Presso il nostro Atelier in <a href=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\" target=\"_blank\" title=\"https://maps.app.goo.gl/UsrrAG4zjQvgxnxH9\">Via Fatebenefratelli, 15</a>.</p><p>Per garantire a ogni ospite il tempo e l'attenzione che desideriamo dedicare, riceviamo esclusivamente su appuntamento.</p><p>Potrà prenotare la Sua visita tramite <a href=\"https://calendly.com/chiaracostacurta/piercing-station?month=2026-06\" target=\"_blank\" title=\"https://calendly.com/chiaracostacurta/piercing-station?month=2026-06\">Calendly</a>, con conferma immediata via e-mail, oppure contattarci direttamente visitando la nostra pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a>. Saremo felici di accompagnarLa nella scelta del momento più adatto per vivere l'esperienza Piercing Station.<br/><br/></p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_V3BUVL": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "Scopri di più",
+            "btn_url": "shopify://pages/contatti",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_w6rrhf",
+        "paragraph_DDWaei",
+        "button_V3BUVL"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "custom_liquid_nErNUR": {
+      "type": "custom-liquid",
+      "name": "t:custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "custom_liquid": "<div class=\"klaviyo-form-Yh2JGc\"></div>"
+      }
+    },
+    "rich_text_JP9GgG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3t8bbk": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Scopri le collezioni",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_dHTKLg": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Un universo  di creazioni pensato per raccontare storie, custodire ricordi e accompagnare ogni momento della vita.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3t8bbk",
+        "paragraph_dHTKLg"
+      ],
+      "disabled": true,
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 40,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 30,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "image_BM4T7V": {
+      "type": "image",
+      "blocks": {
+        "heading_UmhPtm": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Victoria",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_Y4biCP": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>L’eleganza in movimento, ispirata alla forza della natura.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "image_PU6RVK": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "image": "shopify://shop_images/collezione_victoria_lead_generation_chiara_costacurta.png",
+            "image_ratio": "16x9"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UmhPtm",
+        "paragraph_Y4biCP",
+        "image_PU6RVK"
+      ],
+      "name": "t:image.presets.image.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "left",
+        "content_alignment": "left"
+      }
+    },
+    "featured_collection_NF3cHm": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:featured_collection.presets.featured_collection.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection": "victoria",
+        "product_list": [],
+        "display_mode": "slider",
+        "product_limit": 9,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "shopify://collections/victoria",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "image_dCYxzz": {
+      "type": "image",
+      "blocks": {
+        "heading_FtAAjh": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Saint Tropez",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_x8kzkr": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Perline colorate e dettagli in oro per un’estate senza tempo.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "image_ka83RN": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "image": "shopify://shop_images/collezione_saint_tropez_lead_generation_chiara_costcurta.png",
+            "image_ratio": "16x9"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FtAAjh",
+        "paragraph_x8kzkr",
+        "image_ka83RN"
+      ],
+      "name": "t:image.presets.image.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "left",
+        "content_alignment": "left"
+      }
+    },
+    "featured_collection_JfKRNy": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:featured_collection.presets.featured_collection.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection": "saint-tropez",
+        "product_list": [],
+        "display_mode": "slider",
+        "product_limit": 9,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "shopify://collections/saint-tropez",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "image_8r9mAP": {
+      "type": "image",
+      "blocks": {
+        "heading_hWthr9": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Make A Wish",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_UEz6mc": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Un cielo stellato di luce.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "image_Lk87M7": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "image": "shopify://shop_images/collezione_make_a_wish_lead_generation_chiara_costacurta.png",
+            "image_ratio": "16x9"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hWthr9",
+        "paragraph_UEz6mc",
+        "image_Lk87M7"
+      ],
+      "name": "t:image.presets.image.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "left",
+        "content_alignment": "left"
+      }
+    },
+    "featured_collection_aciqrg": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:featured_collection.presets.featured_collection.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection": "make-a-wish",
+        "product_list": [],
+        "display_mode": "slider",
+        "product_limit": 9,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "shopify://collections/make-a-wish",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "image_kxmaNL": {
+      "type": "image",
+      "blocks": {
+        "heading_WYEqk7": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Piercing",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_UcEfnd": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Oro 14kt e diamanti naturali, per un lusso quotidiano.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "image_7V4RQB": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "image": "shopify://shop_images/collezione_piercing_lead_generation_chiara_costcurta.png",
+            "image_ratio": "16x9"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WYEqk7",
+        "paragraph_UcEfnd",
+        "image_7V4RQB"
+      ],
+      "name": "t:image.presets.image.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "left",
+        "content_alignment": "left"
+      }
+    },
+    "featured_collection_V9VTMm": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:featured_collection.presets.featured_collection.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "collection": "piercing",
+        "product_list": [],
+        "display_mode": "slider",
+        "product_limit": 9,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "shopify://collections/piercing",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "media_with_text_FKFYif": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_Hz3wBE": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Un gioiello, una storia",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_YDWTUF": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Ogni gioiello racconta una storia diversa, e personale. Per un consiglio nella scelta o per un realizzare una creazione personalizzata, il team di Chiara Costacurta sarà lieto di accompagnarLa in ogni fase.</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_WG9QcE": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Hz3wBE",
+        "paragraph_YDWTUF",
+        "button_WG9QcE"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "media-outside-container",
+        "grid_gap_desktop": 50,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 0,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "left",
+        "image": "shopify://shop_images/leade-generation-chiara-costacurta-foto-2.jpg",
+        "media_width": 50,
+        "image_ratio": "4x5",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video_ratio": "default",
+        "video_autoplay": false,
+        "video_yt_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_3Ngfdn",
+    "media_with_text_4GHcwf",
+    "rich_text_LfPncN",
+    "custom_liquid_nErNUR",
+    "rich_text_JP9GgG",
+    "image_BM4T7V",
+    "featured_collection_NF3cHm",
+    "image_dCYxzz",
+    "featured_collection_JfKRNy",
+    "image_8r9mAP",
+    "featured_collection_aciqrg",
+    "image_kxmaNL",
+    "featured_collection_V9VTMm",
+    "media_with_text_FKFYif"
+  ]
+}

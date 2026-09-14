@@ -17,13 +17,22 @@
         "announcement-block-1": {
           "type": "announcement",
           "settings": {
-            "title": "10% di sconto con iscrizione alla Newsletter",
+            "title": "Un benvenuto speciale del 15% sul primo acquisto",
+            "link": "#footer"
+          }
+        },
+        "announcement_tWF4e6": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "title": "Gli ordini effettuati ad agosto verranno spediti dal 1° settembre",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-block-1"
+        "announcement-block-1",
+        "announcement_tWF4e6"
       ],
       "custom_css": [
         ".o-announcement-bar__text {font-size: 14px;}"
@@ -37,14 +46,15 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-bef3b841-52e0-4dae-a7b0-d41f1ceccafe",
         "main_menu": "main-menu",
         "menu_letter_case": "unset",
         "enable_uncollapsed_nav_active_page": false,
         "enable_header_transparency": true,
-        "transparent_url": "/products",
-        "transparent_url_dark": "/"
+        "transparent_url": "/,  /pages/welcome-chiara-costacurta-landing-page-15, /chiara-costacurta, /piercing-station",
+        "transparent_url_dark": "/products"
       }
     },
     "header-utilities": {

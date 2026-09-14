@@ -1057,5 +1057,66 @@
         "info": "CSS selector for where to attach the icon on mobile view"
       }
     ]
+  },
+  {
+    "name": "Prezzo su richiesta",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Nei prodotti a cui è assegnato il template indicato qui sotto il prezzo non viene mostrato e il pulsante \"Aggiungi al carrello\" viene sostituito da un link. Vale sia nella scheda prodotto sia nelle griglie di collezione, ricerca e prodotti correlati."
+      },
+      {
+        "type": "checkbox",
+        "id": "price_on_request_enabled",
+        "label": "Attiva \"Prezzo su richiesta\"",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "price_on_request_templates",
+        "label": "Template prodotto interessati",
+        "default": "price-on-request",
+        "info": "Suffisso del template prodotto (es. per \"product.price-on-request\" scrivi \"price-on-request\"). Più template vanno separati da virgola."
+      },
+      {
+        "type": "header",
+        "content": "Prezzo"
+      },
+      {
+        "type": "text",
+        "id": "price_on_request_price_text",
+        "label": "Testo al posto del prezzo",
+        "default": "Prezzo su richiesta",
+        "info": "Lascia vuoto per non mostrare nulla al posto del prezzo."
+      },
+      {
+        "type": "header",
+        "content": "Pulsante"
+      },
+      {
+        "type": "text",
+        "id": "price_on_request_button_label",
+        "label": "Testo del pulsante",
+        "default": "Prezzo su richiesta"
+      },
+      {
+        "type": "url",
+        "id": "price_on_request_url",
+        "label": "Link del pulsante",
+        "info": "Pagina a cui portare il cliente (es. Contatti). Senza link il pulsante resta disattivato."
+      },
+      {
+        "type": "checkbox",
+        "id": "price_on_request_new_tab",
+        "label": "Apri il link in una nuova scheda",
+        "default": false
+      },
+      {
+        "type": "richtext",
+        "id": "price_on_request_note",
+        "label": "Testo sotto al pulsante",
+        "info": "Opzionale, es. \"Trattativa riservata. Indica il codice del gioiello nel form.\""
+      }
+    ]
   }
 ]
