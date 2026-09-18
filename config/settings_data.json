@@ -78,7 +78,7 @@
     "price_on_request_button_label": "Prezzo su richiesta",
     "price_on_request_url": "/pages/contatti",
     "price_on_request_new_tab": true,
-    "price_on_request_note": "<p>Contattaci per ricevere il prezzo e una consulenza dedicata.</p>",
+    "price_on_request_note": "<p>Contattaci per conoscere la quotazione e le opzioni di personalizzazione.</p>",
     "column_grid_gap": 10,
     "row_grid_gap": 10,
     "section_spacing_small_desktop": 80,
