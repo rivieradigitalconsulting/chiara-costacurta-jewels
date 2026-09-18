@@ -113,4 +113,8 @@ body.u-sticky-header-hidden .o-product__information--sticky, body.u-no-sticky-he
   top: 0;
 }
 
+.o-product__price-on-request-note {
+  padding-top: 8px;
+}
+
 
