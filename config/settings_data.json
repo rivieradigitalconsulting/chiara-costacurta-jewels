@@ -9,6 +9,13 @@
  */
 {
   "current": {
+    "price_on_request_enabled": true,
+    "price_on_request_templates": "price-on-request",
+    "price_on_request_price_text": "Prezzo su richiesta",
+    "price_on_request_button_label": "Prezzo su richiesta",
+    "price_on_request_url": "/pages/contatti",
+    "price_on_request_new_tab": false,
+    "price_on_request_note": "",
     "logo": "shopify://shop_images/CHIARA_COSTACURTA_def_3.png",
     "inverted_logo": "shopify://shop_images/CHIARA_COSTACURTA_def_3_bianco.png",
     "logo_width": 300,

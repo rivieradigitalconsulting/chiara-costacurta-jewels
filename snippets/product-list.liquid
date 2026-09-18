@@ -20,6 +20,11 @@
       assign is_preorder = true
     endif
   endfor
+
+  capture price_on_request_check
+    render 'price-on-request-check', product: list_product
+  endcapture
+  assign is_price_on_request = price_on_request_check | strip
 -%}
 
 <div class="m-product-list">
@@ -125,6 +130,13 @@
           </div>
         </div>
         <span class="u-backdrop js-image-hotspot-optionsbar-underlay"></span>
+      </div>
+    {%- elsif is_price_on_request == 'true' -%}
+      <div class="m-product-form__buttons">
+        {%- render 'price-on-request-button',
+          product: list_product,
+          button_class: 'm-product-form__submit u-unstyled-btn a-link'
+        -%}
       </div>
     {%- else -%}
       <div class="js-product-form no-js-hidden">
