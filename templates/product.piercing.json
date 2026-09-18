@@ -350,6 +350,93 @@
         "btn_icon": false
       }
     },
+    "video_tnWmAg": {
+      "type": "video",
+      "blocks": {
+        "caption_4XFMqQ": {
+          "type": "caption",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "title": "Piercing Station",
+            "caption_size": "body-fs-sm",
+            "caption_style": "subtitle"
+          }
+        },
+        "heading_fDVDXg": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Non è un semplice piercing",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_FtWBbR": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Condividi informazioni sul tuo video con i tuoi clienti.</p>",
+            "text_size": "body-fs-md"
+          }
+        },
+        "video_GfUBB4": {
+          "type": "video",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "video": "shopify://files/videos/Video piercing station (1).mov",
+            "video_ratio": "16x9",
+            "video_autoplay": false,
+            "video_yt_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "button_KF8Wi7": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_4XFMqQ",
+        "heading_fDVDXg",
+        "paragraph_FtWBbR",
+        "video_GfUBB4",
+        "button_KF8Wi7"
+      ],
+      "name": "t:video.presets.video.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "center"
+      }
+    },
     "media_with_text_M6HPXx": {
       "type": "media-with-text",
       "blocks": {
@@ -513,6 +600,7 @@
     "blocks_Rwfktp",
     "1780068900439b45f8",
     "product_recommendations_3VYMEY",
+    "video_tnWmAg",
     "media_with_text_M6HPXx",
     "multicolumn_MFWiGU"
   ]
