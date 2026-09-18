@@ -397,8 +397,8 @@
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
             "btn_label": "Scopri di più",
-            "btn_url": "",
-            "btn_style": "line",
+            "btn_url": "shopify://pages/piercing-station",
+            "btn_style": "primary",
             "btn_icon": false
           }
         }
@@ -412,9 +412,9 @@
       "name": "t:video.presets.video.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 40,
+        "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
