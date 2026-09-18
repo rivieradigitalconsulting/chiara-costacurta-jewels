@@ -353,18 +353,6 @@
     "video_tnWmAg": {
       "type": "video",
       "blocks": {
-        "caption_4XFMqQ": {
-          "type": "caption",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "title": "Piercing Station",
-            "caption_size": "body-fs-sm",
-            "caption_style": "subtitle"
-          }
-        },
         "heading_fDVDXg": {
           "type": "heading",
           "settings": {
@@ -372,7 +360,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "Non è un semplice piercing",
+            "heading": "Piercing Station nel nostro Atelier di Milano",
             "heading_size": "h3",
             "convert_to_h1": false
           }
@@ -384,8 +372,8 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Condividi informazioni sul tuo video con i tuoi clienti.</p>",
-            "text_size": "body-fs-md"
+            "text": "<p>Nel nostro Atelier di Milano ti seguiamo in ogni momento: consulenza sul tuo orecchio, styling della composizione, foratura eseguita da una piercer certificata e aftercare fino alla guarigione.</p>",
+            "text_size": "body-fs-sm"
           }
         },
         "video_GfUBB4": {
@@ -416,7 +404,6 @@
         }
       },
       "block_order": [
-        "caption_4XFMqQ",
         "heading_fDVDXg",
         "paragraph_FtWBbR",
         "video_GfUBB4",
