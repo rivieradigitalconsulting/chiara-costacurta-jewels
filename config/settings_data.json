@@ -9,13 +9,6 @@
  */
 {
   "current": {
-    "price_on_request_enabled": true,
-    "price_on_request_templates": "price-on-request",
-    "price_on_request_price_text": "Prezzo su richiesta",
-    "price_on_request_button_label": "Prezzo su richiesta",
-    "price_on_request_url": "/pages/contatti",
-    "price_on_request_new_tab": false,
-    "price_on_request_note": "",
     "logo": "shopify://shop_images/CHIARA_COSTACURTA_def_3.png",
     "inverted_logo": "shopify://shop_images/CHIARA_COSTACURTA_def_3_bianco.png",
     "logo_width": 300,
@@ -79,6 +72,13 @@
     "swym_advanced_collections_wishlist_icon_width": 1.3,
     "swym_header_icon_enabled": true,
     "swym_header_icon_show_count": true,
+    "price_on_request_enabled": true,
+    "price_on_request_templates": "price-on-request",
+    "price_on_request_price_text": "Prezzo su richiesta",
+    "price_on_request_button_label": "Prezzo su richiesta",
+    "price_on_request_url": "/pages/contatti",
+    "price_on_request_new_tab": true,
+    "price_on_request_note": "",
     "column_grid_gap": 10,
     "row_grid_gap": 10,
     "section_spacing_small_desktop": 80,
