@@ -315,41 +315,6 @@
       "name": "Testo narrativo",
       "settings": {}
     },
-    "product_recommendations_3VYMEY": {
-      "type": "product-recommendations",
-      "custom_css": [
-        ".o-product-recommendations__heading {text-align: left !important; width: 100% !important; padding-left: 0; white-space: nowrap;}",
-        ".grid--center-h {justify-content: flex-start !important;}"
-      ],
-      "settings": {
-        "section_padding_top_desktop": 80,
-        "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 40,
-        "section_padding_bottom_mobile": 40,
-        "invert_navigation_color": true,
-        "color_scheme": "",
-        "section_width": "constrict",
-        "display_mode": "slider",
-        "product_limit": 13,
-        "columns_desktop": 3,
-        "columns_mobile": "2",
-        "column_gap_desktop": 5,
-        "row_gap_desktop": 20,
-        "column_gap_mobile": 5,
-        "row_gap_mobile": 20,
-        "content_width": 4,
-        "content_position": "center",
-        "content_alignment": "center",
-        "heading": "Altre creazioni da scoprire",
-        "heading_size": "h3",
-        "text": "",
-        "text_size": "body-fs-sm",
-        "btn_label": "Discover more",
-        "btn_url": "",
-        "btn_style": "primary",
-        "btn_icon": false
-      }
-    },
     "video_tnWmAg": {
       "type": "video",
       "blocks": {
@@ -360,7 +325,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "Piercing Station nel nostro Atelier di Milano",
+            "heading": "Il salotto del piercing",
             "heading_size": "h3",
             "convert_to_h1": false
           }
@@ -372,7 +337,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Nel nostro Atelier di Milano ti seguiamo in ogni momento: consulenza sul tuo orecchio, styling della composizione, foratura eseguita da una piercer certificata e aftercare fino alla guarigione.</p>",
+            "text": "<p>Un appuntamento privato dedicato all'arte del piercing e alla creazione di composizioni su misura.<br/><br/>Ogni mercoledì, nel cuore di Milano.</p>",
             "text_size": "body-fs-sm"
           }
         },
@@ -422,6 +387,41 @@
         "column_width": 12,
         "content_position": "center",
         "content_alignment": "center"
+      }
+    },
+    "product_recommendations_3VYMEY": {
+      "type": "product-recommendations",
+      "custom_css": [
+        ".o-product-recommendations__heading {text-align: left !important; width: 100% !important; padding-left: 0; white-space: nowrap;}",
+        ".grid--center-h {justify-content: flex-start !important;}"
+      ],
+      "settings": {
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "display_mode": "slider",
+        "product_limit": 13,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "content_width": 4,
+        "content_position": "center",
+        "content_alignment": "center",
+        "heading": "Altre creazioni da scoprire",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Discover more",
+        "btn_url": "",
+        "btn_style": "primary",
+        "btn_icon": false
       }
     },
     "media_with_text_M6HPXx": {
@@ -586,8 +586,8 @@
     "main",
     "blocks_Rwfktp",
     "1780068900439b45f8",
-    "product_recommendations_3VYMEY",
     "video_tnWmAg",
+    "product_recommendations_3VYMEY",
     "media_with_text_M6HPXx",
     "multicolumn_MFWiGU"
   ]
