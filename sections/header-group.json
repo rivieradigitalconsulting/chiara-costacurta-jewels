@@ -34,6 +34,7 @@
         "announcement-block-1",
         "announcement_tWF4e6"
       ],
+      "disabled": true,
       "custom_css": [
         ".o-announcement-bar__text {font-size: 14px;}"
       ],
