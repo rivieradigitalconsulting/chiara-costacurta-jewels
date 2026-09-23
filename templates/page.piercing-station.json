@@ -199,7 +199,7 @@
         "section_padding_top_desktop": 20,
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_bottom_mobile": 20,
         "invert_navigation_color": true,
         "color_scheme": "",
         "section_bg_repeat": false,
@@ -305,6 +305,7 @@
         "usp_Y9nXtH",
         "usp_GBz4jk"
       ],
+      "disabled": true,
       "name": "t:unique_selling_points.presets.unique_selling_points.name",
       "settings": {
         "section_id": "",
@@ -335,6 +336,7 @@
           "settings": {
             "title": "",
             "text": "<p>Step 1 → <strong>Consulenza<br/></strong></p><p>Incontro con la piercer certificata Chiara Venturelli.</p><p>Valutazione dell'anatomia dell'orecchio e brainstorming creativo: una vera e propria consulenza dedicata a nuovi piercing, alla riapertura di fori esistenti, alla sistemazione di forature precedenti o allo studio di composizioni nuove e personalizzate.</p>",
+            "image": "shopify://shop_images/chiara_costacurta_piercing_station_esperienza.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -345,6 +347,7 @@
           "settings": {
             "title": "",
             "text": "<p>Step 2 → <strong>Piercing Styling</strong></p><p>Scelta del gioiello e definizione della composizione.</p><p>Dopo aver valutato proporzioni, equilibrio e posizionamento si procederà con la scelta del gioiello: dall’oro semplice alle pietre più colorate, il nostro obiettivo è quello di creare insieme un risultato armonioso e in piena linea con il Suo stile.</p>",
+            "image": "shopify://shop_images/piercing_station_chiara_costacurta_2.png",
             "btn_label": "Scopri di più",
             "btn_url": "",
             "btn_style": "line"
@@ -355,6 +358,7 @@
           "settings": {
             "title": "",
             "text": "<p>Step 3 → <strong>Foratura</strong></p><p>La foratura viene eseguita direttamente in Atelier dalla piercer certificata, in uno spazio dedicato e certificato.</p><p>Il servizio di consulenza, foratura e accompagnamento aftercare è omaggiato contestualmente all'acquisto di un gioiello della collezione Piercing & Earcuff.</p>",
+            "image": "shopify://shop_images/chiara_costacurta_piercing_station_3.png",
             "btn_label": "Scopri di più",
             "btn_url": "",
             "btn_style": "line"
@@ -366,7 +370,6 @@
         "column_YBiHFh",
         "column_e3tcab"
       ],
-      "disabled": true,
       "custom_css": [
         "a,p {font-size: 14px;}",
         ".h4 {font-size: 20px;}"
@@ -388,7 +391,7 @@
         "content_alignment": "left",
         "columns_desktop": 3,
         "columns_mobile": "1",
-        "column_gap_desktop": 5,
+        "column_gap_desktop": 7,
         "row_gap_desktop": 5,
         "column_gap_mobile": 0,
         "row_gap_mobile": 30,
@@ -428,7 +431,7 @@
         "section_padding_top_desktop": 40,
         "section_padding_bottom_desktop": 40,
         "section_padding_top_mobile": 40,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_bottom_mobile": 10,
         "invert_navigation_color": false,
         "color_scheme": "",
         "media_contain_width": true,
@@ -476,7 +479,7 @@
         "section_padding_top_desktop": 40,
         "section_padding_bottom_desktop": 40,
         "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
         "section_bg_repeat": false,
@@ -717,7 +720,7 @@
         "section_padding_top_desktop": 20,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 20,
+        "section_padding_bottom_mobile": 60,
         "invert_navigation_color": false,
         "color_scheme": "",
         "collection": "",
