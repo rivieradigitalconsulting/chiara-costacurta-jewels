@@ -132,7 +132,7 @@
         "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_bottom_mobile": 70,
         "invert_navigation_color": true,
         "color_scheme": "",
         "section_bg_repeat": false,
@@ -196,7 +196,7 @@
       "name": "t:media_with_text.presets.media_with_text.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 0,
+        "section_padding_top_desktop": 50,
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 40,
