@@ -34,14 +34,14 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
-        "cta_ACkUjb": {
+        "cta_R4RCEC": {
           "type": "cta",
           "settings": {
-            "index": 1,
+            "index": 2,
             "color_scheme": "scheme-1",
             "card_vertical_text_alignment": "bottom",
             "card_text_alignment": "left",
-            "image": "shopify://shop_images/IMG_8105.jpg",
+            "image": "shopify://shop_images/25_03_16_CHIARA_COSTACURTA_01_CESALPINO_7_1042.jpg",
             "image_ratio": "inherit",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
@@ -53,14 +53,14 @@
             "btn_icon": false
           }
         },
-        "cta_UdUXJy": {
+        "cta_ACkUjb": {
           "type": "cta",
           "settings": {
-            "index": 4,
+            "index": 6,
             "color_scheme": "scheme-1",
             "card_vertical_text_alignment": "bottom",
             "card_text_alignment": "left",
-            "image": "shopify://shop_images/IMG_8134.jpg",
+            "image": "shopify://shop_images/25_03_16_CHIARA_COSTACURTA_01_CESALPINO_7_1018.jpg",
             "image_ratio": "inherit",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
@@ -75,11 +75,30 @@
         "cta_4CetNK": {
           "type": "cta",
           "settings": {
-            "index": 5,
+            "index": 13,
             "color_scheme": "scheme-1",
             "card_vertical_text_alignment": "bottom",
             "card_text_alignment": "left",
-            "image": "shopify://shop_images/d849bb40-6855-450c-9ca3-e4921e88f99b.jpg",
+            "image": "shopify://shop_images/25_03_16_CHIARA_COSTACURTA_01_CESALPINO_7_1111.jpg",
+            "image_ratio": "inherit",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "heading": "",
+            "text": "",
+            "btn_url": "",
+            "btn_label": "",
+            "btn_style": "primary",
+            "btn_icon": false
+          }
+        },
+        "cta_UdUXJy": {
+          "type": "cta",
+          "settings": {
+            "index": 20,
+            "color_scheme": "scheme-1",
+            "card_vertical_text_alignment": "bottom",
+            "card_text_alignment": "left",
+            "image": "shopify://shop_images/25_03_16_CHIARA_COSTACURTA_01_CESALPINO_7_1023.jpg",
             "image_ratio": "inherit",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
@@ -93,9 +112,10 @@
         }
       },
       "block_order": [
+        "cta_R4RCEC",
         "cta_ACkUjb",
-        "cta_UdUXJy",
-        "cta_4CetNK"
+        "cta_4CetNK",
+        "cta_UdUXJy"
       ],
       "custom_css": [
         "label {font-size: 14px;}",
