@@ -158,6 +158,73 @@
         "video_yt_url": ""
       }
     },
+    "media_with_text_zFR7CA": {
+      "type": "media-with-text",
+      "blocks": {
+        "paragraph_FxqyQT": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Uno spazio intimo, lontano dalla frenesia, dove scegliere con calma il gioiello più adatto a Lei</p>",
+            "text_size": "body-fs-sm"
+          }
+        },
+        "button_iJEgTr": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_FxqyQT",
+        "button_iJEgTr"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "media-outside-container",
+        "grid_gap_desktop": 50,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 0,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "right",
+        "image": "shopify://shop_images/chiara_costacurta_piercing_station.jpg",
+        "media_width": 50,
+        "image_ratio": "4x5",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video_ratio": "default",
+        "video_autoplay": false,
+        "video_yt_url": ""
+      }
+    },
     "rich_text_hm8Ppa": {
       "type": "rich-text",
       "blocks": {
@@ -680,6 +747,7 @@
     "main",
     "slideshow_3Ngfdn",
     "media_with_text_4GHcwf",
+    "media_with_text_zFR7CA",
     "rich_text_hm8Ppa",
     "text_with_icons_di8MAH",
     "multicolumn_YmiBKU",
