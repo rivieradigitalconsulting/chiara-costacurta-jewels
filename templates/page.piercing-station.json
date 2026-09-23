@@ -130,7 +130,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 60,
+        "section_padding_bottom_desktop": 20,
         "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": true,
@@ -196,7 +196,7 @@
       "name": "t:media_with_text.presets.media_with_text.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 50,
+        "section_padding_top_desktop": 20,
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 40,
@@ -259,7 +259,7 @@
       "name": "t:image.presets.image.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 60,
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 5,
         "section_padding_bottom_mobile": 0,
