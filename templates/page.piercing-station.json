@@ -130,9 +130,9 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 50,
+        "section_padding_bottom_desktop": 60,
         "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 70,
+        "section_padding_bottom_mobile": 40,
         "invert_navigation_color": true,
         "color_scheme": "",
         "section_bg_repeat": false,
@@ -225,43 +225,50 @@
         "video_yt_url": ""
       }
     },
-    "rich_text_hm8Ppa": {
-      "type": "rich-text",
+    "image_thNqD4": {
+      "type": "image",
       "blocks": {
-        "heading_WJyetm": {
+        "heading_6RFCCA": {
           "type": "heading",
           "settings": {
             "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 0,
+            "block_spacing_bottom_desktop": 40,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
             "heading": "L'esperienza",
             "heading_size": "h3",
             "convert_to_h1": false
           }
+        },
+        "image_Q6n4CM": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "image": "shopify://shop_images/chiara_costacurta_piercing_station_esperienza.jpg",
+            "image_ratio": "1x1"
+          }
         }
       },
       "block_order": [
-        "heading_WJyetm"
+        "heading_6RFCCA",
+        "image_Q6n4CM"
       ],
-      "name": "t:rich_text.presets.rich_text.name",
+      "name": "t:image.presets.image.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 40,
-        "section_padding_bottom_desktop": 40,
-        "section_padding_top_mobile": 20,
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 5,
         "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "section_bg_repeat": false,
-        "section_bg_position": "bottom center",
-        "section_bg_size": "auto",
-        "section_bg_opacity": 100,
-        "column_width": 12,
+        "media_contain_width": true,
+        "column_width": 10,
         "content_position": "center",
-        "content_alignment": "left",
-        "title_position": "inline",
-        "grid_gap_desktop": 20
+        "content_alignment": "center"
       }
     },
     "text_with_icons_di8MAH": {
@@ -302,7 +309,7 @@
         "section_id": "",
         "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 40,
+        "section_padding_top_mobile": 20,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
@@ -748,7 +755,7 @@
     "slideshow_3Ngfdn",
     "media_with_text_4GHcwf",
     "media_with_text_zFR7CA",
-    "rich_text_hm8Ppa",
+    "image_thNqD4",
     "text_with_icons_di8MAH",
     "multicolumn_YmiBKU",
     "video_kpPndJ",
