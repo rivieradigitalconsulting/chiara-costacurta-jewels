@@ -57,6 +57,9 @@
         "column_PMCn6t",
         "column_iVyYjL"
       ],
+      "custom_css": [
+        "p, p strong, p a, .rte * {font-size: 14px !important; line-height: 1.6 !important;}"
+      ],
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
