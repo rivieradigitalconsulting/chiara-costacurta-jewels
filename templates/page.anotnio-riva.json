@@ -44,7 +44,7 @@
             "content_alignment": "center",
             "overlay_color": "#000",
             "overlay_opacity": 0,
-            "image_1": "shopify://shop_images/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_1815.jpg",
+            "image_1": "shopify://shop_images/11_02655066-ab56-486f-b3b7-0f9825bd4245.png",
             "image_ratio": "4x5",
             "title": "",
             "caption_size": "h5",
@@ -70,7 +70,7 @@
         "section_padding_bottom_desktop": 0,
         "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 0,
-        "invert_navigation_color": false,
+        "invert_navigation_color": true,
         "section_width": "page-width",
         "section_height": "medium",
         "autoplay": true,
@@ -78,21 +78,48 @@
         "pagination": false
       }
     },
-    "rich_text_JP9GgG": {
+    "rich_text_V7Y3Dy": {
       "type": "rich-text",
       "blocks": {
-        "heading_3t8bbk": {
+        "heading_9xqwU7": {
           "type": "heading",
           "settings": {
             "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
+            "block_spacing_bottom_desktop": 0,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "La nostra storia",
+            "heading": "Una sposa, tre mondi",
             "heading_size": "h3",
             "convert_to_h1": false
           }
-        },
+        }
+      },
+      "block_order": [
+        "heading_9xqwU7"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "rich_text_JP9GgG": {
+      "type": "rich-text",
+      "blocks": {
         "paragraph_dHTKLg": {
           "type": "paragraph",
           "settings": {
@@ -100,7 +127,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Chiara Costacurta nasce nel 2019 a Treviso, con una prima collezione di gioielli in argento e pietre naturali realizzati nel laboratorio in cui il brand muove i suoi primi passi. Fin dall'inizio, ogni creazione nasce da un'idea precisa: trasformare emozioni, ricordi e desideri in gioielli contemporanei, capaci di accompagnare chi li indossa nel tempo.</p><p>Nel 2021 prende forma una nuova visione. La scelta di introdurre l'oro 18 carati coincide con la partecipazione alla prima fiera internazionale del settore, Vicenzaoro: un momento che segna l'inizio di un percorso di crescita e apre le porte alle successive edizioni di Milano, Madrid, Parigi e Roma.</p><p>Con l'evoluzione del brand cresce anche la ricerca artigianale. Grazie alla collaborazione con gli eccellenti maestri orafi di Valenza, ogni collezione acquisisce una nuova complessità tecnica senza rinunciare all'identità che da sempre distingue il marchio.</p>",
+            "text": "<p><em>Ci sono incontri che nascono dalla somiglianza.&nbsp;</em></p><p><em>Quello tra Chiara Costacurta e Antonio Riva nasce dal riconoscersi in una stessa idea di bellezza: quella che prende forma attraverso la sperimentazione, la libertà creativa e la cura del dettaglio.&nbsp;</em></p><p><em>Due mondi distinti si avvicinano e, nel dialogo tra gioiello e couture, scoprono una naturale affinità; quasi come fossero - e forse lo sono - complementari.&nbsp;</em></p><p><em>È da questo incontro che prende forma il nostro racconto bridal.</em></p><p><em>Chiara Costacurta</em></p>",
             "text_column": "",
             "grid_gap_desktop": 20,
             "text_size": "body-fs-sm"
@@ -108,13 +135,12 @@
         }
       },
       "block_order": [
-        "heading_3t8bbk",
         "paragraph_dHTKLg"
       ],
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 50,
+        "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 20,
         "section_padding_bottom_mobile": 30,
@@ -124,7 +150,47 @@
         "section_bg_position": "bottom center",
         "section_bg_size": "auto",
         "section_bg_opacity": 100,
-        "column_width": 12,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "right",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "rich_text_WT3Chn": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_yhzfjV": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Per il mondo bridal di Antonio Riva, Chiara Costacurta porta in scena tre anime della maison: <strong>Onda, Flowers e Drops</strong>.&nbsp;</p><p>Tre mondi diversi, nati da storie e ispirazioni lontane, che incontrano la sposa attraverso gioielli pensati per accompagnare ogni momento, dal sì della promessa, fino a ciò che resta per sempre.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_yhzfjV"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
         "content_position": "center",
         "content_alignment": "left",
         "title_position": "inline",
@@ -275,7 +341,9 @@
   "order": [
     "main",
     "slideshow_3Ngfdn",
+    "rich_text_V7Y3Dy",
     "rich_text_JP9GgG",
+    "rich_text_WT3Chn",
     "media_with_text_VbGT3d",
     "slideshow_8CcbEE",
     "rich_text_pjhBtU"
