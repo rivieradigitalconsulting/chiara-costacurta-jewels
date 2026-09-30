@@ -229,7 +229,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 80,
-        "section_padding_bottom_desktop": 50,
+        "section_padding_bottom_desktop": 60,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -338,7 +338,7 @@
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 30,
+        "section_padding_top_desktop": 40,
         "section_padding_bottom_desktop": 40,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
@@ -369,6 +369,16 @@
     "multicolumn_wgWB3P": {
       "type": "multicolumn",
       "blocks": {
+        "column_AjNmiK": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
         "column_hjAiAK": {
           "type": "column",
           "settings": {
@@ -391,6 +401,7 @@
         }
       },
       "block_order": [
+        "column_AjNmiK",
         "column_hjAiAK",
         "column_d4bBtj"
       ],
@@ -409,7 +420,7 @@
         "content_width": 10,
         "content_position": "left",
         "content_alignment": "left",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "columns_mobile": "2",
         "column_gap_desktop": 5,
         "row_gap_desktop": 20,
@@ -424,6 +435,196 @@
         "btn_style": "line",
         "btn_icon": false
       }
+    },
+    "rich_text_PYLk9w": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_eDc78T": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Per la maison di gioielli, la collezione Onda segue il moto architettonico della vita ed esprime una promessa tanto importante quanto sincera: beside you in the highs and lows of life.</p><p>Il movimento ondulato rappresentativo della nostra collezione Onda incontra il mondo bridal attraverso l’anello di fidanzamento, la fede nuziale e gli orecchini con diamante solitario: gioielli che trasformano una linea in una promessa.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_eDc78T"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "multicolumn_HmP8NV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9fqg9M": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_UKEffz": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_gthV89": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_9fqg9M",
+        "column_UKEffz",
+        "column_gthV89"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 50,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "4x5",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "heading": "Drops",
+        "heading_size": "h3",
+        "text": "<p>Una goccia di luce.</p>",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_VQqjYR": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_NeyrqR": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Una collezione costruita intorno al diamante taglio goccia, che viene spogliato completamente da griffes e montature. Come piccole gocce di luce sospese nel vuoto, gli orecchini e le collane Drops incontrano la sposa nella loro forma più essenziale: sono gocce pure, luminose e brillanti, evocative.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_NeyrqR"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "rich_text_rjUneq": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_r6zGwJ": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<h4>Tre mondi indipendenti,&nbsp;<br/>tre storie intrecciate,&nbsp;<br/>tre modi con cui Chiara Costacurta ha deciso di raccontare la sposa.</h4>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_r6zGwJ"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 40,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
     }
   },
   "order": [
@@ -435,6 +636,10 @@
     "multicolumn_kVDGUL",
     "rich_text_VaCmUX",
     "multicolumn_Qr9N6V",
-    "multicolumn_wgWB3P"
+    "multicolumn_wgWB3P",
+    "rich_text_PYLk9w",
+    "multicolumn_HmP8NV",
+    "rich_text_VQqjYR",
+    "rich_text_rjUneq"
   ]
 }
