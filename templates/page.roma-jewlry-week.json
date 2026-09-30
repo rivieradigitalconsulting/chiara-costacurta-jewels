@@ -58,7 +58,7 @@
         "column_iVyYjL"
       ],
       "custom_css": [
-        "p, p strong, p a, .rte * {font-size: 14px !important; line-height: 1.6 !important;}"
+        "p,p strong,p a,.rte * {font-size: 14px !important; line-height: 1.6 !important;}"
       ],
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
@@ -90,10 +90,97 @@
         "btn_style": "line",
         "btn_icon": false
       }
+    },
+    "rich_text_px38VK": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_TRKwXp": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Vi aspettiamo con grande emozione,<br/><em>Chiara.</em></p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-md"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_TRKwXp"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 40,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "contact_form_7JGb4k": {
+      "type": "contact-form",
+      "blocks": {
+        "heading_C7DhXV": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Prenota il tuo appuntamento a Roma",
+            "heading_size": "h3"
+          }
+        },
+        "paragraph_mkU3bG": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Vieni a scoprire da vicino le nostre collezioni durante la Roma Jewelry Week o la presentazione della collezione Bridal da Atelier Antonio Riva. Lasciaci i tuoi dati e ti ricontatteremo per riservarti un momento dedicato.</p>",
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_C7DhXV",
+        "paragraph_mkU3bG"
+      ],
+      "name": "t:contact_form.presets.contact_form.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "form_size": 6,
+        "form_position": "right",
+        "content_alignment": "left",
+        "show_phone": false
+      }
     }
   },
   "order": [
     "main",
-    "multicolumn_R98w8N"
+    "multicolumn_R98w8N",
+    "rich_text_px38VK",
+    "contact_form_7JGb4k"
   ]
 }
