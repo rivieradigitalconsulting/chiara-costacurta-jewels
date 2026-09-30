@@ -228,7 +228,7 @@
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 60,
         "section_padding_bottom_desktop": 60,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 20,
