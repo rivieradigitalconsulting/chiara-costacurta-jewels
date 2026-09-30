@@ -33,9 +33,10 @@
         "column_PMCn6t": {
           "type": "column",
           "settings": {
-            "title": "Elemento di colonna",
-            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
-            "btn_label": "Scopri di più",
+            "title": "",
+            "text": "<p>Le nostre collezioni parteciperanno all’esposizione della <strong>Roma Jewelry Week</strong> presso le <a href=\"https://maps.app.goo.gl/p2gkDgUgLHK3V3NT9\" target=\"_blank\" title=\"https://maps.app.goo.gl/p2gkDgUgLHK3V3NT9\"><strong>Corsie Sistine in Sassia - Borgo Santo Spirito, 1/2 a Roma.</strong></a><br/>Da giovedì<strong> 8 Ottobre</strong> a domenica<strong> 11 Ottobre</strong>, dalle <strong>10:00</strong> alle <strong>20:00</strong>.</p>",
+            "image": "shopify://shop_images/chiara_costacurta_roma_jewelry_week_ottore_2026.jpg",
+            "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
           }
@@ -45,6 +46,7 @@
           "settings": {
             "title": "Elemento di colonna",
             "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
+            "image": "shopify://shop_images/chiara_costacurta_x_antonio_riva_eb9f41f9-e4d5-4293-b973-3250291a92c7.jpg",
             "btn_label": "Scopri di più",
             "btn_url": "",
             "btn_style": "line"
@@ -66,7 +68,7 @@
         "color_scheme": "",
         "section_width": "constrict",
         "columns_alignment": "left",
-        "image_ratio": "4x5",
+        "image_ratio": "default",
         "content_width": 10,
         "content_position": "left",
         "content_alignment": "left",
@@ -77,10 +79,10 @@
         "column_gap_mobile": 20,
         "row_gap_mobile": 20,
         "heading": "",
-        "heading_size": "h2",
+        "heading_size": "h3",
         "text": "",
-        "text_size": "body-fs-md",
-        "btn_label": "Scopri di più",
+        "text_size": "body-fs-sm",
+        "btn_label": "",
         "btn_url": "",
         "btn_style": "line",
         "btn_icon": false
