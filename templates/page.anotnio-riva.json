@@ -197,117 +197,76 @@
         "grid_gap_desktop": 20
       }
     },
-    "media_with_text_VbGT3d": {
-      "type": "media-with-text",
+    "multicolumn_kVDGUL": {
+      "type": "multicolumn",
       "blocks": {
-        "paragraph_bEdPBa": {
-          "type": "paragraph",
+        "column_DbeM7B": {
+          "type": "column",
           "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 40,
-            "block_spacing_bottom_mobile": 20,
-            "text": "<p>Nasce così <strong>Victoria</strong>, la collezione che diventa simbolo dell’atelier: una cascata di sottili catene veneziane che, intrecciandosi, catturano la luce fino a trasformarla in un unico riflesso. È questa creazione a proiettare ufficialmente Chiara Costacurta nel panorama della gioielleria contemporanea.</p><p>A Victoria seguono <strong>Make a Wish</strong> e <strong>Onda</strong>, collezioni che consolidano l'identità del brand attraverso un linguaggio riconoscibile, un forte valore simbolico e la continua ricerca di materiali preziosi e manifattura d'eccellenza.</p>",
-            "text_size": "body-fs-sm"
+            "title": "",
+            "text": "",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_kFpGqg": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
           }
         }
       },
       "block_order": [
-        "paragraph_bEdPBa"
+        "column_DbeM7B",
+        "column_kFpGqg"
       ],
-      "name": "t:media_with_text.presets.media_with_text.name",
+      "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 100,
-        "section_padding_top_mobile": 0,
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 30,
+        "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "section_bg_repeat": false,
-        "section_bg_position": "bottom center",
-        "section_bg_size": "auto",
-        "section_bg_opacity": 100,
-        "display_mode": "media-outside-container",
-        "grid_gap_desktop": 50,
-        "grid_gap_mobile": 20,
-        "content_vertical_position": "center",
-        "content_top_position": 0,
-        "content_max_width": 600,
-        "content_horizontal_position": "center",
-        "content_alignment": "left",
-        "media_position": "left",
-        "image": "shopify://shop_images/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_2025.jpg",
-        "media_width": 50,
+        "section_width": "constrict",
+        "columns_alignment": "left",
         "image_ratio": "4x5",
-        "image_ratio_2": "default",
-        "show_image_2_on_mobile": false,
-        "video_ratio": "default",
-        "video_autoplay": false,
-        "video_yt_url": ""
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "2",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "heading": "Onda",
+        "heading_size": "h3",
+        "text": "<p>Una promessa importante: con te, negli alti e bassi della vita.</p>",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
       }
     },
-    "slideshow_8CcbEE": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_4gKwiL": {
-          "type": "slide",
-          "settings": {
-            "color_scheme": "",
-            "block_width": "constrict",
-            "background_media_size": "full-width",
-            "background_media_position": "left",
-            "column_width": 6,
-            "vertical_content_position": "center",
-            "content_position": "center",
-            "content_alignment": "center",
-            "overlay_color": "#000",
-            "overlay_opacity": 0,
-            "image_1": "shopify://shop_images/25_03_16-CHIARA-COSTACURTA-01-CESALPINO-7_1498-copia.jpg",
-            "image_ratio": "4x5",
-            "title": "",
-            "caption_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "convert_to_h1": false,
-            "text": "",
-            "text_size": "body-fs-md",
-            "btn_label": "",
-            "btn_url": "",
-            "btn_style": "line",
-            "btn_icon": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_4gKwiL"
-      ],
-      "name": "t:slideshow.presets.slideshow.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 0,
-        "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 0,
-        "invert_navigation_color": false,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "autoplay": true,
-        "change_slides_every": 5,
-        "pagination": false
-      }
-    },
-    "rich_text_pjhBtU": {
+    "rich_text_VaCmUX": {
       "type": "rich-text",
       "blocks": {
-        "paragraph_VAbdii": {
+        "paragraph_YhLLGe": {
           "type": "paragraph",
           "settings": {
-            "block_spacing_top_desktop": 20,
+            "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Oggi Chiara Costacurta continua a raccontare storie attraverso il gioiello, unendo design contemporaneo, artigianalità italiana e una profonda attenzione ai dettagli. Ogni collezione nasce per custodire un significato, accompagnare un ricordo e diventare parte della vita di chi la sceglie.</p>",
+            "text": "<p>Per la maison di gioielli, la collezione Onda segue il moto architettonico della vita ed esprime una promessa tanto importante quanto sincera: beside you in the highs and lows of life.</p><p>Il movimento ondulato rappresentativo della nostra collezione Onda incontra il mondo bridal attraverso l’anello di fidanzamento, la fede nuziale e gli orecchini con diamante solitario: gioielli che trasformano una linea in una promessa.</p>",
             "text_column": "",
             "grid_gap_desktop": 20,
             "text_size": "body-fs-sm"
@@ -315,15 +274,15 @@
         }
       },
       "block_order": [
-        "paragraph_VAbdii"
+        "paragraph_YhLLGe"
       ],
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 50,
-        "section_padding_bottom_desktop": 20,
-        "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 20,
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
         "section_bg_repeat": false,
@@ -336,6 +295,65 @@
         "title_position": "inline",
         "grid_gap_desktop": 20
       }
+    },
+    "multicolumn_Qr9N6V": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_iGb3bJ": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_xjR8M3": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_iGb3bJ",
+        "column_xjR8M3"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 30,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "4x5",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "2",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
     }
   },
   "order": [
@@ -344,8 +362,8 @@
     "rich_text_V7Y3Dy",
     "rich_text_JP9GgG",
     "rich_text_WT3Chn",
-    "media_with_text_VbGT3d",
-    "slideshow_8CcbEE",
-    "rich_text_pjhBtU"
+    "multicolumn_kVDGUL",
+    "rich_text_VaCmUX",
+    "multicolumn_Qr9N6V"
   ]
 }
