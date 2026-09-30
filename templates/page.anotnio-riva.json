@@ -408,7 +408,7 @@
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 100,
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
@@ -460,7 +460,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 0,
+        "section_padding_bottom_desktop": 10,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -518,7 +518,7 @@
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 100,
         "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
@@ -609,7 +609,7 @@
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 80,
+        "section_padding_top_desktop": 100,
         "section_padding_bottom_desktop": 40,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
