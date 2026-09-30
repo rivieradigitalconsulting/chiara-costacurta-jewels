@@ -44,8 +44,8 @@
         "column_iVyYjL": {
           "type": "column",
           "settings": {
-            "title": "Elemento di colonna",
-            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
+            "title": "",
+            "text": "<p>Saremo ospiti dell’<strong>Atelier Antonio Riva</strong> per presentare la <strong>collezione Bridal</strong>, in collaborazione con la <strong>Roma Jewelry Week</strong>.<br/><a href=\"https://maps.app.goo.gl/q1p3Pff8DBUPYne38\" target=\"_blank\" title=\"https://maps.app.goo.gl/q1p3Pff8DBUPYne38\"><strong>Palazzo Grazioli - via del Plebiscito, 102, Roma.</strong></a><br/>Martedì <strong>6 ottobre</strong>, dalle <strong>16:30</strong> alle <strong>21:00.</strong></p>",
             "image": "shopify://shop_images/chiara_costacurta_x_antonio_riva_eb9f41f9-e4d5-4293-b973-3250291a92c7.jpg",
             "btn_label": "Scopri di più",
             "btn_url": "",
