@@ -80,7 +80,7 @@
         "invert_navigation_color": false,
         "color_scheme": "",
         "media_contain_width": true,
-        "column_width": 12,
+        "column_width": 10,
         "content_position": "center",
         "content_alignment": "left"
       }
@@ -137,7 +137,7 @@
         "invert_navigation_color": false,
         "color_scheme": "",
         "media_contain_width": true,
-        "column_width": 12,
+        "column_width": 10,
         "content_position": "center",
         "content_alignment": "left"
       }
