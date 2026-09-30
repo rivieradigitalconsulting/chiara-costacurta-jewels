@@ -34,7 +34,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>Le nostre collezioni parteciperanno all’esposizione della <strong>Roma Jewelry Week</strong> presso le <a href=\"https://maps.app.goo.gl/p2gkDgUgLHK3V3NT9\" target=\"_blank\" title=\"https://maps.app.goo.gl/p2gkDgUgLHK3V3NT9\"><strong>Corsie Sistine in Sassia - Borgo Santo Spirito, 1/2 a Roma.</strong></a><br/>Da giovedì<strong> 8 Ottobre</strong> a domenica<strong> 11 Ottobre</strong>, dalle <strong>10:00</strong> alle <strong>20:00</strong>.</p>",
+            "text": "<p>Le nostre collezioni parteciperanno all’esposizione della Roma Jewelry Week presso le <a href=\"https://maps.app.goo.gl/p2gkDgUgLHK3V3NT9\" target=\"_blank\" title=\"https://maps.app.goo.gl/p2gkDgUgLHK3V3NT9\">Corsie Sistine in Sassia - Borgo Santo Spirito, 1/2 a Roma.</a><br/>Da giovedì 8 Ottobre a domenica 11 Ottobre, dalle 10:00 alle 20:00.</p>",
             "image": "shopify://shop_images/chiara_costacurta_roma_jewelry_week_ottore_2026.jpg",
             "btn_label": "",
             "btn_url": "",
@@ -45,7 +45,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>Saremo ospiti dell’<strong>Atelier Antonio Riva</strong> per presentare la <strong>collezione Bridal</strong>, in collaborazione con la <strong>Roma Jewelry Week</strong>.<br/><a href=\"https://maps.app.goo.gl/q1p3Pff8DBUPYne38\" target=\"_blank\" title=\"https://maps.app.goo.gl/q1p3Pff8DBUPYne38\"><strong>Palazzo Grazioli - via del Plebiscito, 102, Roma.</strong></a><br/>Martedì <strong>6 ottobre</strong>, dalle <strong>16:30</strong> alle <strong>21:00.</strong></p>",
+            "text": "<p>Saremo ospiti dell’Atelier Antonio Riva per presentare la collezione Bridal, in collaborazione con la Roma Jewelry Week.<br/><a href=\"https://maps.app.goo.gl/q1p3Pff8DBUPYne38\" target=\"_blank\" title=\"https://maps.app.goo.gl/q1p3Pff8DBUPYne38\">Palazzo Grazioli - via del Plebiscito, 102, Roma.</a><br/>Martedì 6 ottobre, dalle 16:30 alle 21:00.</p>",
             "image": "shopify://shop_images/chiara_costacurta_x_antonio_riva_eb9f41f9-e4d5-4293-b973-3250291a92c7.jpg",
             "btn_label": "Scopri di più",
             "btn_url": "",
@@ -152,7 +152,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Vieni a scoprire da vicino le nostre collezioni durante la Roma Jewelry Week o la presentazione della collezione Bridal da Atelier Antonio Riva. Lasciaci i tuoi dati e ti ricontatteremo per riservarti un momento dedicato.</p>",
+            "text": "<p>Vieni a scoprire da vicino le nostre collezioni durante la Roma Jewelry Week o la presentazione della collezione Bridal da Atelier Antonio Riva. Lasciaci i tuoi dati e ti ricontatteremo per riservarti un momento dedicato.<br/><br/><strong>Contatti:&nbsp;<br/></strong><a href=\"mailto:info@chiaracostacurta.com\" target=\"_blank\" title=\"mailto:info@chiaracostacurta.com\">info@chiaracostacurta.com<br/></a><a href=\"tel:+39 345 6979437\" target=\"_blank\" title=\"tel:+39 345 6979437\">+39 345 6979437<br/><br/></a>&nbsp;<a href=\"https://wa.me/+393456979437\" target=\"_blank\" title=\"https://wa.me/+393456979437\">Chat diretta di Whatsapp</a> →<br/></p>",
             "text_size": "body-fs-sm"
           }
         }
