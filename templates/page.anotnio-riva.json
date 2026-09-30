@@ -127,7 +127,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p><em>Ci sono incontri che nascono dalla somiglianza.&nbsp;</em></p><p><em>Quello tra Chiara Costacurta e Antonio Riva nasce dal riconoscersi in una stessa idea di bellezza: quella che prende forma attraverso la sperimentazione, la libertà creativa e la cura del dettaglio.&nbsp;</em></p><p><em>Due mondi distinti si avvicinano e, nel dialogo tra gioiello e couture, scoprono una naturale affinità; quasi come fossero - e forse lo sono - complementari.&nbsp;</em></p><p><em>È da questo incontro che prende forma il nostro racconto bridal.</em></p><p><em>Chiara Costacurta</em></p>",
+            "text": "<p><em>Ci sono incontri che nascono dalla somiglianza.&nbsp;</em></p><p><em>Quello tra Chiara Costacurta e Antonio Riva nasce dal riconoscersi in una stessa idea di bellezza: quella che prende forma attraverso la sperimentazione, la libertà creativa e la cura del dettaglio.&nbsp;</em></p><p><em>Due mondi distinti si avvicinano e, nel dialogo tra gioiello e couture, scoprono una naturale affinità; quasi come fossero - e forse lo sono - complementari.&nbsp;</em></p><p><em>È da questo incontro che prende forma il nostro racconto bridal.</em></p><p><em>-</em></p><p><em>Chiara Costacurta</em></p>",
             "text_column": "",
             "grid_gap_desktop": 20,
             "text_size": "body-fs-sm"
@@ -141,7 +141,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 50,
+        "section_padding_bottom_desktop": 60,
         "section_padding_top_mobile": 20,
         "section_padding_bottom_mobile": 30,
         "invert_navigation_color": false,
@@ -229,7 +229,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 80,
-        "section_padding_bottom_desktop": 30,
+        "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -242,7 +242,7 @@
         "content_alignment": "left",
         "columns_desktop": 2,
         "columns_mobile": "2",
-        "column_gap_desktop": 20,
+        "column_gap_desktop": 5,
         "row_gap_desktop": 20,
         "column_gap_mobile": 20,
         "row_gap_mobile": 20,
@@ -263,7 +263,7 @@
           "type": "paragraph",
           "settings": {
             "block_spacing_top_desktop": 0,
-            "block_spacing_bottom_desktop": 20,
+            "block_spacing_bottom_desktop": 0,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
             "text": "<p>Per la maison di gioielli, la collezione Onda segue il moto architettonico della vita ed esprime una promessa tanto importante quanto sincera: beside you in the highs and lows of life.</p><p>Il movimento ondulato rappresentativo della nostra collezione Onda incontra il mondo bridal attraverso l’anello di fidanzamento, la fede nuziale e gli orecchini con diamante solitario: gioielli che trasformano una linea in una promessa.</p>",
@@ -299,6 +299,16 @@
     "multicolumn_Qr9N6V": {
       "type": "multicolumn",
       "blocks": {
+        "column_q7DWqR": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
         "column_iGb3bJ": {
           "type": "column",
           "settings": {
@@ -321,14 +331,74 @@
         }
       },
       "block_order": [
+        "column_q7DWqR",
         "column_iGb3bJ",
         "column_xjR8M3"
       ],
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 20,
-        "section_padding_bottom_desktop": 30,
+        "section_padding_top_desktop": 30,
+        "section_padding_bottom_desktop": 40,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "4x5",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "multicolumn_wgWB3P": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_hjAiAK": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_d4bBtj": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_hjAiAK",
+        "column_d4bBtj"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 50,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
@@ -341,13 +411,13 @@
         "content_alignment": "left",
         "columns_desktop": 2,
         "columns_mobile": "2",
-        "column_gap_desktop": 20,
+        "column_gap_desktop": 5,
         "row_gap_desktop": 20,
         "column_gap_mobile": 20,
         "row_gap_mobile": 20,
-        "heading": "",
+        "heading": "Flowers",
         "heading_size": "h3",
-        "text": "",
+        "text": "<p>Quando il ricordo affettivo diventa scelta creativa: il nostro mondo floreale.</p>",
         "text_size": "body-fs-sm",
         "btn_label": "Scopri di più",
         "btn_url": "",
@@ -364,6 +434,7 @@
     "rich_text_WT3Chn",
     "multicolumn_kVDGUL",
     "rich_text_VaCmUX",
-    "multicolumn_Qr9N6V"
+    "multicolumn_Qr9N6V",
+    "multicolumn_wgWB3P"
   ]
 }
