@@ -323,7 +323,7 @@
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
+            "block_spacing_top_mobile": 10,
             "block_spacing_bottom_mobile": 20,
             "heading": "Presentazione e garanzia",
             "heading_size": "h3",
@@ -351,7 +351,7 @@
         "section_id": "",
         "section_padding_top_desktop": 100,
         "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 40,
+        "section_padding_top_mobile": 20,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
