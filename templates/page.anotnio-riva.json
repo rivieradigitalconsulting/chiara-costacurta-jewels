@@ -268,7 +268,7 @@
             "block_spacing_bottom_desktop": 0,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Per la maison di gioielli, la collezione Onda segue il moto architettonico della vita ed esprime una promessa tanto importante quanto sincera: <em>beside you in the highs and lows of life.</em></p><p>Il movimento ondulato rappresentativo della nostra collezione Onda incontra il mondo bridal attraverso l’anello di fidanzamento, la fede nuziale e gli orecchini con diamante solitario: gioielli che trasformano una linea in una promessa.</p>",
+            "text": "<p>Per la maison di gioielli, la collezione Onda segue il moto architettonico della vita ed esprime una promessa tanto importante quanto sincera: <em>beside you in the highs and lows of life.</em></p>",
             "text_column": "",
             "grid_gap_desktop": 20,
             "text_size": "body-fs-sm"
@@ -298,6 +298,79 @@
         "grid_gap_desktop": 20
       }
     },
+    "image_MbBh6h": {
+      "type": "image",
+      "blocks": {
+        "image_DWtbWy": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "image": "shopify://shop_images/ONDA_3.jpg",
+            "image_ratio": "16x9"
+          }
+        }
+      },
+      "block_order": [
+        "image_DWtbWy"
+      ],
+      "name": "t:image.presets.image.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 60,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "center"
+      }
+    },
+    "rich_text_7664mQ": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_jPaArD": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Il movimento ondulato rappresentativo della nostra collezione Onda incontra il mondo bridal attraverso l’anello di fidanzamento, la fede nuziale e gli orecchini con diamante solitario: gioielli che trasformano una linea in una promessa.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_jPaArD"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
     "multicolumn_Qr9N6V": {
       "type": "multicolumn",
       "blocks": {
@@ -306,6 +379,7 @@
           "settings": {
             "title": "",
             "text": "",
+            "image": "shopify://shop_images/ONDA_4.jpg",
             "btn_label": "Scopri di più",
             "btn_url": "",
             "btn_style": "line"
@@ -316,6 +390,7 @@
           "settings": {
             "title": "",
             "text": "",
+            "image": "shopify://shop_images/ONDA_5.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -326,16 +401,7 @@
           "settings": {
             "title": "",
             "text": "",
-            "btn_label": "",
-            "btn_url": "",
-            "btn_style": "line"
-          }
-        },
-        "column_6TTGap": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "",
+            "image": "shopify://shop_images/ONDA_6.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -345,8 +411,7 @@
       "block_order": [
         "column_q7DWqR",
         "column_iGb3bJ",
-        "column_xjR8M3",
-        "column_6TTGap"
+        "column_xjR8M3"
       ],
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
@@ -363,7 +428,7 @@
         "content_width": 10,
         "content_position": "left",
         "content_alignment": "left",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "columns_mobile": "2",
         "column_gap_desktop": 5,
         "row_gap_desktop": 20,
@@ -649,6 +714,8 @@
     "rich_text_WT3Chn",
     "multicolumn_kVDGUL",
     "rich_text_VaCmUX",
+    "image_MbBh6h",
+    "rich_text_7664mQ",
     "multicolumn_Qr9N6V",
     "multicolumn_wgWB3P",
     "rich_text_PYLk9w",
