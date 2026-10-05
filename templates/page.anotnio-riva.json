@@ -638,6 +638,7 @@
           "settings": {
             "title": "",
             "text": "",
+            "image": "shopify://shop_images/DROPS_1.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -648,6 +649,7 @@
           "settings": {
             "title": "",
             "text": "",
+            "image": "shopify://shop_images/DROPS_2.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
