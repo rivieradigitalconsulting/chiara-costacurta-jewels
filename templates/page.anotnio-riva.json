@@ -268,7 +268,7 @@
             "block_spacing_bottom_desktop": 0,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Per la maison di gioielli, la collezione Onda segue il moto architettonico della vita ed esprime una promessa tanto importante quanto sincera: beside you in the highs and lows of life.</p><p>Il movimento ondulato rappresentativo della nostra collezione Onda incontra il mondo bridal attraverso l’anello di fidanzamento, la fede nuziale e gli orecchini con diamante solitario: gioielli che trasformano una linea in una promessa.</p>",
+            "text": "<p>Per la maison di gioielli, la collezione Onda segue il moto architettonico della vita ed esprime una promessa tanto importante quanto sincera: <em>beside you in the highs and lows of life.</em></p><p>Il movimento ondulato rappresentativo della nostra collezione Onda incontra il mondo bridal attraverso l’anello di fidanzamento, la fede nuziale e gli orecchini con diamante solitario: gioielli che trasformano una linea in una promessa.</p>",
             "text_column": "",
             "grid_gap_desktop": 20,
             "text_size": "body-fs-sm"
