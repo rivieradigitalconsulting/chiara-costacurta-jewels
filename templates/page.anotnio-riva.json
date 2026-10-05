@@ -739,6 +739,7 @@
           "settings": {
             "title": "",
             "text": "",
+            "image": "shopify://shop_images/DROPS_3.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -749,6 +750,18 @@
           "settings": {
             "title": "",
             "text": "",
+            "image": "shopify://shop_images/DROPS_4.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_FDY8Lx": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/DROPS_5.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -757,7 +770,8 @@
       },
       "block_order": [
         "column_dCzGCf",
-        "column_QbwCiJ"
+        "column_QbwCiJ",
+        "column_FDY8Lx"
       ],
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
