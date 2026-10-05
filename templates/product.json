@@ -285,6 +285,36 @@
       "name": "Immagine / Video Narrativo",
       "settings": {}
     },
+    "1780068900439b45f8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_2c6dbe2_QJ7rFg": {
+          "type": "ai_gen_block_2c6dbe2",
+          "name": "Testo narrativo",
+          "settings": {
+            "text": "<p>{{ closest.product.metafields.pdp.descrizione_narrativa.value }}</p>",
+            "text_color": "#1d1d1d",
+            "desktop_width_percent": 60,
+            "font_size_desktop": 14,
+            "line_height_desktop": 1.5,
+            "text_align_desktop": "center",
+            "margin_top_desktop": 20,
+            "margin_bottom_desktop": 20,
+            "font_size_mobile": 14,
+            "line_height_mobile": 1.5,
+            "text_align_mobile": "center",
+            "margin_top_mobile": 15,
+            "margin_bottom_mobile": 60
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_2c6dbe2_QJ7rFg"
+      ],
+      "name": "Testo narrativo",
+      "settings": {}
+    },
     "image_9ygYj9": {
       "type": "image",
       "blocks": {
@@ -327,7 +357,6 @@
         "image_rNUkFg",
         "paragraph_RqMDMC"
       ],
-      "disabled": true,
       "name": "t:image.presets.image.name",
       "settings": {
         "section_id": "",
@@ -338,40 +367,10 @@
         "invert_navigation_color": false,
         "color_scheme": "",
         "media_contain_width": true,
-        "column_width": 10,
+        "column_width": 12,
         "content_position": "center",
         "content_alignment": "left"
       }
-    },
-    "1780068900439b45f8": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_2c6dbe2_QJ7rFg": {
-          "type": "ai_gen_block_2c6dbe2",
-          "name": "Testo narrativo",
-          "settings": {
-            "text": "<p>{{ closest.product.metafields.pdp.descrizione_narrativa.value }}</p>",
-            "text_color": "#1d1d1d",
-            "desktop_width_percent": 60,
-            "font_size_desktop": 14,
-            "line_height_desktop": 1.5,
-            "text_align_desktop": "center",
-            "margin_top_desktop": 20,
-            "margin_bottom_desktop": 20,
-            "font_size_mobile": 14,
-            "line_height_mobile": 1.5,
-            "text_align_mobile": "center",
-            "margin_top_mobile": 15,
-            "margin_bottom_mobile": 60
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_2c6dbe2_QJ7rFg"
-      ],
-      "name": "Testo narrativo",
-      "settings": {}
     },
     "product_recommendations_3VYMEY": {
       "type": "product-recommendations",
@@ -569,8 +568,8 @@
   "order": [
     "main",
     "blocks_Rwfktp",
-    "image_9ygYj9",
     "1780068900439b45f8",
+    "image_9ygYj9",
     "product_recommendations_3VYMEY",
     "media_with_text_M6HPXx",
     "multicolumn_MFWiGU"
