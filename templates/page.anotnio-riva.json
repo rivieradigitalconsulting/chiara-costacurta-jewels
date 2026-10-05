@@ -452,6 +452,7 @@
           "settings": {
             "title": "",
             "text": "",
+            "image": "shopify://shop_images/FLOWERS_1.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -462,6 +463,7 @@
           "settings": {
             "title": "",
             "text": "",
+            "image": "shopify://shop_images/FLOWERS_2.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
