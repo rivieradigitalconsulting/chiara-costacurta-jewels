@@ -285,6 +285,64 @@
       "name": "Immagine / Video Narrativo",
       "settings": {}
     },
+    "image_9ygYj9": {
+      "type": "image",
+      "blocks": {
+        "heading_6k98KN": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Packaging Luxury",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "image_rNUkFg": {
+          "type": "image",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "image_ratio": "16x9"
+          }
+        },
+        "paragraph_RqMDMC": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Abbina testo e immagine per mettere in risalto il prodotto, la collezione o l'articolo del blog che hai scelto. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6k98KN",
+        "image_rNUkFg",
+        "paragraph_RqMDMC"
+      ],
+      "disabled": true,
+      "name": "t:image.presets.image.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 40,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "media_contain_width": true,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "left"
+      }
+    },
     "1780068900439b45f8": {
       "type": "_blocks",
       "blocks": {
@@ -506,72 +564,15 @@
         "btn_style": "line",
         "btn_icon": false
       }
-    },
-    "image_9ygYj9": {
-      "type": "image",
-      "blocks": {
-        "heading_6k98KN": {
-          "type": "heading",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "heading": "Packaging Luxury",
-            "heading_size": "h3",
-            "convert_to_h1": false
-          }
-        },
-        "image_rNUkFg": {
-          "type": "image",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "image_ratio": "16x9"
-          }
-        },
-        "paragraph_RqMDMC": {
-          "type": "paragraph",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "text": "<p>Abbina testo e immagine per mettere in risalto il prodotto, la collezione o l'articolo del blog che hai scelto. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
-            "text_size": "body-fs-sm"
-          }
-        }
-      },
-      "block_order": [
-        "heading_6k98KN",
-        "image_rNUkFg",
-        "paragraph_RqMDMC"
-      ],
-      "name": "t:image.presets.image.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 40,
-        "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 40,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "media_contain_width": true,
-        "column_width": 10,
-        "content_position": "center",
-        "content_alignment": "left"
-      }
     }
   },
   "order": [
     "main",
     "blocks_Rwfktp",
+    "image_9ygYj9",
     "1780068900439b45f8",
     "product_recommendations_3VYMEY",
     "media_with_text_M6HPXx",
-    "multicolumn_MFWiGU",
-    "image_9ygYj9"
+    "multicolumn_MFWiGU"
   ]
 }
