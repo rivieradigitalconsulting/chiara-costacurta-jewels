@@ -337,7 +337,8 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "image_ratio": "16x9"
+            "image": "shopify://shop_images/PHOTO-2026-10-05-13-42-10.jpg",
+            "image_ratio": "1x1"
           }
         },
         "paragraph_RqMDMC": {
