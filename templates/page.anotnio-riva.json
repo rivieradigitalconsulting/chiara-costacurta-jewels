@@ -652,22 +652,11 @@
             "btn_url": "",
             "btn_style": "line"
           }
-        },
-        "column_gthV89": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "btn_label": "",
-            "btn_url": "",
-            "btn_style": "line"
-          }
         }
       },
       "block_order": [
         "column_9fqg9M",
-        "column_UKEffz",
-        "column_gthV89"
+        "column_UKEffz"
       ],
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
@@ -684,7 +673,7 @@
         "content_width": 10,
         "content_position": "left",
         "content_alignment": "left",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "columns_mobile": "2",
         "column_gap_desktop": 5,
         "row_gap_desktop": 20,
