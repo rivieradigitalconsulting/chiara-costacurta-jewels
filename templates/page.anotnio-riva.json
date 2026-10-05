@@ -543,7 +543,7 @@
         "section_padding_top_desktop": 0,
         "section_padding_bottom_desktop": 10,
         "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_bottom_mobile": 0,
         "invert_navigation_color": false,
         "color_scheme": "",
         "section_bg_repeat": false,
@@ -555,6 +555,79 @@
         "content_alignment": "left",
         "title_position": "inline",
         "grid_gap_desktop": 20
+      }
+    },
+    "multicolumn_cemERz": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_xf7eN3": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/FLOWERS_3.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_KADyHR": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/FLOWERS_4.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_rWmVGV": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_xf7eN3",
+        "column_KADyHR",
+        "column_rWmVGV"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "4x5",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "heading": "",
+        "heading_size": "h3",
+        "text": "",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
       }
     },
     "multicolumn_HmP8NV": {
@@ -721,6 +794,7 @@
     "multicolumn_Qr9N6V",
     "multicolumn_wgWB3P",
     "rich_text_PYLk9w",
+    "multicolumn_cemERz",
     "multicolumn_HmP8NV",
     "rich_text_VQqjYR",
     "rich_text_rjUneq"
