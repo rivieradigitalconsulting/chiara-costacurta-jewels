@@ -479,7 +479,7 @@
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
+            "block_spacing_top_mobile": 10,
             "block_spacing_bottom_mobile": 20,
             "heading": "Ricerca Creativa",
             "heading_size": "h3",
