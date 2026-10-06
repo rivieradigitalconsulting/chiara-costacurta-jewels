@@ -389,6 +389,68 @@
         "content_alignment": "center"
       }
     },
+    "media_with_text_ARtwBX": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_ADVVhP": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "heading": "Presentazione e Garanzia",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "paragraph_ixn6MY": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Tutti gli articoli Chiara Costacurta sono confezionati e consegnati nella scatola di velluto verde firmata Chiara Costacurta. Ogni gioiello è accompagnato da un certificato di garanzia.<br/><br/>Qualora decidesse di ordinare sul sito web, la Sua creazione Chiara Costacurta sarà accuratamente confezionata e collocata in un discreto imballaggio protetto per la consegna.</p>",
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ADVVhP",
+        "paragraph_ixn6MY"
+      ],
+      "name": "t:media_with_text.presets.media_with_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "display_mode": "inside-container",
+        "grid_gap_desktop": 20,
+        "grid_gap_mobile": 20,
+        "content_vertical_position": "center",
+        "content_top_position": 33,
+        "content_max_width": 600,
+        "content_horizontal_position": "center",
+        "content_alignment": "left",
+        "media_position": "left",
+        "image": "shopify://shop_images/PHOTO-2026-10-05-13-42-10.jpg",
+        "media_width": 50,
+        "image_ratio": "4x5",
+        "image_ratio_2": "default",
+        "show_image_2_on_mobile": false,
+        "video_ratio": "default",
+        "video_autoplay": false
+      }
+    },
     "product_recommendations_3VYMEY": {
       "type": "product-recommendations",
       "custom_css": [
@@ -587,6 +649,7 @@
     "blocks_Rwfktp",
     "1780068900439b45f8",
     "video_tnWmAg",
+    "media_with_text_ARtwBX",
     "product_recommendations_3VYMEY",
     "media_with_text_M6HPXx",
     "multicolumn_MFWiGU"
