@@ -811,7 +811,7 @@
         "image_ratio": "4x5",
         "content_width": 10,
         "content_position": "left",
-        "content_alignment": "left",
+        "content_alignment": "center",
         "columns_desktop": 4,
         "columns_mobile": "2",
         "column_gap_desktop": 5,
