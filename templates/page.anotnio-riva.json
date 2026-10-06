@@ -385,17 +385,6 @@
             "btn_style": "line"
           }
         },
-        "column_iGb3bJ": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify://shop_images/ONDA_5.jpg",
-            "btn_label": "",
-            "btn_url": "",
-            "btn_style": "line"
-          }
-        },
         "column_xjR8M3": {
           "type": "column",
           "settings": {
@@ -406,12 +395,35 @@
             "btn_url": "",
             "btn_style": "line"
           }
+        },
+        "column_iGb3bJ": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/Onda_5_new.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_MgY3kt": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/ONDA_3.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
         }
       },
       "block_order": [
         "column_q7DWqR",
+        "column_xjR8M3",
         "column_iGb3bJ",
-        "column_xjR8M3"
+        "column_MgY3kt"
       ],
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
@@ -422,13 +434,13 @@
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": false,
         "color_scheme": "",
-        "section_width": "constrict",
+        "section_width": "page-width",
         "columns_alignment": "left",
         "image_ratio": "4x5",
         "content_width": 10,
         "content_position": "left",
         "content_alignment": "left",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "columns_mobile": "2",
         "column_gap_desktop": 5,
         "row_gap_desktop": 20,
