@@ -630,7 +630,7 @@
         "columns_mobile": "2",
         "column_gap_desktop": 5,
         "row_gap_desktop": 20,
-        "column_gap_mobile": 20,
+        "column_gap_mobile": 5,
         "row_gap_mobile": 20,
         "heading": "",
         "heading_size": "h3",
