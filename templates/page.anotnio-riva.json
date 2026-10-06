@@ -778,12 +778,24 @@
             "btn_url": "",
             "btn_style": "line"
           }
+        },
+        "column_g6VdRr": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/Drops_last_new.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
         }
       },
       "block_order": [
         "column_dCzGCf",
         "column_QbwCiJ",
-        "column_FDY8Lx"
+        "column_FDY8Lx",
+        "column_g6VdRr"
       ],
       "name": "t:multicolumn.presets.multicolumn.name",
       "settings": {
