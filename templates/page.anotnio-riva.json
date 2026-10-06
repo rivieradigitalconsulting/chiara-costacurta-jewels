@@ -475,7 +475,7 @@
           "settings": {
             "title": "",
             "text": "",
-            "image": "shopify://shop_images/FLOWERS_2.jpg",
+            "image": "shopify://shop_images/Flowers_2_new.jpg",
             "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
@@ -517,7 +517,7 @@
         "columns_mobile": "2",
         "column_gap_desktop": 5,
         "row_gap_desktop": 20,
-        "column_gap_mobile": 20,
+        "column_gap_mobile": 5,
         "row_gap_mobile": 20,
         "heading": "Flowers",
         "heading_size": "h3",
