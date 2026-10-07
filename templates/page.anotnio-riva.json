@@ -676,6 +676,40 @@
         "btn_icon": false
       }
     },
+    "breadcrumb_navigation_3rirgK": {
+      "type": "breadcrumb-navigation",
+      "blocks": {
+        "navigation_XCrtzL": {
+          "type": "navigation",
+          "settings": {
+            "btn_label": "Scopri la Collezione Flowers",
+            "btn_url": "shopify://collections/flowers",
+            "btn_style": "line",
+            "btn_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "navigation_XCrtzL"
+      ],
+      "name": "t:accordion_navigation.presets.accordion_navigation.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center"
+      }
+    },
     "multicolumn_HmP8NV": {
       "type": "multicolumn",
       "blocks": {
@@ -918,6 +952,7 @@
     "multicolumn_wgWB3P",
     "rich_text_PYLk9w",
     "multicolumn_cemERz",
+    "breadcrumb_navigation_3rirgK",
     "multicolumn_HmP8NV",
     "rich_text_VQqjYR",
     "multicolumn_x3cjxd",
