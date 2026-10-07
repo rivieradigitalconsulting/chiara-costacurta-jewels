@@ -450,8 +450,8 @@
         "heading_size": "h3",
         "text": "",
         "text_size": "body-fs-sm",
-        "btn_label": "Scopri la Collezione Onda",
-        "btn_url": "shopify://collections/onda",
+        "btn_label": "",
+        "btn_url": "",
         "btn_style": "line",
         "btn_icon": true
       }
