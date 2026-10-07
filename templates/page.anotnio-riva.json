@@ -456,6 +456,40 @@
         "btn_icon": true
       }
     },
+    "breadcrumb_navigation_kc6jYr": {
+      "type": "breadcrumb-navigation",
+      "blocks": {
+        "navigation_zWwqzz": {
+          "type": "navigation",
+          "settings": {
+            "btn_label": "Scopri la Collezione Onda",
+            "btn_url": "shopify://collections/onda",
+            "btn_style": "line",
+            "btn_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "navigation_zWwqzz"
+      ],
+      "name": "t:accordion_navigation.presets.accordion_navigation.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 80,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "column_width": 10,
+        "content_position": "center",
+        "content_alignment": "center"
+      }
+    },
     "multicolumn_wgWB3P": {
       "type": "multicolumn",
       "blocks": {
@@ -880,6 +914,7 @@
     "image_MbBh6h",
     "rich_text_7664mQ",
     "multicolumn_Qr9N6V",
+    "breadcrumb_navigation_kc6jYr",
     "multicolumn_wgWB3P",
     "rich_text_PYLk9w",
     "multicolumn_cemERz",
