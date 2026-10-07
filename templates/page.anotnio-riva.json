@@ -452,8 +452,8 @@
         "text_size": "body-fs-sm",
         "btn_label": "Scopri la Collezione Onda",
         "btn_url": "shopify://collections/onda",
-        "btn_style": "primary",
-        "btn_icon": false
+        "btn_style": "line",
+        "btn_icon": true
       }
     },
     "multicolumn_wgWB3P": {
