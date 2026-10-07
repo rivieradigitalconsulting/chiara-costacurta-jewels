@@ -439,7 +439,7 @@
         "image_ratio": "4x5",
         "content_width": 10,
         "content_position": "left",
-        "content_alignment": "left",
+        "content_alignment": "center",
         "columns_desktop": 4,
         "columns_mobile": "2",
         "column_gap_desktop": 5,
@@ -450,9 +450,9 @@
         "heading_size": "h3",
         "text": "",
         "text_size": "body-fs-sm",
-        "btn_label": "Scopri di più",
-        "btn_url": "",
-        "btn_style": "line",
+        "btn_label": "Scopri la Collezione Onda",
+        "btn_url": "shopify://collections/onda",
+        "btn_style": "primary",
         "btn_icon": false
       }
     },
