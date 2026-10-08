@@ -140,6 +140,7 @@
         },
         "tab_AjHYKE": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 0,
@@ -363,7 +364,8 @@
         "image_ratio_2": "default",
         "show_image_2_on_mobile": false,
         "video_ratio": "default",
-        "video_autoplay": false
+        "video_autoplay": false,
+        "video_yt_url": ""
       }
     },
     "product_recommendations_3VYMEY": {
