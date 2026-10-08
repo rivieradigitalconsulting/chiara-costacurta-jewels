@@ -150,6 +150,7 @@
         },
         "tab_AjHYKE": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 0,
@@ -423,10 +424,10 @@
       "name": "t:media_with_text.presets.media_with_text.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 60,
+        "section_padding_top_desktop": 20,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 40,
+        "section_padding_bottom_mobile": 20,
         "invert_navigation_color": false,
         "color_scheme": "",
         "section_bg_repeat": false,
@@ -448,7 +449,8 @@
         "image_ratio_2": "default",
         "show_image_2_on_mobile": false,
         "video_ratio": "default",
-        "video_autoplay": false
+        "video_autoplay": false,
+        "video_yt_url": ""
       }
     },
     "product_recommendations_3VYMEY": {
