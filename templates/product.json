@@ -150,6 +150,7 @@
         },
         "tab_AjHYKE": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "block_spacing_top_desktop": 0,
             "block_spacing_bottom_desktop": 0,
