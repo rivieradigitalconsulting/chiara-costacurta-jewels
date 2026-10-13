@@ -23,9 +23,8 @@
         },
         "announcement_tWF4e6": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "title": "Gli ordini effettuati ad agosto verranno spediti dal 1° settembre",
+            "title": "Iscriviti alla Newsletter: un benvenuto speciale del 10% sul primo ordine ti aspetta",
             "link": ""
           }
         }
@@ -34,7 +33,6 @@
         "announcement-block-1",
         "announcement_tWF4e6"
       ],
-      "disabled": true,
       "custom_css": [
         ".o-announcement-bar__text {font-size: 14px;}"
       ],
