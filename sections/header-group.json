@@ -24,8 +24,8 @@
         "announcement_tWF4e6": {
           "type": "announcement",
           "settings": {
-            "title": "Iscriviti alla Newsletter: un benvenuto speciale del 10% sul primo ordine ti aspetta",
-            "link": ""
+            "title": "Un benvenuto del 10% per te. Iscriviti alla Newsletter",
+            "link": "#newsletter"
           }
         }
       },
