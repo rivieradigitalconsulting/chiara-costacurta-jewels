@@ -24,7 +24,7 @@
         "announcement_tWF4e6": {
           "type": "announcement",
           "settings": {
-            "title": "Un benvenuto del 10% per te. Iscriviti alla Newsletter",
+            "title": "<u> Un benvenuto del 10% per te. Iscriviti alla Newsletter</u>",
             "link": "#newsletter"
           }
         }
