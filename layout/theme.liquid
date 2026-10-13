@@ -153,5 +153,16 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search-script.min.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script>
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href$="#newsletter"]');
+    if (!link) return;
+    e.preventDefault();
+    window._klOnsite = window._klOnsite || [];
+    window._klOnsite.push(['openForm', 'Wbnedj']);
+  }, true);
+</script>
+
   </body>
 </html>
