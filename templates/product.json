@@ -211,7 +211,6 @@
         },
         "complementary_MFNUhx": {
           "type": "complementary",
-          "disabled": true,
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
