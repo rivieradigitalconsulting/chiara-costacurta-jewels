@@ -203,13 +203,12 @@
         },
         "complementary_MFNUhx": {
           "type": "complementary",
-          "disabled": true,
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "product_list_limit": 2,
+            "product_list_limit": 3,
             "column_gap_desktop": 20,
             "column_gap_mobile": 20,
             "heading": "Si abbina bene con"
