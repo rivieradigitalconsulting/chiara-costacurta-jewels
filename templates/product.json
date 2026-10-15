@@ -129,7 +129,7 @@
             "link_color": "#000000",
             "background_color": "",
             "feed_id": "",
-            "html_area": ""
+            "html_area": "<style>\n#insta-feed { text-align: left !important; }\n#insta-feed h2 { font-size: 16px !important; line-height: 1.3 !important; text-align: left !important; margin: 0 0 12px !important; }\n#insta-feed .instafeed-new-layout-container { text-align: left !important; }\n#insta-feed .instafeed-new-layout-wrapper { justify-content: flex-start !important; gap: 10px !important; }\n#insta-feed .instafeed-new-layout-item { width: 70px !important; height: 70px !important; flex: 0 0 70px !important; margin: 0 !important; }\n#insta-feed .instafeed-new-layout-item video,\n#insta-feed .instafeed-new-layout-item img,\n#insta-feed .instafeed-new-layout-item-container,\n#insta-feed .instafeed-hover-layer { width: 100% !important; height: 100% !important; object-fit: cover; }\n#insta-feed .instafeed-product-icon { top: 4px !important; right: 4px !important; width: 14px !important; height: 14px !important; }\n</style>"
           }
         },
         "variant_metafield_GafxBg": {
