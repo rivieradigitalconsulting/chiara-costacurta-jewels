@@ -108,14 +108,15 @@
           "type": "price",
           "settings": {
             "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 30,
+            "block_spacing_bottom_desktop": 35,
             "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 30,
+            "block_spacing_bottom_mobile": 35,
             "show_tax_message": false
           }
         },
         "instafeed_app_block_7GXLiw": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "disabled": true,
           "settings": {
             "title": "Chiara racconta",
             "title_color": "",
