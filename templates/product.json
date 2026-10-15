@@ -208,6 +208,20 @@
             "waitForElementSelector": "",
             "waitForElementDelay": 1
           }
+        },
+        "complementary_MFNUhx": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "product_list_limit": 2,
+            "column_gap_desktop": 20,
+            "column_gap_mobile": 20,
+            "heading": "Si abbina bene con"
+          }
         }
       },
       "block_order": [
@@ -225,7 +239,8 @@
         "tab_epHAfB",
         "tab_QUDqae",
         "tab_H3Fmn4",
-        "kiwi_size_chart_recommender_kiwi_sizing_WgRPib"
+        "kiwi_size_chart_recommender_kiwi_sizing_WgRPib",
+        "complementary_MFNUhx"
       ],
       "custom_css": [
         ".m-breadcrumbs__link,.m-breadcrumbs__chevron {font-size: 12px;}",
