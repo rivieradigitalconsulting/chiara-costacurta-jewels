@@ -227,7 +227,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "product_list_limit": 3,
+            "product_list_limit": 4,
             "column_gap_desktop": 20,
             "column_gap_mobile": 20,
             "heading": "Si abbina bene con"
