@@ -116,7 +116,6 @@
         },
         "instafeed_app_block_7GXLiw": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
-          "disabled": true,
           "settings": {
             "title": "Chiara racconta",
             "title_color": "",
@@ -222,14 +221,15 @@
         },
         "complementary_MFNUhx": {
           "type": "complementary",
+          "disabled": true,
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "product_list_limit": 4,
-            "column_gap_desktop": 5,
-            "column_gap_mobile": 5,
+            "product_list_limit": 3,
+            "column_gap_desktop": 20,
+            "column_gap_mobile": 20,
             "heading": "Si abbina bene con"
           }
         },
