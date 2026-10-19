@@ -16,6 +16,7 @@
       "blocks": {
         "announcement-block-1": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "title": "Spedizione Express Gratuita per ordini superiori a €500,00",
             "link": ""
