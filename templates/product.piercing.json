@@ -243,10 +243,10 @@
       ],
       "custom_css": [
         ".m-breadcrumbs__link,.m-breadcrumbs__chevron {font-size: 12px;}",
-        ".o-product__description {font-size: 14px;}",
-        ".o-product__accordion {border-top: none; border-bottom: none;}",
-        ".m-accordion__text {font-size: 14px;}",
-        ".m-price-item--regular {font-size: 16px;}"
+        ".o-product__description,.m-accordion__text {font-size: 14px;}",
+        ".o-product__accordion {border-block: 0;}",
+        ".m-price-item--regular {font-size: 16px;}",
+        "@media (max-width: 767px) {.o-complementary-products .swiper-wrapper {display: grid; grid: auto/1fr 1fr; gap: 15px 5px; transform: none !important; height: auto !important; } .o-complementary-products .swiper-slide {width: auto !important; margin: 0 !important; } .o-complementary-products .m-swiper__arrow {display: none !important; }}"
       ],
       "settings": {
         "section_id": "",
