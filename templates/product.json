@@ -220,12 +220,25 @@
             "content": "<p>Per provare un gioiello o approfondire una selezione, il nostro team sarà lieto di concordare un appuntamento, in presenza presso il nostro atelier di Milano o in videochiamata. La invitiamo a consultare la pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a> per riservare la Sua consulenza dedicata.</p>"
           }
         },
+        "tab_g9bUMd": {
+          "type": "tab",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 0,
+            "show_tab_collapsed": false,
+            "icon": "plus",
+            "title": "Prenota un appuntamento",
+            "content": "<p>Per provare un gioiello o approfondire una selezione, il nostro team sarà lieto di concordare un appuntamento, in presenza presso il nostro atelier di Milano o in videochiamata. La invitiamo a consultare la pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a> per riservare la Sua consulenza dedicata.</p>"
+          }
+        },
         "complementary_MFNUhx": {
           "type": "complementary",
           "settings": {
-            "block_spacing_top_desktop": 30,
+            "block_spacing_top_desktop": 40,
             "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 30,
+            "block_spacing_top_mobile": 40,
             "block_spacing_bottom_mobile": 20,
             "product_list_limit": 4,
             "column_gap_desktop": 5,
@@ -258,6 +271,7 @@
         "tab_epHAfB",
         "tab_QUDqae",
         "tab_H3Fmn4",
+        "tab_g9bUMd",
         "complementary_MFNUhx",
         "kiwi_size_chart_recommender_kiwi_sizing_WgRPib"
       ],
