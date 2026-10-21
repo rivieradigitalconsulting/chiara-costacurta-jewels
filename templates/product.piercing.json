@@ -201,8 +201,21 @@
             "content": "<p>Per provare un gioiello o approfondire una selezione, il nostro team sarà lieto di concordare un appuntamento, in presenza presso il nostro atelier di Milano o in videochiamata. La invitiamo a consultare la pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a> per riservare la Sua consulenza dedicata.</p>"
           }
         },
+        "complementary_kftG33": {
+          "type": "complementary",
+          "settings": {
+            "block_spacing_top_desktop": 30,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 30,
+            "block_spacing_bottom_mobile": 20,
+            "product_list_limit": 4,
+            "column_gap_desktop": 5,
+            "column_gap_mobile": 5,
+            "heading": "Si abbina bene con"
+          }
+        },
         "kiwi_size_chart_recommender_kiwi_sizing_WgRPib": {
-          "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
+          "type": "shopify://apps/kiwi-size-chart/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
           "settings": {
             "fallbackToBlockPosition": false,
             "waitForElementSelector": "",
@@ -225,6 +238,7 @@
         "tab_epHAfB",
         "tab_QUDqae",
         "tab_H3Fmn4",
+        "complementary_kftG33",
         "kiwi_size_chart_recommender_kiwi_sizing_WgRPib"
       ],
       "custom_css": [
