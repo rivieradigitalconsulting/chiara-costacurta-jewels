@@ -37,7 +37,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Un gioiello è molto più della sua forma.</p><p>È la materia di cui è composto, il modo in cui viene lavorato, la luce che riflette e le emozioni che è in grado di custodire nel tempo.</p><p>Dall'oro ai diamanti, fino alle pietre naturali, Chiara Costacurta seleziona esclusivamente materiali preziosi e naturali, capaci di mantenere intatta la propria bellezza generazione dopo generazione.</p>",
+            "text": "<p><em>Ci sono gioielli che custodiscono una storia,&nbsp;<br/>e altri che nascono dal desiderio di scriverne una nuova.</em></p>",
             "text_column": "",
             "grid_gap_desktop": 20,
             "text_size": "body-fs-sm"
@@ -46,6 +46,46 @@
       },
       "block_order": [
         "paragraph_ytX9aA"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "left",
+        "content_alignment": "right",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "rich_text_HFVNpk": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_weixN6": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Il Made to Measure dell’Atelier Chiara Costacurta nasce dall'incontro tra una visione creativa e una sensibilità personale. Ogni progetto prende forma attraverso un percorso fatto di ascolto, ricerca e disegno, in cui pietre, materiali e proporzioni vengono reinterpretati per dare vita a creazioni intime e simboliche.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_weixN6"
       ],
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
@@ -65,6 +105,87 @@
         "content_alignment": "left",
         "title_position": "inline",
         "grid_gap_desktop": 20
+      }
+    },
+    "multicolumn_iazAdy": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_KQUdP9": {
+          "type": "column",
+          "settings": {
+            "title": "Elemento di colonna",
+            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_BGTwaf": {
+          "type": "column",
+          "settings": {
+            "title": "Elemento di colonna",
+            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_NYL9nF": {
+          "type": "column",
+          "settings": {
+            "title": "Elemento di colonna",
+            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_3aXRtG": {
+          "type": "column",
+          "settings": {
+            "title": "Elemento di colonna",
+            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
+            "btn_label": "Scopri di più",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_KQUdP9",
+        "column_BGTwaf",
+        "column_NYL9nF",
+        "column_3aXRtG"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "4x5",
+        "content_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "2",
+        "column_gap_desktop": 20,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 20,
+        "row_gap_mobile": 20,
+        "heading": "A gardern of milestones",
+        "heading_size": "h3",
+        "text": "<p>Abbina testo e immagine per mettere in risalto il prodotto, la collezione o l'articolo del blog che hai scelto. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
+        "text_size": "body-fs-md",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
       }
     },
     "media_with_text_dzGYMt": {
@@ -263,6 +384,8 @@
   "order": [
     "main",
     "rich_text_NKAEBk",
+    "rich_text_HFVNpk",
+    "multicolumn_iazAdy",
     "media_with_text_dzGYMt",
     "media_with_text_ndraPD",
     "video_gN8RMp"
