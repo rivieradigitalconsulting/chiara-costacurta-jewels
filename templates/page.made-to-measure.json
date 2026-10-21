@@ -60,7 +60,7 @@
         "section_bg_position": "bottom center",
         "section_bg_size": "auto",
         "section_bg_opacity": 100,
-        "column_width": 10,
+        "column_width": 11,
         "content_position": "left",
         "content_alignment": "right",
         "title_position": "inline",
@@ -100,7 +100,7 @@
         "section_bg_position": "bottom center",
         "section_bg_size": "auto",
         "section_bg_opacity": 100,
-        "column_width": 10,
+        "column_width": 12,
         "content_position": "left",
         "content_alignment": "left",
         "title_position": "inline",
@@ -225,7 +225,7 @@
         "section_bg_position": "bottom center",
         "section_bg_size": "auto",
         "section_bg_opacity": 100,
-        "column_width": 10,
+        "column_width": 12,
         "content_position": "left",
         "content_alignment": "left",
         "title_position": "inline",
@@ -350,94 +350,69 @@
         "section_bg_position": "bottom center",
         "section_bg_size": "auto",
         "section_bg_opacity": 100,
-        "column_width": 10,
+        "column_width": 12,
         "content_position": "left",
         "content_alignment": "left",
         "title_position": "inline",
         "grid_gap_desktop": 20
       }
     },
-    "media_with_text_dzGYMt": {
-      "type": "media-with-text",
+    "rich_text_aTHtzJ": {
+      "type": "rich-text",
       "blocks": {
-        "heading_9mVX9f": {
+        "heading_CFATwW": {
           "type": "heading",
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "heading": "Oro 750/1000",
+            "heading": "A guiding sky",
             "heading_size": "h3",
             "convert_to_h1": false
           }
         },
-        "paragraph_7dzWUB": {
+        "paragraph_8WWk6N": {
           "type": "paragraph",
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>L'oro è una delle poche materie capaci di attraversare i secoli senza perdere il proprio fascino.</p><p>Prezioso per natura, raro e incorruttibile, custodisce da sempre storie, affetti e momenti destinati a durare. È il materiale che più di ogni altro accompagna i passaggi importanti della vita, trasformandosi in un simbolo da conservare e tramandare.</p><p>Chiara Costacurta si impegna affinché ogni lavorazione nasca dalle mani di orafi esperti che plasmano l'oro con gesti antichi e con una sensibilità contemporanea. Perché dietro ogni gioiello non c'è solo una materia preziosa, ma il tempo, la competenza e la cura necessari per trasformarla in qualcosa di unico.</p>",
+            "text": "<p>Un cielo da portare con sé.</p><p>Ci sono gioielli che diventano piccoli punti di riferimento, simboli da custodire nel tempo.</p><p>Da uno zaffiro bianco nasce l'idea di un anello da mignolo pensato per una giovane cliente: una creazione che racchiude un sentimento e lo traduce in una forma personale. La pietra viene avvolta da un disegno che richiama un piccolo cielo stellato, una costellazione intima da portare con sé come una guida silenziosa.</p><p>L'oro bianco satinato accompagna il bianco ghiaccio dello zaffiro, esaltandone la luminosità attraverso un contrasto delicato e sofisticato. L'incastonatura a filo integra la pietra nel disegno dell'anello, restituendo una superficie armoniosa e una presenza discreta, pensata anche in relazione all'età della giovane destinataria.</p><p>Un gioiello che unisce ricerca estetica e significato personale: un piccolo universo di luce, amore e possibilità, destinato ad accompagnare chi lo indossa nel proprio percorso.<br/></p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
             "text_size": "body-fs-sm"
           }
         }
       },
       "block_order": [
-        "heading_9mVX9f",
-        "paragraph_7dzWUB"
+        "heading_CFATwW",
+        "paragraph_8WWk6N"
       ],
-      "custom_css": [
-        "a {font-size: 14px;}"
-      ],
-      "name": "t:media_with_text.presets.media_with_text.name",
+      "name": "t:rich_text.presets.rich_text.name",
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 50,
-        "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 10,
-        "invert_navigation_color": true,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": false,
         "color_scheme": "",
         "section_bg_repeat": false,
         "section_bg_position": "bottom center",
         "section_bg_size": "auto",
         "section_bg_opacity": 100,
-        "display_mode": "media-outside-container",
-        "grid_gap_desktop": 50,
-        "grid_gap_mobile": 20,
-        "content_vertical_position": "center",
-        "content_top_position": 0,
-        "content_max_width": 600,
-        "content_horizontal_position": "center",
+        "column_width": 12,
+        "content_position": "left",
         "content_alignment": "left",
-        "media_position": "left",
-        "image": "shopify://shop_images/Arte_del_gioiello_Chiara_Costacurta.png",
-        "media_width": 50,
-        "image_ratio": "4x5",
-        "image_ratio_2": "default",
-        "show_image_2_on_mobile": false,
-        "video_ratio": "default",
-        "video_autoplay": false,
-        "video_yt_url": ""
+        "title_position": "inline",
+        "grid_gap_desktop": 20
       }
     },
     "media_with_text_ndraPD": {
       "type": "media-with-text",
       "blocks": {
-        "heading_tWqDzh": {
-          "type": "heading",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "heading": "Diamanti naturali",
-            "heading_size": "h3",
-            "convert_to_h1": false
-          }
-        },
         "paragraph_eH46wD": {
           "type": "paragraph",
           "settings": {
@@ -445,13 +420,12 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Nati nelle profondità della Terra e plasmati nel corso di milioni di anni, i diamanti naturali custodiscono una storia unica fatta di tempo, pressione e trasformazione chimica. La loro luce non è soltanto una qualità estetica: è il risultato di un percorso straordinario che rende ogni pietra irripetibile.</p><p>Per le creazioni Chiara Costacurta vengono selezionati esclusivamente diamanti naturali certificati, scelti per la loro bellezza, luminosità e qualità. Crediamo che il valore di una pietra non risieda soltanto nella sua rarità, ma anche nella trasparenza e nell'etica che ne accompagnano il percorso.</p><p>Per questo collaboriamo con fornitori che aderiscono al <strong>Kimberley Process</strong>, il sistema internazionale nato per garantire la tracciabilità dei diamanti grezzi e promuovere pratiche di approvvigionamento responsabili. Una scelta che ci permette di offrire diamanti naturali ottenuti nel rispetto delle persone, delle comunità coinvolte e dei territori da cui provengono.</p><p>Per Chiara Costacurta il diamante è davvero prezioso solo quando la sua bellezza è accompagnata da rispetto, responsabilità e trasparenza.</p>",
+            "text": "<p><em>Ho sempre sognato di arrivare a questo.</em></p><p><em>Che la mia creatività riuscisse a dare forma ai sogni e ai desideri delle mie clienti: realizzare insieme il disegno con precisione, cambiare idea più volte e confrontarsi anche sui dettagli che sembrano trascurabili; cercare le pietre perfette, emotivamente e tecnicamente.</em></p><p><em>&nbsp;Trasformiamo un racconto personale in una creazione che non potrebbe appartenere a nessun altro.</em></p><p><em>Chiara Costacurta</em></p>",
             "text_size": "body-fs-sm"
           }
         }
       },
       "block_order": [
-        "heading_tWqDzh",
         "paragraph_eH46wD"
       ],
       "custom_css": [
@@ -460,8 +434,8 @@
       "name": "t:media_with_text.presets.media_with_text.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 60,
-        "section_padding_bottom_desktop": 50,
+        "section_padding_top_desktop": 30,
+        "section_padding_bottom_desktop": 100,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 30,
         "invert_navigation_color": false,
@@ -470,83 +444,23 @@
         "section_bg_position": "bottom center",
         "section_bg_size": "auto",
         "section_bg_opacity": 100,
-        "display_mode": "media-outside-container",
+        "display_mode": "inside-container",
         "grid_gap_desktop": 50,
         "grid_gap_mobile": 20,
         "content_vertical_position": "center",
         "content_top_position": 0,
         "content_max_width": 600,
         "content_horizontal_position": "center",
-        "content_alignment": "left",
+        "content_alignment": "right",
         "media_position": "right",
+        "image": "shopify://shop_images/made_to_measure.jpg",
         "media_width": 50,
-        "image_ratio": "1x1",
+        "image_ratio": "4x5",
         "image_ratio_2": "default",
         "show_image_2_on_mobile": false,
-        "video": "shopify://files/videos/Arte del Gioiello MOV Chiara Costacurta.mp4",
         "video_ratio": "4x5",
         "video_autoplay": true,
         "video_yt_url": ""
-      }
-    },
-    "video_gN8RMp": {
-      "type": "video",
-      "blocks": {
-        "heading_qc8Cne": {
-          "type": "heading",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "heading": "L'arte del gioiello, dietro a ogni gioiello",
-            "heading_size": "h3",
-            "convert_to_h1": false
-          }
-        },
-        "video_cCK8fN": {
-          "type": "video",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "video": "shopify://files/videos/Arte del Gioiello MOV2 Chiara Costacurta.mov",
-            "video_ratio": "16x9",
-            "video_autoplay": true,
-            "video_yt_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-          }
-        },
-        "paragraph_TTRPWK": {
-          "type": "paragraph",
-          "settings": {
-            "block_spacing_top_desktop": 20,
-            "block_spacing_bottom_desktop": 20,
-            "block_spacing_top_mobile": 20,
-            "block_spacing_bottom_mobile": 20,
-            "text": "<p>Un gioiello non nasce soltanto da materiali preziosi.</p><p>Nasce dal tempo, dalla competenza e dalla cura necessarie per trasformarli in qualcosa destinato a durare.</p>",
-            "text_size": "body-fs-sm"
-          }
-        }
-      },
-      "block_order": [
-        "heading_qc8Cne",
-        "video_cCK8fN",
-        "paragraph_TTRPWK"
-      ],
-      "name": "t:video.presets.video.name",
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 80,
-        "section_padding_bottom_desktop": 80,
-        "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 30,
-        "invert_navigation_color": false,
-        "color_scheme": "",
-        "media_contain_width": true,
-        "column_width": 12,
-        "content_position": "center",
-        "content_alignment": "left"
       }
     }
   },
@@ -558,8 +472,7 @@
     "rich_text_ebW33N",
     "multicolumn_Af78fg",
     "rich_text_tUX7UH",
-    "media_with_text_dzGYMt",
-    "media_with_text_ndraPD",
-    "video_gN8RMp"
+    "rich_text_aTHtzJ",
+    "media_with_text_ndraPD"
   ]
 }
