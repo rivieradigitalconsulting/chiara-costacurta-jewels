@@ -191,8 +191,21 @@
             "content": "<p>Per provare un gioiello o approfondire una selezione, il nostro team sarà lieto di concordare un appuntamento, in presenza presso il nostro atelier di Milano o in videochiamata. La invitiamo a consultare la pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a> per riservare la Sua consulenza dedicata.</p>"
           }
         },
+        "complementary_X9TbV7": {
+          "type": "complementary",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "product_list_limit": 2,
+            "column_gap_desktop": 20,
+            "column_gap_mobile": 20,
+            "heading": "Si abbina bene con"
+          }
+        },
         "kiwi_size_chart_recommender_kiwi_sizing_WgRPib": {
-          "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
+          "type": "shopify://apps/kiwi-size-chart/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
           "settings": {
             "fallbackToBlockPosition": false,
             "waitForElementSelector": "",
@@ -214,14 +227,15 @@
         "tab_epHAfB",
         "tab_QUDqae",
         "tab_H3Fmn4",
+        "complementary_X9TbV7",
         "kiwi_size_chart_recommender_kiwi_sizing_WgRPib"
       ],
       "custom_css": [
         ".m-breadcrumbs__link,.m-breadcrumbs__chevron {font-size: 12px;}",
-        ".o-product__description {font-size: 14px;}",
-        ".o-product__accordion {border-top: none; border-bottom: none;}",
-        ".m-accordion__text {font-size: 14px;}",
-        ".m-price-item--regular {font-size: 16px;}"
+        ".o-product__description,.m-accordion__text {font-size: 14px;}",
+        ".o-product__accordion {border-block: 0;}",
+        ".m-price-item--regular {font-size: 16px;}",
+        "@media (max-width: 767px) {.o-complementary-products .swiper-wrapper {display: grid; grid: auto/1fr 1fr; gap: 15px 5px; transform: none !important; height: auto !important; } .o-complementary-products .swiper-slide {width: auto !important; margin: 0 !important; } .o-complementary-products .m-swiper__arrow {display: none !important; }}"
       ],
       "settings": {
         "section_id": "",
