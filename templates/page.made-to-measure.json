@@ -113,9 +113,10 @@
         "column_KQUdP9": {
           "type": "column",
           "settings": {
-            "title": "Elemento di colonna",
-            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
-            "btn_label": "Scopri di più",
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/made_to_measure_1.jpg",
+            "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
           }
@@ -123,9 +124,10 @@
         "column_BGTwaf": {
           "type": "column",
           "settings": {
-            "title": "Elemento di colonna",
-            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
-            "btn_label": "Scopri di più",
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/made_to_measure_1b.jpg",
+            "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
           }
@@ -133,9 +135,10 @@
         "column_NYL9nF": {
           "type": "column",
           "settings": {
-            "title": "Elemento di colonna",
-            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
-            "btn_label": "Scopri di più",
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/made_to_measure_2.jpg",
+            "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
           }
@@ -143,9 +146,10 @@
         "column_3aXRtG": {
           "type": "column",
           "settings": {
-            "title": "Elemento di colonna",
-            "text": "<p>Informazioni aggiuntive sull'elemento di colonna</p>",
-            "btn_label": "Scopri di più",
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/made_to_measure_3.jpg",
+            "btn_label": "",
             "btn_url": "",
             "btn_style": "line"
           }
@@ -164,28 +168,68 @@
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
-        "invert_navigation_color": false,
+        "invert_navigation_color": true,
         "color_scheme": "",
         "section_width": "constrict",
         "columns_alignment": "left",
         "image_ratio": "4x5",
-        "content_width": 10,
+        "content_width": 12,
         "content_position": "left",
         "content_alignment": "left",
-        "columns_desktop": 2,
+        "columns_desktop": 4,
         "columns_mobile": "2",
-        "column_gap_desktop": 20,
+        "column_gap_desktop": 5,
         "row_gap_desktop": 20,
-        "column_gap_mobile": 20,
+        "column_gap_mobile": 5,
         "row_gap_mobile": 20,
         "heading": "A gardern of milestones",
         "heading_size": "h3",
-        "text": "<p>Abbina testo e immagine per mettere in risalto il prodotto, la collezione o l'articolo del blog che hai scelto. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
-        "text_size": "body-fs-md",
+        "text": "<p>La trasformazione di un solitario.</p>",
+        "text_size": "body-fs-sm",
         "btn_label": "Scopri di più",
         "btn_url": "",
         "btn_style": "line",
         "btn_icon": false
+      }
+    },
+    "rich_text_ebW33N": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_D7kqiC": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Ogni traguardo merita di essere custodito.</p><p>Il punto di partenza è un diamante taglio brillante, protagonista di un solitario da reinterpretare e trasformare in una nuova creazione. Attorno alla pietra centrale prende forma un progetto geometrico, nel quale diamanti taglio baguette e brillante si alternano in un disegno pavé che richiama l'immagine di un giardino prezioso.</p><p>Il solitario originario diventa così il cuore di una composizione più articolata, in cui ogni pietra trova il proprio spazio e contribuisce a definire un nuovo equilibrio.</p><p>Un anello che racconta un'evoluzione: la capacità di guardare a ciò che si è costruito e riconoscerne il valore, trasformando i traguardi raggiunti in qualcosa da indossare ogni giorno.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_D7kqiC"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
       }
     },
     "media_with_text_dzGYMt": {
@@ -386,6 +430,7 @@
     "rich_text_NKAEBk",
     "rich_text_HFVNpk",
     "multicolumn_iazAdy",
+    "rich_text_ebW33N",
     "media_with_text_dzGYMt",
     "media_with_text_ndraPD",
     "video_gN8RMp"
