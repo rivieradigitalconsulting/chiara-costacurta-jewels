@@ -51,7 +51,7 @@
     "enable_view_cart": false,
     "cart_drawer_redirect": false,
     "show_cart_upsell": true,
-    "cart_upsell_title": "Aggiungi il nostro portagioie al tuo ordine",
+    "cart_upsell_title": "I tuoi gioielli meritano una custodia speciale",
     "cart_upsell_products": [
       "portagioielli-chiara-costacurta"
     ],
