@@ -90,7 +90,7 @@
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
         "section_id": "",
-        "section_padding_top_desktop": 0,
+        "section_padding_top_desktop": 20,
         "section_padding_bottom_desktop": 80,
         "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 20,
@@ -165,7 +165,7 @@
       "settings": {
         "section_id": "",
         "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 80,
+        "section_padding_bottom_desktop": 20,
         "section_padding_top_mobile": 40,
         "section_padding_bottom_mobile": 40,
         "invert_navigation_color": true,
@@ -211,6 +211,131 @@
       },
       "block_order": [
         "paragraph_D7kqiC"
+      ],
+      "name": "t:rich_text.presets.rich_text.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_bg_repeat": false,
+        "section_bg_position": "bottom center",
+        "section_bg_size": "auto",
+        "section_bg_opacity": 100,
+        "column_width": 10,
+        "content_position": "left",
+        "content_alignment": "left",
+        "title_position": "inline",
+        "grid_gap_desktop": 20
+      }
+    },
+    "multicolumn_Af78fg": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_EwNMaL": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/zambia_1_1.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_GCCrBN": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/zambia_1_2.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_Nmbg8q": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/zambia_1_3.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_pzrFzg": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/zambia_1_4.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_EwNMaL",
+        "column_GCCrBN",
+        "column_Nmbg8q",
+        "column_pzrFzg"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "4x5",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "heading": "A point of color",
+        "heading_size": "h3",
+        "text": "<p>Dallo Zambia al cuore.</p>",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
+    "rich_text_tUX7UH": {
+      "type": "rich-text",
+      "blocks": {
+        "paragraph_Rw7a3n": {
+          "type": "paragraph",
+          "settings": {
+            "block_spacing_top_desktop": 20,
+            "block_spacing_bottom_desktop": 20,
+            "block_spacing_top_mobile": 20,
+            "block_spacing_bottom_mobile": 20,
+            "text": "<p>Ogni traguardo merita di essere custodito.</p><p>Il punto di partenza è un diamante taglio brillante, protagonista di un solitario da reinterpretare e trasformare in una nuova creazione. Attorno alla pietra centrale prende forma un progetto geometrico, nel quale diamanti taglio baguette e brillante si alternano in un disegno pavé che richiama l'immagine di un giardino prezioso.</p><p>Il solitario originario diventa così il cuore di una composizione più articolata, in cui ogni pietra trova il proprio spazio e contribuisce a definire un nuovo equilibrio.</p><p>Un anello che racconta un'evoluzione: la capacità di guardare a ciò che si è costruito e riconoscerne il valore, trasformando i traguardi raggiunti in qualcosa da indossare ogni giorno.</p>",
+            "text_column": "",
+            "grid_gap_desktop": 20,
+            "text_size": "body-fs-sm"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_Rw7a3n"
       ],
       "name": "t:rich_text.presets.rich_text.name",
       "settings": {
@@ -431,6 +556,8 @@
     "rich_text_HFVNpk",
     "multicolumn_iazAdy",
     "rich_text_ebW33N",
+    "multicolumn_Af78fg",
+    "rich_text_tUX7UH",
     "media_with_text_dzGYMt",
     "media_with_text_ndraPD",
     "video_gN8RMp"
