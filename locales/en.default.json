@@ -468,6 +468,20 @@
         },
         "location_information_far_away_one_item": {
           "many": "There are %{count} locations with the item"
+        },
+        "stock_details": {
+          "ship_separately": {
+            "many": "The items will be shipped separately"
+          },
+          "remove_items": {
+            "many": "The items will be removed from the order."
+          }
+        },
+        "unavailable_item_count": {
+          "many": "%{count} items unavailable"
+        },
+        "ship_separately_notice": {
+          "many": "%{count} items will be shipped separately"
         }
       },
       "split_delivery": {
@@ -688,6 +702,9 @@
         "split_shipping_merchandise_quantity_label_inline": "%{merchandise_title} × %{quantity}",
         "split_shipping_shipment_count_notice_one_time_purchase": {
           "many": "Your order will arrive in %{count} shipments"
+        },
+        "split_shipping_arrives_in_shipments": {
+          "many": "Arrives in %{count} shipments"
         }
       },
       "payment": {
@@ -726,6 +743,9 @@
               "many": "%{count} days"
             }
           }
+        },
+        "shop_pay_hsa": {
+          "pay_button_label": "Go to the health questionnaire"
         }
       },
       "shipping_errors": {
@@ -882,6 +902,16 @@
         "pick_up": "Pick up at Atelier",
         "pick_up_from_store": "Pick up at Atelier",
         "pickup_store": "Pick up at Atelier"
+      },
+      "field_errors": {
+        "custom_field": {
+          "cart_metafield_value_too_long_with_limit": {
+            "many": "Enter a maximum of %{count} characters."
+          },
+          "cart_metafield_value_too_short_with_limit": {
+            "many": "Enter at least %{count} characters."
+          }
+        }
       }
     },
     "notices": {
@@ -931,6 +961,11 @@
         },
         "gift_card_resend_button": {
           "many": "Resend gift vouchers"
+        },
+        "fulfillment_tracking": {
+          "gift_card_sent_to_recipient": {
+            "many": "The gift cards have been sent to the recipients."
+          }
         }
       }
     },
