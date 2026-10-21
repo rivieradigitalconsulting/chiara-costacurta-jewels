@@ -27,6 +27,7 @@
             "overlay_opacity": 0,
             "image_1": "shopify://shop_images/25_03_16_CHIARA_COSTACURTA_01_CESALPINO_7_0300.jpg",
             "image_ratio": "1x1",
+            "video": "shopify://files/videos/chiara costacurta homepage video ottobre 2026 (1).mp4",
             "title": "",
             "caption_size": "h5",
             "heading": "",
@@ -34,8 +35,8 @@
             "convert_to_h1": false,
             "text": "",
             "text_size": "body-fs-sm",
-            "btn_label": "Scopri la collezione Victoria",
-            "btn_url": "shopify://collections/victoria",
+            "btn_label": "Scopri la nuova collezione Day to Night",
+            "btn_url": "shopify://collections/day-to-night",
             "btn_style": "line",
             "btn_icon": true
           }
@@ -53,7 +54,7 @@
         "section_padding_bottom_desktop": 0,
         "section_padding_top_mobile": 0,
         "section_padding_bottom_mobile": 0,
-        "invert_navigation_color": false,
+        "invert_navigation_color": true,
         "section_width": "page-width",
         "section_height": "large",
         "autoplay": true,
