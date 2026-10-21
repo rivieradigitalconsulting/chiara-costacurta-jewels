@@ -455,7 +455,7 @@
         "media_position": "right",
         "image": "shopify://shop_images/made_to_measure.jpg",
         "media_width": 50,
-        "image_ratio": "4x5",
+        "image_ratio": "default",
         "image_ratio_2": "default",
         "show_image_2_on_mobile": false,
         "video_ratio": "4x5",
