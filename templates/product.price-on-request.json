@@ -175,7 +175,20 @@
             "show_tab_collapsed": false,
             "icon": "plus",
             "title": "Pagamenti sicuri",
-            "content": "<p>Accettiamo pagamenti con carta di credito, PayPal (anche in 3 rate), Klarna, Wallet digitali (Apple Pay, Google Pay) e bonifico bancario.<br/>Chiara Costacurta  garantisce la massima sicurezza per tutti i tuoi acquisti.</p>"
+            "content": "<p>Accettiamo pagamenti con carta di credito, PayPal (anche in 3 rate), Klarna, Wallet digitali (Apple Pay, Google Pay) e bonifico bancario.<br/>Chiara Costacurta &nbsp;garantisce la massima sicurezza per tutti i tuoi acquisti.</p>"
+          }
+        },
+        "tab_JUaMQQ": {
+          "type": "tab",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 0,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 0,
+            "show_tab_collapsed": false,
+            "icon": "plus",
+            "title": "Confezione regalo",
+            "content": "<p>In fase di conferma dell’ordine, potrà indicarci eventuali preferenze per la confezione regalo: un biglietto scritto a mano, dettagli decorativi personalizzati o la consegna direttamente all’indirizzo desiderato. Ogni richiesta potrà essere descritta nelle note al carrello.</p>"
           }
         },
         "tab_H3Fmn4": {
@@ -187,8 +200,8 @@
             "block_spacing_bottom_mobile": 0,
             "show_tab_collapsed": false,
             "icon": "plus",
-            "title": "Prenota un appuntamento",
-            "content": "<p>Per provare un gioiello o approfondire una selezione, il nostro team sarà lieto di concordare un appuntamento, in presenza presso il nostro atelier di Milano o in videochiamata. La invitiamo a consultare la pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a> per riservare la Sua consulenza dedicata.</p>"
+            "title": "Prenota un appuntamento o Acquista con noi",
+            "content": "<p>Per provare un gioiello, approfondire una selezione o procedere con un acquisto, il nostro team sarà lieto di accompagnarLa in un percorso dedicato, in presenza presso il nostro atelier di Milano, in videochiamata o telefonicamente. La invitiamo a consultare la pagina <a href=\"/pages/contatti\" target=\"_blank\" title=\"Scopri il mondo Chiara Costacurta\">Contatti & Appuntamenti</a> per concordare una consulenza personalizzata o ricevere assistenza per il Suo acquisto.</p>"
           }
         },
         "complementary_X9TbV7": {
@@ -226,6 +239,7 @@
         "tab_AjHYKE",
         "tab_epHAfB",
         "tab_QUDqae",
+        "tab_JUaMQQ",
         "tab_H3Fmn4",
         "complementary_X9TbV7",
         "kiwi_size_chart_recommender_kiwi_sizing_WgRPib"
