@@ -109,7 +109,7 @@
             "block_spacing_bottom_desktop": 15,
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 15,
-            "heading": "Collezione Saint-Tropez",
+            "heading": "Collezione Bridal",
             "heading_size": "h3",
             "convert_to_h1": false
           }
@@ -134,7 +134,7 @@
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 30,
             "btn_label": "Scopri i dettagli",
-            "btn_url": "shopify://collections/saint-tropez",
+            "btn_url": "shopify://collections/chiara-costacurta-x-antonio-riva",
             "btn_style": "tertiary",
             "btn_icon": false
           }
