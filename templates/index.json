@@ -181,7 +181,7 @@
         "section_padding_bottom_mobile": 60,
         "invert_navigation_color": false,
         "color_scheme": "scheme-1",
-        "collection": "saint-tropez",
+        "collection": "chiara-costacurta-x-antonio-riva",
         "product_list": [],
         "display_mode": "slider",
         "product_limit": 12,
@@ -199,8 +199,8 @@
         "heading_size": "h3",
         "text": "",
         "text_size": "body-fs-sm",
-        "btn_label": "Scopri la nuova Saint-Tropez",
-        "btn_url": "shopify://collections/saint-tropez",
+        "btn_label": "Scopri di più",
+        "btn_url": "shopify://collections/chiara-costacurta-x-antonio-riva",
         "btn_style": "line",
         "btn_icon": true
       }
