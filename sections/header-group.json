@@ -22,16 +22,25 @@
             "link": ""
           }
         },
-        "announcement_tWF4e6": {
+        "announcement_qxEedt": {
           "type": "announcement",
           "settings": {
-            "title": "<u> Un benvenuto del 10% per te. Iscriviti alla Newsletter</u>",
+            "title": "Fino a lunedì -15% su Idee Regalo. Scopri la nostra selezione.",
+            "link": "shopify://collections/idee-regalo"
+          }
+        },
+        "announcement_tWF4e6": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "title": "Un benvenuto del 10% per te. Iscriviti alla Newsletter",
             "link": "#newsletter"
           }
         }
       },
       "block_order": [
         "announcement-block-1",
+        "announcement_qxEedt",
         "announcement_tWF4e6"
       ],
       "custom_css": [
