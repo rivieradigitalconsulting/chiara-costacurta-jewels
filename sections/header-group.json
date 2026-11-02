@@ -24,14 +24,14 @@
         },
         "announcement_qxEedt": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
-            "title": "<u>Fino a lunedì, -15% su Idee Regalo. Scopri la nostra selezione.</u>",
+            "title": "Fino a lunedì, -15% su Idee Regalo. Scopri la nostra selezione.",
             "link": "shopify://collections/idee-regalo"
           }
         },
         "announcement_tWF4e6": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "title": "Un benvenuto del 10% per te. Iscriviti alla Newsletter",
             "link": "#newsletter"
