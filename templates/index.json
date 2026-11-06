@@ -61,6 +61,58 @@
         "pagination": true
       }
     },
+    "slideshow_mGd3wx": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_9ApMh6": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "block_width": "page-width",
+            "background_media_size": "full-width",
+            "background_media_position": "left",
+            "column_width": 6,
+            "vertical_content_position": "bottom",
+            "content_position": "center",
+            "content_alignment": "center",
+            "overlay_color": "#1d1d1d",
+            "overlay_opacity": 0,
+            "image_1": "shopify://shop_images/chiara_costacurta_day_to_night.png",
+            "image_ratio": "1x1",
+            "title": "",
+            "caption_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "convert_to_h1": false,
+            "text": "",
+            "text_size": "body-fs-sm",
+            "btn_label": "-15% sulla selezione Idee Regalo. Scopri di più",
+            "btn_url": "shopify://collections/idee-regalo",
+            "btn_style": "line",
+            "btn_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_9ApMh6"
+      ],
+      "custom_css": [
+        "a {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "invert_navigation_color": true,
+        "section_width": "page-width",
+        "section_height": "large",
+        "autoplay": true,
+        "change_slides_every": 5,
+        "pagination": true
+      }
+    },
     "featured_collection_a7Xnrp": {
       "type": "featured-collection",
       "custom_css": [
@@ -709,6 +761,7 @@
   },
   "order": [
     "slideshow",
+    "slideshow_mGd3wx",
     "featured_collection_a7Xnrp",
     "banner_M4yQRt",
     "featured_collection_tTU4Kq",
