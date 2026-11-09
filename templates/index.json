@@ -44,7 +44,6 @@
       "block_order": [
         "slide"
       ],
-      "disabled": true,
       "custom_css": [
         "a {font-size: 14px;}"
       ],
@@ -97,6 +96,7 @@
       "block_order": [
         "slide_9ApMh6"
       ],
+      "disabled": true,
       "custom_css": [
         "a {font-size: 14px;}"
       ],
@@ -116,7 +116,6 @@
     },
     "featured_collection_a7Xnrp": {
       "type": "featured-collection",
-      "disabled": true,
       "custom_css": [
         "a {margin-top: 20px; font-size: 14px;}"
       ],
@@ -154,6 +153,7 @@
     },
     "featured_collection_pJk4f3": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         "a {margin-top: 20px; font-size: 14px;}"
       ],
@@ -222,7 +222,6 @@
         "heading_Hm3DJY",
         "button_wXLf8E"
       ],
-      "disabled": true,
       "custom_css": [
         "span {font-size: 14px;}"
       ],
@@ -248,7 +247,6 @@
     },
     "featured_collection_tTU4Kq": {
       "type": "featured-collection",
-      "disabled": true,
       "custom_css": [
         "a {margin-top: 20px; font-size: 14px;}"
       ],
