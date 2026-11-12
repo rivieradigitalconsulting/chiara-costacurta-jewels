@@ -535,6 +535,14 @@
         },
         "items_count": {
           "many": "%{count} items"
+        },
+        "delivery_updated_toast": {
+          "shipping": {
+            "many": "{{count}} items have been moved to shipping."
+          },
+          "removal": {
+            "many": "{{count}} items have been removed."
+          }
         }
       },
       "merchandise_unavailable_in_buyer_location": {
@@ -986,6 +994,22 @@
           "gift_card_sent_to_recipient": {
             "many": "The gift cards have been sent to the recipients."
           }
+        }
+      },
+      "buy_again_review": {
+        "unavailable_in_market": {
+          "body": {
+            "many": "These products were not added to your cart because they are not available in your country or geographic area."
+          },
+          "none_body": {
+            "many": "These products are not available in your country or region."
+          },
+          "heading": {
+            "many": "Products not available"
+          }
+        },
+        "item_count": {
+          "many": "{{count}} items"
         }
       }
     },
