@@ -44,6 +44,7 @@
       "block_order": [
         "slide"
       ],
+      "disabled": true,
       "custom_css": [
         "a {font-size: 14px;}"
       ],
@@ -76,7 +77,7 @@
             "content_position": "center",
             "content_alignment": "center",
             "overlay_color": "#1d1d1d",
-            "overlay_opacity": 0,
+            "overlay_opacity": 15,
             "image_1": "shopify://shop_images/Homepage_Desktop.png",
             "mobile_image_1": "shopify://shop_images/Homepage_Mobile.png",
             "image_ratio": "1x1",
@@ -97,7 +98,6 @@
       "block_order": [
         "slide_9ApMh6"
       ],
-      "disabled": true,
       "custom_css": [
         "a {font-size: 14px;}"
       ],
