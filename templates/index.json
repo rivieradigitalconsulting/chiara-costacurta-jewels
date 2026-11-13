@@ -78,6 +78,7 @@
             "overlay_color": "#1d1d1d",
             "overlay_opacity": 0,
             "image_1": "shopify://shop_images/Homepage_Desktop.png",
+            "mobile_image_1": "shopify://shop_images/Homepage_Mobile.png",
             "image_ratio": "1x1",
             "title": "",
             "caption_size": "h5",
