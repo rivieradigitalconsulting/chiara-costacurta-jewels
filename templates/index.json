@@ -117,6 +117,7 @@
     },
     "featured_collection_a7Xnrp": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         "a {margin-top: 20px; font-size: 14px;}"
       ],
@@ -154,7 +155,6 @@
     },
     "featured_collection_pJk4f3": {
       "type": "featured-collection",
-      "disabled": true,
       "custom_css": [
         "a {margin-top: 20px; font-size: 14px;}"
       ],
@@ -180,7 +180,7 @@
         "content_width": 12,
         "content_position": "center",
         "content_alignment": "left",
-        "heading": "Idee Regalo",
+        "heading": "Preparati al Natale con la nostra selezione Idee Regalo",
         "heading_size": "h3",
         "text": "<p>Fino a lunedì, -15% su Idee Regalo. La nostra selezione di creazioni pensate per sorprendere: gioielli da regalare e da tramandare.</p>",
         "text_size": "body-fs-sm",
