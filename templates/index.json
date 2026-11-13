@@ -115,44 +115,6 @@
         "pagination": true
       }
     },
-    "featured_collection_a7Xnrp": {
-      "type": "featured-collection",
-      "disabled": true,
-      "custom_css": [
-        "a {margin-top: 20px; font-size: 14px;}"
-      ],
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 60,
-        "section_padding_bottom_desktop": 70,
-        "section_padding_top_mobile": 50,
-        "section_padding_bottom_mobile": 60,
-        "invert_navigation_color": false,
-        "color_scheme": "scheme-1",
-        "collection": "day-to-night",
-        "product_list": [],
-        "display_mode": "grid",
-        "product_limit": 6,
-        "columns_desktop": 3,
-        "columns_mobile": "2",
-        "column_gap_desktop": 5,
-        "row_gap_desktop": 20,
-        "column_gap_mobile": 5,
-        "row_gap_mobile": 20,
-        "section_width": "constrict",
-        "content_width": 12,
-        "content_position": "center",
-        "content_alignment": "left",
-        "heading": "Day to Night",
-        "heading_size": "h3",
-        "text": "<p>Day to Night. I gioielli da vivere senza programmi o regole. Scopri i dettagli.</p>",
-        "text_size": "body-fs-sm",
-        "btn_label": "Scopri di più",
-        "btn_url": "shopify://collections/day-to-night",
-        "btn_style": "line",
-        "btn_icon": true
-      }
-    },
     "featured_collection_pJk4f3": {
       "type": "featured-collection",
       "custom_css": [
@@ -223,6 +185,7 @@
         "heading_Hm3DJY",
         "button_wXLf8E"
       ],
+      "disabled": true,
       "custom_css": [
         "span {font-size: 14px;}"
       ],
@@ -246,8 +209,65 @@
         "image": "shopify://shop_images/chiara_costacurta_day_to_night.png"
       }
     },
+    "banner_AxrxUC": {
+      "type": "banner",
+      "blocks": {
+        "heading_dgUBHJ": {
+          "type": "heading",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 15,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 15,
+            "heading": "Day to Night",
+            "heading_size": "h3",
+            "convert_to_h1": false
+          }
+        },
+        "button_h4eKMf": {
+          "type": "button",
+          "settings": {
+            "block_spacing_top_desktop": 0,
+            "block_spacing_bottom_desktop": 30,
+            "block_spacing_top_mobile": 0,
+            "block_spacing_bottom_mobile": 30,
+            "btn_label": "Vai alla selezione",
+            "btn_url": "shopify://collections/day-to-night",
+            "btn_style": "tertiary",
+            "btn_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dgUBHJ",
+        "button_h4eKMf"
+      ],
+      "custom_css": [
+        "span {font-size: 14px;}"
+      ],
+      "name": "t:banner.presets.banner.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 5,
+        "invert_navigation_color": true,
+        "color_scheme": "",
+        "section_width": "page-width",
+        "section_height": "medium",
+        "column_width": 8,
+        "vertical_content_position": "bottom",
+        "content_position": "center",
+        "content_alignment": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10,
+        "image": "shopify://shop_images/14_e055fe00-e81a-4d14-ae65-467c18bc6069.png"
+      }
+    },
     "featured_collection_tTU4Kq": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         "a {margin-top: 20px; font-size: 14px;}"
       ],
@@ -279,6 +299,43 @@
         "text_size": "body-fs-sm",
         "btn_label": "Scopri di più",
         "btn_url": "shopify://collections/idee-regalo",
+        "btn_style": "line",
+        "btn_icon": true
+      }
+    },
+    "featured_collection_a7Xnrp": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {margin-top: 20px; font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 70,
+        "section_padding_top_mobile": 50,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "scheme-1",
+        "collection": "day-to-night",
+        "product_list": [],
+        "display_mode": "grid",
+        "product_limit": 6,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "heading": "Day to Night",
+        "heading_size": "h3",
+        "text": "<p>Day to Night. I gioielli da vivere senza programmi o regole. Scopri i dettagli.</p>",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "shopify://collections/day-to-night",
         "btn_style": "line",
         "btn_icon": true
       }
@@ -802,10 +859,11 @@
   "order": [
     "slideshow",
     "slideshow_mGd3wx",
-    "featured_collection_a7Xnrp",
     "featured_collection_pJk4f3",
     "banner_M4yQRt",
+    "banner_AxrxUC",
     "featured_collection_tTU4Kq",
+    "featured_collection_a7Xnrp",
     "banner_cpc4cb",
     "featured_collection_NJtEpV",
     "banner_qJTiPR",
