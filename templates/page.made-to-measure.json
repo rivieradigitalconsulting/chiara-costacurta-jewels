@@ -357,11 +357,97 @@
         "grid_gap_desktop": 20
       }
     },
+    "multicolumn_NgJz6D": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ar8iV9": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/zambia_1_1.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_ywwj6R": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/zambia_1_2.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_aWJpi8": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/zambia_1_3.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        },
+        "column_bRFHPG": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify://shop_images/zambia_1_4.jpg",
+            "btn_label": "",
+            "btn_url": "",
+            "btn_style": "line"
+          }
+        }
+      },
+      "block_order": [
+        "column_ar8iV9",
+        "column_ywwj6R",
+        "column_aWJpi8",
+        "column_bRFHPG"
+      ],
+      "name": "t:multicolumn.presets.multicolumn.name",
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 20,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 20,
+        "invert_navigation_color": false,
+        "color_scheme": "",
+        "section_width": "constrict",
+        "columns_alignment": "left",
+        "image_ratio": "4x5",
+        "content_width": 12,
+        "content_position": "left",
+        "content_alignment": "left",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "heading": "A guiding sky",
+        "heading_size": "h3",
+        "text": "<p>Un cielo da portare con sè.</p>",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "",
+        "btn_style": "line",
+        "btn_icon": false
+      }
+    },
     "rich_text_aTHtzJ": {
       "type": "rich-text",
       "blocks": {
         "heading_CFATwW": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "block_spacing_top_desktop": 20,
             "block_spacing_bottom_desktop": 20,
@@ -379,7 +465,7 @@
             "block_spacing_bottom_desktop": 20,
             "block_spacing_top_mobile": 20,
             "block_spacing_bottom_mobile": 20,
-            "text": "<p>Un cielo da portare con sé.</p><p>Ci sono gioielli che diventano piccoli punti di riferimento, simboli da custodire nel tempo.</p><p>Da uno zaffiro bianco nasce l'idea di un anello da mignolo pensato per una giovane cliente: una creazione che racchiude un sentimento e lo traduce in una forma personale. La pietra viene avvolta da un disegno che richiama un piccolo cielo stellato, una costellazione intima da portare con sé come una guida silenziosa.</p><p>L'oro bianco satinato accompagna il bianco ghiaccio dello zaffiro, esaltandone la luminosità attraverso un contrasto delicato e sofisticato. L'incastonatura a filo integra la pietra nel disegno dell'anello, restituendo una superficie armoniosa e una presenza discreta, pensata anche in relazione all'età della giovane destinataria.</p><p>Un gioiello che unisce ricerca estetica e significato personale: un piccolo universo di luce, amore e possibilità, destinato ad accompagnare chi lo indossa nel proprio percorso.<br/></p>",
+            "text": "<p>Ci sono gioielli che diventano piccoli punti di riferimento, simboli da custodire nel tempo.</p><p>Da uno zaffiro bianco nasce l'idea di un anello da mignolo pensato per una giovane cliente: una creazione che racchiude un sentimento e lo traduce in una forma personale. La pietra viene avvolta da un disegno che richiama un piccolo cielo stellato, una costellazione intima da portare con sé come una guida silenziosa.</p><p>L'oro bianco satinato accompagna il bianco ghiaccio dello zaffiro, esaltandone la luminosità attraverso un contrasto delicato e sofisticato. L'incastonatura a filo integra la pietra nel disegno dell'anello, restituendo una superficie armoniosa e una presenza discreta, pensata anche in relazione all'età della giovane destinataria.</p><p>Un gioiello che unisce ricerca estetica e significato personale: un piccolo universo di luce, amore e possibilità, destinato ad accompagnare chi lo indossa nel proprio percorso.<br/></p>",
             "text_column": "",
             "grid_gap_desktop": 20,
             "text_size": "body-fs-sm"
@@ -472,6 +558,7 @@
     "rich_text_ebW33N",
     "multicolumn_Af78fg",
     "rich_text_tUX7UH",
+    "multicolumn_NgJz6D",
     "rich_text_aTHtzJ",
     "media_with_text_ndraPD"
   ]
