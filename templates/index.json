@@ -641,7 +641,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/2.png",
+            "image": "shopify://shop_images/instagram-image-48a429e2-5490-43c2-b5fd-5da03a2035ed.jpg",
             "heading": "Bracciali",
             "description": "<p>Fornisci una breve panoramica delle collezioni in evidenza</p>",
             "btn_label": "Bracciali",
@@ -765,7 +765,7 @@
         "content_horizontal_position": "center",
         "content_alignment": "left",
         "media_position": "left",
-        "image": "shopify://shop_images/5.01.jpg",
+        "image": "shopify://shop_images/IMG_6854.jpg",
         "media_width": 50,
         "image_ratio": "4x5",
         "image_ratio_2": "default",
