@@ -92,8 +92,46 @@
         "pagination": true
       }
     },
+    "featured_collection_pJk4f3": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a {margin-top: 20px; font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "section_padding_top_desktop": 60,
+        "section_padding_bottom_desktop": 70,
+        "section_padding_top_mobile": 50,
+        "section_padding_bottom_mobile": 60,
+        "invert_navigation_color": false,
+        "color_scheme": "scheme-1",
+        "collection": "idee-regalo",
+        "product_list": [],
+        "display_mode": "grid",
+        "product_limit": 6,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "column_gap_desktop": 5,
+        "row_gap_desktop": 20,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 20,
+        "section_width": "constrict",
+        "content_width": 12,
+        "content_position": "center",
+        "content_alignment": "left",
+        "heading": "Preparati al Natale con la nostra selezione Idee Regalo",
+        "heading_size": "h3",
+        "text": "<p>Scopri a nostra selezione di creazioni pensate per sorprendere: gioielli da regalare e da tramandare.</p>",
+        "text_size": "body-fs-sm",
+        "btn_label": "Scopri di più",
+        "btn_url": "shopify://collections/day-to-night",
+        "btn_style": "line",
+        "btn_icon": true
+      }
+    },
     "featured_collection_a7Xnrp": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         "a {margin-top: 20px; font-size: 14px;}"
       ],
@@ -181,43 +219,6 @@
         "autoplay": true,
         "change_slides_every": 5,
         "pagination": true
-      }
-    },
-    "featured_collection_pJk4f3": {
-      "type": "featured-collection",
-      "custom_css": [
-        "a {margin-top: 20px; font-size: 14px;}"
-      ],
-      "settings": {
-        "section_id": "",
-        "section_padding_top_desktop": 60,
-        "section_padding_bottom_desktop": 70,
-        "section_padding_top_mobile": 50,
-        "section_padding_bottom_mobile": 60,
-        "invert_navigation_color": false,
-        "color_scheme": "scheme-1",
-        "collection": "idee-regalo",
-        "product_list": [],
-        "display_mode": "grid",
-        "product_limit": 6,
-        "columns_desktop": 3,
-        "columns_mobile": "2",
-        "column_gap_desktop": 5,
-        "row_gap_desktop": 20,
-        "column_gap_mobile": 5,
-        "row_gap_mobile": 20,
-        "section_width": "constrict",
-        "content_width": 12,
-        "content_position": "center",
-        "content_alignment": "left",
-        "heading": "Preparati al Natale con la nostra selezione Idee Regalo",
-        "heading_size": "h3",
-        "text": "<p>Scopri a nostra selezione di creazioni pensate per sorprendere: gioielli da regalare e da tramandare.</p>",
-        "text_size": "body-fs-sm",
-        "btn_label": "Scopri di più",
-        "btn_url": "shopify://collections/day-to-night",
-        "btn_style": "line",
-        "btn_icon": true
       }
     },
     "banner_M4yQRt": {
@@ -335,6 +336,7 @@
     },
     "featured_collection_tTU4Kq": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         "a {margin-top: 20px; font-size: 14px;}"
       ],
@@ -888,9 +890,9 @@
   },
   "order": [
     "slideshow",
+    "featured_collection_pJk4f3",
     "featured_collection_a7Xnrp",
     "slideshow_mGd3wx",
-    "featured_collection_pJk4f3",
     "banner_M4yQRt",
     "banner_AxrxUC",
     "featured_collection_tTU4Kq",
