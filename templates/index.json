@@ -35,15 +35,45 @@
             "convert_to_h1": false,
             "text": "",
             "text_size": "body-fs-sm",
-            "btn_label": "Scopri la selezione Day to Night",
-            "btn_url": "shopify://collections/day-to-night",
+            "btn_label": "Scopri la selezione Idee Regalo",
+            "btn_url": "shopify://collections/idee-regalo",
+            "btn_style": "line",
+            "btn_icon": true
+          }
+        },
+        "slide_xkkLTe": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "block_width": "page-width",
+            "background_media_size": "full-width",
+            "background_media_position": "left",
+            "column_width": 6,
+            "vertical_content_position": "bottom",
+            "content_position": "center",
+            "content_alignment": "center",
+            "overlay_color": "#1d1d1d",
+            "overlay_opacity": 0,
+            "image_1": "shopify://shop_images/Homepage_Desktop.png",
+            "mobile_image_1": "shopify://shop_images/Chira_costacurta_home_1.jpg",
+            "image_ratio": "1x1",
+            "title": "",
+            "caption_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "convert_to_h1": false,
+            "text": "",
+            "text_size": "body-fs-sm",
+            "btn_label": "Scopri la selezione Idee Regalo",
+            "btn_url": "shopify://collections/idee-regalo",
             "btn_style": "line",
             "btn_icon": true
           }
         }
       },
       "block_order": [
-        "slide"
+        "slide",
+        "slide_xkkLTe"
       ],
       "custom_css": [
         "a {font-size: 14px;}"
