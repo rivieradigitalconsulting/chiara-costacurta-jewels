@@ -185,7 +185,6 @@
     },
     "featured_collection_pJk4f3": {
       "type": "featured-collection",
-      "disabled": true,
       "custom_css": [
         "a {margin-top: 20px; font-size: 14px;}"
       ],
@@ -213,7 +212,7 @@
         "content_alignment": "left",
         "heading": "Preparati al Natale con la nostra selezione Idee Regalo",
         "heading_size": "h3",
-        "text": "<p>Fino a lunedì, -15% su Idee Regalo. La nostra selezione di creazioni pensate per sorprendere: gioielli da regalare e da tramandare.</p>",
+        "text": "<p>Scopri a nostra selezione di creazioni pensate per sorprendere: gioielli da regalare e da tramandare.</p>",
         "text_size": "body-fs-sm",
         "btn_label": "Scopri di più",
         "btn_url": "shopify://collections/day-to-night",
