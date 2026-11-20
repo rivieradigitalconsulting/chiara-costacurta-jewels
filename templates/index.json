@@ -76,7 +76,8 @@
         "slide_xkkLTe"
       ],
       "custom_css": [
-        "a {font-size: 14px;}"
+        "a {font-size: 14px;}",
+        "@media screen and (max-width: 749px) {.o-slideshow, .o-slideshow--slider, .o-slideshow__inner, .o-slideshow__slide, .o-slideshow__slide-inner, .o-slideshow__slide-media, .o-slideshow__slide-image, .o-slideshow__slide-image-panel, .o-slideshow__slide-overlay {height: 80vh !important; height: 80svh !important; min-height: 0 !important; } .o-slideshow__slide-image-panel img {width: 100% !important; height: 100% !important; object-fit: cover; object-position: center; }}"
       ],
       "settings": {
         "section_id": "",
