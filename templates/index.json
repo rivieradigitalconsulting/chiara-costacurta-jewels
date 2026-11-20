@@ -231,7 +231,7 @@
             "block_spacing_bottom_desktop": 15,
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 15,
-            "heading": "Idee Regalo",
+            "heading": "Day to Night",
             "heading_size": "h3",
             "convert_to_h1": false
           }
@@ -244,7 +244,7 @@
             "block_spacing_top_mobile": 0,
             "block_spacing_bottom_mobile": 30,
             "btn_label": "Vai alla selezione",
-            "btn_url": "shopify://collections/idee-regalo",
+            "btn_url": "shopify://collections/day-to-night",
             "btn_style": "tertiary",
             "btn_icon": false
           }
@@ -274,7 +274,7 @@
         "content_alignment": "center",
         "overlay_color": "#000000",
         "overlay_opacity": 10,
-        "image": "shopify://shop_images/chiara_costacurta_day_to_night.png"
+        "image": "shopify://shop_images/DAY_TO_NIGHT.png"
       }
     },
     "banner_AxrxUC": {
