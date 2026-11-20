@@ -336,7 +336,6 @@
     },
     "featured_collection_tTU4Kq": {
       "type": "featured-collection",
-      "disabled": true,
       "custom_css": [
         "a {margin-top: 20px; font-size: 14px;}"
       ],
@@ -362,12 +361,12 @@
         "content_width": 12,
         "content_position": "center",
         "content_alignment": "left",
-        "heading": "Preparati al Natale con le nostre Idee Regalo",
+        "heading": "Day to Night",
         "heading_size": "h3",
-        "text": "<p>La nostra selezione di creazioni pensate per sorprendere: gioielli da regalare e da tramandare.</p>",
+        "text": "<p>I gioielli da vivere senza programmi o regole. Scopri i dettagli.</p>",
         "text_size": "body-fs-sm",
         "btn_label": "Scopri di più",
-        "btn_url": "shopify://collections/idee-regalo",
+        "btn_url": "shopify://collections/day-to-night",
         "btn_style": "line",
         "btn_icon": true
       }
