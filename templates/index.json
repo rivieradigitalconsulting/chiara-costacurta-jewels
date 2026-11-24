@@ -107,7 +107,14 @@
         "invert_navigation_color": false,
         "color_scheme": "scheme-1",
         "collection": "idee-regalo",
-        "product_list": [],
+        "product_list": [
+          "portagioielli-chiara-costacurta",
+          "chiara-costacurta-ciondolo-goccia-di-diamante-naturale-08hd-yg18d",
+          "anello-victoria-in-argento-925-e-diamanti-brown",
+          "chiara-costacurta-ciondolo-rosellina-di-corallo-arancione-e-oro-giallo-08hc9-yg18",
+          "chiara-costacurta-catena-rolo-con-goccia-di-diamante-in-oro-giallo-09c2c-yg18d",
+          "ciondolo-capricorno-in-oro-giallo"
+        ],
         "display_mode": "grid",
         "product_limit": 6,
         "columns_desktop": 3,
