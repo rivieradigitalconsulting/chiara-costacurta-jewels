@@ -356,7 +356,14 @@
         "invert_navigation_color": false,
         "color_scheme": "scheme-1",
         "collection": "idee-regalo",
-        "product_list": [],
+        "product_list": [
+          "bracciale-onda-in-oro-giallo",
+          "chiara-costacurta-choker-in-oro-giallo-08ck-yg18",
+          "chiara-costacurta-ciondolo-medusa-di-pietra-lavica-08hl9-rg14d",
+          "chiara-costacurta-multipli-in-oro-rosa-e-goccia-di-diamante-02omu-rg18d",
+          "chiara-costacurta-orecchini-onda-con-oro-giallo-e-diamanti-03ond-tiyg18d",
+          "chiara-costacurta-desiderio-in-oro-giallo-con-goccia-di-diamante-02oav-yg18dd"
+        ],
         "display_mode": "slider",
         "product_limit": 12,
         "columns_desktop": 3,
