@@ -14,13 +14,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_Qbtp6y": {
-          "type": "announcement",
-          "settings": {
-            "title": "Benvenuto nel nostro negozio",
-            "link": ""
-          }
-        },
         "announcement-block-1": {
           "type": "announcement",
           "disabled": true,
@@ -39,7 +32,6 @@
         }
       },
       "block_order": [
-        "announcement_Qbtp6y",
         "announcement-block-1",
         "announcement_qxEedt"
       ],
