@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_d9hCLT": {
+          "type": "announcement",
+          "settings": {
+            "title": "<u>10% di benvenuto sul primo ordine. Iscriviti alla nostra Newsletter</u>",
+            "link": ""
+          }
+        },
         "announcement-block-1": {
           "type": "announcement",
           "disabled": true,
@@ -26,12 +33,13 @@
           "type": "announcement",
           "disabled": true,
           "settings": {
-            "title": "<u>Fino a lunedì, -15% su Idee Regalo. Scopri la nostra selezione.</u>",
+            "title": "Fino a lunedì, -15% su Idee Regalo. Scopri la nostra selezione.",
             "link": "shopify://collections/idee-regalo"
           }
         }
       },
       "block_order": [
+        "announcement_d9hCLT",
         "announcement-block-1",
         "announcement_qxEedt"
       ],
